@@ -1,0 +1,734 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Script-Type" content="text/javascript">
+   <meta http-equiv="Content-Style-Type" content="text/css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="apple-mobile-web-app-title" content="TONGTONGMALL">
+   <meta name="title" content="통통몰 - 최저가보다 더 저렴하게!">
+   
+            <meta id="meta-desc" name="description" content="[이너프] 3step 콜라겐 돼지코팩">
+      <meta id="meta-keyword" name="keywords" content="[이너프],3step,콜라겐,돼지코팩">
+      <meta property="og:description" content="[이너프] 3step 콜라겐 돼지코팩">
+   
+   <meta name="robots" content="index,follow">
+   <meta property="og:title" content="통통몰 :: 최저가보다 더 저렴하게!">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.tongtongmall.net/">
+   <meta property="og:image" content="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+   <title>통통몰 :: 최저가보다 더 저렴하게!</title>
+   <link rel="shortcut icon" href="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/common/component/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/side_menu.css?v=1685064666" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/bottom_tab_bar.css?v=1685064666" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   <!-- <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/common.css?ver=1685064666" /> -->
+   <!-- <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/parameters.css?ver=1.0" /> -->
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/parameters.css">
+   <!-- <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/custom.css?ver=1685064666" /> -->
+   <link rel="stylesheet" href="./css/custom2.css">
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/toast.css?ver=1.0" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/raterater.css?ver=1.0" />
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.ui.touch-punch.min.js"></script>
+   <script src="https://tomato.etomato.com/bootstrap.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.touchSwipe.min.js"></script>
+   <script src="https://tomato.etomato.com/tomatopay/swiper.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.cookie.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.22.0/load-image.all.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/lazy/jquery.lazyload.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/exif.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment-timezone-with-data.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/raterater.jquery.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/Winwheel.js"></script>
+   <script src="https://tomato.etomato.com/crypto-js.min.js"></script>
+
+         <script src="https://tomato.etomato.com/tomatopay/tomato_pay_20220420.js?v=1685064666"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/utility.js?ver=1685064666"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/loadjavascript.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/toast.js"></script>
+
+   <meta name="naver-site-verification" content="939ab956fced0f816c38d1969a807cb2c97365a4" />
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154704959-1"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-154704959-1');
+   </script>
+   <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+   <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "11410ee1ab15bb";
+      if (window.wcs) {
+         wcs_do();
+      }
+   </script>
+</head>
+
+<body>
+   <div id="spinner_overay" style="display: block;">
+      <div class="spinner"></div>
+   </div>
+   <a href="javascript: setViewTop();" class="btn-top"><img src="https://www.tongtongmall.net/assets/user/images/btn_top.png" style="width: 45px; height: 45px;" alt=""></a>
+   <div class="dialog-overlay" onclick="closeDialog();"></div>
+   <div class="dialog-overlay-address" onclick="closeDialogAddress();"></div>
+   <div class="dialog-overlay-shipping" onclick="closeDialogShipping();"></div>
+   <!-- 일반다이얼로그(통통몰) -->
+   <div class="dialog-normal">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn"></div>
+      </div>
+   </div>
+   <!-- 일반다이얼로그(통통마일) -->
+   <div class="dialog-normal-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn-gtc"></div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통몰-네/아니오) -->
+   <div class="dialog-setting">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;"></div>
+            <div class="btn-1 back-0 fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통마일-네/아니오)  -->
+   <div class="dialog-setting-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;"></div>
+            <div class="btn-1 back-gtc fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통몰) -->
+   <div class="dialog-cart">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;">쇼핑 계속하기</div>
+            <div class="btn-1 back-0 fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통마일) -->
+   <div class="dialog-cart-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_gtc_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;">쇼핑 계속하기</div>
+            <div class="btn-1 back-gtc fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 배송지설정 다이얼로그 -->
+   <div class="dialog-address">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogAddress();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content" style="height: 100%;">
+         <div id="wrap" style="display: none; width: 100%; height: 80%; margin: 5px 0; position: relative;"></div>
+      </div>
+   </div>
+   <!-- 배송정보 다이얼로그 -->
+   <div class="dialog-shipping">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogShipping();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content pt-9">
+         <div class="font-999-12 mb-9">수령인</div>
+         <div class="font-222-12 mb-21" id="name"></div>
+         <div class="font-999-12 mb-9">연락처</div>
+         <div class="font-222-12 mb-21" id="phone"></div>
+         <div class="font-999-12 mb-9">배송지</div>
+         <div class="font-222-12 mb-21 line-height-1" id="address"></div>
+         <div class="font-999-12 mb-9">배송메모</div>
+         <div class="font-222-12" id="memo" style="padding-bottom: 44px;"></div>
+      </div>
+   </div>
+   <!-- 간편결제용 카드사 다이얼로그 -->
+   <div class="dialog-card">
+      <div style="height: 100%;">
+         <div class="dialog-header">
+            <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+         </div>
+         <div class="dialog-title" style="height: 81%; overflow-y: auto;">
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('비씨', '01');">비씨카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('국민', '02');">국민카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('외환', '03');">외환카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('삼성', '04');">삼성카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('신한', '06');">신한카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('현대', '07');">현대카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('롯대', '08');">롯데카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('NH농협', '12');">NH농협카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('하나SK', '16');">하나SK카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('씨티', '11');">씨티카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('우리', '15');">우리카드</div>
+         </div>
+      </div>
+   </div>
+   <!-- 통통몰앱으로 이동팝업 -->
+   <div class="run-app-view">
+      <div class="row mb-15">
+         <img class="fl" src="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark_2.png" alt="" style="width: 100%;">
+      </div>
+      <div class="row mb-15">
+         <img id="run-app" src="https://www.tongtongmall.net/assets/user/images/btn_app_redirect.png" alt="" style="width: 100%;" onclick="">
+      </div>
+      <div id="run-web" class="text-center font-weight" style="font-size: 15px; color: #fff; text-decoration: underline;" onclick="runWeb();">아니요, 웹에서 볼게요.</div>
+   </div>
+<div id="header-search" class="default-unit border-btm">
+   <div class="row padding-15">
+      <div class="col-xs-2" style="display: flex; align-items: center; height: 36px;">
+         <img class="pointer fl" src="./images/icon/ic_back.svg" onclick="goBack('https://www.tongtongmall.net/');" alt="">
+      </div>
+      <div class="col-xs-10">
+         <input id="search-value" class="radius-3 border-default h-36" type="text" name="" value="세제" placeholder="검색어를 입력해주세요." onkeypress="setAutoSearch(this, event);" style="padding-right: 55px;" autocomplete="off">
+         <img class="pos-ab pointer" src="https://www.tongtongmall.net/assets/user/images/input_del_icon.png" alt="" style="width: 15px; height: 15px; top: 12px; right: 9px;" onclick="setClearSearchWord();">
+          <img class="pos-ab pointer" src="./images/ic_search.svg" alt="" style="width: 18px; height: 18px; top: 10px; right: 35px;" onclick="setClickSearch();">
+      </div>
+   </div>
+</div>
+<div id="search-result" class="default-unit pos-re" style="padding-bottom: 20px;" data-userid="">
+   <div class="row" style="padding: 0px 15px;">
+      <div class="col-xs-10 pb-5">
+         <div id="filter-item-content" class="row"></div>
+      </div>
+      <div class="col-xs-2 pt-10" style="height: 35px;">
+         <div id="text-filter" class="font-222-12 fr ml-5 pointer" onclick="setSearchFilter();">필터</div>
+         <img id="icon-filter" class="fr pointer" src="./images/icon/ic_filter.svg" alt="" style="width: 15px; top:5px;" onclick="setSearchFilter();">
+      </div>
+   </div>
+   <div class="back-line-border"></div>
+   <div id="search-content">
+      <div id="tongtongmall-section" style="display: block;">
+         <div class="border-btm" style="padding: 13px 15px;">
+            <div class="font-222-15">검색결과</div>
+         </div>
+         <div id="content">
+                                                                           <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=15157'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/4064788.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 베이비워시출시기념 베이비워시200ml+아기옷 세탁세제500ml</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">30%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">28,000원</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=14693'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/7124747.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">샤프란 섬유유연제 리필 2100ml *2개 엘지생활건강 유연제</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">28%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="4.5"></div>
+                              <div class="font-222-12 fl mt-2">(4.5)</div>
+                           </div>
+                        </div>
+                                                   <img src="https://www.tongtongmall.net/assets/user/images/free_shipping.png" alt="" style="width: 60px; height: 19px;">
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=13588'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/7901090.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 스페셜 4종세제: 주방500ml(아기 젖병 세제 겸용)+ 과일채소300ml + 세탁500ml + 핸드워시300ml+ 수세미</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">38%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=13560'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/4928015.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 스페셜 2종세제 [주방세제 500ml + 리필 500ml(아기 젖병 세제 겸용) + 세탁세제 500ml + 리필 500ml (아기 옷 세탁 겸용,  속옷, 타올 세탁 세제)+ 수세미]</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">35%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=13356'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/5404791.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 주방세제 리필 500ml 1+1  (아기 젖병 세제 겸용)</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">21%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=13354'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/4831544.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 세탁세제 리필  500ml 2+1  (아기 옷 세탁 겸용, 속옷, 타올 세탁 세제)</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">19%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=13322'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/8725760.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 주방세제 [액상형500ml+ 폼300ml+캠핑용25ml x 2(아기 젖병 세제 겸용) + 핸드워시 (300ml + 휴대용 50ml)</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">30%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                                   <img src="https://www.tongtongmall.net/assets/user/images/free_shipping.png" alt="" style="width: 60px; height: 19px;">
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=13320'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/3052084.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 핸드워시 300ml + 주방세제 (폼300ml+ 캠핑용25mlx2)</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">30%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                                   <img src="https://www.tongtongmall.net/assets/user/images/free_shipping.png" alt="" style="width: 60px; height: 19px;">
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=13318'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/8992429.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 주방세제 500ml (아기 젖병 세제 겸용)+ 핸드워시 300ml</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">30%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                                   <img src="https://www.tongtongmall.net/assets/user/images/free_shipping.png" alt="" style="width: 60px; height: 19px;">
+                                             </div>
+                  </div>
+                                                                                             <div class="row padding-15 border-btm" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=13316'">
+                     <div class="col-xs-2 pointer">
+                        <img class="thumbnail-2 m0 fl lazy" data-original="https://img.tongtongmall.net/assets/upload/product/3215982.jpg" alt="">
+                                             </div>
+                     <div class="col-xs-10 pt-6 pointer">
+                        <div class="font-222-12 content-width line-height-2 mb-4">소이브라운 천연명품 주방세제 [액상500ml + 폼300ml + 캠핑용25mlx2 (아기 젖병 세제 겸용)]</div>
+                        <div class="row mb-4">
+                           <div class="font-default-18 font-weight fl">30%</div>
+                                                         <div class="font-222-15 font-weight ml-5 fl pt-2">할인가</div>
+                                                      <div class="fr pt-3">
+                              <div class="ratebox-1 fl" data-id="1" data-rating="0.0"></div>
+                              <div class="font-222-12 fl mt-2">(0.0)</div>
+                           </div>
+                        </div>
+                                             </div>
+                  </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                             </div>
+                     <div class="row padding-15">
+               <div class="col-xs-2"></div>
+               <div class="col-xs-8">
+                  <div class="btn-border text-center pointer" onclick="getTongtongmallMoreData('296', '세제');" style="padding: 14px 0px; font-size: 15px;">검색결과 전체보기 ></div>
+               </div>
+               <div class="col-xs-2"></div>
+            </div>
+            <div class="back-line-border"></div>
+               </div>
+      <div id="groupby-section" style="display: none;">
+         <div class="border-btm" style="padding: 13px 15px;">
+            <div class="font-222-15">통통몰 공동구매</div>
+         </div>
+         <div id="content">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </div>
+                     <div class="row padding-15">
+               <div class="col-xs-2"></div>
+               <div class="col-xs-8">
+                  <div class="btn-border text-center pointer" onclick="getTongtongmallMoreData('295', '세제');" style="padding: 14px 0px; font-size: 15px;">검색결과 전체보기 ></div>
+               </div>
+               <div class="col-xs-2"></div>
+            </div>
+            <div class="back-line-border"></div>
+               </div>
+      <!-- <div id="shopping-section" style="display: none;">
+         <div id="shopping-section" style="display: block;">
+            <div class="border-btm" style="padding: 13px 15px;">
+               <div class="font-222-15">쇼핑몰</div>
+            </div>
+            <div id="content">
+               <div class="padding-15 border-btm">
+                  <div class="swiper-container" id="swiper-1">
+                     <div class="swiper-wrapper search_wrapper">
+                                                                     </div>
+                     <div class="swiper-pagination" style="bottom: -2px;"></div>
+                  </div>
+               </div>
+                           </div>
+         </div>
+      </div> -->
+   </div>
+   <div id="filter-menu">
+      <div class="menu-overlay-filter" onclick="setCloseSearchFilter();"></div>
+      <nav class="navbar navbar-inverse" id="filter-wrapper">
+         <div id="filter-header" class="padding-15">
+            <div class="row">
+               <div class="font-222-17 fl font-weight">필터</div>
+               <img class="fr pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel_1.png" alt="" style="width: 17px;" onclick="setCloseSearchFilter();">
+            </div>
+         </div>
+         <div class="h-24"></div>
+         <div class="border-btm" style="padding: 0px 15px 9px 10px;">
+            <div class="row">
+               <div class="fl" style="width: 90%;">
+                  <div class="row" id="search-item-content"></div>
+               </div>
+               <img class="fr pointer mt-5" src="https://www.tongtongmall.net/assets/user/images/ico_refresh.png" alt="" style="width: 15px;" onclick="setClearSearchItem();">
+            </div>
+         </div>
+         <div id="search-filter-content
+         
+         ">
+            <div class="row" style="height: 100%;">
+               <div id="filter-menu-list" class="col-xs-4 back-6" style="border-right: 1px solid #dedede; height: 100%;">
+                  <div class="search-menu-item active border-btm" onclick="setSearchFilterKind(this, 'category');">카테고리</div>
+                  <div class="search-menu-item border-btm" onclick="setSearchFilterKind(this, 'review');">리뷰</div>
+                  <div class="search-menu-item border-btm" onclick="setSearchFilterKind(this, 'sort');">정렬</div>
+                  <!-- <div class="search-menu-item border-btm" onclick="setSearchFilterKind(this, 'shoppingmall');">쇼핑몰</div> -->
+               </div>
+               <div class="col-xs-8">
+                  <div class="padding-15">
+                     <div id="category-content">
+                                                   <div class="cat-item" style="padding: 10px 0px 20px 0px;" data-catid="29">
+                              <div class="search-category-txt">- 식품</div>
+                              <div class="subcategory-content">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <div class="search-sucategory-txt" data-catid="29" data-subcatid="461" onclick="setSubCategoryItem(this, '29', '461');">ㄴ 신선식품</div>
+                                                                                                                                                                                                                                                                                                                                                               <div class="search-sucategory-txt" data-catid="29" data-subcatid="63" onclick="setSubCategoryItem(this, '29', '63');">ㄴ 가공식품</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="29" data-subcatid="62" onclick="setSubCategoryItem(this, '29', '62');">ㄴ 건강식품</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <div class="search-sucategory-txt" data-catid="29" data-subcatid="465" onclick="setSubCategoryItem(this, '29', '465');">ㄴ 생수/커피/음료</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <div class="search-sucategory-txt" data-catid="29" data-subcatid="464" onclick="setSubCategoryItem(this, '29', '464');">ㄴ 기타</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
+                           </div>
+                                                   <div class="cat-item" style="padding: 10px 0px 20px 0px;" data-catid="31">
+                              <div class="search-category-txt">- 생활/생필품</div>
+                              <div class="subcategory-content">
+                                                                                                                                                                                                                                                                                                                                                                                                <div class="search-sucategory-txt" data-catid="31" data-subcatid="72" onclick="setSubCategoryItem(this, '31', '72');">ㄴ 주방용품</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="search-sucategory-txt" data-catid="31" data-subcatid="73" onclick="setSubCategoryItem(this, '31', '73');">ㄴ 욕실용품</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <div class="search-sucategory-txt" data-catid="31" data-subcatid="77" onclick="setSubCategoryItem(this, '31', '77');">ㄴ 구강/세안/면도</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <div class="search-sucategory-txt" data-catid="31" data-subcatid="78" onclick="setSubCategoryItem(this, '31', '78');">ㄴ 세제/방향/살충</div>
+                                                                                                                                                                                                                                                                                                                                                               <div class="search-sucategory-txt" data-catid="31" data-subcatid="52" onclick="setSubCategoryItem(this, '31', '52');">ㄴ 유아용품</div>
+                                                                                                                                                                                                                     <div class="search-sucategory-txt" data-catid="31" data-subcatid="74" onclick="setSubCategoryItem(this, '31', '74');">ㄴ 생활잡화</div>
+                                                                                                                                                                                                                     <div class="search-sucategory-txt" data-catid="31" data-subcatid="79" onclick="setSubCategoryItem(this, '31', '79');">ㄴ 수납정리용품</div>
+                                                                                                                                                                                                                     <div class="search-sucategory-txt" data-catid="31" data-subcatid="75" onclick="setSubCategoryItem(this, '31', '75');">ㄴ 기타</div>
+                                                                                                                                                                        </div>
+                           </div>
+                                                   <div class="cat-item" style="padding: 10px 0px 20px 0px;" data-catid="30">
+                              <div class="search-category-txt">- 건강/레저</div>
+                              <div class="subcategory-content">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <div class="search-sucategory-txt" data-catid="30" data-subcatid="76" onclick="setSubCategoryItem(this, '30', '76');">ㄴ 건강/의료용품</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <div class="search-sucategory-txt" data-catid="30" data-subcatid="66" onclick="setSubCategoryItem(this, '30', '66');">ㄴ 운동기구</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="30" data-subcatid="67" onclick="setSubCategoryItem(this, '30', '67');">ㄴ 레저용품</div>
+                                                                                                                                                                                                                                                                                                                                                               <div class="search-sucategory-txt" data-catid="30" data-subcatid="68" onclick="setSubCategoryItem(this, '30', '68');">ㄴ 운동의류/잡화</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <div class="search-sucategory-txt" data-catid="30" data-subcatid="69" onclick="setSubCategoryItem(this, '30', '69');">ㄴ 기타</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </div>
+                           </div>
+                                                   <div class="cat-item" style="padding: 10px 0px 20px 0px;" data-catid="26">
+                              <div class="search-category-txt">- 가전/디지털</div>
+                              <div class="subcategory-content">
+                                                                                                            <div class="search-sucategory-txt" data-catid="26" data-subcatid="39" onclick="setSubCategoryItem(this, '26', '39');">ㄴ 계절가전</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="26" data-subcatid="42" onclick="setSubCategoryItem(this, '26', '42');">ㄴ 건강가전</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="26" data-subcatid="43" onclick="setSubCategoryItem(this, '26', '43');">ㄴ 주방가전</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <div class="search-sucategory-txt" data-catid="26" data-subcatid="44" onclick="setSubCategoryItem(this, '26', '44');">ㄴ 생활/미용가전</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="26" data-subcatid="40" onclick="setSubCategoryItem(this, '26', '40');">ㄴ 영상/음향가전</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="search-sucategory-txt" data-catid="26" data-subcatid="35" onclick="setSubCategoryItem(this, '26', '35');">ㄴ PC/노트북</div>
+                                                                                                                                                                                                                     <div class="search-sucategory-txt" data-catid="26" data-subcatid="36" onclick="setSubCategoryItem(this, '26', '36');">ㄴ PC주변기기</div>
+                                                                                                                                                                                                                     <div class="search-sucategory-txt" data-catid="26" data-subcatid="38" onclick="setSubCategoryItem(this, '26', '38');">ㄴ 저장장치</div>
+                                                                                                                                                                                                                     <div class="search-sucategory-txt" data-catid="26" data-subcatid="37" onclick="setSubCategoryItem(this, '26', '37');">ㄴ 스마트 기기</div>
+                                                                                                                                                                                                                     <div class="search-sucategory-txt" data-catid="26" data-subcatid="33" onclick="setSubCategoryItem(this, '26', '33');">ㄴ 기타</div>
+                                                                                                   </div>
+                           </div>
+                                                   <div class="cat-item" style="padding: 10px 0px 20px 0px;" data-catid="27">
+                              <div class="search-category-txt">- 패션/주얼리/뷰티</div>
+                              <div class="subcategory-content">
+                                                                                                                                                                                 <div class="search-sucategory-txt" data-catid="27" data-subcatid="46" onclick="setSubCategoryItem(this, '27', '46');">ㄴ 의류/언더웨어</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="27" data-subcatid="49" onclick="setSubCategoryItem(this, '27', '49');">ㄴ 잡화</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="27" data-subcatid="50" onclick="setSubCategoryItem(this, '27', '50');">ㄴ 화장품/향수</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <div class="search-sucategory-txt" data-catid="27" data-subcatid="468" onclick="setSubCategoryItem(this, '27', '468');">ㄴ 주얼리/시계</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </div>
+                           </div>
+                                                   <div class="cat-item" style="padding: 10px 0px 20px 0px;" data-catid="28">
+                              <div class="search-category-txt">- 가구/취미/반려</div>
+                              <div class="subcategory-content">
+                                                                                                                                                                                                                                                      <div class="search-sucategory-txt" data-catid="28" data-subcatid="53" onclick="setSubCategoryItem(this, '28', '53');">ㄴ 가구/DIY</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="28" data-subcatid="58" onclick="setSubCategoryItem(this, '28', '58');">ㄴ 침구/커튼</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="28" data-subcatid="59" onclick="setSubCategoryItem(this, '28', '59');">ㄴ 인테리어소품</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="search-sucategory-txt" data-catid="28" data-subcatid="61" onclick="setSubCategoryItem(this, '28', '61');">ㄴ 기타</div>
+                                                                                                                                                                                                                                                                                          <div class="search-sucategory-txt" data-catid="28" data-subcatid="81" onclick="setSubCategoryItem(this, '28', '81');">ㄴ 취미/문구</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <div class="search-sucategory-txt" data-catid="28" data-subcatid="82" onclick="setSubCategoryItem(this, '28', '82');">ㄴ 반려동물</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </div>
+                           </div>
+                                                   <div class="cat-item" style="padding: 10px 0px 20px 0px;" data-catid="32">
+                              <div class="search-category-txt">- 자동차/공구</div>
+                              <div class="subcategory-content">
+                                                                                                                                                                                                                                                                                                                           <div class="search-sucategory-txt" data-catid="32" data-subcatid="70" onclick="setSubCategoryItem(this, '32', '70');">ㄴ 자동차용품</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="search-sucategory-txt" data-catid="32" data-subcatid="71" onclick="setSubCategoryItem(this, '32', '71');">ㄴ 공구</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div class="search-sucategory-txt" data-catid="32" data-subcatid="83" onclick="setSubCategoryItem(this, '32', '83');">ㄴ 기타</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                           </div>
+                                             </div>
+                     <div id="review-content" style="display: none;">
+                        <div class="row">
+                           <div class="ratebox-2 fl" data-id="2" data-rating="0"></div>
+                           <div class="font-222-12 fl mt-5">이상</div>
+                        </div>
+                     </div>
+                     <div id="sort-content" style="display: none;">
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="popular" type="checkbox" name="" value="인기순" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="popular"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">인기순</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="new" type="checkbox" name="" value="최신순" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="new"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">최신순</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="purchase" type="checkbox" name="" value="구매순" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="purchase"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">구매순</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="low" type="checkbox" name="" value="낮은가격순" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="low"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">낮은가격순</div>
+                        </div>
+                        <div class="row">
+                           <div class="fl">
+                              <input id="high" type="checkbox" name="" value="높은가격순" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="high"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">높은가격순</div>
+                        </div>
+                     </div>
+                     <div id="shoppingmall-content" style="display: none;">
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="bonga" type="checkbox" name="" value="11번가" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="bonga"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">11번가</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="auction" type="checkbox" name="" value="옥션" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="auction"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">옥션</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="gmarket" type="checkbox" name="" value="지마켓" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="gmarket"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">지마켓</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="coupang" type="checkbox" name="" value="쿠팡" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="coupang"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">쿠팡</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="g9" type="checkbox" name="" value="G9" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="g9"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">G9</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="tmon" type="checkbox" name="" value="티몬" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="tmon"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">티몬</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="wemakeprice" type="checkbox" name="" value="위메프" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="wemakeprice"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">위메프</div>
+                        </div>
+                        <div class="row mb-15">
+                           <div class="fl">
+                              <input id="interpark" type="checkbox" name="" value="인터파크" onclick="checkSearchFilter(this);" autocomplete="off">
+                              <label for="interpark"></label>
+                           </div>
+                           <div class="font-222-12 mt-3 fl ml-6">인터파크</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </div>
+</div>
+
+<script type="text/javascript">
+   $('.ratebox-2').raterater({
+      submitFunction: 'setRate',
+      allowChange: true,
+      starWidth: 20,
+      spaceWidth: 5,
+      numStars: 5,
+      step: true
+   });
+
+   $('.ratebox-1').raterater({
+      starWidth: 13,
+      spaceWidth: 3,
+      numStars: 5,
+      isStatic: true,
+      step: false
+   });
+
+   $('img.lazy').lazyload({
+      effect: "fadeIn"
+   });
+
+   new Swiper('#swiper-1', {
+      spaceBetween: 9,
+      pagination: {
+         el: '.swiper-pagination',
+      }
+   });
+
+   loadJavascript("https://www.tongtongmall.net/assets/user/js/product/search_result.js?ver=1685064666", null);
+</script>

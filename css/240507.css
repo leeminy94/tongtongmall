@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.review-conts{
+    display: flex; justify-content: space-between;
+    margin:0 25px !important;
+}
+.btn_rw{
+    font-size: 15px;
+    color: #fff;
+    background-color: #e60012;
+    width: 192px; height: 40px; line-height: 40px; text-align: center;
+    box-sizing: border-box;
+}

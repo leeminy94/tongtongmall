@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+*{font-size: 16px;}
+#card_info ul {list-style: none; width: 100%; padding-left: 0px; margin-top: 20px;}
+#card_info ul li{font-size: 1em; margin-bottom: 0;}
+#card_info ul li input{margin-bottom: 20px;}
+
+
+#card_info ul li .input__check{width: 100%;}
+#card_info ul li .input__check input[type="checkbox"]+label{
+background: url(https://www.tongtongmall.net/assets/user/images/ico_checkbox_unselected.png) no-repeat; height: 17px;     background-size: auto 100%; margin: 0;}
+#card_info ul li .input__check input[type="checkbox"]:checked+label{
+    background: url(https://www.tongtongmall.net/assets/user/images/ico_checkbox_selected.png) no-repeat;
+    height: 17px;    background-size: auto 100%;
+    margin: 0;
+}
+#card_info ul li .input__check label{
+    width: 100%;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+#card_info2{ display: flex; justify-content: center; align-items: center; width: 100%;}
+#card_info2 ul {list-style: none; width: 100%; padding-left: 0px; margin-top: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 0px; flex-direction: column;  }
+#card_info2 ul li{font-size: 1em; margin-bottom: 0;  height: 100%; margin-right: 0; width: 100%; max-width: 350px;}
+#card_info2 ul li .input__check{width: 100%; height: 45px;display: flex; align-items: center;}
+#card_info2 ul li .input__check input{width: 200px; margin-right: 10px;}
+#card_info2 ul li .input__check input[type="radio"]{    height: 100%; background: url(https://www.tongtongmall.net/assets/user/images/ico_checkbox_unselected.png) no-repeat 0% 30px; height: 17px;     background-size: 15px; margin: 0;}
+#card_info2 ul li .input__check input[type="radio"]+label:checked+label{
+    background: url(https://www.tongtongmall.net/assets/user/images/ico_checkbox_selected.png) no-repeat;
+    height: 100%;    background-size: 15px;  width: 100%;
+    margin: 0; display: flex; align-items: center;
+}
+#card_info2 ul li .input__check input[type=radio]+label{
+    background: url(https://www.tongtongmall.net/assets/user/images/ico_radiobox_unselected.png) no-repeat 2%; height: 100%;  width: 100%; margin: 0; background-size: 15px; display: flex; align-items: center;
+}
+#card_info2 ul li .input__check input[type=radio]:checked+label{background: url(https://www.tongtongmall.net/assets/user/images/ico_radiobox_selected.png) no-repeat 2%; height: 100%;  width: 100%; margin: 0; background-size: 15px; display: flex; align-items: center; } 
+
+
+#card_info2 ul li .input__check label{
+    width: 100%;
+    font-weight: 700;
+    font-size: 1em;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 480px)  {
+    #card_info2 ul{flex-direction: column; align-items: center;}
+    #card_info2 ul li{margin-right: 0; margin-bottom: 0; width: 100%; font-size: 1em;}
+    #card_info2 ul li .input__check label{font-size: 1em;}
+}
+
+
+.btn-submit-2.active{margin:0 auto; width: 100%;}
+
+.remove_card{background: #de322a; color:#fff; border-radius: 50%; width: 20px; height: 20px; text-align: center; display: inline-block; font-size: .9em;}
+
+
+#card_info .ci_li{display: flex; margin-bottom: 20px; justify-content: flex-start; width: 100%;}
+#card_info .ci_li div{  max-width: 400px;}
+#card_info .ci_li div:first-child{margin-right: 20px;}
+#card_info .ci_li div label{margin-bottom: 0px; font-size: .9em; margin-bottom: 5px;}
+
+#card_info .ci_li div input[type=number],#card_info .ci_li input[type=password]{margin-bottom: 0px;}
+
+/*231114*/
+#card_info2 ul li .input__check input:disabled{
+    color:#000 !important; background: #fff !important;
+}

@@ -1,0 +1,51 @@
+.raterater-bg-layer {
+    color: #e3e3e3;
+}
+
+.raterater-hover-layer {
+    color: #ffda07;
+     width:120%;
+}
+
+.raterater-hover-layer.rated {
+    color: #ffda07;
+    width:120%;
+}
+
+.raterater-rating-layer {
+    color: /*#ffda07*/red;
+     width:120%;
+}
+
+.raterater-outline-layer {
+    opacity: 0;
+}
+
+.raterater-wrapper {
+    overflow: visible;
+}
+
+.raterater-layer,
+.raterater-layer i {
+    display: block;
+    position: absolute;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+     width:120%;
+}
+
+.raterater-hover-layer i,
+.raterater-rating-layer i {
+    width: 0;
+    overflow: hidden;
+     width:120%;
+}
+
+/*230622*/
+.raterater-layer.raterater-cover-layer {font-size: 26px !important;}
+.raterater-layer.raterater-rating-layer > i{font-size: 26px !important;}
+.raterater-layer.raterater-outline-layer >i {font-size: 26px !important;}
+.raterater-layer.raterater-bg-layer > i{ font-size: 26px !important;}
+.raterater-layer.raterater-hover-layer.rated > i{font-size: 26px !important;}

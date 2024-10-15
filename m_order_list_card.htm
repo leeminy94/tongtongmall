@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Script-Type" content="text/javascript">
+   <meta http-equiv="Content-Style-Type" content="text/css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="apple-mobile-web-app-title" content="TONGTONGMALL">
+   <meta name="title" content="통통몰 - 최저가보다 더 저렴하게!">
+
+            <meta id="meta-desc" name="description" content="UH 전동자동거품기 실버 (거치대는없음)">
+      <meta id="meta-keyword" name="keywords" content="UH,전동자동거품기,실버,(거치대는없음)">
+      <meta property="og:description" content="UH 전동자동거품기 실버 (거치대는없음)">
+   
+   <meta name="robots" content="index,follow">
+   <meta property="og:title" content="통통몰 :: 최저가보다 더 저렴하게!">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.tongtongmall.net/">
+   <meta property="og:image" content="http://211.192.45.232/assets/user/images/tongtongmall_mark.jpg">
+   <title>통통몰 :: 최저가보다 더 저렴하게!</title>
+   <link rel="shortcut icon" href="http://211.192.45.232/assets/user/images/tongtongmall_mark.jpg">
+
+   <link rel="stylesheet" href="http://211.192.45.232/assets/common/component/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/side_menu.css?v=1681456120" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/bottom_tab_bar.css?v=1681456120" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="http://211.192.45.232/assets/user/css/common.css?ver=1681456120" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/user/css/parameters.css?ver=1.0" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/user/css/custom.css?ver=1681456120" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/user/css/toast.css?ver=1.0" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/user/css/raterater.css?ver=1.0" />
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
+   <link rel="stylesheet" href="./css/m_ttmall_style.css">
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/jquery.ui.touch-punch.min.js"></script>
+   <script src="https://tomato.etomato.com/bootstrap.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/jquery.touchSwipe.min.js"></script>
+   <script src="https://tomato.etomato.com/tomatopay/swiper.min.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/jquery.cookie.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.22.0/load-image.all.min.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/lazy/jquery.lazyload.min.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/exif.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/moment.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/moment-timezone-with-data.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/raterater.jquery.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/Winwheel.js"></script>
+   <script src="https://tomato.etomato.com/crypto-js.min.js"></script>
+
+         <script src="https://tomato.etomato.com/tomatopay/tomato_pay_20220420.js?v=1681456120"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+   <script src="http://211.192.45.232/assets/common/js/utility.js?ver=1681456120"></script>
+   <script src="http://211.192.45.232/assets/common/js/loadjavascript.js"></script>
+   <script src="http://211.192.45.232/assets/common/js/toast.js"></script>
+
+   <meta name="naver-site-verification" content="939ab956fced0f816c38d1969a807cb2c97365a4" />
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154704959-1"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-154704959-1');
+   </script>
+   <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+   <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "11410ee1ab15bb";
+      if (window.wcs) {
+         wcs_do();
+      }
+   </script>
+</head>
+
+<body style="min-width: 320px;">
+   <div id="spinner_overay" style="display: block;">
+      <div class="spinner"></div>
+   </div>
+   <a href="javascript: setViewTop();" class="btn-top"><img src="http://211.192.45.232/assets/user/images/btn_top.png" style="width: 45px; height: 45px;" alt=""></a>
+   <div class="dialog-overlay" onclick="closeDialog();"></div>
+   <div class="dialog-overlay-address" onclick="closeDialogAddress();"></div>
+   <div class="dialog-overlay-shipping" onclick="closeDialogShipping();"></div>
+   <!-- 일반다이얼로그(통통몰) -->
+   <div class="dialog-normal">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn"></div>
+      </div>
+   </div>
+   <!-- 일반다이얼로그(통통마일) -->
+   <div class="dialog-normal-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn-gtc"></div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통몰-네/아니오) -->
+   <div class="dialog-setting">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;"></div>
+            <div class="btn-1 back-0 fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통마일-네/아니오)  -->
+   <div class="dialog-setting-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;"></div>
+            <div class="btn-1 back-gtc fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통몰) -->
+   <div class="dialog-cart">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="http://211.192.45.232/assets/user/images/add_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;">쇼핑 계속하기</div>
+            <div class="btn-1 back-0 fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통마일) -->
+   <div class="dialog-cart-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="http://211.192.45.232/assets/user/images/add_gtc_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;">쇼핑 계속하기</div>
+            <div class="btn-1 back-gtc fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 배송지설정 다이얼로그 -->
+   <div class="dialog-address">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogAddress();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content" style="height: 100%;">
+         <div id="wrap" style="display: none; width: 100%; height: 80%; margin: 5px 0; position: relative;"></div>
+      </div>
+   </div>
+   <!-- 배송정보 다이얼로그 -->
+   <div class="dialog-shipping">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogShipping();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content pt-9">
+         <div class="font-999-12 mb-9">수령인</div>
+         <div class="font-222-12 mb-21" id="name"></div>
+         <div class="font-999-12 mb-9">연락처</div>
+         <div class="font-222-12 mb-21" id="phone"></div>
+         <div class="font-999-12 mb-9">배송지</div>
+         <div class="font-222-12 mb-21 line-height-1" id="address"></div>
+         <div class="font-999-12 mb-9">배송메모</div>
+         <div class="font-222-12" id="memo" style="padding-bottom: 44px;"></div>
+      </div>
+   </div>
+   <!-- 간편결제용 카드사 다이얼로그 -->
+   <div class="dialog-card">
+      <div style="height: 100%;">
+         <div class="dialog-header">
+            <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+         </div>
+         <div class="dialog-title" style="height: 81%; overflow-y: auto;">
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('비씨', '01');">비씨카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('국민', '02');">국민카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('외환', '03');">외환카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('삼성', '04');">삼성카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('신한', '06');">신한카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('현대', '07');">현대카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('롯대', '08');">롯데카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('NH농협', '12');">NH농협카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('하나SK', '16');">하나SK카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('씨티', '11');">씨티카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('우리', '15');">우리카드</div>
+         </div>
+      </div>
+   </div>
+   <div class="dialog-coupon">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1">[쿠폰 <span class="disc-rate">10%</span>] 당첨!</div>
+         <div class="pos-re mt-15" style="padding: 0 45px; display: flex; justify-content: center;">
+            <img src="http://211.192.45.232/assets/user/images/coupon_bg.png" alt="" style="width: 100%; height: 56px;">
+            <div class="pos-ab" style="top: 8px;">
+               <p class="mb-5" style="font-size: 12px; color: #666666; font-weight: bold;">행운 할인쿠폰</p>
+               <p class="mb-0 disc-rate" style="font-size: 18px; color: #de322a; font-weight: bold;">10%</p>
+            </div>
+         </div>
+      </div>
+      <div class="dialog-content">
+         <p style="font-size: 12px; color: #999999; padding: 0 30px;">* <span id="apply-part">전체 상품 사용가능</span></p>
+         <div class="text-center">
+            <p style="font-size: 13px; color: #555555; line-height: 1.3;">
+               하단
+               <span class="pointer" style="color: #de322a; text-decoration: underline;" onclick="window.location.replace('http://211.192.45.232/coupon');">[쿠폰함 바로가기]</span>
+               에서<br>발급 받은 쿠폰을 확인 해보세요.
+            </p>
+            <p class="pb-15" style="font-size: 13px; color: #555555; line-height: 1.3;">오늘까지 사용 가능하며,<br>내일도 받으실 수 있어요.</p>
+         </div>
+      </div>
+   </div>
+   <!-- 통통몰앱으로 이동팝업 -->
+   <div class="run-app-view">
+      <div class="row mb-15">
+         <img class="fl" src="http://211.192.45.232/assets/user/images/tongtongmall_mark_2.png" alt="" style="width: 100%;">
+      </div>
+      <div class="row mb-15">
+         <img id="run-app" src="http://211.192.45.232/assets/user/images/btn_app_redirect.png" alt="" style="width: 100%;" onclick="">
+      </div>
+      <div id="run-web" class="text-center font-weight" style="font-size: 15px; color: #fff; text-decoration: underline;" onclick="runWeb();">아니요, 웹에서 볼게요.</div>
+   </div> 
+<div id="header-other" class="default-unit border-btm " >
+   <div class="row padding-15">
+      <div class="col-xs-12">
+                     <div class="col-xs-1">
+                                 <img class="pointer" src="./images/icon/ic_back.svg" onclick="goBack('http://211.192.45.232/');" alt="">
+                           </div>
+                           <div class="col-xs-9">
+                                       <div id="cat-title" class="font-222-18 font-weight ml-10">주문내역</div>
+                                 </div>
+                                       <div class="col-xs-2 text-right">
+                                                               <img class="fr ml-10 pointer" src="./images/header_ic2.svg" alt="" onclick="window.location.replace('http://211.192.45.232/basket')" >
+                                                               <img class="fr pointer" src="./images/ic_search.svg" alt=""  onclick="window.location.replace('http://211.192.45.232/search')">
+                                 </div>
+                           </div>
+   </div>
+</div> 
+<div id="order" class="default-unit" data-reward="0" data-status="">
+   <div id="order-kind">
+      <div class="row">
+         <div class="col-xs-12 border-btm">
+            <div class="col-xs-6 text-center">
+               <div class="prod-tab active pointer pointer" onclick="setOrderKind(this, 'order');" style="font-size: 14px;">통통몰</div>
+            </div>
+            <div class="col-xs-6 text-center pointer">
+               <div class="prod-tab pointer" onclick="setOrderKind(this, 'gtc');" style="font-size: 14px;">통통마일몰</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="order-search-tool" class="row border-btm" style="padding: 8px 15px;">
+               <div id="date-text" class="font-999-12 fl">전체</div>
+            <img id="icon-top-bottom" class="fl ml-6 mt-4" src="http://211.192.45.232/assets/user/images/ico_down_2.png" alt="" style="width: 9px; height: 5px;" onclick="setViewItem(this, 'date');">
+      <img id="search" class="fr pointer" src="http://211.192.45.232/assets/user/images/ico_search_2.png" alt="" style="width: 12px; height: 12px; display: block;" onclick="setViewItem(this, 'cancel');">
+      <img id="cancel" class="fr pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" style="width: 10px; height: 10px; display: none;" onclick="setViewItem(this, 'search');">
+   </div>
+   <div id="order-search-content" style="display: none;">
+      <div id="order-date" class="padding-15 " style="display: none;">
+         <div class="row">
+            <div class="col-xs-3">
+                                 <div class="btn-other-5 active pointer h-36 pt-10" style="border-top-left-radius: 3px; border-bottom-left-radius: 3px;" onclick="setDataByDate(this, 'all');">전체</div>
+                           </div>
+            <div class="col-xs-3">
+               <div class="btn-other-5 pointer h-36 pt-10" onclick="setDataByDate(this, '1');">1개월</div>
+            </div>
+            <div class="col-xs-3">
+                                 <div class="btn-other-5 pointer h-36 pt-10" onclick="setDataByDate(this, '3');">3개월</div>
+                           </div>
+            <div class="col-xs-3">
+               <div class="btn-other-5 pointer h-36 pt-10" style="border-top-right-radius: 3px; border-bottom-right-radius: 3px;" onclick="setDataByDate(this, '6');">6개월</div>
+            </div>
+         </div>
+      </div>
+      <div id="order-search" class="padding-15 border-btm pos-re" style="display: none;">
+         <input id="search-value" class="radius-3 h-36 pr-30" type="text" name="" value="" placeholder="주문상품 검색" onkeypress="setSearchOrder(this, event);" autocomplete="off">
+         <img class="pos-ab pointer" src="http://211.192.45.232/assets/user/images/ico_search_3.png" alt="" style="width: 15px; height: 15px; top: 26px; right: 25px;" onclick="setClickSearch(this);">
+         <div id="search-result" class="mt-12" style="display: none;">
+            <span class="font-222-12">검색결과&nbsp;</span>
+            <span class="font-default-12">0</span>
+            <span class="font-222-12">건</span>
+         </div>
+      </div>
+
+      <div class="order-date">
+         <input type="date" id="now_date" />
+        
+      </div>
+      <script>
+         document.getElementById('now_date').valueAsDate = new Date();
+      </script>
+
+   </div>
+
+ 
+   <div class="back-line"></div>
+   <div class="padding-15">
+      <div id="shipping-status" class="row border-all radius-5 mb-6">
+         <div class="col-xs-3 text-center" style="padding: 15px 0px;">
+                           <div class="font-weight mb-15" style="font-size: 15px; color: #cecece;">0</div>
+               <div class="" style="font-size: 12px; color: #cecece;">결제완료</div>
+                     </div>
+         <div class="col-xs-3 text-center" style="padding: 15px 0px;">
+                           <div class="font-weight mb-15" style="font-size: 15px; color: #cecece;">0</div>
+               <div class="" style="font-size: 12px; color: #cecece;">배송준비중</div>
+                     </div>
+         <div class="col-xs-3 text-center" style="padding: 15px 0px;">
+                           <div class="font-weight mb-15" style="font-size: 15px; color: #cecece;">0</div>
+               <div class="" style="font-size: 12px; color: #cecece;">배송중</div>
+                     </div>
+         <div class="col-xs-3 text-center" style="padding: 15px 0px;">
+                           <div class="font-weight mb-15" style="font-size: 15px; color: #cecece;">0</div>
+               <div class="" style="font-size: 12px; color: #cecece;">배송완료</div>
+                     </div>
+      </div>
+      <div id="other-status" class="row border-all radius-5">
+         <div class="col-xs-6 text-center h-36 pt-10" style="border-right: 1px solid #dedede;">
+                           <span class="font-222-12">취소/교환/환불</span>
+               <span class="font-default-12 ml-9 font-weight pointer" onclick="setViewOrder('cancel');">1</span>
+                     </div>
+         <div class="col-xs-6 text-center h-36 pt-10">
+                           <span style="font-size: 12px; color: #cecece;">구매확정</span>
+               <span class="ml-9 font-weight" style="font-size: 12px; color: #cecece;">0</span>
+                     </div>
+      </div>
+   </div>
+   <div class="back-line-border"></div>
+
+   <!--popup-->
+   <div class="overlay" id="pp1">
+      <div class="content">
+         
+          <div class="popup_cont">주문을 취소하시겠습니까? <br>(코인결제는 관리자 승인 후 <br> 취소처리 됩니다.)</div>
+          <div class="popup_btn">
+              <button class="popup_close">아니오</button>
+              <button class="pp1_ok">네</button>
+          </div>
+      </div>
+  </div>
+
+  <div class="overlay" id="pp2">
+      <div class="content">
+          <div class="popup_cont">주문취소가 완료되었습니다. <br> 환불은 영업일 기준 <br> 약 2~3일 소요됩니다.</div>
+          <div class="popup_btn">
+              <button class="popup_close" id="pp2_ok">확인</button>
+          </div>
+      </div>
+  </div>
+
+   <div class="order-content" style="display: block;">
+      <div id="content">
+
+         <div class="order-list-cont">
+           <div class="olc_tit">
+               <p class="ot"><span>2023-03-20</span>토마토페이 </p>
+               <p>53,550원</p>
+           </div>
+
+           <div class="olc_list">
+               <ul>
+                  <li class="pt-20">
+                     <img src="./images/m_ol.png" alt="">
+                     <p class="ol_conts">
+                        <span>주문번호 ######</span>
+                        <span>오뚜기 | 진라면 매운맛 작은컵(15개)</span>
+                        <span class="ol_conts_price">20,000원</span>
+                     </p>
+                  </li>
+                  <hr>
+                  <li class="pb-20">
+                     <img src="./images/m_ol2.png" alt="">
+                     <p class="ol_conts">
+                        <span>주문번호 ######</span>
+                        <span>오뚜기 | 진라면 매운맛 작은컵(15개)</span>
+                        <span class="ol_conts_price">33,990원</span>
+                     </p>
+                  </li>
+               </ul>
+           </div>
+           <div class="olc_btn">
+            <button class="buttons" id="cc2">주문취소</button>
+            <button onclick="location.href='https://dev.tongtongmall.net/service'">판매자 문의</button>
+           </div>
+         </div>  
+
+         <div class="back-line-border"></div>
+
+         <div class="order-list-cont">
+            <div class="olc_tit">
+                <p class="ot"><span>2023-03-20</span>마샘 </p>
+                <p>20,000원</p>
+            </div>
+ 
+            <div class="olc_list">
+                <ul>
+                   <li class="pt-20">
+                      <img src="./images/m_ol3.png" alt="">
+                      <p class="ol_conts">
+                         <span>주문번호 ######</span>
+                         <span>오뚜기 | 진라면 매운맛 작은컵(15개)</span>
+                         <span class="ol_conts_price">20,000원</span>
+                      </p>
+                   </li>
+                  
+                </ul>
+            </div>
+            <div class="olc_btn">
+             <button>배송준비중</button>
+             <button onclick="location.href='https://dev.tongtongmall.net/service'">판매자 문의</button>
+            </div>
+          </div>  
+        
+
+       
+      </div>
+      <div class="back-line-border"></div>
+   </div>
+
+   <script>
+      $(".buttons").on("click", function() {
+          $("#pp1").addClass("is-on");
+          $('body').css('overflow','hidden');
+
+          return false;
+      });
+
+      $(".popup_close").on("click", function() {
+          $("#pp1").removeClass("is-on");
+          $("#pp2").removeClass("is-on");
+          $('body').css('overflow','auto');
+      });
+
+      $(".pp1_ok").on("click", function() {
+          $("#pp1").removeClass("is-on");
+          $("#pp2").addClass("is-on");
+          $('body').css('overflow','hidden');
+
+          return false;
+      });
+
+      $("#pp2_ok").on("click", function() {
+          $("#cc2").html('취소완료');
+          $("#cc2").prop("disabled", true);
+          
+          return false;
+      });
+   </script>
+
+   <div class="gtc-content" style="display: none;"></div>
+   <div class="subpurchase-content" style="display: none;"></div>
+</div>
+
+<script type="text/javascript">
+   loadJavascript("http://211.192.45.232/assets/user/js/orderinfo/order/order.js?ver=1681456120", null);
+</script>

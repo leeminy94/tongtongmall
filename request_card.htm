@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="description" content="투자자를 위한 종합쇼핑몰 통통몰 - IT, 가전 등 다양한 제품과 이벤트">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="통통몰 :: 최저가보다 더 저렴하게!">
+   <meta property="og:description" content="투자자를 위한 종합쇼핑몰 통통몰 - IT, 가전 등 다양한 제품과 이벤트">
+   <meta property="og:image" content="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+   <meta property="og:url" content="https://www.tongtongmall.com">
+   <title>통통몰 :: 최저가보다 더 저렴하게!</title>
+   <link rel="shortcut icon" href="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/common/component/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="https://dev.tongtongmall.net/assets/user/css/common.css?ver=1685068416" />
+   <link rel="stylesheet" href="https://dev.tongtongmall.net/assets/user/css/parameters.css?ver=1.0" />
+   <link rel="stylesheet" href="https://dev.tongtongmall.net/assets/user/css/custom.css?ver=1685068416" /> -->
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/parameters.css">
+   <link rel="stylesheet" href="./css/custom2.css">
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/toast.css" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/raterater.css" />
+
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery-1.12.4.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/bootstrap/js/bootstrap.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.cookie.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/pay/webtoolkit.md5.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/pay/incMerchant.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/loadjavascript.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/utility.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/toast.js"></script>
+</head>
+
+<body>
+   <div id="header-other" class="default-unit border-btm">
+      <div class="row padding-15">
+         <div class="col-xs-12">
+            <div class="col-xs-1">
+               <img class="pointer" src="https://www.tongtongmall.net/assets/user/images/ico_prod_back.png" onclick="goBack('https://www.tongtongmall.net/', '-1');" style="width: 18px; height: 16px;" alt="">
+            </div>
+            <div class="col-xs-11">
+               <div class="font-222-18 font-weight ml-10">신용카드결제</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="card-request" class="default-unit">
+      <div id="content" class="border-btm" style="padding: 18px 15px 60px 15px;">
+         <div class="font-222-15 font-weight mb-24">결제정보</div>
+         <div class="row mb-12">
+            <div class="font-222-13 fl">상품명</div>
+                        <div class="font-999-13 fr title-width text-right" style="width: 85%;">광동 진홍삼 프리미엄</div>
+         </div>
+         <div class="row">
+            <div class="font-222-13 fl">상품금액</div>
+            <div class="font-999-13 fr">41,000원</div>
+         </div>
+      </div>
+      <div class="font-222-17 font-weight text-center" style="margin-top: 30px;">위와 같은 금액으로 결제가 진행됩니다.</div>
+   </div>
+   <form name="payForm" id="payForm" method="post" style="display:none;">
+      <input type="hidden" name="PayMethod" value="CARD">
+      <input type="hidden" name="MID" size="20" value="tongtongmm">
+      <input type="hidden" name="License" value="gT9lxGJ3PwJvq4wkswTQGfsumQbSn/i7bq/anhBrRl8kMp7rbbJ9FXRiQwslGDXMyesdz4CtMwER023XzTRG1g==">
+      <input type="hidden" name="GoodsName" value="광동 진홍삼 프리미엄">
+      <input type="hidden" name="Amt" value="41000">
+      <input type="hidden" name="Moid" value="D2348949809558">
+      <input type="hidden" name="BuyerName" value="이민영">
+      <input type="hidden" name="BuyerTel" value="01023397559">
+      <input type="hidden" name="BuyerEmail" value="leeminy94@etomato.com">
+      <input type="hidden" name="BuyerAddr" value="">
+      <input type="hidden" name="BuyerPostNo" value="">
+      <input type="hidden" name="ReturnURL" value="https://www.tongtongmall.net/return_card">
+      <input type="hidden" name="ResultYN" value="Y">
+      <input type="hidden" name="FORWARD" value="Y">
+      <input type="hidden" name="mallUserID" value="651">
+      <input type="hidden" name="UserIP" value="211.192.45.131">
+      <input type="hidden" name="MallIP" value="192.168.0.6" />
+      <input type="hidden" name="MallReserved">
+      <input type="hidden" name="EncodingType" value="utf-8">
+      <input type="hidden" name="GoodsCnt" value="1">
+      <input type="hidden" name="ediDate" value="20230614153029">
+      <input type="hidden" name="EncryptData">
+      <input type="hidden" name="MallResultFWD" value="N">
+      <input type="hidden" name="device">
+      <input type="hidden" name="ParentEmail">
+   </form>
+   <div class="row pos-fix" style="bottom: 0; width: 100%; max-width: 500px; left:50%; transform:translate(-50%);">
+      <div class="col-xs-6">
+         <div class="text-center pt-17 pointer" style="width: 100%; height: 51px; border: 1px solid #de322a; background-color: #fff;" onclick="goBack('https://www.tongtongmall.net/', '-1');">
+            <div class="font-default-15 font-weight ml-6" style="display: inline-block;">취소</div>
+         </div>
+      </div>
+      <div class="col-xs-6">
+         <div class="text-center font-white-15 font-weight pt-17 pointer" style="width: 100%; height: 51px; background-color: #de322a;" onclick="goPay();">결제</div>
+      </div>
+   </div>
+   <script type="text/javascript">
+      setEdiDate('20230614153029');
+      setPayActionUrl('https://pay.tomatopay.net');
+      setMKey('gT9lxGJ3PwJvq4wkswTQGfsumQbSn/i7bq/anhBrRl8kMp7rbbJ9FXRiQwslGDXMyesdz4CtMwER023XzTRG1g==');
+   </script>
+</body>
+
+</html>

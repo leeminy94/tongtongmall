@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Script-Type" content="text/javascript">
+   <meta http-equiv="Content-Style-Type" content="text/css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="apple-mobile-web-app-title" content="TONGTONGMALL">
+   <meta name="title" content="합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.">
+   <meta name="facebook-domain-verification" content="9jqyzhvxh9bi8ledm60906o2f702qe" />
+            <meta id="meta-desc" name="description" content="통통생활 섬유유연제 1.7L 1+1">
+      <meta id="meta-keyword" name="keywords" content="통통생활,섬유유연제,1.7L,1+1">
+      <meta property="og:description" content="통통생활 섬유유연제 1.7L 1+1">
+   
+   <meta name="robots" content="index,follow">
+   <meta property="og:title" content="통통몰 :: 합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.tongtongmall.net/">
+   <meta property="og:image" content="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+   <title>통통몰 :: 합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.</title>
+   <link rel="shortcut icon" href="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/common/component/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/side_menu.css?v=1699241724" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/bottom_tab_bar.css?v=1699241724" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   <!--<link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/common.css?ver=1699241724" />-->
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/mobile_common.css?ver=1699241724" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/parameters.css?ver=1699241724" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/custom.css?ver=1699241724" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/toast.css?ver=1699241724" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/raterater.css?ver=1699241724" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/m_ttmall_style.css?ver=1699241724">
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/subscribe.css?ver=1699241724">
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="./css/card_info.css">
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.ui.touch-punch.min.js"></script>
+   <script src="https://tomato.etomato.com/bootstrap.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.touchSwipe.min.js"></script>
+   <script src="https://tomato.etomato.com/tomatopay/swiper.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.cookie.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.22.0/load-image.all.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/lazy/jquery.lazyload.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/exif.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment-timezone-with-data.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/raterater.jquery.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/Winwheel.js"></script>
+   <script src="https://tomato.etomato.com/crypto-js.min.js"></script>
+
+ <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+
+
+
+         <script src="https://tomato.etomato.com/tomatopay/tomato_pay_20220420.js?v=1699241724"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/utility.js?ver=1699241724"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/loadjavascript.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/toast.js"></script>
+
+   <meta name="naver-site-verification" content="939ab956fced0f816c38d1969a807cb2c97365a4" />
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154704959-1"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/m_main_new.js?ver=1699241724"></script>
+  <!--
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-154704959-1');
+   </script>
+   -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HWXEEDRCJ"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9HWXEEDRCJ');
+   </script>
+
+   <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '213048801265200');
+      fbq('track', 'PageView');
+   </script>
+   <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=213048801265200&ev=PageView&noscript=1"/>
+   </noscript>
+
+   <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
+   <script type="text/javascript">
+      kakaoPixel('8334493243257763801').pageView();
+   </script>
+</head>
+
+<body style="min-width: 320px;">
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script>
+<script type="text/javascript">
+   if (!wcs_add) var wcs_add={};
+   wcs_add["wa"] = "s_2914622f9666";
+   if (!_nasa) var _nasa={};
+   if(window.wcs){
+      wcs.inflow("tongtongmall.net");
+      wcs_do(_nasa);
+   }
+</script>
+   <div id="spinner_overay" style="display: block;">
+      <div class="spinner"></div>
+   </div>
+   <a href="javascript: setViewTop();" class="btn-top"><img src="https://www.tongtongmall.net/assets/user/images/btn_top.png" style="width: 45px; height: 45px;" alt=""></a>
+   <div class="dialog-overlay" onclick="closeDialog();"></div>
+   <div class="dialog-overlay-address" onclick="closeDialogAddress();"></div>
+   <div class="dialog-overlay-shipping" onclick="closeDialogShipping();"></div>
+   <!-- 일반다이얼로그(통통몰) -->
+   <div class="dialog-normal">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn"></div>
+      </div>
+   </div>
+   <!-- 일반다이얼로그(통통마일) -->
+   <div class="dialog-normal-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn-gtc"></div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통몰-네/아니오) -->
+   <div class="dialog-setting">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;"></div>
+            <div class="btn-1 back-0 fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통마일-네/아니오)  -->
+   <div class="dialog-setting-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;"></div>
+            <div class="btn-1 back-gtc fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통몰) -->
+   <div class="dialog-cart">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;">쇼핑 계속하기</div>
+            <div class="btn-1 back-0 fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통마일) -->
+   <div class="dialog-cart-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_gtc_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;">쇼핑 계속하기</div>
+            <div class="btn-1 back-gtc fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 배송지설정 다이얼로그 -->
+   <div class="dialog-address">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogAddress();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content" style="height: 100%;">
+         <div id="wrap" style="display: none; width: 100%; height: 80%; margin: 5px 0; position: relative;"></div>
+      </div>
+   </div>
+   <!-- 배송정보 다이얼로그 -->
+   <div class="dialog-shipping">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogShipping();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content pt-9">
+         <div class="font-999-12 mb-9">수령인</div>
+         <div class="font-222-12 mb-21" id="name"></div>
+         <div class="font-999-12 mb-9">연락처</div>
+         <div class="font-222-12 mb-21" id="phone"></div>
+         <div class="font-999-12 mb-9">배송지</div>
+         <div class="font-222-12 mb-21 line-height-1" id="address"></div>
+         <div class="font-999-12 mb-9">배송메모</div>
+         <div class="font-222-12" id="memo" style="padding-bottom: 44px;"></div>
+      </div>
+   </div>
+   <!-- 간편결제용 카드사 다이얼로그 -->
+   <div class="dialog-card">
+      <div style="height: 100%;">
+         <div class="dialog-header">
+            <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+         </div>
+         <div class="dialog-title" style="height: 81%; overflow-y: auto;">
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('비씨', '01');">비씨카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('국민', '02');">국민카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('외환', '03');">외환카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('삼성', '04');">삼성카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('신한', '06');">신한카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('현대', '07');">현대카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('롯대', '08');">롯데카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('NH농협', '12');">NH농협카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('하나SK', '16');">하나SK카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('씨티', '11');">씨티카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('우리', '15');">우리카드</div>
+         </div>
+      </div>
+   </div>
+   <div class="dialog-coupon">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1">[쿠폰 <span class="disc-rate">10%</span>] 당첨!</div>
+         <div class="pos-re mt-15" style="padding: 0 45px; display: flex; justify-content: center;">
+            <img src="https://www.tongtongmall.net/assets/user/images/coupon_bg.png" alt="" style="width: 100%; height: 56px;">
+            <div class="pos-ab" style="top: 8px;">
+               <p class="mb-5" style="font-size: 12px; color: #666666; font-weight: bold;">행운 할인쿠폰</p>
+               <p class="mb-0 disc-rate" style="font-size: 18px; color: #de322a; font-weight: bold;">10%</p>
+            </div>
+         </div>
+      </div>
+      <div class="dialog-content">
+         <p style="font-size: 12px; color: #999999; padding: 0 30px;">* <span id="apply-part">전체 상품 사용가능</span></p>
+         <div class="text-center">
+            <p style="font-size: 13px; color: #555555; line-height: 1.3;">
+               하단
+               <span class="pointer" style="color: #de322a; text-decoration: underline;" onclick="window.location.replace('https://www.tongtongmall.net/coupon');">[쿠폰함 바로가기]</span>
+               에서<br>발급 받은 쿠폰을 확인 해보세요.
+            </p>
+            <p class="pb-15" style="font-size: 13px; color: #555555; line-height: 1.3;">오늘까지 사용 가능하며,<br>내일도 받으실 수 있어요.</p>
+         </div>
+      </div>
+   </div>
+   <!-- 통통몰앱으로 이동팝업 -->
+   <div class="run-app-view">
+      <div class="row mb-15">
+         <img class="fl" src="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark_2.png" alt="" style="width: 100%;">
+      </div>
+      <div class="row mb-15">
+         <img id="run-app" src="https://www.tongtongmall.net/assets/user/images/btn_app_redirect.png" alt="" style="width: 100%;" onclick="">
+      </div>
+      <div id="run-web" class="text-center font-weight" style="font-size: 15px; color: #fff; text-decoration: underline;" onclick="runWeb();">아니요, 웹에서 볼게요.</div>
+   </div>
+ 
+<div id="header-other" class="default-unit border-btm " >
+   <div class="row padding-15">
+      <div class="col-xs-12">
+                     <div class="col-xs-1">
+                                 <img class="pointer" src="https://www.tongtongmall.net/assets/user/images/ic_back.svg" onclick="goBack('https://www.tongtongmall.net/');" style="width: 18px; height: 16px;" alt="">
+                           </div>
+                           <div class="col-xs-8">
+                                       <div id="cat-title" class="font-222-18 font-weight ml-10">구매하기</div>
+                                 </div>
+                                       <div class="col-xs-3 text-right">
+                                                               <img class="fr ml-10 pointer" src="https://www.tongtongmall.net/assets/user/images/header_ic2.svg" alt="" onclick="window.location.replace('https://www.tongtongmall.net/basket')" style="width: 24px; ">
+                                                                  <div class="ico-cart pointer" style="top: -10px;" onclick="window.location.replace('https://www.tongtongmall.net/basket')">2</div>
+                                          <img class="fr pointer" src="https://www.tongtongmall.net/assets/user/images/icon.png" alt="" style="width: 24px;" onclick="window.location.replace('https://www.tongtongmall.net/search')">
+
+
+                                 </div>
+                           </div>
+   </div>
+</div><div id="order" class="default-unit" data-realprice="109.57" data-email="leeminy94@etomato.com" data-realctc="1.00">
+   <div id="prod-info">
+      <div id="prod-title" class="border-btm pointer" style="padding: 18px 15px;" onclick="setViewProduct(this);">
+         <div class="row">
+            <div class="font-222-15 fl font-weight">주문정보</div>
+                        <div class="font-777-15 ml-12 fl title-width" style="width: 72%;"> 외 -1건</div>
+            <img id="icon" class="fr mt-5" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" style="width: 12px; height: 6px;" alt="">
+         </div>
+      </div>
+      <div id="prod-list" style="display: none;">
+
+               </div>
+   </div>
+
+
+   <div class="back-line"></div>
+   <div id="user-info" style="padding: 20px 15px 24px 15px;">
+      <div class="font-222-15 font-weight mb-24">주문자 정보</div>
+      <div class="row mb-12">
+         <div class="font-222-12 fl">이름</div>
+         <div class="font-777-12 fr">이민영</div>
+      </div>
+      <div class="row mb-12">
+         <div class="font-222-12 fl">휴대폰</div>
+         <div class="font-777-12 fr">01023397559</div>
+      </div>
+      <div class="row">
+         <div class="font-222-12 fl">이메일</div>
+                     <div class="font-222-12 border-all fr ml-10 pointer" style="padding: 2px 8px; margin-top: -3px;" onclick="setEmail(this, 'modify');">수정</div>
+            <input type="text" id="useremail" class="fr text-right" name="" value="leeminy94@etomato.com" style="width: 60%; height: 25px; margin-top: -5px; padding: 0px 5px;">
+               </div>
+   </div>
+   <div class="back-line-border"></div>
+   <div id="delivery-info" style="padding: 20px 15px 24px 15px;">
+      <div class="row">
+         <div class="font-222-15 font-weight fl">배송지 정보</div>
+                     <div class="font-default-13 mt-2 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_setting'">배송지 변경 ></div>
+               </div>
+               <div id="delivery" class="border-all mt-15 padding-15 mb-20">
+            <div class="font-222-15 mb-10">이민영</div>
+            <div class="font-999-12 mb-6">010-2339-7559</div>
+            <div class="font-222-12 mb-5">[04084]</div>
+            <div class="font-222-12">서울 마포구 양화진4길 32 6층 토마토페이</div>
+         </div>
+            <div id="delivery-memo">
+         <select class="h-42 mt-9 pad-default font-222-13" id="select-memo" name="" onchange="selectDeliveryMemo();" style="background-position: 95% 50% !important;">
+            <option value="">배송메시지를 선택해주세요</option>
+            <option value="부재시 경비실에 맡겨주세요.">부재시 경비실에 맡겨주세요.</option>
+            <option value="부재시 핸드폰 연락바랍니다.">부재시 핸드폰 연락바랍니다.</option>
+            <option value="집앞에 놓아주세요.">집앞에 놓아주세요.</option>
+            <option value="택배함에 넣어주세요.">택배함에 넣어주세요.</option>
+            <option value="1">직접입력</option>
+         </select>
+         <input id="delivery-message" type="text" class="mt-9" name="" value="" placeholder="배송메시지를 입력해주세요" style="display: none;">
+      </div>
+   </div>
+   <div class="back-line-border"></div>
+   
+
+   <div id="pay-data">
+      <div id="order-info" class="border-btm" style="padding: 20px 15px 21px 15px;">
+         <div class="font-222-15 font-weight mb-24">결제 정보</div>
+         <div class="row mb-12">
+            <div class="font-999-12 fl">주문 금액</div>
+            <div class="font-222-12 fr">0원</div>
+         </div>
+         <div class="row mb-12">
+            <div class="font-999-12 fl">배송비</div>
+            <div class="font-222-12 fr">무료배송</div>
+         </div>
+
+               </div>
+
+      <div id="coupon-info" class="border-btm" style="padding: 20px 15px 21px 15px;">
+         <div class="font-222-15 font-weight mb-24">할인 금액</div>
+         <div class="row  ci_cont1">
+            <div class="font-999-12 fl">통통쿠폰(TTCO)</div>
+            <div class="font-222-12 fr ci_cont1_sub">
+               <span class="mr-20">할인 금액</span>
+               <!--<input type="text" class="ci_input" value="4,000원">-->
+               0원            </div>
+         </div>
+         <div class="row  ci_cont1" style="padding:5px 0 0 0;">
+            <div class="font-999-12 fl">사용가능한 통통쿠폰(TTCO)</div>
+            <div class="font-222-12 fr ci_cont1_sub">
+               <span class="mr-20"></span>
+               <!--<input type="text" class="ci_input" value="4,000원">-->
+               0원            </div>
+         </div>
+         <!--<div class="row mb-12">
+            <div class="font-222-12 fr ci_cont1_sub">
+               <span  class="mr-20">사용</span>
+               <input type="text" class="ci_input2" value="" placeholder="입력하세요.">
+            </div>
+         </div>
+         <div class="row ">
+            <div class="font-222-12 fr ci_cont1_sub">
+               <span>최대 4,050원 사용 가능</span>
+
+            </div>
+         </div>-->
+      </div>
+      <div id="pay-info" style="padding: 21px 15px 27px 15px;">
+         <div class="row mb-12">
+            <div class="font-default-15 font-weight fl">최종결제금액</div>
+                        <div class="font-default-18 font-weight fr" id="total-price" data-totalprice="0">0<span class="font-default-12"> 원</span></div>
+            <div class="font-default-18 font-weight fr"  style="display:none;" id="total-ttc-price" data-totalprice="0">0<span class="font-default-12"> 원</span></div>
+
+                     </div>
+                                    <div class="row mb-7">
+                  <div class="font-999-13 fr">통통코인 결제시 <span id="total-coin" class="font-0ba-13">0.0 통통코인</span></div>
+               </div>
+               <div class="row">
+                  <div class="font-999-13 fr">통통머니 결제시 <span id="total-ctc" class="font-0ba-13">0 통통머니</span></div>
+               </div>
+                                             </div>
+   </div>
+   <div class="back-line-border"></div>
+   <div id="pay-method" style="padding: 20px 15px; border-bottom: 1px solid #dedede;">
+      <div class="font-222-15 font-weight mb-24">결제수단</div>
+      <div id="method" class="text-center">
+         <!-- 간편결제 -->
+         <!-- <div class="btn-simple pointer" onclick="setPayMethod(this, '471', '0');"></div> -->
+         <!-- 신용카드결제 -->
+         <div class="btn-card pointer" onclick="setPayMethod(this, '331', '0');" style="margin-right: 30px;"></div>
+         <!-- 코인결제 -->
+                     <div class="btn-ttcoin pointer" onclick="setPayMethod(this, '330', '0');" style="display: inline-block;"></div>
+        </div>
+
+        <div id="card_info" style="display: none;">
+            <ul>
+                <li>
+                    <label for="">카드번호</label>
+                    <input type="text" oninput="hypenTel(this)" placeholder="1234-5678-9101-1121" maxlength="19">
+                </li>
+   
+             
+                <li class="ci_li">
+                    <div>
+                        <label for="">카드 유효기간</label>
+                        <input type="text"  maxlength="4" placeholder="MM/YY">
+                     </div>
+                  <div>
+                     <label for="">카드 비밀번호 앞 2자리</label>
+                     <input type="password" placeholder="**" maxlength="2">
+                  </div>
+                </li>
+                <li >
+                    <label for="">주민등록번호 앞 6자리(법인카드시 사업자번호 10자리)</label>
+                    <input type="text" maxlength="10" placeholder="YYMMDD">
+                </li>
+                
+            </ul>
+         </div>
+
+          <!--카드등록 삭제 -->
+      <script>
+        $(".remove_card").click(function() {
+           $(this).parent().remove();
+           
+           return false;
+        });
+     </script>
+     <!--카드번호 -->
+     <script>
+        const hypenTel = (target) => {
+       target.value = target.value
+         .replace(/[^0-9]/g, '')
+         .replace(/^(\d{4})(\d{4})(\d{4})(\d{4})$/, `$1-$2-$3-$4`);
+      }
+     </script>
+     
+        <!--신용카드 결제 script-->
+        <script>
+            $('.btn-card').click(function(){
+                $('#card_info').css('display','block');
+               
+            });
+            $('.btn-ttcoin').click(function(){
+                $('#card_info').css('display','none');
+            });
+        </script>
+         <!-- 간편결제 최-->
+   </div>
+   <!-- 간편결제 최초이용할 경우 -->
+         <div id="pay-simple-new" style="display: none; padding: 20px;">
+         <div id="card-name" data-cardname="" data-cardcode=""></div>
+         <div class="text-center">
+            <!-- 카드사를 선택하지 않았을 때 -->
+            <img id="unsel-card-company" class="pointer mb-15" src="https://www.tongtongmall.net/assets/user/images/card_none.png" alt="" style="width: 220px; height: 130px; display: none;" onclick="showDialogCard('-1', '-1');">
+            <!-- 카드사를 선택했을 때 -->
+            <div class="pos-re mb-15 sel-card-company" style="display: none; width: 220px; margin: 0 auto;">
+               <img id="cardimage" src="https://www.tongtongmall.net/assets/user/images/card_none.png" alt="" style="width: 220px; height: 130px;">
+               <div class="pos-ab font-white-12 pointer" style="bottom: 15px; right: 15px;" onclick="showDialogCard('-1', '-1');">클릭하고 카드사 변경 ></div>
+            </div>
+         </div>
+      </div>
+      <!-- 간편결제 이용이력이 있는 경우 -->
+      <div id="coin-balance" style="display: none;">
+      <div id="balance-ttcoin" class="padding-15" style="border-bottom: 1px solid #dedede;">
+         <div class="row">
+            <div class="fl">
+               <input id="ttcoin-check" type="radio" class="cycle-checkbox" name="coin" value="" onclick="setCoinType('330', 'old');">
+               <label for="ttcoin-check" style="width: 15px !important; height: 15px !important;"></label>
+            </div>
+            <img class="fl ml-12" src="https://www.tongtongmall.net/assets/user/images/ico_coin_1.png" alt="" style="width: 18px;">
+            <div class="font-222-15 fl ml-6 font-weight">통통코인</div>
+            <div id="ttcoin-balance" class="font-222-15 fr font-weight">0.0 통통코인</div>
+         </div>
+      </div>
+      <div id="balance-ctc" class="padding-15" style="border-bottom: 1px solid #dedede;">
+         <div class="row">
+            <div class="fl">
+               <input id="ctc-check" type="radio" class="cycle-checkbox" name="coin" value="" onclick="setCoinType('466', 'old');">
+               <label for="ctc-check" style="width: 15px !important; height: 15px !important;"></label>
+            </div>
+            <img class="fl ml-12" src="https://www.tongtongmall.net/assets/user/images/ico_ctc.png" alt="" style="width: 17px;">
+            <div class="font-222-15 fl ml-6 font-weight">통통머니</div>
+            <div id="ctc-balance" class="font-222-15 fr font-weight">0.0 통통머니</div>
+         </div>
+      </div>
+   </div>
+   <div id="ttcoin-view" class="padding-15" style="border-bottom: 1px solid #dedede; display: none;">
+      <div class="row mb-9">
+         <div class="font-222-14 fl font-weight">총 결제예정금액</div>
+         <div class="font-0ba-17 font-weight fr">
+            <span id="pay-coin">
+
+                              0.0<span class="font-default-12">
+                           </span>
+            <span class="font-0ba-14"> 통통코인</span>
+         </div>
+      </div>
+      <div class="row mb-24">
+                     <div class="fr font-222-14">≒ <span id="pay-price" data-payprice="0">0.0</span> KRW</div>
+               </div>
+      <div class="row mb-4">
+
+         <div class="font-999-14 fr">1 통통코인 ≒ 109.57 KRW</div>
+      </div>
+      <div class="row mb-7">
+                  <div class="font-default-14 fr">Fee: 0.000 통통코인 포함</div>
+      </div>
+      <div class="row">
+         <div class="font-999-11 fr">※ 변환금액은 시세에 따라 변동됩니다.(산정기준 2023.11.06 12:35)</div>
+      </div>
+   </div>
+   <div id="ctc-view" class="padding-15" style="border-bottom: 1px solid #dedede; display: none;">
+      <div class="row mb-9">
+         <div class="font-222-14 fl font-weight">총 결제예정금액</div>
+         <div class="font-0ba-17 font-weight fr">
+            <span id="pay-coin">0</span>
+            <span class="font-0ba-14"> 통통머니</span>
+         </div>
+      </div>
+      <div class="row mb-24">
+         <div class="fr font-222-14">≒ <span id="pay-price" data-payprice="0">0</span> KRW</div>
+      </div>
+      <div class="row mb-4">
+         <div class="font-999-14 fr">1 통통머니 ≒ 1.00 KRW</div>
+      </div>
+      <div class="row">
+         <div class="font-999-11 fr">※ 변환금액은 시세에 따라 변동됩니다.(산정기준 2023.11.06 12:35)</div>
+      </div>
+   </div>
+   <div class="back-line"></div>
+   <div id="policy-content">
+       <div id="financial-policy">
+         <div class="row border-btm pointer" style="padding: 17px 15px;" onclick="setViewPolicy(this);">
+            <div class="font-222-12 fl">전자금융거래 이용약관</div>
+            <img class="fr mt-4" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;">
+         </div>
+         <div class="padding-15 border-btm policy-content" style="display: none;">
+            <div class="font-777-12 line-height-2">
+               <strong>제1조 (목적)</strong><br />
+               이 약관은 ‘주식회사 토마토페이’(이하 &#39;회사&#39;라 합니다)가 제공하는 전자지급결제대행서비스를 이용자가 이용함에 있어 회사와 이용자 사이의 전자금융거래에 관한 기본적인 사항을 정함을 목적으로
+               합니다.<br /><br />
+               <strong>제2조 (용어의 정의)</strong><br />
+               이 약관에서 정하는 용어의 정의는 다음과 같습니다.<br />
+               1) &#39;전자금융거래&#39;라 함은 회사가 전자적 장치를 통하여 전자지급결제대행서비스(이하 &#39;전자금융거래
+               서비스&#39;라고 합니다)를 제공하고, 이용자가 회사의 종사자와 직접 대면하거나 의사소통을 하지
+               아니하고 자동화된 방식으로 이를 이용하는 거래를 말합니다.<br />
+               2) &#39;전자지급결제대행서비스&#39;라 함은 전자적 방법으로 재화의 구입 또는 용역의 이용에 있어서
+               지급결제정보를 송신하거나 수신하는 것 또는 그 대가의 정산을 대행하거나 매개하는 서비스를
+               말합니다.<br />
+               3) &#39;이용자&#39;라 함은 이 약관에 동의하고 회사가 제공하는 전자금융거래 서비스를 이용하는 자를
+               말합니다.<br />
+               4) &#39;접근매체&#39;라 함은 전자금융거래에 있어서 거래지시를 하거나 이용자 및 거래내용의 진실성과
+               정확성을 확보하기 위하여 사용되는 수단 또는 정보로서 전자식 카드 및 이에 준하는 전자적
+               정보(신용카드번호를 포함한다), &#39;전자서명법&#39;상의 인증서, 회사에 등록된 이용자번호, 이용자의
+               생체정보, 이상의 수단이나 정보를 사용하는데 필요한 비밀번호 등 전자금융거래법 제2조 제10호에서 정하고 있는 것을 말합니다. <br />
+               5) &#39;거래지시&#39;라 함은 이용자가 본 약관에 의하여 체결되는 전자금융거래계약에 따라 회사에 대하여
+               전자금융거래의 처리를 지시하는 것을 말합니다. <br/>
+               6) &#39;오류&#39;라 함은 이용자의 고의 또는 과실 없이 전자금융거래가 전자금융거래계약 또는 이용자의
+               거래지시에 따라 이행되지 아니한 경우를 말합니다. <br/><br />
+               <strong>제3조 (약관의 명시 및 변경)</strong><br />
+               ① 회사는 이용자가 전자금융거래 서비스를 이용하기 전에 이 약관을 게시하고 이용자가 이 약관의 중요한 내용을 확인할 수 있도록 합니다.<br />
+               ② 회사는 이용자의 요청이 있는 경우 전자문서의 전송방식에 의하여 본 약관의 사본을 이용자에게 교부합니다. <br />
+               ③ 회사가 약관을 변경하는 때에는 그 시행일 1월 전에 변경되는 약관을 회사가 제공하는 전자금융거래 서비스 이용 초기화면 및 회사의 홈페이지에 게시함으로써 이용자에게 공지합니다.<br /><br />
+               <strong>제4조 (전자지급결제대행서비스의 종류)</strong><br />
+               회사가 제공하는 전자지급결제대행서비스는 지급결제수단에 따라 다음과 같이 구별됩니다.<br />
+               1. 신용카드결제대행서비스: 이용자가 결제대금의 지급을 위하여 제공한 지급결제수단이 신용카드인 경우로서, 회사가 전자결제시스템을 통하여 신용카드 지불정보를 송,수신하고 결제대금의 정산을 대행하거나 매개하는 서비스를 말합니다<br/><br />
+               <strong>제5조 (이용시간)</strong><br />
+               ① 회사는 이용자에게 연중무휴 1일 24시간 전자금융거래 서비스를 제공함을 원칙으로 합니다. 단,
+               금융기관 기타 결제수단 발행업자의 사정에 따라 달리 정할 수 있습니다.<br />
+               ② 회사는 정보통신설비의 보수,점검 기타 기술상의 필요나 금융기관 기타 결제수단 발행업자의 사정에
+               의하여 서비스 중단이 불가피한 경우, 서비스 중단 3일 전까지 게시 가능한 전자적 수단을 통하여
+               서비스 중단 사실을 게시한 후 서비스를 일시 중단할 수 있습니다. 다만, 시스템 장애보국, 긴급한
+               프로그램 보수, 외부요인 등 불가피한 경우에는 사전 게시 없이 서비스를 중단할 수 있습니다.<br /><br />
+               <strong>제6조 (접근매체의 선정과 사용 및 관리)</strong><br />
+               ① 회사는 전자금융거래 서비스 제공 시 접근매체를 선정하여 이용자의 신원, 권한 및 거래지시의 내용
+               등을 확인할 수 있습니다.<br />
+
+               ② 이용자는 접근매체를 제3자에게 대여하거나 사용을 위임하거나 양도 또는 담보 목적으로 제공할 수
+               없습니다.<br />
+
+               ③ 이용자는 자신의 접근매체를 제3자에게 누설 또는 노출하거나 방치하여서는 안되며, 접근매체의
+               도용이나 위조 또는 변조를 방지하기 위하여 충분한 주의를 기울여야 합니다.<br />
+
+               ④ 회사는 이용자로부터 접근매체의 분실이나 도난 등의 통지를 받은 때에는 그 때부터 제3자가 그
+               접근매체를 사용함으로 인하여 이용자에게 발생한 손해를 배상할 책임이 있습니다.<br /><br />
+
+               <strong>제7조 (거래내용의 확인)</strong><br />
+               ① 회사는 이용자와 미리 약정한 전자적 방법을 통하여 이용자의 거래내용(이용자의 &#39;오류정정
+               요구사실 및 처리결과에 관한 사항&#39;을 포함합니다)을 확인할 수 있도록 하며, 이용자의 요청이 있는
+               경우에는 요청을 받은 날로부터 2주 이내에 모사전송 등의 방법으로 거래내용에 관한 서면을
+               교부합니다.<br />
+
+               ② 회사가 이용자에게 제공하는 거래내용 중 거래계좌의 명칭 또는 번호, 거래의 종류 및 금액,
+               거래상대방을 나타내는 정보, 거래일자, 전자적 장치의 종류 및 전자적 장치를 식별할 수 있는 정보와
+               해당 전자금융거래와 관련한 전자적 장치의 접속기록은 5년간, 건당 거래금액이 1만원 이하인 소액
+               전자금융거래에 관한 기록, 전자지급수단 이용 시 거래승인에 관한 기록, 이용자의 오류정정 요구사실
+               및 처리결과에 관한 사항은 1년간의 기간을 대상으로 하되, 회사가 전자지급결제대행 서비스 제공의
+               대가로 수취한 가맹점의 수수료에 관한 사항은 제공하는 거래내용에서 제외됩니다.<br />
+
+               ③ 이용자가 제1항에서 정한 서면교부를 요청하고자 할 경우 다음의 주소 및 전화번호로 요청할 수
+               있습니다.<br />
+               주소: 서울시 마포구 양화진 4길 32 (합정동) 이토마토빌딩<br />
+               이메일 주소: tomatopay@etomato.com<br />
+               전화번호: 02-2128-2600<br /><br/>
+
+               <strong>제8조 (오류의 정정 등)</strong><br />
+
+               ① 이용자는 전자금융거래 서비스를 이용함에 있어 오류가 있음을 안 때에는 회사에 대하여 그 정정을
+               요구할 수 있습니다.<br />
+
+               ② 회사는 전항의 규정에 따른 오류의 정정요구를 받은 때에는 이를 즉시 조사하여 처리한 후
+               정정요구를 받은 날부터 2주 이내에 그 결과를 이용자에게 알려 드립니다.<br /><br />
+
+               <strong>제9조 (회사의 책임)</strong><br />
+
+               ① 접근매체의 위조나 변조로 발생한 사고로 인하여 이용자에게 발생한 손해에 대하여 배상책임이
+               있습니다. 다만 이용자가 제6조 제2항에 위반하거나 제3자가 권한 없이 이용자의 접근매체를 이용하여
+               전자금융거래를 할 수 있음을 알았거나 알 수 있었음에도 불구하고 이용자가 자신의 접근매체를 누설
+               또는 노출하거나 방치한 경우 그 책임의 전부 또는 일부를 이용자가 부담하게 할 수 있습니다.
+
+               ② 회사는 계약체결 또는 거래지시의 전자적 전송이나 처리과정에서 발생한 사고로 인하여 이용자에게
+               그 손해가 발생한 경우에는 그 손해를 배상할 책임이 있습니다. 다만 본조 제1항 단서에 해당하거나
+               법인(&#39;중소기업기본법&#39; 제2조 제2항에 의한 소기업을 제외합니다)인 이용자에게 손해가 발생한
+               경우로서 회사가 사고를 방지하기 위하여 보안절차를 수립하고 이를 철저히 준수하는 등 합리적으로
+               요구되는 충분한 주의의무를 다한 경우 그 책임의 전부 또는 일부를 이용자가 부담하게 할 수
+               있습니다.
+
+               ③ 회사는 이용자로부터의 거래지시가 있음에도 불구하고 천재지변, 회사의 귀책사유가 없는 정전,
+               화재, 통신장애 기타의 불가항력적인 사유로 처리 불가능하거나 지연된 경우로서 이용자에게 처리
+               불가능 또는 지연사유를 통지한 경우(금융기관 또는 결제수단 발행업체나 통신판매업자가 통지한
+               경우를 포함합니다)에는 이용자에 대하여 이로 인한 책임을 지지 아니합니다.
+
+               ④ 회사는 전자금융거래를 위한 전자적 장치 또는 ‘정보통신망 이용촉진 및 정보보호 등에 관한 법률’
+               제2조제1항제1호에 따른 정보통신망에 침입하여 거짓이나 그 밖의 부정한 방법으로 획득한
+               접근매체의 이용으로 발생한 사고로 인하여 이용자에 그 손해가 발생한 경우에는 그 손해를 배상할
+               책임이 있습니다.<br /><br />
+
+               <strong>제10조 (전자지급거래계약의 효력)</strong><br />
+
+               ① 회사는 이용자의 거래지시가 전자지급거래에 관한 경우 그 지급절차를 대행하며, 전자지급거래에
+               관한 거래지시의 내용을 전송하여 지급이 이루어지도록 합니다.<br />
+
+               ② 회사는 이용자의 전자지급거래에 관한 거래지시에 따라 지급거래가 이루어지지 않은 경우 수령한
+               자금을 이용자에게 반환하여야 합니다.<br /><br />
+
+
+               <strong>제11조 (거래지시의 철회)</strong><br />
+
+               ① 이용자는 전자지급거래에 관한 거래지시의 경우 지급의 효력이 발생하기 전까지 거래지시를 철회할
+               수 있습니다.<br />
+
+
+               ② 전항의 지급의 효력이 발생 시점이란 (i) 전자자금이체의 경우에는 거래지시된 금액의 정보에 대하여
+               수취인의 계좌가 개설되어 있는 금융기관의 계좌 원장에 입금기록이 끝난 때 (ii) 그 밖의
+               전자지급수단으로 지급하는 경우에는 거래지시된 금액의 정보가 수취인의 계좌가 개설되어 있는
+               금융기관의 전자적 장치에 입력이 끝난 때를 말합니다.<br />
+
+               ③ 이용자는 지급의 효력이 발생한 경우에는 전자상거래 등에서의 소비자보호에 관한 법률 등 관련
+               법령상 청약의 철회의 방법에 따라 결제대금을 반환받을 수 있습니다.<br /><br />
+
+               <strong>제12조 (전자지급결제대행 서비스 이용 기록의 생성 및 보존)</strong><br />
+
+               ① 회사는 이용자가 전자금융거래의 내용을 추적, 검색하거나 그 내용에 오류가 발생한 경우에 이를
+               확인하거나 정정할 수 있는 기록을 생성하여 보존합니다.<br />
+
+               ② 전항의 규정에 따라 회사가 보존하여야 하는 기록의 종류 및 보존방법은 제8조 제2항에서 정한 바에
+               따릅니다.<br /><br />
+
+               <strong>제13조 (전자금융거래정보의 제공금지)</strong><br />
+
+               회사는 전자금융거래 서비스를 제공함에 있어서 취득한 이용자의 인적사항, 이용자의 계좌, 접근매체
+               및 전자금융거래의 내용과 실적에 관한 정보 또는 자료를 이용자의 동의를 얻지 아니하고 제3자에게
+               제공, 누설하거나 업무상 목적 외에 사용하지 아니합니다.<br /><br />
+
+               <strong>제14조 (분쟁처리 및 분쟁조정)</strong><br />
+
+               ① 이용자는 다음의 분쟁처리 책임자 및 담당자에 대하여 전자금융거래 서비스 이용과 관련한 의견 및
+               불만의 제기, 손해배상의 청구 등의 분쟁처리를 요구할 수 있습니다.<br />
+               담당자: 박서준 <br />
+               연락처(전화번호, 전자우편주소): 02-2128-2600, tomatopay@etomato.com <br />
+
+               ② 이용자가 회사에 대하여 분쟁처리를 신청한 경우에는 회사는 15일 이내에 이에 대한 조사 또는 처리
+               결과를 이용자에게 안내합니다. <br />
+
+               ③ 이용자는 &#39;금융감독기구의 설치 등에 관한 법률&#39; 제51조의 규정에 따른 금융감독원의 금융분쟁조정위원회나 &#39;소비자보호법&#39; 제31조 제1항의 규정에 따른 소비자보호원에 회사의 전자금융거래 서비스의 이용과 관련한 분쟁조정을 신청할 수 있습니다.<br /><br />
+
+               <strong>제15조 (회사의 안정성 확보 의무)</strong><br />
+
+               회사는 전자금융거래의 안전성과 신뢰성을 확보할 수 있도록 전자금융거래의 종류별로 전자적
+               전송이나 처리를 위한 인력, 시설, 전자적 장치 등의 정보기술부문 및 전자금융업무에 관하여
+               금융감독위원회가 정하는 기준을 준수합니다.<br /><br />
+
+              <strong>제16조 (약관 외 준칙 및 관할)</strong> <br />
+
+               ① 이 약관에서 정하지 아니한 사항에 대하여는 전자금융거래법, 전자상거래 등에서의 소비자 보호에
+               관한 법률, 통신판매에 관한 법률, 여신전문금융업법 등 소비자보호 관련 법령에서 정한 바에
+               따릅니다.<br />
+
+               ② 회사와 이용자간에 발생한 분쟁에 관한 관할은 민사소송법에서 정한 바에 따릅니다.<br />
+
+               부칙 &lt; 제 1 호, 2016.01.28.&gt; <br />
+               본 약관은 2016년 01월 28일부터 시행한다. <br />
+               부칙 &lt; 제 2 호, 2017.01.18 &gt; <br />
+               본 약관은 2017년 01월 18일 부로 시행한다. (제 9조 일부 개정) <br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+         </div>
+      </div>
+      <div id="infouse-policy">
+         <div class="row border-btm pointer" style="padding: 17px 15px;" onclick="setViewPolicy(this);">
+            <div class="font-222-12 fl">개인정보수집 및 이용안내</div>
+            <img class="fr mt-4" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;">
+         </div>
+         <div class="padding-15 border-btm policy-content" style="display: none;">
+            <div class="font-777-12 line-height-2">
+               <strong>제 1조(상품의 구매취소, 청약철회 등)</strong><br />
+               [개인정보 수집 및 이용 동의]<br/>
+               &quot;주식회사 “토마토페이&quot; (이하 &quot;회사&quot;)는 이용자의 개인정보를 중요시하며, &quot;정보통신망 이용촉진 및
+               정보보호에 관한 법률&quot; 및 “개인정보보호법”과 “전자상거래 등에서의 소비자 보호에 관한 법률”을
+               준수하고 있습니다. 회사는 전자지급결제대행서비스 (이하 &quot;서비스&quot;) 이용자로부터 아래와 같이
+               개인정보를 수집 및 이용합니다.<br/><br/>
+
+               <strong>1. (개인정보의 수집 및 이용목적)</strong><br/>
+
+               회사는 다음과 같은 목적 하에 “서비스”와 관련한 개인정보를 수집합니다.<br/>
+
+               서비스 제공 계약의 성립, 유지, 종료를 위한 본인 식별 및 실명확인, 각종 회원관리<br/>
+               서비스 제공 과정 중 본인 식별, 인증, 실명확인 및 회원에 대한 각종 안내/고지<br/>
+               대금 환불, 상품배송 등 전자상거래 관련 서비스 제공<br/>
+               서비스 제공 및 관련 업무처리에 필요한 동의 또는 철회 등 의사확인<br/>
+               이용 빈도 파악 및 인구통계학적 특성에 따른 서비스 제공 및 CRM<br/>
+               기타 회사가 제공하는 이벤트 등 광고성 정보 전달, 통계학적 특성에 따른 서비스 제공 및 광고 게재,
+               실제 마케팅 활동<br/> 
+               현금영수증 발행 및 관리 등<br/><br/>
+
+               <strong>2. (수집하는 개인정보 항목)</strong><br/>
+               가. 결제수단별 회사가 수집하는 개인정보의 항목은 다음과 같습니다. (신용카드) 카드번호(3rd-
+               마스킹), 승인시간, 승인번호, 승인금액 등<br/>
+
+               나. 상기 명시된 개인정보 항목 이외의 “서비스” 이용과정이나 “서비스” 처리 과정에서 다음과 같은
+               추가 정보들이 자동 혹은 수동으로 생성되어 수집 될 수 있습니다.<br/>
+               -이용자 IP/Mac Address, 쿠키, e-mail, 서비스 접속 일시, 서비스 이용기록, 불량 혹은 비정상 이용기록,
+               결제기록<br/>
+
+               다. 기타, 회사는 서비스 이용과 관련한 대금결제, 물품배송 및 환불 등에 필요한 정보를 추가로 수집할 수 있습니다.<br/><br/>
+               <strong>3. (개인정보의 보유 및 이용기간)</strong><br/>
+               이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기 합니다. 단,
+               다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존 합니다. <br/><br/>
+
+               가. 회사 내부 방침의 의한 정보보유 <br/>
+
+               -보존항목: 서비스 상담 수집 항목(회사명, 고객명, 전화번호, E-mail, 상담내용 등)<br/>
+               -보존이유: 분쟁이 발생 할 경우 소명자료 활용<br/>
+               -보존기간: 상담 완료 후 6개월<br/><br/>
+
+               나. 관련법령에 의한 정보보유<br/>
+
+               상법, 전자상거래 등에서의 소비자보호에 관한 법률, 전자금융거래법 등 관련법령의 규정에 의하여
+               보존할 필요가 있는 경우 회사는 관련법령에서 정한 일정한 기간 동안 정보를 보관합니다. 이 경우
+               회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.<br/><br/>
+
+               계약 또는 청약철회 등에 관한 기록<br/>
+               보존기간: 5년<br/>
+               보존근거: 전자상거래 등에서의 소비자보호에 관한 법률<br/><br/>
+
+               대금결제 및 재화 등의 공급에 관한 기록<br/>
+               보존기간: 5년<br/>
+               보존근거: 전자상거래 등에서의 소비자보호에 관한 법률<br/>
+               (단, 건당 거래 금액이 1만원 이하의 경우에는 1년간 보존 합니다.)<br/><br/>
+
+               소비자의 불만 또는 분쟁처리에 관한 기록<br/>
+               보존기간: 3년<br/>
+               보존근거: 전자상거래 등에서의 소비자보호에 관한 법률<br/><br/>
+
+               신용정보의 수집/처리 및 이용 등에 관한 기록<br/>
+               보존기간: 3년<br/>
+               보존근거: 신용정보의 이용 및 보호에 관한 법률<br/><br/>
+
+               본인확인에 관한 기록<br/>
+               보존기간: 6개월<br/>
+               보존근거: 정보통신 이용촉진 및 정보보호 등에 관한 법률<br/><br/>
+
+               방문에 관한 기록<br/>
+               보존기간: 3개월<br/>
+               보존근거: 통신비밀보호법<br/><br/>
+
+               현금영수증 결제내역에 관한 기록<br/>
+               보존기간: 1년<br/>
+               보존근거: 조세특례제한법<br/><br/>
+
+               <strong>4. (개인정보 파기절차 및 방법)</strong><br/>
+
+               이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다.
+               회사의 개인정보 파기절차 및 방법은 다음과 같습니다.<br/><br/>
+
+               가. 파기절차
+               이용자가 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 별도의 DB로 옮겨져(종이의 경우
+               별도의 서류함) 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조)일정
+               기간 저장된 후 파기됩니다.
+               동 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다.<br/><br/>
+
+               나. 파기방법
+               종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.
+               전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br/><br/>
+
+               <strong>  5. (이용자의 개인정보의 수집 및 이용 거부)</strong><br/>
+
+               이용자는 회사의 개인정보 수집 및 이용 동의를 거부할 수 있습니다. 단, 동의를 거부 하는 경우 서비스
+               결제가 정상적으로 완료 될 수 없음을 알려 드립니다. <br/><br/>
+            </div>
+         </div>
+      </div>
+      <div id="infouse2-policy">
+         <div class="row border-btm pointer" style="padding: 17px 15px;" onclick="setViewPolicy(this);">
+            <div class="font-222-12 fl">개인정보제공 및 위탁안내</div>
+            <img class="fr mt-4" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;">
+         </div>
+         <div class="padding-15 border-btm policy-content" style="display: none;">
+            <div class="font-777-12 line-height-2">
+               [개인정보 제공 및 위탁 동의]<br/><br/>
+               &quot;주식회사 토마토페이&quot;(이하 &quot;회사&quot;)는 이용자의 개인정보를 중요시하며, &quot;정보통신망 이용촉진 및
+               정보보호에 관한 법률&quot; 및 &quot;개인정보보호법&quot;과 &quot;전자상거래 등에서의 소비자 보호에 관한 법률&quot;을
+               준수하고 있습니다. 회사는 이용자의 개인정보를 [개인정보의 수집목적]에서 고지한 범위 내에서
+               사용하며, 이용자의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 이용자의
+               개인정보를 외부에 제공 또는 위탁하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.
+               이용자가 사전에 동의한 경우(이용자가 사전에 동의한 경우란, 서비스 이용 등을 위하여 이용자가
+               자발적으로 자신의 개인정보를 제3자에게 제공하는 것에 동의하는 것을 의미합니다).
+               법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는
+               경우, 회사는 이용자에게<br/>
+               
+               (1) 개인정보를 제공받는 자<br/>
+               (2) 그의 이용목적<br/>
+               (3) 제공되는 개인정보의 항목<br/>
+               (4) 개인정보의 보유 및 이용기간<br/><br/>
+               
+               을 사전에 고지하고 이에 대해 명시적ㆍ개별적으로 동의를 얻습니다. 이와 같은 모든 과정에 있어서
+               회사는 이용자의 의사에 반하여 추가적인 정보를 수집하거나, 동의의 범위를 벗어난 정보를 제3자와
+               공유하지 않습니다.<br/><br/>
+
+               <strong>1. 개인정보의 제공</strong><br/>
+
+               회사는 아래와 같이 이용자로부터 수집한 개인정보를 제3자에게 제공 합니다.<br/>
+
+               가. 결제수단 사업자<br/>
+               신용카드: 신용카드사(KB국민, 비씨, 롯데, 삼성, NH농협, 현대, 외환, 신한, 하나SK), 은행계열 카드사,
+               부가통신사업자(VAN) 등<br/>
+
+               1)개인정보를 제공받는 자의 개인정보 이용 목적<br/>
+               본인 인증, 거래승인, 요금정산을 위한 거래정보전송, 수납 등 요금 정산 관련 업무<br/>
+
+               2)결제수단별 제공하는 개인정보의 항목(신용카드)<br/>
+               이용자의 서비스 거래정보(이용 상점 정보, 상품명, 주문금액 등)<br/>
+
+               3)개인정보를 제공받는 자의 개인정보 보유 및 이용 기간<br/>
+               : 해당 사업자가 이미 보유하고 있는 개인정보이기 때문에 별도로 저장하지 않음. 단, 법령의 규정에
+               의한 거래 내역 등을 보관(건당 거래금액이 1만원 이하의 경우 1년, 1만원 초과의 경우 5년)<br/>
+
+               나. 이용자의 거래 상대방<br/>
+
+               1)개인정보를 제공받는 자의 개인정보 이용 목적<br/>
+               거래 승인 확인, 취소 및 환불, 거래 대금의 정산, 거래 확인 요청에 대한 응대 및 확인<br/>
+
+               2)제공하는 개인정보의 항목<br/>
+               이용자의 서비스 거래 정보(각 결제 수단의 거래 승인 여부, 거래 승인 실패 원인, 결제 일시, 결제금액
+               등)<br/>
+
+               3)개인정보를 제공받는 자의 개인정보 보유 및 이용 기간<br/>
+               법령의 규정에 의한 거래 내역을 보관(건당 거래금액이 1만원 이하의 경우 1년, 1만원 초과의 경우 5년)<br/><br/>
+
+               <strong>2. 개인정보의 취급 위탁</strong><br/>
+               회사는 아래와 같이 이용자로부터 수집한 개인정보를 제3자에게 위탁 합니다.<br/>
+
+               가. 결제수단 사업자<br/>
+               신용카드: 신용카드사(KB국민, 비씨, 롯데, 삼성, NH농협, 현대, 외환, 신한, 하나SK), 은행계열 카드사,
+               부가통신사업자(VAN) 등<br/>
+               
+               1)개인정보 취급위탁을 하는 업무의 내용<br/>
+               본인 인증, 거래승인, 요금정산을 위한 거래정보전송, 수납 등 요금 정산 관련 업무<br/>
+               
+               나. 이용자의 거래 상대방<br/>
+
+               1)개인정보 취급위탁을 하는 업무의 내용<br/>
+               거래 승인 확인, 취소 및 환불, 거래 대금의 정산, 거래 확인 요청에 대한 응대 및 확인<br/><br/>
+
+               <strong>3. 이용자의 개인정보의 제공 및 위탁 거부</strong><br/>
+               이용자는 회사의 개인정보 제공 및 위탁 동의를 거부할 수 있습니다. 단, 동의를 거부 하는 경우 서비스
+               결제가 정상적으로 완료 될 수 없음을 알려 드립니다.<br/>
+               
+            </div>
+         </div>
+      </div>
+      <div id="personal-policy">
+         <div class="row border-btm pointer" style="padding: 17px 15px;" onclick="setViewPolicy(this);">
+            <div class="font-222-12 fl">개인정보 제3자 제공동의</div>
+            <img class="fr mt-4" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;">
+         </div>
+         <div class="padding-15 border-btm policy-content" style="display: none;">
+            <div class="font-777-12 line-height-2">
+               서비스 제공을 위해 아래 정보가 제공됩니다. <br>
+               고객님께서는 정보제공에 공의하지 않을 수 있으며 동의하지 않은 경우 서비스 이용이 제한 될수 있습니다.<br>
+               - 수탁자: 현대택배, 대한통운, 우체국택배 및 기타 택배사 <br>
+               - 제공목적: 구매 상품 배송 <br>
+               - 제공정보: 성명, 휴대폰 번호, 주소
+            </div>
+         </div>
+      </div>
+      <div id="pay-policy">
+         <div class="row border-btm pointer" style="padding: 17px 15px;" onclick="setViewPolicy(this);">
+            <div class="font-222-12 fl">결제대행서비스 이용약관 동의</div>
+            <img class="fr mt-4" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;">
+         </div>
+         <div class="padding-15 border-btm policy-content" style="display: none;">
+            <div class="font-777-12 line-height-2">
+               <strong>주식회사 토마토페이 개인정보 취급방침</strong> <br>
+               주식회사 토마토페이(이하 "회사"라 함)은 "정보통신망이용 촉진 및 정보보호 등에 관한 법률"(이하 "정통망법"이라 함) 등 모든 관련법규를 준수하며 회원님의 개인정보가 보호받을 수 있도록
+               최선을 다하고 있습니다. 회사는 개인정보취급방침의 공개를 통하여 회원 여러분의 개인정보가 어떠한 목적과 방식으로 이용되 있으며 개인정보호를 위해 어떠한 조치가 취해지고 있는지를
+               알려드립니다. 본 개인정보취급방침은 관련법령의 개정이나 당사 내부방침에 의해 변경될 수 있으며 회원 가입 시나 사이트 이용 시에 수시로 확인하여 주시기 바랍니다. <br><br>
+               <strong>1. 수집/이용 목적. 수집 항목 및 수집방법</strong><br>
+               ① 개인정보란?<br>
+               생존하는 개인에 관한 정보로서 댕해 정보에 포함되어 있는 성명, 주민등록번호 등의 사항에 의하여 댕해 개인을 식별할 수 있는 정보(당해 정보만으로는 특정 개인을 식별할 수 없더라도 다른
+               정보와 용이하게 결합하여 식별할 수 있는 것을 포함)를 말합니다.<br>
+               ② 회사는 고객이 회원가입을 할 때 서비스 제공을 위해 필요한 필수적인 최소한의 개인정보를 받고 있습니다. 회사가 고객의 개인정보를 수집하는 목적은 쇼핑몰 "통통몰"을 통하여 고객에게
+               최적의 서비스를 제공해 드리기 의한 것이며 고객이 제공한 개인정보를 바탕으로 고객에게 보다 더 유용한 정보를 선택적으로 제공하기 위한 것입니다.<br>
+               ③ 회사는 고객의 사전 동의 없이는 고객의 개인정보를 사전에 밝힌 목적 이외로 이용하거나 제3자에게 공개하지 않습니다.<br>
+               ④ 회사는 아래의 항목을 다음과 같은 목적을 위하여 개인정보를 수집하고 있습니다.<br>
+               가. 필수항목<br>
+               - 이름, 아이디(전자메일주소), 비밀번호: 이용자 본인 식별을 위한 목적<br>
+               - 배송지 주소, 휴대폰 번호: 고객이 주문하신 상품 및 경품 배송을 위한 목적<br>
+               - IP Address, 방문 일시, 서비스 이용기록(자동으로 생성 되는 개인정보): 부정이용방지, 비인가 사용방지, 분쟁조정 해결을 위한 기록보존 등<br>
+               나. 선택항목<br>
+               - 휴대폰 번호, 생년월일, 셩별: 할인쿠폰, 특가상품 정보, 포인트 혜택 등의 발송을 의한 목적<br>
+               - 결제 : 신용카드 - 카드사명, 카드번호, 유효기간, cvc<br>
+               &nbsp;&nbsp;&nbsp;가상계좌 - 은행명, 계좌번호<br>
+               &nbsp;&nbsp;&nbsp;통통코인 - 통통지갑 주소, 통통코인 금액<br>
+               - 취소.환: 은행명, 계좌번호, 통통코인 지갑 주소<br>
+               ⑤ 회사는 고객님의 기본적 인권 침해의 우려가 있는 민감한 개인정보(인종 및 민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록, 건강상태 등)는 수집하지 않습니다.<br><br>
+               <strong>2. 3자 제공 시 제공 받는 자의 성명, 이용 목적, 제공하는 개인정보항목</strong><br>
+               ① 회사는 고객의 동의가 있거나 법률의 규정에 의한 경우를 제외하고는 어떠한 경우에도 "1. 개인정보의 수집항목 및 수집방법"에서 고지한 범위를 넘어서 고객의 개인정보를 이용하거나 타인 또는
+               타기업, 기관에 제공하지 않습니다.<br>
+               ② 회사가 고객의 개인정보를 제3자에게 제공하는 경우 사전에 고객에게 고객의 개인정보를 제공 받는자, 개인정보를 제공받는 자의 개인정보 이용목적에 대해 동의를 구하는 절차를 거치거나 회원
+               가입시 별도로 동의를 구하는 절차를 거치게 됩니다. 고객이 동의하지 않는 경우에는 개인정보를 제공하거나 공유하지 않습니다. <br />
+               ③ 다음의 경우에는 예외적으로 고객의 동의 없이 개인정보를 제공할 수 있습니다.<br />
+               가. 형사소송법, 금융실명거래 및 비밀보장에 관한 법률, 신용정보의 이용 및 보호에 관한 법률, 전기통신기본법, 전기통신사업법, 전파법, 지방세법, 소비자보호법, 한국은행법, 등 관계법령에 특별한 규정이 있는 경우<br />
+               나. 통계작성, 학술연구나 시장조사를 위하여 특정 개인을 식별할 수 없는 형태로 제공하는 경우<br />
+               다. 관계법령에 의하거나 수사기관의 요청에 의해 정보를 제공한 경우에도 본래의 수집목적 및 이용목적에 반하여 무분별하게 정보가 제공되지 않도록 최대한 노력하겠습니다.<br />
+               <strong>3. 개인정보 보유 및 이용기간, 파기 절차 및 방법</strong><br />
+               ① 회원님의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은 목적이 달성되면 파기됩니다. 단, 상법, 전자상거래 등 에서의 소비자보호에 관한 법률 등 관련법령 및 회사 내부 규정에 의하여 다음과 같이
+               거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다. <br />
+               가. 계약 또는 청약철회 등에 관한 기록: 5년<br />
+               나. 대금결제 및 재화 등의 공급에 관한 기록: 5년<br />
+               다. 전자금융 거래에 관한 기록: 5년<br />
+               라. 소비자의 불만 또는 분쟁처리에 관한 기록: 3년<br />
+               마. 표시, 광고에 관한 기록: 6개월<br />
+               바. 본인확인에 관한 기록: 6개월<br />
+               사. 사이트 접속에 관한 기록: 3개월<br />
+               아. 부정 이용 기록: 1년<br />
+               자. 잔여 포인트 처리 및 부정가입 방지를 위한 탈퇴 회원정보: 1개월<br />
+               ② 회원님의 동의를 받아 보유하고 있는 거래정보 등을 회원님께서 열람을 요구하는 경우에는 소정의 본인확인절차를 거친 후 지체 없이 열람, 확인할 수 있도록 조치합니다.<br />
+               ③ 회원가입 등을 통한 개인정보의 수집, 이용, 제공에 대하여 회원은 가입 시 동의한 내용에 대해서 언제든지 철회할 수 있습니다. 동의 철회는 당사 고객센터로 요청하여 언제든지 철회할 수 있으며, 개인정보 민원담당자에게
+               서면, 전화, e-mail 등으로 연락하시면 신속하게 개인정보의 삭제 등 필요한 조치를 합니다. 단, 회원ID에 대해서는 서비스 이용의 혼선 방지, 법령에서 규정하는 회원거래정보의 보존기간 동안의 보관의무의 이행, 기타 안정적인
+               서비스 제공을 위하여 필요한 정보이므로, 탈퇴 후 동일 ID로의 재가입은 허용되지 않습니다. 이미 제공된 회원정보를 철회 하는 데는 일정 시간이 소요되며 소요되는 시간 동안 마케팅에 활용되지 않도록 하겠습니다.
+               회사는 회원님의 소중한 정보를 보호하기 위하여 신속하게 처리 되도록 최선의 노력을 다하겠습니다.<br />
+               ④ 회사는 고객의 개인정보를 보호하여 개인정보 유출로 인한 피해가 발생하지 않도록 하기 위하여 다음과 같은 방법을 통하여 개인정보를 파기합니다.<br />
+               가. 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.<br />
+               나. 전자적 파일 형태로 저장된 개인 정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br />
+               <strong>4. 개인정보 취급 위탁 시, 위탁 업무의 내용 및 수탁자</strong><br />
+               ① 회사는 위탁계약 체결 시 위탁업무 수행목적 외 개인정보 처리금지, 기술적/관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리/감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가
+               개인정보를 안전하게 처리하는지를 감독하고 있습니다.<br />
+               ② 회사는 보다 나은 서비스 제공과 고객 편의 제공 등 업무수행을 원활하게 하기 위해 고객의 개인정보를 제한된 범위 내에서 수집, 보관, 처리 등을 위탁하여 처리하고 있습니다. 회사가 고객의 개인정보를 위탁하는 현황은 다음과 같습니다.<br />
+               - 나이스 정보통신 : 상품 구매에 필요한 신용카드, 가상계좌결제대행 업무<br />
+               - 통통체인 : 상품 구매에 필요한 통통코인 결제대행 업무<br />
+               <strong>5. 개인정보의 기술적/관리적 보호 대책</strong><br />
+               회사는 이용자들의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적/ 관리적 대책을 강구하고 있습니다.<br />
+               가. 해킹 등에 대비한 대책<br />
+               회사는 해킹이나 컴퓨터 바이러스 등에 의해 회원의 개인정보가 유출되거나 훼손되는 것을 막기 위해 최선을 다하고 있습니다. 개인정보의 훼손에 대비해서 자료를 수시로 백업하고 있고, 최신 백신프로그램을
+               이용하여 이용자들의 개인정보나 자료가 누출되거나 손상되지 않도록 방지하고 있으며, 암호화 통신 등을 통하여 네트워크상에서 개인정보를 안전하게 전송할 수 있도록 하고 있습니다.
+               그리고 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있으며, 기타 시스템적으로 보안성을 확보하기 위한 가능한 모든 기술적 장치를 갖추려 노력하고 있습니다.<br />
+               나. 취급 직원의 최소화 및 교육 <br />
+               회사의 개인정보관련 취급 직원은 담당자에 한정시키고 있고 이를 위한 별도의 비밀번호를 부여하고 있으며, 담당자에 대한 수시 교육을 통하여 “통통몰” 개인정보취급방침의 준수를 항상 강조하고 있습니다.<br />
+               다. 개인정보보호 운영관리<br />
+               회사는 개인정보취급방침의 이행사항 및 담당자의 준수여부를 확인하여 문제가 발견될 경우 즉시 수정하고 바로 잡을 수 있도록 노력하고 있습니다. 단, 이용자 본인의 부주의나 회사의 고의 또는 중대한 과실이 아닌
+               사유로 개인정보가 유출되어 발생한 문제에 대해 회사는 일체의 책임을 지지 않습니다.
+            </div>
+         </div>
+      </div>
+      <div id="prod-policy">
+         <div class="row border-btm pointer" style="padding: 17px 15px;" onclick="setViewPolicy(this);">
+            <div class="font-222-12 fl">상품 구매조건 확인 및 취소환불 규정 동의</div>
+            <img class="fr mt-4" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;">
+         </div>
+         <div class="padding-15 border-btm policy-content" style="display: none;">
+            <div class="font-777-12 line-height-2">
+               <strong>제 1조(상품의 구매취소, 청약철회 등)</strong><br />
+               1) "회사"의 구매취소 및 청약철회 규정은 전자상거래 등에서의 소비자보호에 관한 법률 등 관련 법령을 준수합니다.<br />
+               2) "상품 등"을 구매한 "회원"은 “상품 등”을 공급받은 날로부터 7일(청약 철회기간) 이내에 "회사"에 상품 구매 청약을 철회할 수 있습니다.<br />
+               3) "회원"의 단순 변심에 의한 취소 및 환불일 경우 이의 처리에 발생하는 수수료는 "회원"이 부담합니다.<br />
+               4) "회원"은 "상품 등"의 내용이 표시∙광고 내용과 다르거나 계약 내용과 다르게 이행된 때에는 그 "상품 등"을 공급받은 날부터 3월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 청약을 철회 할 수 있습니다.<br />
+               5) 개별 "상품 등"의 성격에 따라 "회사"는 별도 계약 및 이용조건에 따른 구매취소 및 청약철회 관련 규정을 정할 수 있으며 이 경우 별도 계약 및 이용조건상의 구매취소 및 청약철회 규정이 우선 적용됩니다.<br />
+               6) 신용카드로 결제한 "회원"의 경우 구매 취소 시 기존에 결제하였던 내역을 취소하며 취소 시점에 따라 결제 취소 수수료를 재승인 합니다. 이 경우 구매 취소 시점과 해당 카드사의 환불 처리기준에 따라 취소금액의 환급 방법과
+               환급일은 다소 차이가 있을 수 있으며, 사용한 신용카드의 환불 정책은 신용카드회사에 직접 문의하여야 합니다.<br />
+               7) 가상계좌로 결제한 "회원"의 경우 구매 익일 23 시 59 분 59 초까지 "상품 등"의 대금을 송금하지 않는 때에는 "회사"는 "회원"의 "상품 등"을 구매 취소 처리합니다. 이 경우 "회원"은 가상계좌 대금 송금
+               기간 연장이나 구매 취소 처리의 복구를 "회사"에게 요구할 수 없습니다.<br />
+               8) 가상계좌로 결제한 “회원”의 경우 구매 취소 시 기존에 결제하였던 내역을 취소하며 취소수수료가 발생합니다.<br />
+               9) 통통코인(TTCOIN)으로 결제한 "회원"의 경우 "회원"은 암호화폐 대금 송금 기간 연장이나 구매 취소 처리의 복구를 "회사"에게 요구할 수 없습니다. 통통코인(TTCOIN)으로 결제한 “회원”의 경우
+               구매 취소 시점의 시세를 반영하여 주문한 현금가와 상응하는 통통코인으로 반환되며 취소 수수료가 발생합니다.<br />
+               10) 미성년자 또는 미성년자의 법정대리인은 미성년자의 구매를 취소할 수 있으며 구체적인 내용은 민법 상 미성년자의 법률행위 취소 규정에 따릅니다.<br />
+               11) "회원"이 타인의 신용카드 또는 휴대전화번호를 도용하는 등 본 약관에서 금지하는 부정한 방법으로 부당한 이익을 편취하였다고 의심되는 경우 "회사"는 "회원"의 상품 구매를 취소처리를
+               할 수 있으며, "회원"이 충분한 소명 자료를 제출할 때까지 환불을 보류할 수 있습니다.<br />
+               12) 기타 이 약관 및 "사이트"의 이용안내에 규정되지 않은 취소 및 환불에 대한 사항에 대해서는 소비자 피해보상 규정에서 정한 바에 따릅니다.<br />
+               <strong>제1조의2(상품에서의 환불 특칙)</strong><br />
+               1) "회원"은 상품을 배송 받은 경우 다음 각 호에 해당하는 경우에는 환불 또는 교환을 요청할 수 없습니다.<br />
+               ① "회원"에게 책임 있는 사유로 상품이 멸실 또는 훼손된 경우<br />
+               ② "회원"의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우<br />
+               ③ 시간의 경과에 의하여 재판매가 곤란할 정도로 상품의 가치가 현저히 감소한 경우<br />
+               ④ 복제가 가능한 상품의 포장을 훼손한 경우<br />
+               ⑤ 기타 "회원"이 환불 또는 교환을 요청할 수 없는 합리적인 사유가 있는 경우<br />
+               2) "회사"가 상품의 반품 절차에 따라 고객에게 환불하는 경우, 반품하는 상품이 "회사" 또는 제휴업체에 도착하고, 반품사유 및 반품비용 부담에 대한 사항을 확인한 이후 환불이 이루어집니다. 단,
+               예외적으로 선 환불이 이루어졌음에도 반품하는 상품이 “회사” 또는 제휴업체에 도달하지 않거나 상품이 본 조 ②에 해당하는 경우, “회원”은 반품에 소요된 비용 및/또는 환불 받은 금액을 “회사”가 지정한 방법에 따라 즉시 반환하여야 합니다.<br />
+            </div>
+         </div>
+      </div>
+   </div>
+         <div id="payment" class="btn-submit-2 active text-center h-51 pointer" onclick="setPayment('%20%EC%99%B8%20-1%EA%B1%B4', '이민영', '010-2339-7559', '04084', '서울 마포구 양화진4길 32', '6층 토마토페이', '0', '', '01023397559', '01021273819');">결제하기</div>
+   </div>
+
+<script type="text/javascript">
+   loadJavascript("https://www.tongtongmall.net/assets/user/js/product/order.js?ver=1699241724", null);
+</script>

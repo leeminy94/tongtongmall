@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Script-Type" content="text/javascript">
+   <meta http-equiv="Content-Style-Type" content="text/css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="apple-mobile-web-app-title" content="TONGTONGMALL">
+   <meta name="title" content="합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.">
+   <meta name="facebook-domain-verification" content="9jqyzhvxh9bi8ledm60906o2f702qe" />
+   <meta id="meta-desc" name="description" content="✿48시간 고보습, 스킨+로션 올인원, 시카, 비타민 성분 첨가✿ 통통스킨로션">
+   <meta id="meta-keyword" name="keywords" content="✿48시간,고보습,,스킨+로션,올인원,,시카,,비타민,성분,첨가✿,통통스킨로션">
+   <meta property="og:description" content="✿48시간 고보습, 스킨+로션 올인원, 시카, 비타민 성분 첨가✿ 통통스킨로션">
+
+   <meta name="robots" content="index,follow">
+   <meta property="og:title" content="통통몰 :: 합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.tongtongmall.net/">
+   <meta property="og:image" content="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+   <title>통통몰 :: 합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.</title>
+   <link rel="shortcut icon" href="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/common/component/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/side_menu.css?v=1715652784" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/bottom_tab_bar.css?v=1715652784" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+   <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
+
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/swiper-bundle.min.css?ver=1715652784" />
+
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   <!--<link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/common.css?ver=1715652784" />-->
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/mobile_common.css?ver=1715652784" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/parameters.css?ver=1715652784" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/custom.css?ver=1715652784" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/toast.css?ver=1715652784" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/raterater.css?ver=1715652784" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/m_ttmall_style.css?ver=1715652784">
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/subscribe.css?ver=1715652784">
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/pc/css/240130.css?ver=1715652784" />
+
+
+   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+
+   <!--240530-->
+   <link rel="stylesheet" href="./css/240530.css">
+   <link rel="stylesheet" href="./css/240628.css">
+   <link rel="stylesheet" href="./css/m_main_renewal.css">
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.ui.touch-punch.min.js"></script>
+   <script src="https://tomato.etomato.com/bootstrap.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.touchSwipe.min.js"></script>
+   <script src="https://tomato.etomato.com/tomatopay/swiper.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.cookie.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.22.0/load-image.all.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/lazy/jquery.lazyload.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/exif.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment-timezone-with-data.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/raterater.jquery.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/Winwheel.js"></script>
+   <script src="https://tomato.etomato.com/crypto-js.min.js"></script>
+
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+
+
+
+   <script src="https://tomato.etomato.com/tomatopay/tomato_pay_20220420.js?v=1715652784"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/utility.js?ver=1715652784"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/loadjavascript.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/toast.js"></script>
+
+   <meta name="naver-site-verification" content="939ab956fced0f816c38d1969a807cb2c97365a4" />
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154704959-1"></script>
+   <!-- Swiper JS -->
+   <!--<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>-->
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/swiper-bundle.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/m_main_new.js?ver=1715652784"></script>
+   <!--
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-154704959-1');
+   </script>
+   -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HWXEEDRCJ"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-9HWXEEDRCJ');
+   </script>
+
+   <script>
+      !function (f, b, e, v, n, t, s) {
+         if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+               n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+         };
+         if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+         n.queue = []; t = b.createElement(e); t.async = !0;
+         t.src = v; s = b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '213048801265200');
+      fbq('track', 'PageView');
+   </script>
+   <noscript>
+      <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=213048801265200&ev=PageView&noscript=1" />
+   </noscript>
+
+   <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
+   <script type="text/javascript">
+      kakaoPixel('8334493243257763801').pageView();
+   </script>
+</head>
+
+<body style="min-width: 320px;">
+   <script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script>
+   <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "s_2914622f9666";
+      if (!_nasa) var _nasa = {};
+      if (window.wcs) {
+         wcs.inflow("tongtongmall.net");
+         wcs_do(_nasa);
+      }
+   </script>
+   <div id="spinner_overay" style="display: block;">
+      <div class="spinner"></div>
+   </div>
+   <a href="javascript: setViewTop();" class="btn-top"><img
+         src="https://www.tongtongmall.net/assets/user/images/btn_top.png" style="width: 45px; height: 45px;"
+         alt=""></a>
+   <div class="dialog-overlay" onclick="closeDialog();"></div>
+   <div class="dialog-overlay-address" onclick="closeDialogAddress();"></div>
+   <div class="dialog-overlay-shipping" onclick="closeDialogShipping();"></div>
+   <!-- 일반다이얼로그(통통몰) -->
+   <div class="dialog-normal">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn"></div>
+      </div>
+   </div>
+   <!-- 일반다이얼로그(통통마일) -->
+   <div class="dialog-normal-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn-gtc"></div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통몰-네/아니오) -->
+   <div class="dialog-setting">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;"></div>
+            <div class="btn-1 back-0 fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통마일-네/아니오)  -->
+   <div class="dialog-setting-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;"></div>
+            <div class="btn-1 back-gtc fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통몰) -->
+   <div class="dialog-cart">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;">쇼핑 계속하기</div>
+            <div class="btn-1 back-0 fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통마일) -->
+   <div class="dialog-cart-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_gtc_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;">쇼핑 계속하기</div>
+            <div class="btn-1 back-gtc fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 배송지설정 다이얼로그 -->
+   <div class="dialog-address">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialogAddress();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content" style="height: 100%;">
+         <div id="wrap" style="display: none; width: 100%; height: 80%; margin: 5px 0; position: relative;"></div>
+      </div>
+   </div>
+   <!-- 배송정보 다이얼로그 -->
+   <div class="dialog-shipping">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialogShipping();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content pt-9">
+         <div class="font-999-12 mb-9">수령인</div>
+         <div class="font-222-12 mb-21" id="name"></div>
+         <div class="font-999-12 mb-9">연락처</div>
+         <div class="font-222-12 mb-21" id="phone"></div>
+         <div class="font-999-12 mb-9">배송지</div>
+         <div class="font-222-12 mb-21 line-height-1" id="address"></div>
+         <div class="font-999-12 mb-9">배송메모</div>
+         <div class="font-222-12" id="memo" style="padding-bottom: 44px;"></div>
+      </div>
+   </div>
+   <!-- 간편결제용 카드사 다이얼로그 -->
+   <div class="dialog-card">
+      <div style="height: 100%;">
+         <div class="dialog-header">
+            <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+               onclick="closeDialog();">
+         </div>
+         <div class="dialog-title" style="height: 81%; overflow-y: auto;">
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('비씨', '01');">
+               비씨카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('국민', '02');">
+               국민카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('외환', '03');">
+               외환카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('삼성', '04');">
+               삼성카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('신한', '06');">
+               신한카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('현대', '07');">
+               현대카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('롯대', '08');">
+               롯데카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer"
+               onclick="selectCardCompany('NH농협', '12');">NH농협카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer"
+               onclick="selectCardCompany('하나SK', '16');">하나SK카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('씨티', '11');">
+               씨티카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('우리', '15');">
+               우리카드</div>
+         </div>
+      </div>
+   </div>
+   <div class="dialog-coupon">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt=""
+            onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1">[쿠폰 <span class="disc-rate">10%</span>] 당첨!</div>
+         <div class="pos-re mt-15" style="padding: 0 45px; display: flex; justify-content: center;">
+            <img src="https://www.tongtongmall.net/assets/user/images/coupon_bg.png" alt=""
+               style="width: 100%; height: 56px;">
+            <div class="pos-ab" style="top: 8px;">
+               <p class="mb-5" style="font-size: 12px; color: #666666; font-weight: bold;">행운 할인쿠폰</p>
+               <p class="mb-0 disc-rate" style="font-size: 18px; color: #de322a; font-weight: bold;">10%</p>
+            </div>
+         </div>
+      </div>
+      <div class="dialog-content">
+         <p style="font-size: 12px; color: #999999; padding: 0 30px;">* <span id="apply-part">전체 상품 사용가능</span></p>
+         <div class="text-center">
+            <p style="font-size: 13px; color: #555555; line-height: 1.3;">
+               하단
+               <span class="pointer" style="color: #de322a; text-decoration: underline;"
+                  onclick="window.location.replace('https://www.tongtongmall.net/coupon');">[쿠폰함 바로가기]</span>
+               에서<br>발급 받은 쿠폰을 확인 해보세요.
+            </p>
+            <p class="pb-15" style="font-size: 13px; color: #555555; line-height: 1.3;">오늘까지 사용 가능하며,<br>내일도 받으실 수 있어요.
+            </p>
+         </div>
+      </div>
+   </div>
+   <!-- 통통몰앱으로 이동팝업 -->
+   <div class="run-app-view">
+      <div class="row mb-15">
+         <img class="fl" src="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark_2.png" alt=""
+            style="width: 100%;">
+      </div>
+      <div class="row mb-15">
+         <img id="run-app" src="https://www.tongtongmall.net/assets/user/images/btn_app_redirect.png" alt=""
+            style="width: 100%;" onclick="">
+      </div>
+      <div id="run-web" class="text-center font-weight"
+         style="font-size: 15px; color: #fff; text-decoration: underline;" onclick="runWeb();">아니요, 웹에서 볼게요.</div>
+   </div>
+
+
+   <div id="header-other" class="default-unit ">
+      <div class="row padding-15">
+         <div class="col-xs-12">
+            <div class="col-xs-1">
+               <img class="pointer" src="./images/icon/ic_back.svg" onclick="goBack('https://dev.tongtongmall.net/');"
+                  alt="">
+            </div>
+            <div class="col-xs-8">
+               <img class="main_logo " src="https://www.tongtongmall.net/assets/user/images/m_logo.svg" alt=""
+                  style="z-index:10000;margin-left: 34px;"
+                  onclick="window.location.href='https://www.tongtongmall.net/main'">
+            </div>
+            <div class="text-right sub_menu">
+               <img class="pointer" src="./images/icon/ic_dip.png" alt="" onclick="#">
+               <img class="pointer" src="./images/icon/ic_pack.png" alt="" onclick="#">
+               <img class="pointer" src="./images/icon/ic_my.png" alt="" onclick="#">
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!--19세 팝업-->
+   <!--19세 팝업-->
+
+
+   <div id="product-detail" class="default-unit" data-productid="18359" data-attrid="0" data-question="0"
+      data-userid="651" data-prodname="☀시카, 비타민 함유, 주름개선, 미백·영양 공급 SPF50+/PA++++☀ 통통선스틱" data-prodprice="14900"
+      data-prodid="18359" data-catid="556" data-salestatus="534" data-subcatid="571" data-subscribe_price="7450"
+      data-point="2100400" data-nsale_price="14900" style="padding-top: 15px; padding-bottom: 65px;">
+      <div class="swiper-container " id="swiper-1" data-thumb="0">
+
+         <div class="swiper-wrapper">
+            <div class="swiper-slide" onclick="setShowMainDetailImage('0');">
+               <div class="swiper-zoom-container">
+                  <img src="https://img.tongtongmall.net/assets/upload/product/7526617555570524160.jpg"
+                  style="width: 100%;height:100%;">
+               </div>
+            </div>
+            <div class="swiper-slide" onclick="setShowMainDetailImage('0');">
+               <div class="swiper-zoom-container">
+                  <img src="	https://img.tongtongmall.net/assets/upload/banner/5826280341416968192.jpg"
+                     style="width: 100%;height:100%;">
+               </div>
+            </div>
+         </div>
+         <div class="paging"></div>
+         <!-- 공동구매상품이면 공동구매마크 표시 -->
+
+         <div class="coin-event pointer" style="display: none;"
+            onclick="setConnectTongTongApp('product_detail', 'event', 'old');">
+            <img src="https://www.tongtongmall.net/assets/user/images/ico_coin_event.png" alt="" style="width: 70px;">
+         </div>
+         <div class="swiper-pagination"></div>
+         <!---- add by hj-->
+      </div>
+      <div id="swiper-main" style="display: none;">
+         <div class="swiper-container mod_slider_viewer">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="swiper-zoom-container">
+                     <img src="https://img.tongtongmall.net/assets/upload/product/7526617555570524160.jpg"
+                        style="width: 100%; height: 411px; object-fit: fill;">
+                  </div>
+               </div>
+            </div>
+            <div class="paging" style="color: #fff; background: #868383; opacity: 1;"></div>
+         </div>
+         <div class="mod_slider_mask ml-0"></div>
+         <div class="mask_close">
+            <img class="pointer" src="https://www.tongtongmall.net/assets/user/images/ico_close.png" alt=""
+               style="width: 15px; height: 15px; margin-top: 15px; margin-left: 96%;"
+               onclick="setCloseMainDetailImage();">
+         </div>
+
+      </div>
+      <div id="prod-info" class="padding-15 product-detail">
+         <div class="row">
+            <!-- 첫구매혜택상품인 경우 -->
+            <div class="col-xs-10">
+               <div class="font-ff0000-15" style="word-break: break-all;">완벽한 자외선 차단, 비타민 함유, 주름개선,
+                  미백,영양공급 기능성 선스틱</div>
+            </div>
+            <div class="col-xs-2">
+               <img class="fr pointer" src="./images/icon/icon_share.png" alt="" style="width: 17px; height: 22px;"
+                  onclick="setSharingURL('https://www.tongtongmall.net/product_detail?productid=18359');">
+            </div>
+         </div>
+         <div class="font-000-18 mt-4" style="word-break: break-all;font-weight: 600;">☀시카, 비타민 함유, 주름개선,
+            미백·영양 공급 SPF50+/PA++++☀ 통통선스틱</div>
+         <div class="row ">
+            <div class="sale-price mt-8 mb-8">14,900<span>원</span></div>
+         </div>
+
+         <!-- 첫구매혜택상품인 경우 -->
+         <div class="mt-5 pb-15">
+            <!-- TTCO 할인가 처리  -->
+            <div class="row mb-9" style="display: flex;align-items: center;color: #169aa8;">
+               <img class="fl" src="./images/icon/ttco_symbol.webp" alt="" style="width: 16px;">
+               <div class="font-169aa8-13 ml-6 fl">TTCO</div>
+               <div class="fl ctc-price_re ml-6 ttco-count-wrap_re" style="font-weight: bold;">7,450원 <span
+                     class="ttco-percent-badge ml-6"><b class="ttco-percent">50</b>% 할인</span></div>
+            </div>
+
+            <div class="row" style="display: flex;align-items: center;color: #04c0ea;">
+               <img class="fl" src="https://www.tongtongmall.net/assets/pc/images/ttc_icon.png" alt=""
+                  style="width: 16px;">
+               <div class="ml-6">TTC</div>
+               <div class="ttc-price_re ml-6 fl ttc-count-wrap_re" style="font-weight: bold;">6,705원 (<span>78.8</span>
+                  TTC) </div>
+            </div>
+
+            <div class="ttc-sale-txt mt-6">
+               TTC로 결제 시 <span>5</span>% 추가 할인
+            </div>
+
+         </div>
+      </div>
+      <!-- 공동구매상품이면 -->
+      <!-- 첫구매혜택상품이 아닌 경우 -->
+      <div class="row padding-15 border-btm">
+         <div class="font-000 fl">배송비</div>
+         <div class="font-000 fr free_txt">무료배송
+            <div class="shipping-delivery-date">6월 29일(토)까지 도착 예정</div>
+         </div>
+      </div>
+      <!-- 일반상품인 경우 -->
+      <div class="row border-btm padding-15">
+         <div class="font-000 fl">상품재고</div>
+         <div class="font-000 fr">
+            <!--2,299 개-->
+            2,299 개
+         </div>
+      </div>
+      <!--             <div class="row padding-15">
+      <div class="font-222-15 fl">상품평점</div>
+      <div class="fr">
+         <div class="ratebox-1 fl" data-id="1" data-rating="5.0"></div>
+         <div class="font-222-18 fl mt-3">(5.0)</div>
+      </div>
+   </div> -->
+      <!--          <div class="back-line-border"></div> -->
+      <div id="prod-content">
+         <div id="product-tab" class="border-btm">
+            <div class="row">
+               <div class="col-xs-12">
+                  <div class="col-xs-3 text-center">
+                     <div class="prod-tab active pointer pointer" onclick="setSection(this, '0', '0');">상품설명</div>
+                  </div>
+                  <div class="col-xs-3 text-center">
+                     <div class="prod-tab pointer" onclick="setSection(this, '2', '0');">후기(2)</div>
+                  </div>
+                  <div class="col-xs-3 text-center">
+                     <div id="quest-section" class="prod-tab pointer" onclick="setSection(this, '3', '0');">문의</div>
+                  </div>
+                  <div class="col-xs-3 text-center">
+                     <div class="prod-tab pointer" onclick="setSection(this, '1', '0');">교환/반품</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <!-- 상품설명탭 섹션 -->
+         <div id="product-explain" style="padding-top: 30px; padding-bottom: 18px; display: block;">
+            <div class="font-222-15 font-weight pad-default"></div>
+            <textarea class="line-height-2" id="prod-serv-desc" name="name"
+               style="width: 100%; border: 0; outline: 0; color: #555555; font-size: 15px; padding: 19px 15px 5px 15px;"
+               placeholder="" readonly></textarea>
+            <div id="image-detail" class="mt-10" style="width: 100%;">
+               <div class="mb-10">
+               </div>
+               <img class="mb-10" src="https://img.tongtongmall.net/assets/upload/description/2755904484608573440.jpg"
+                  alt="" style="width: 100%;">
+               <img class="mb-10" src="https://img.tongtongmall.net/assets/upload/description/1655477951489114112.gif"
+                  alt="" style="width: 100%;">
+               <img class="mb-10" src="https://img.tongtongmall.net/assets/upload/description/1797205751928717312.jpg"
+                  alt="" style="width: 100%;">
+            </div>
+            <div class="back-line-border"></div>
+            <div class="row padding-15 back-default">
+               <div class="font-222-15 font-weight fl">최근 본 상품</div>
+               <div class="font-777-12 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/recent'">
+                  전체보기 ></div>
+            </div>
+            <div class="pad-default back-default">
+               <div class="swiper-container" id="swiper-8">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=18093'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/3904825532121874432.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">아우라 막창 300g</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=18128'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/6551209295575252992.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">ABC주스 100ml 30팩</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=17156'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/8117078.png" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">통통생활 일회용수세미- 딥그린 x2</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=17753'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/6168158879185108992.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">통통생활 비타 올인원</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=18374'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/5055215217932238848.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">통통선스틱 20g, 1개</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=18363'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/4679318846962663424.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">통통치약 300g, 1개</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=17735'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/9126304199712178176.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">통통생활 통통쌀 1kg x 4개</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=18361'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/87571952213950464.png" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">통통스킨로션 300ml</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=17776'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/1918706249268985856.png" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">통통생활 세탁세제 x2</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=18279'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/5784142670678982656.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">암꽃게장 2.5kg 3미</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=18033'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/6402020131920150528.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">100% 국내산 아카시아꿀, 통통꿀 500g</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide pointer" style="width: 140px;"
+                        onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=18359'">
+                        <div class="row">
+                           <img class="thumbnail m0"
+                              src="https://img.tongtongmall.net/assets/upload/product/7526617555570524160.jpg" alt=""
+                              style="width: 140px; height: 140px !important;">
+                        </div>
+                        <div class="pt-5 pl-3 pr-3 pb-20" style="width: 140px;">
+                           <div class="mb-9" style="height: 32px;">
+                              <div class="content-width font-777-12 line-height-2">통통선스틱 20g, 1개</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- 주의사항탭 섹션 -->
+         <div id="product-caution" style="display: none;">
+            <div>
+               <div class="font-222-15 font-weight pad-default pt-24">교환/반품 정보</div>
+               <div class="font-555-12 pt-24 pl-24 font-weight">판매자 지정 택배사</div>
+               <!-- 첫구매혜택상품인 경우 -->
+               <div class="font-777-12 pt-12 pl-24 pr-24">- CJ대한통운</div>
+               <div class="font-555-12 pt-24 pl-24 font-weight">교환/반품 기본 배송비</div>
+               <div class="font-777-12 pt-12 pl-24 pr-24">- 편도 3,500원/왕복 7,000원</div>
+               <div class="font-555-12 pt-24 pl-24 font-weight">교환/반품 고지사항</div>
+               <textarea class="line-height-2 pl-24 pr-24" id="courier-desc" name="name"
+                  style="width: 100%; border: 0; outline: 0; color: #777777; font-size: 12px;" placeholder="" readonly>[교환/반품 요청가능기간]
+1. 구매자 변심으로 인한 반품요청은 [구매확정 처리] 이전에 판매자와 협의하여 신청할 수 있습니다. (교환/반품 절차는 아래 참조)
+2. 직접 구매확정을 하지 않아도, 상품 배송완료가 확인된 시점부터 7일이 지나면 자동 구매확정으로 인정됩니다.
+
+[교환/반품 비용]
+1. 교환/반품 비용은 일반적으로 교환/반품 왕복 배송비가 부과되나, 경우마다 상이할 수 있습니다. 
+2. 교환/반품 비용은 고객 단순 변심의 경우에만 발생하며, 도서산간 지역은 배송 불가합니다.
+3. 초기 배송비가 무료일 경우 반품배송비가 왕복으로 청구될 수 있습니다.
+
+[교환/반품 절차]
+통통몰 앱 내 [주문내역] > [반품신청] 또는 [교환신청] 선택 > 반품 또는 교환 사유 작성
+
+[교환/반품이 불가능한 경우]
+1. 교환/반품 가능 기간 (구매확정 처리 이전)을 경과한 경우
+2. 분실/파손/고장/오염으로 상품가치가 현저히 상실되어 재판매가 불가능한 경우
+    (상품의 확인을 위한 단순 포장 훼손의 경우 불가사유에 해당하지 않습니다)
+3. 상품의 사용 또는 시간의 경과에 의해 상품의 가치가 감소한 경우
+4. 고객 주문으로서 별도 제작되는 상품 (인쇄 / 주문제작 등) 의 제작이 이미 진행된 경우
+5. 모니터 해상도 차이로 인하여 색상 등 이미지가 실제와 다소 상이한 경우
+6. 복제가 가능한 상품 (CD / DVD / 게임 / 도서 등) 이 개봉된 경우
+    (자세한 내용은 통통몰 고객센터의로 문의해 주시기 바랍니다.)
+
+[참고사항]
+1. 교환/반품의 경우, 고객센터와 전화 후 진행하시는 걸 권합니다. (구매 상품에 따라 반품 배송비가 차등 부과될 수 있습니다.)
+2. 통통몰 고객센터 : 02-2128-2600</textarea>
+               <div class="font-555-12 pt-14 pl-24 font-weight">환불규정 안내</div>
+               <textarea class="line-height-2 mb-24 pl-24 pr-24" id="return-desc" name="name"
+                  style="width: 100%; border: 0; outline: 0; color: #777777; font-size: 12px;" placeholder="" readonly>1. 환불은 최대 10일 또는 그 이상 소요될 수 있습니다.
+2. 환불은 판매자(정보가 없을 경우, 통통몰)와 우선 협의가 완료된 이후 진행이 가능합니다.
+3. 반품한 상품이 판매자에게 도착하거나 상호 협의가 완료된 후에 환불이 진행됩니다.
+4. 간편결제 및 신용카드 결제 : 반품완료 확인 후 카드 승인 취소로 환불되며, 주말 및 공휴일 제외 3~5일 정도 소요됩니다.
+5. 가상화폐 결제 : 반품완료 확인 후 즉시 해당 가상화폐 계좌로 환불됩니다.
+6. 반송장이 정확하지 않거나 판매자에게 제품 도착이 확인 되지 않는 경우, 환불이 지연되거나 환불이 안될 수 있습니다.
+7. 상품 특성에 따라 환불이나 교환이 되지 않는 제품 및 판매 종료된 상품에 대해서는 환불이 불가합니다.
+</textarea>
+            </div>
+            <div class="back-line-border"></div>
+            <div class="pb-24">
+               <div class="font-222-15 font-weight pad-default pt-24">상품 정보</div>
+               <div class="font-555-12 pt-24 pl-24 pr-24 line-height-2">-&nbsp;상세페이지 참고</div>
+               <div class="font-555-12 pt-12 pl-24 pr-24 line-height-2">&nbsp;&nbsp;상세페이지 참고</div>
+            </div>
+            <div class="back-line-border"></div>
+            <div class="border-btm pb-24">
+               <div class="font-222-15 font-weight pad-default pt-24">거래 정보</div>
+               <div class="font-555-12 pt-24 pl-24 pr-24 line-height-2">-&nbsp;상세페이지 참고</div>
+               <div class="font-555-12 pt-12 pl-24 pr-24 line-height-2">&nbsp;&nbsp;상세페이지 참고</div>
+            </div>
+         </div>
+         <!-- 후기/문의탭 섹션 -->
+         <div id="product-review" style="padding-top: 30px; padding-bottom: 18px; display: none;">
+            <!-- 구매후기 -->
+            <div class="pad-default">
+               <!-- 구매후기 타이틀 -->
+               <div id="review-item">
+                  <div class="row">
+                     <div class="col-xs-6">
+                        <div class="font-222-15 font-weight fl">구매후기 <span class="font-999-12">총</span> <span
+                              class="font-default-12">2</span><span class="font-999-12">건</span></div>
+                     </div>
+                     <div class="col-xs-6">
+                        <div class="font-222-12 mt-2 fr ml-6">(5.0)</div>
+                        <div class="ratebox-3 fr" data-id="1" data-rating="5.0"></div>
+                     </div>
+                  </div>
+                  <!--240507-->
+                  <div id="btn-quest" class="font-default-12 text-center pt-11 pb-11 mt-15 pointer mb-15"
+                     style="width: 100%; height: 36px; border: 1px solid #de322a;"
+                     onclick="sendreviews('18359','11117')">리뷰 쓰기</div>
+                  <!--240507-->
+                  <div class="font-bfbf-12 mt-9 pb-18 border-btm">구매후기는 마이페이지 > 구매내역에서 작성하실수 있습니다.</div>
+               </div>
+               <!-- 총구매후기 이미지/동영상 -->
+               <div id="review-all-image" class="border-btm" style="padding: 15px 0px;">
+                  <div class="row">
+                     <div class="col-xs-11">
+                        <div id="review-all">
+                           <div class="row">
+                              <div class="col-xs-3" onclick="setReivewAllImage('0');">
+                                 <img class="product-review-thumb-1"
+                                    src="https://img.tongtongmall.net/assets/upload/reviews/4603853698886533120.jpg"
+                                    alt="">
+                              </div>
+                              <div class="col-xs-3" onclick="setReivewAllImage('1');">
+                                 <img class="product-review-thumb-1"
+                                    src="https://img.tongtongmall.net/assets/upload/reviews/3777746963185795072.jpg"
+                                    alt="">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xs-1"></div>
+                  </div>
+                  <!--
+                  <div id="swiper-all-image" style="display: none;">
+                     <img class="pos-fix pointer" src="https://img.tongtongmall.net/assets/user/images/ico_back_1.png" alt="" style="width: 18px; height: 15px; top: 22px; z-index: 16000;" onclick="setcancleReivewAllImage();">'
+                     <div class="swiper-container mod_slider_viewer" style="margin-left: -15px;">
+                        11111
+                        <div class="swiper-wrapper">
+                                                                                                                     <div class="swiper-slide" data-name="최윤정" data-cdate="2024-05-13 11:38:39" data-rate="5" data-title="☀시카, 비타민 함유, 주름개선, 미백·영양 공급 SPF50+/PA++++☀ 통통선스틱" data-content="스틱 형식이라 바를 때 번거롭지 않고 답답하거나 끈적임도 없어서 자주 사용할 것 같아용!" data-nickname="">
+                                    <div class="swiper-zoom-container">
+                                       <img src="https://img.tongtongmall.net/assets/upload/reviews/4603853698886533120.jpg" style="width: 100%; height: 360px; object-fit: fill;" alt="">
+                                    </div>
+                                 </div>
+                                                                                                                        <div class="swiper-slide" data-name="김에스텔" data-cdate="2024-05-09 09:02:31" data-rate="5" data-title="☀시카, 비타민 함유, 주름개선, 미백·영양 공급 SPF50+/PA++++☀ 통통선스틱" data-content="골프하는 친구 선물했는데 어디서든 쓰기 간편하고 하얗게 뜨는 현상이 없다고 좋아하네요!!" data-nickname="">
+                                    <div class="swiper-zoom-container">
+                                       <img src="https://img.tongtongmall.net/assets/upload/reviews/3777746963185795072.jpg" style="width: 100%; height: 360px; object-fit: fill;" alt="">
+                                    </div>
+                                 </div>
+                                                                                 </div>
+                     </div>
+                     <div class="mod_slider_mask"></div>
+                     <div id="swiper-content-all"></div>
+                  </div>
+                  -->
+                  <!--20230619 수정-->
+
+                  <div id="swiper-all-image" style="display: none;">
+                     <div class="swiper-container mod_slider_viewer">
+                        <h4 class="cimg_detail_tit">☀시카, 비타민 함유, 주름개선, 미백·영양 공급 SPF50+/PA++++☀ 통통선스틱</h4>
+                        <div style="width:100%; position:absolute; top: 50px; margin-left:10px;">
+                           <div class="review-content" style="display:flex; width:100%;  flex-direction:row;">
+                              <div class="review-name" style="margin-right:10px;">최*정</div>
+                              <div class="review-content-rate-panel review-pannel"
+                                 style="display: flex; flex-direction: row;">
+                                 <div class="ratebox-2 raterater-wrapper" data-id="1" data-rating="5">
+                                    <div class="raterater-layer raterater-bg-layer" style="width: 18px; height: 15px;">
+                                       <i class="fa fa-star" style="left: 0px; font-size: 15px;"></i>
+                                    </div>
+                                    <div class="raterater-layer raterater-hover-layer"
+                                       style="width: 18px; height: 15px;"><i class="fa fa-star"
+                                          style="left: 0px; font-size: 15px;"></i></div>
+                                    <div class="raterater-layer raterater-rating-layer"
+                                       style="width: 18px; height: 15px;"><i class="fa fa-star"
+                                          style="left: 0px; font-size: 15px; width: 14px;"></i></div>
+                                    <div class="raterater-layer raterater-outline-layer"
+                                       style="width: 18px; height: 15px;"><i class="fa fa-star-o"
+                                          style="left: 0px; font-size: 15px;"></i></div>
+                                    <div class="raterater-layer raterater-cover-layer"
+                                       style="width: 18px; height: 15px;"></div>
+                                 </div>
+                                 <div class="ratebox-txt">5</div>
+                                 <div class="cdate" style="margin-left:10px;">2024-05-13 11:38:39</div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <img class="close_btn pointer" onclick="setcancleReivewAllImage()"
+                           src="https://www.tongtongmall.net/assets/user/images/popup_close.png" alt="">
+
+
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide" data-name="최윤정" data-cdate="2024-05-13 11:38:39" data-rate="5"
+                              data-title="☀시카, 비타민 함유, 주름개선, 미백·영양 공급 SPF50+/PA++++☀ 통통선스틱" data-nickname="">
+                              <div class="swiper-zoom-container">
+                                 <img src="https://img.tongtongmall.net/assets/upload/reviews/4603853698886533120.jpg"
+                                    style="width: 100%; height: 300px; object-fit: fill; margin-top: -20px;" alt="">
+                              </div>
+                           </div>
+                           <div class="swiper-slide" data-name="김에스텔" data-cdate="2024-05-09 09:02:31" data-rate="5"
+                              data-title="☀시카, 비타민 함유, 주름개선, 미백·영양 공급 SPF50+/PA++++☀ 통통선스틱" data-nickname="">
+                              <div class="swiper-zoom-container">
+                                 <img src="https://img.tongtongmall.net/assets/upload/reviews/3777746963185795072.jpg"
+                                    style="width: 100%; height: 300px; object-fit: fill; margin-top: -20px;" alt="">
+                              </div>
+                           </div>
+                           <!--
+                           <div class="swiper-slide" data-name="3819" data-cdate="2022-07-21 16:19:20" data-rate="5" data-title="[정관장] 홍삼보활" data-content="저럼한 가격에 구매 했습니다 다 먹고 또 시킬게요" data-nickname="J2NEzi3cP">
+                              <div class="swiper-zoom-container">
+                                 <img src="https://img.tongtongmall.net/assets/upload/reviews/6626868162769.jpg" style="width: 100%; height: 300px; object-fit: fill;" alt="">
+                              </div>
+                           </div>
+                           -->
+                        </div>
+
+                        <div class="cimg_detail_txt">스틱 형식이라 바를 때 번거롭지 않고 답답하거나 끈적임도 없어서 자주 사용할 것 같아용!</div>
+                     </div>
+                     <div class="mod_slider_mask"></div>
+                     <div id="swiper-content-all"></div>
+                  </div>
+               </div>
+               <div id="review-content">
+                  <div class="row">
+                     <div id="review-body" class="mt-24">
+                        <div class="row">
+                           <div class="col-xs-6">
+                              <div class="font-999-12">최*정</div>
+                              <div class="font-999-12 mt-9">2024.05.13 11:38:39</div>
+                           </div>
+                           <div class="col-xs-6">
+                              <div class="ratebox-3 fr" data-id="1" data-rating="5"></div>
+                           </div>
+                        </div>
+                        <div class="font-333-12 mt-15 mb-10 line-height-2" style="word-break: break-all;">스틱 형식이라 바를 때
+                           번거롭지 않고 답답하거나 끈적임도 없어서 자주 사용할 것 같아용!</div>
+                        <div class="review-image" class="border-btm pb-3">
+                           <div class="row">
+                              <div class="col-xs-2" onclick="setReivewDetailImage(this, '0');">
+                                 <img class="product-review-thumb-2"
+                                    src="https://img.tongtongmall.net/assets/upload/reviews/4603853698886533120.jpg"
+                                    alt="">
+                              </div>
+                           </div>
+                           <div class="review-image-detail" style="display: none;">
+                              <div class="swiper-container mod_slider_viewer" style="margin-left: 0px;">
+                                 <h4 class="cimg_detail_tit">☀시카, 비타민 함유, 주름개선, 미백·영양 공급 SPF50+/PA++++☀ 통통선스틱</h4>
+
+                                 <div style="width:100%; position:absolute; top: 50px; margin-left:10px;">
+                                    <div class="review-content" style="display:flex; width:100%;  flex-direction:row;">
+                                       <div class="review-name" style="margin-right:10px;">최*정</div>
+                                       <div class="review-content-rate-panel review-pannel"
+                                          style="display: flex; flex-direction: row;">
+                                          <div class="ratebox-2 raterater-wrapper" data-id="1" data-rating="5">
+                                             <div class="raterater-layer raterater-bg-layer"
+                                                style="width: 18px; height: 15px;"><i class="fa fa-star"
+                                                   style="left: 0px; font-size: 15px;"></i></div>
+                                             <div class="raterater-layer raterater-hover-layer"
+                                                style="width: 18px; height: 15px;"><i class="fa fa-star"
+                                                   style="left: 0px; font-size: 15px;"></i></div>
+                                             <div class="raterater-layer raterater-rating-layer"
+                                                style="width: 18px; height: 15px;"><i class="fa fa-star"
+                                                   style="left: 0px; font-size: 15px; width: 14px;"></i></div>
+                                             <div class="raterater-layer raterater-outline-layer"
+                                                style="width: 18px; height: 15px;"><i class="fa fa-star-o"
+                                                   style="left: 0px; font-size: 15px;"></i></div>
+                                             <div class="raterater-layer raterater-cover-layer"
+                                                style="width: 18px; height: 15px;"></div>
+                                          </div>
+                                          <div class="ratebox-txt">5</div>
+                                          <div class="cdate" style="margin-left:10px;">2024-05-13 11:38:39</div>
+                                       </div>
+
+                                    </div>
+                                 </div>
+                                 <img class="close_btn pointer" onclick="setReivewDetailImag_out();"
+                                    src="https://www.tongtongmall.net/assets/user/images/popup_close.png" alt=""
+                                    style="top: 10px; width: 30px; height: 30px; right: 10px; position: absolute; z-index: 1000000;">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div class="swiper-zoom-container">
+                                          <img
+                                             src="https://img.tongtongmall.net/assets/upload/reviews/4603853698886533120.jpg"
+                                             style="width: 100%; height: 360px; object-fit: fill;" alt=""
+                                             onclick="setReivewDetailImag_out();">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="cimg_detail_txt" style="margin-top: 20px;">스틱 형식이라 바를 때 번거롭지 않고 답답하거나 끈적임도
+                                    없어서 자주 사용할 것 같아용!</div>
+                              </div>
+
+                              <div class="mod_slider_mask"></div>
+                              <div id="swiper-content-review"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="review-commnet">
+                        <div id="comment-content">
+                        </div>
+                     </div>
+                     <div id="report-block" class="row mt-5">
+                        <div class="fr">
+                           <span class="font-222-13 pointer" onclick="setReport('372');">신고하기</span>
+                           <span class="font-222-13">&nbsp;|&nbsp;</span>
+                           <span class="font-222-13 pointer"
+                              onclick="showDialogSetting('후기를 차단하시겠습니까?', '', '취소', '확인', 'closeDialog();', 'setBlock(372, 0);');">차단하기</span>
+                        </div>
+                     </div>
+                     <div id="review-body" class="mt-24">
+                        <div class="row">
+                           <div class="col-xs-6">
+                              <div class="font-999-12">김*텔</div>
+                              <div class="font-999-12 mt-9">2024.05.09 09:02:31</div>
+                           </div>
+                           <div class="col-xs-6">
+                              <div class="ratebox-3 fr" data-id="1" data-rating="5"></div>
+                           </div>
+                        </div>
+                        <div class="font-333-12 mt-15 mb-10 line-height-2" style="word-break: break-all;">골프하는 친구 선물했는데
+                           어디서든 쓰기 간편하고 하얗게 뜨는 현상이 없다고 좋아하네요!!</div>
+                        <div class="review-image" class="border-btm pb-3">
+                           <div class="row">
+                              <div class="col-xs-2" onclick="setReivewDetailImage(this, '0');">
+                                 <img class="product-review-thumb-2"
+                                    src="https://img.tongtongmall.net/assets/upload/reviews/3777746963185795072.jpg"
+                                    alt="">
+                              </div>
+                           </div>
+                           <div class="review-image-detail" style="display: none;">
+                              <div class="swiper-container mod_slider_viewer" style="margin-left: 0px;">
+                                 <h4 class="cimg_detail_tit">☀시카, 비타민 함유, 주름개선, 미백·영양 공급 SPF50+/PA++++☀ 통통선스틱</h4>
+
+                                 <div style="width:100%; position:absolute; top: 50px; margin-left:10px;">
+                                    <div class="review-content" style="display:flex; width:100%;  flex-direction:row;">
+                                       <div class="review-name" style="margin-right:10px;">김*텔</div>
+                                       <div class="review-content-rate-panel review-pannel"
+                                          style="display: flex; flex-direction: row;">
+                                          <div class="ratebox-2 raterater-wrapper" data-id="1" data-rating="5">
+                                             <div class="raterater-layer raterater-bg-layer"
+                                                style="width: 18px; height: 15px;"><i class="fa fa-star"
+                                                   style="left: 0px; font-size: 15px;"></i></div>
+                                             <div class="raterater-layer raterater-hover-layer"
+                                                style="width: 18px; height: 15px;"><i class="fa fa-star"
+                                                   style="left: 0px; font-size: 15px;"></i></div>
+                                             <div class="raterater-layer raterater-rating-layer"
+                                                style="width: 18px; height: 15px;"><i class="fa fa-star"
+                                                   style="left: 0px; font-size: 15px; width: 14px;"></i></div>
+                                             <div class="raterater-layer raterater-outline-layer"
+                                                style="width: 18px; height: 15px;"><i class="fa fa-star-o"
+                                                   style="left: 0px; font-size: 15px;"></i></div>
+                                             <div class="raterater-layer raterater-cover-layer"
+                                                style="width: 18px; height: 15px;"></div>
+                                          </div>
+                                          <div class="ratebox-txt">5</div>
+                                          <div class="cdate" style="margin-left:10px;">2024-05-13 11:38:39</div>
+                                       </div>
+
+                                    </div>
+                                 </div>
+                                 <img class="close_btn pointer" onclick="setReivewDetailImag_out();"
+                                    src="https://www.tongtongmall.net/assets/user/images/popup_close.png" alt=""
+                                    style="top: 10px; width: 30px; height: 30px; right: 10px; position: absolute; z-index: 1000000;">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div class="swiper-zoom-container">
+                                          <img
+                                             src="https://img.tongtongmall.net/assets/upload/reviews/3777746963185795072.jpg"
+                                             style="width: 100%; height: 360px; object-fit: fill;" alt=""
+                                             onclick="setReivewDetailImag_out();">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="cimg_detail_txt" style="margin-top: 20px;">스틱 형식이라 바를 때 번거롭지 않고 답답하거나 끈적임도
+                                    없어서 자주 사용할 것 같아용!</div>
+                              </div>
+
+                              <div class="mod_slider_mask"></div>
+                              <div id="swiper-content-review"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="review-commnet">
+                        <div id="comment-content">
+                        </div>
+                     </div>
+                     <div id="report-block" class="row mt-5">
+                        <div class="fr">
+                           <span class="font-222-13 pointer" onclick="setReport('344');">신고하기</span>
+                           <span class="font-222-13">&nbsp;|&nbsp;</span>
+                           <span class="font-222-13 pointer"
+                              onclick="showDialogSetting('후기를 차단하시겠습니까?', '', '취소', '확인', 'closeDialog();', 'setBlock(344, 0);');">차단하기</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="more-content" class="border-btm text-center" style="padding-top: 15px; padding-bottom: 30px;">
+               <div id="more-view" style="display: none;">
+                  <div class="font-222-12 pointer" onclick="setViewMoreReview('18359');" style="display: inline-block;">
+                     후기 더보기</div>
+                  <img class="ml-6 pointer" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt=""
+                     style="width: 9px; height: 5px;" onclick="setViewMoreReview('18359');">
+                  &nbsp;&nbsp; | &nbsp;&nbsp;
+                  <div class="font-222-12 pointer" onclick="setViewMoreCloseReview('18359');"
+                     style="display: inline-block;">더보기 닫기</div>
+                  <img class="ml-6 pointer" src="https://www.tongtongmall.net/assets/user/images/ico_up.png" alt=""
+                     style="width: 9px; height: 5px;" onclick="setViewMoreCloseReview('18359');">
+               </div>
+            </div>
+         </div>
+         <!-- 상품문의 -->
+         <div id="product-question" style="padding-top: 30px; padding-bottom: 18px; display: none;">
+            <div class="pad-default">
+               <div id="question-item">
+                  <div class="row">
+                     <div id="question-count" class="font-222-15 font-weight">상품문의 <span class="font-999-12">총</span>
+                        <span class="font-default-12" id="quest-count">0</span><span class="font-999-12">건</span>
+                     </div>
+                  </div>
+               </div>
+               <div id="btn-quest" class="font-default-12 text-center pt-11 pb-11 mt-15 pointer mb-15"
+                  style="width: 100%; height: 36px; border: 1px solid #de322a;"
+                  onclick="window.location.href='https://www.tongtongmall.net/product_question?productid=18359'">상품문의 쓰기
+               </div>
+               <div class="row pb-10 border-btm">
+                  <div id="secret" class="fl mt-7">
+                     <div class="row">
+                        <div class="fr font-222-12 mt-2 ml-6">비밀글 제외</div>
+                        <div class="fl">
+                           <input id="check-security" type="checkbox" name="" value=""
+                              onclick="setSecurity(this, '18359', '651');" autocomplete="off">
+                           <label for="check-security"></label>
+                        </div>
+                     </div>
+                  </div>
+                  <select class="fr" name="" style="width: 30%; height: 31px; padding: 0px 0px 0px 10px;"
+                     onchange="setQuestionType(this, '18359', '651');">
+                     <option value="">문의유형</option>
+                     <option value="490">상품</option>
+                     <option value="491">배송</option>
+                     <option value="492">취소</option>
+                     <option value="493">교환</option>
+                     <option value="494">기타</option>
+                  </select>
+               </div>
+               <div id="question-content">
+               </div>
+            </div>
+            <div id="more-quest-content" class="border-btm text-center"
+               style="padding-top: 15px; padding-bottom: 30px;">
+            </div>
+         </div>
+      </div>
+
+      <!-- 구매하기 버튼 -->
+      <div class="row pos-fix back-default buy-fix">
+         <div style=" display: flex; align-items: center; justify-content: center">
+            <img class="pointer" src="./images/icon/ic_dip_off.png" alt="좋아요" style="width: 28px; height: auto;margin-right: 16px;"
+               onclick="setLikeProduct(this, '18359', '0');">
+         </div>
+         <div style="width: 85%;max-width: 500px;  display: flex; align-items: center; justify-content: center">
+            <!-- 일반상품이면 -->
+            <div class="btn-45-none text-center active pointer" id="buy_btn"
+               onclick="setBuyingOption('show', '508');">
+               구매하기</div>
+         </div>
+      </div>
+
+      <!-- 상품옵션 선택섹션 -->
+      <div id="fake-bg" onclick="setBuyingOption('close', '508');"></div>
+      <div class="option-tool option-tool-rnl">
+         <div class="option-content-rnl">
+            <!-- 상품선택 -->
+            <div id="prod-select-rnl">
+               <h4>상품구매하기</h4>
+               <div class="option-kind">
+                  <div class="product-select pointer" onclick="setProdSelect(this);">
+                     <div class="row">
+                        <!-- 옵션상품이 있다면 상품선택해서 진행 -->
+                        <!-- 옵션상품이 없는 단일상품이라면 상품이 선택된 상태로... -->
+                        <div class="fl font-222-13 title-width" id="prod-select-title" style="width: 93%;">상품을 선택해주세요.
+                        </div>
+                        <img class="fr mt-5" src="https://www.tongtongmall.net/assets/user/images/ico_down.png"
+                           style="width: 12px; height: 6px;" alt="">
+                     </div>
+                  </div>
+                  <div id="prod-select-list" style="display: none;">
+                     <div class="product-select pointer"
+                        onclick="setProdContent(this, '18360', '11117', '', '통통선스틱 20g, 1개', '14900', '353', '0', '3', '2299', '508');"
+                        style="border-top: none;">
+                        <div class="row">
+                           <!-- 옵션상품이 없다면 상품가격 표시 있다면 가격표시하지 않기 -->
+                           <div class="fl font-222-13 title-width" style="width: 60%;">통통선스틱 20g, 8개</div>
+                           <!-- 옵션상품이 없다면 상품가격 표시 있다면 가격표시하지 않기 -->
+                           <div class="font-222-13 fr" id="prod-select-price">14,900원</div>
+                        </div>
+                     </div>
+                     <div class="product-select pointer"
+                        onclick="setProdContent(this, '18365', '11120', '', '통통선스틱 20g, 2개(1+1)', '22900', '353', '0', '3', '2293', '508');"
+                        style="border-top: none;">
+                        <div class="row">
+                           <!-- 옵션상품이 없다면 상품가격 표시 있다면 가격표시하지 않기 -->
+                           <div class="fl font-222-13 title-width" style="width: 60%;">통통선스틱 20g, 2개(1+1)</div>
+                           <!-- 옵션상품이 없다면 상품가격 표시 있다면 가격표시하지 않기 -->
+                           <div class="font-222-13 fr" id="prod-select-price">22,900원</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="option-kind">
+                  <div class="product-select pointer" onclick="setProdSelect(this);">
+                     <div class="row">
+                        <!-- 옵션상품이 있다면 상품선택해서 진행 -->
+                        <!-- 옵션상품이 없는 단일상품이라면 상품이 선택된 상태로... -->
+                        <div class="fl font-222-13 title-width" id="prod-select-title" style="width: 93%;">쿠폰 사용하기
+                        </div>
+                        <img class="fr mt-5" src="https://www.tongtongmall.net/assets/user/images/ico_down.png"
+                           style="width: 12px; height: 6px;" alt="">
+                     </div>
+                  </div>
+                  <div id="prod-select-list" style="display: none;">
+                     <div class="product-select pointer"
+                        onclick="setProdContent(this, '18360', '11117', '', '통통선스틱 20g, 1개', '14900', '353', '0', '3', '2299', '508');"
+                        style="border-top: none;">
+                        <div class="row">
+                           <!-- 옵션상품이 없다면 상품가격 표시 있다면 가격표시하지 않기 -->
+                           <div class="fl font-222-13 title-width" style="width: 60%;">Welcome coupon</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- 상품정보 부분 -->
+            <div>
+               <div id="product-select-result-rnl">
+                  <div class="prod-control-rnl">
+                     <div>
+                        <div class="row item-name-rnl">
+                           <div>통통스킨로션 300ml, 1개</div>
+                        </div>
+                        <div class="row">
+                           <div class="prod-count">
+                              <div class="tag-minuse pointer"
+                                 onclick="setProdCount(this, '7450', '353', '0', '2299', 'minuse');">-</div>
+                              <div class="tag-number" style="padding: 0;">
+                                 <input id="tag-number" class="text-center" type="text" name="" value="1"
+                                    style="border: none; height: 20px; padding: 0;"
+                                    onkeyup="setInputCount(this, '14900', '353', '0', '2299');">
+                              </div>
+                              <div class="tag-plus pointer"
+                                 onclick="setProdCount(this, '7450', '353', '0', '2299', 'plus');">+</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="row cancel-rnl">
+                           <img class="fr pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel_1.png" alt="취소" onclick="setCancelProdItem(this);">
+                        </div>
+                        <div class="row item-price-rnl">
+                           <div>
+                              <span>15,900원</span>
+                           </div>
+                        </div>
+                        <div class="row ttco-price-rnl">
+                           <div>
+                              <span>7,950원</span>
+                              <span class="s_font">(7,950TTCO)</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="product-select-result-rnl">
+                  <div class="prod-control-rnl">
+                     <div class="row item-name-rnl">
+                        <div>WELCOME COUPON</div>
+                     </div>
+
+                     <div>
+                        <div class="row cancel-rnl">
+                           <img class="fr pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel_1.png" alt="취소" onclick="setCancelProdItem(this);">
+                        </div>
+                        <div class="row coupon-price-rnl">
+                           <div>
+                              <span>-795원</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- 구매하기/장바구니 버튼 섹션 -->
+            <div class="row pos-ab-rnl">
+               <div class="total-price-rnl">
+                  <h5>총 결제금액</h5>
+                  <div class="price-rnl">
+                     <div>
+                        <span>7,155</span>
+                        <span>원</span>
+                     </div>
+                     <span class="delivery-rnl">(구독회원 무료배송)</span>
+                  </div>
+               </div>
+               <!-- 일반상품인 경우 -->
+               <div class="btn-section-rnl">
+                  <div class="col-xs-6">
+                     <div class="pointer"
+                        style="width: 100%; height: 36px; background-color: #d2d2d2;border-radius: 10px;margin: 0 auto;line-height: 36px;"
+                        onclick="setAddCart('18359', '508');">
+                        <div class="text-center font-weight" style="display: inline-block;color: #000;font-size: 14px;">
+                           장바구니</div>
+                     </div>
+                  </div>
+                  <div class="col-xs-6">
+                     <div class="font-weight pointer"
+                        style="width: 100%; height: 36px; background-color: #d1342a;border-radius: 10px;margin: 0 auto; line-height: 36px;color: #fff;font-size: 14px;"
+                        onclick="setPreBuying('296', '109', '0', '0', '0', '0', '503', '18359');">구매하기</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="event-coin-res"></div>
+
+      <script type="text/javascript">
+
+         var default_url = "https://www.tongtongmall.net/";
+         if ($('#product-detail').data('userid') == '' && $('#product-detail').data('productid') == '18081') {
+            showDialogWarning('판매자에게 문의해주세요.<BR>02-2128-2600', '', '', '확인', 'redirectLogin(default_url)');
+         }
+
+         $('.ratebox-1').raterater({
+            starWidth: 23,
+            spaceWidth: 5,
+            numStars: 5,
+            isStatic: true,
+            step: false
+         });
+         $('.ratebox-2').raterater({
+            starWidth: 14,
+            spaceWidth: 4,
+            numStars: 5,
+            isStatic: true,
+            step: false
+         });
+         $('.ratebox-3').raterater({
+            starWidth: 16,
+            spaceWidth: 5,
+            numStars: 5,
+            isStatic: true,
+            step: false
+         });
+
+
+         //옵션 선택시 배경 renewal
+         $('#buy_btn').click(function () {
+            $('#fake-bg').css("display", "block")
+         });
+         $('#fake-bg').click(function () {
+            $('#fake-bg').css("display", "none")
+         });
+
+         loadJavascript("https://www.tongtongmall.net/assets/user/js/product/product_detail.js?ver=1715652784", null);
+
+      </script>

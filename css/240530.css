@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/*popup*/
+.dialog-normal.dialog-ttco, .dialog-normal.dialog-main-popup{width: 100%; 
+    position: fixed;
+    display: none;
+    top: 22%;
+    z-index: 4000;
+    width: 80%;
+    max-width: 500px;
+    background: none;
+}
+.dialog-ttco .dialog-ttco-top{position: relative; width: 100%; height: 190px;}
+.dialog-ttco .dialog-ttco-top > p{
+    color:#fff;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left:53%;
+    top: 50px;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-bottom: 0px;
+}
+.dialog-ttco .dialog-ttco-top > img.dtt_l{
+position: absolute; left:-30px; width: 200px; }
+.dialog-ttco .dialog-ttco-top > img.dtt_r{
+position: absolute; right:-30px;width: 200px; }
+
+
+.dialog-ttco .dialog-ttco-mid{position: relative; height: 100px;}
+.dialog-ttco .dialog-ttco-mid > .dtm_price{color:#fff; font-size: 3em; position:absolute; left:260px; z-index:10000; top:20%; transform: translate(-50%); font-weight: bold;}
+.dialog-ttco .dialog-ttco-mid > img{position: absolute;left:50%; transform: translateX(-50%); width: 300px; }
+.dialog-ttco-bottom{width: 100%;}
+
+.dialog-ttco-bottom > p{color:#fff; font-size: 2em; margin-bottom: 0px; text-align: center;}
+.dialog-ttco-bottom > p.green{color:#16CAB7; font-weight: bold; margin-bottom: 5px;}
+.dialog-ttco-bottom > p.purple{color:#c8abff;font-weight: bold; margin-bottom: 5px; }
+
+.dialog-main-popup{text-align: center;}
+.dialog-main-popup h4{color:#fff; font-size: 2.5em; padding-left: 30px;}
+.dialog-main-popup > p{padding-left: 30px; color:#fff; font-size: 2em; margin-top: 10px;}
+
+.dialog-main-popup .dmp_mid{position: relative; width: 100%; height: 190px;}
+.dialog-main-popup .dmp_mid > img{width: 100%;    position: absolute; left:50%; transform: translateX(-50%);}
+
+.dialog-main-popup .dmp_mid > div{position: absolute; top:50%; left:53%; transform: translate(-50%, -50%);}
+.dialog-main-popup .dmp_mid > div > p{color:#fff; font-size: 2em;}
+.dialog-main-popup .dmp_mid > div > p.green{color:#16CAB7; font-weight: bold;}
+
+.dialog-main-popup .dmp_bottom{display: flex; flex-direction: column; max-width: 300px; margin:0 auto; padding-left: 30px;}
+.dialog-main-popup .dmp_bottom input[type="button"]{height: 40px; font-size: 1.5em; background: #e60012; color:#fff; box-shadow: none; border:none; border-radius: 4px; line-height: 40px; cursor: pointer;}
+
+
+/*리뷰쓰기 버튼 위치*/
+.review-btn-r{position: absolute; right:25px;}
+
+/*쿠폰영역 수정*/
+#coupon-content{padding:15px 0px;}
+
+
+/*옵션 가격 표시*/
+.ttco-contant, .ttc-contant{display: flex; flex-direction: row; align-items: center; margin-bottom: 5px;}
+.ttc-name, .ttco-name{color:#1E899A !important; font-weight: bold; font-size: 1.5em !important; }
+.ttc-count-wrap, .ttco-count-wrap{display: flex; color: #1E899A !important;; font-weight: bold; font-size: 1.5em !important; }
+.ttc_sale_badge, .ttco_sale_badge{background: #e60012; color:#fff; padding:0px 6px; border-radius: 3px; margin-left: 5px; font-size: .9em;}
+
+.payment-ttco-badge{background: #1E899A; color:#fff; padding:5px 10px; border-radius: 3px; margin-left: 5px; font-size: 1.2em; font-weight: bold;}
+
+/*구매후기 썸네일*/
+.review-all-container{width: 630px; overflow-x: hidden; justify-content: flex-end;}
+.detail-container .prod-tab-review .review-count-content .review-all-container .review-item{width: 124px; min-width: 124px; min-height: 124px;}
+
+/*etc*/
+.mb-30{margin-bottom: 30px !important;}
+#mySidenav::-webkit-scrollbar{display: none !important; }
+.sidenav{z-index: 1002;}
+
+/*예상배송일*/
+.shipping-delivery-date{color:#e60012; font-weight: bold; display: flex; align-items: center; font-size: 1em;}
+.shipping-delivery-date input[type="date"]:disabled{border:none; font-size: 1em; width: 70px; padding:0px; background: none;}
+
+.shipping-delivery-date input[type="date"]::-webkit-calendar-picker-indicator,
+.shipping-delivery-date input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*240530*/
+.ttco-content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    color:#1E899A ; font-weight: bold; font-size: 1.5em;
+}
+.events-detail .events-detail-content .event-product .event-product-item img.ttco-content-img,
+.ttco-content > img{width: 15px; height: 15px;margin-right: 2px;}
+
+.ttco-count{margin:0 2px; color:#1E899A ; font-size: 1.02em;}
+.ttco-percent{color:#fff !important; text-decoration: none !important;}
+.ttco-percent-badge {background: #cc0000; color:#fff; font-size: .8em; border-radius: 16px; padding:2px 5px; font-weight: normal;} 
+
+.ttc-sale-txt{color:#cc0000; font-weight: bold; font-size: 1.3em; margin-bottom: 4px;}
+
+/*custom.css*/
+.my-info-content .product-content .product-item{height: 100%;}
+.my-info-content .product-content .product-item{padding:20px;}
+
+.product-detail .detail-container .left .goods-content img.ttco-content-img{width: 15px; height: 15px;}
+
+
+/*common.css*/
+.dialog-normal{left:50%; margin-left: 0px; transform: translateX(-50%);}
+
+
+/*마이페이지 ttr 영역*/
+.my-info .wallet-container .ttr-container{    
+    width: 268px;
+    height: 100%;
+    font-size: 16px;
+    color: #0ba7a3;
+    border: 1px solid #3cb9b5;
+    display: flex;
+    margin-right: 5px;}
+.my-info .wallet-container .ttr-container .pic{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-info .wallet-container .ttr-container .pic img{
+    width: 60px; height: 60px;
+}
+.my-info .wallet-container .ttr-container .txt-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.my-info .wallet-container .ttr-container .txt-content .ttr-coin{
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+
+.ttco-link{font-size: 13px; border:1px solid #e60012; color:#e60012; padding:2px;  font-weight: bold;}
+.ttco-link:hover{background: #e60012; cursor: pointer; color:#fff;  }
+
+.font-222-16t{font-size:16px !important; color:#222222 !important; font-weight: normal !important;  }
+.font-red-16t{font-size:16px !important; color:#e60012 !important; font-weight: normal !important;  }
+.font-222-18{font-size:18px !important; color:#222222 !important; font-weight: normal !important; }
+.text-through{text-decoration: line-through ;}
+
+.font-blue-18{font-size:18px !important; color:#2694d0 !important; font-weight: normal !important;  }
+.font-red-21{font-size: 21px !important; color:#e60012;}
+
+.new_price_cont{margin-bottom: 10px; padding: 0px; margin-top: 10px;}
+.new_price_total{ margin-bottom: 10px; padding: 0px;}
+
+.new_price_cont > div, .new_price_total{display: flex; justify-content: space-between; align-items: center;}
+
+.npc_divide{display: flex; justify-content: space-between;}
+
+
+
+@media screen and (max-width:480px){
+    .dialog-ttco .dialog-ttco-top{height: 150px;}
+    .dialog-ttco .dialog-ttco-top > p{font-size: 2em;}
+
+    .dialog-ttco .dialog-ttco-mid > img{left:50%;}
+    .dialog-ttco .dialog-ttco-mid > .dtm_price{font-size: 1.5em; top:25%;  left:155px;}
+
+    .dialog-ttco-bottom > p{padding-left: 0px; font-size: 1.3em;}
+
+ 
+    .dialog-main-popup h4{padding-left: 0px; font-size: 1.5em;}
+    .dialog-main-popup > p{padding-left: 0px; font-size: 1.2em;}
+
+    .dialog-main-popup .dmp_mid{height: 130px;}
+    .dialog-main-popup .dmp_mid > div{top: 40%;}
+    .dialog-main-popup .dmp_mid > div > p{font-size: 1.2em;}
+
+    .dialog-main-popup .dmp_bottom{padding-left: 0px;}
+    .dialog-main-popup .dmp_bottom{max-width: 200px;}
+    .dialog-main-popup .dmp_bottom input[type="button"]{font-size: 1em; }
+
+    .payment-ttco-badge{font-size: 1em; padding:0px 5px; display: inline-block;}
+    .product-detail .ttc-price{display: flex; align-items: center; font-family: 'Noto Sans KR';}
+    .ttc-name, .ttco-name{font-size: 1em !important;}
+    .ttc-count-wrap, .ttco-count-wrap{font-size: 1em !important;}
+
+    .ttc-count-wrap span{font-size: 1em;}
+
+    .shipping-delivery-date{font-size: 0.9em;}
+    .shipping-delivery-date input[type="date"]:disabled{width: 85px;}
+
+    .product-detail .ctc-price{font-weight: bold; font-family: 'Noto Sans KR';}
+
+    .ttc_sale_badge, .ttco_sale_badge{height: 18px;}
+
+
+    .ttco-content, .ttc-sale-txt{font-size: 13px;}
+    .ttco-content > img, .ttco-content > img.ttco-content-img{width: 15px !important;}
+
+    .main-img{border-radius: 0px;}
+    #banner_m2_sub .swiper-wrapper .swiper-slide img{display: block;
+     width: 100%; height: 100%; object-fit: contain;} 
+    
+    .commom_pic{position: relative;}
+    .commom_pic .big-like-icon{right:10px; bottom:10px; position: absolute;}
+    .commom_pic .big-like-icon img{width: 30px;}
+
+
+
+    .dialog-ttco .dialog-ttco-top > img.dtt_l{
+        width: 120px;
+    }
+    .dialog-ttco .dialog-ttco-top > img.dtt_r{
+        width: 120px;
+    }
+    .dialog-ttco .dialog-ttco-top > p{left:50%;}
+}
+
+
+
+

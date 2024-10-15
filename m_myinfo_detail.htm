@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Script-Type" content="text/javascript">
+   <meta http-equiv="Content-Style-Type" content="text/css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="apple-mobile-web-app-title" content="TONGTONGMALL">
+   <meta name="title" content="합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.">
+
+            <meta id="meta-desc" name="description" content="통통생활 세탁세제 1.7L 1+1">
+      <meta id="meta-keyword" name="keywords" content="통통생활,세탁세제,1.7L,1+1">
+      <meta property="og:description" content="통통생활 세탁세제 1.7L 1+1">
+   
+   <meta name="robots" content="index,follow">
+   <meta property="og:title" content="통통몰 :: 합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.tongtongmall.net/">
+   <meta property="og:image" content="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+   <title>통통몰 :: 합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.</title>
+   <link rel="shortcut icon" href="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/common/component/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/side_menu.css?v=1687324559" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/bottom_tab_bar.css?v=1687324559" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/common.css?ver=1687324559" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/parameters.css?ver=1.0" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/custom.css?ver=1687324559" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/toast.css?ver=1.0" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/raterater.css?ver=1.0" />
+   <!-- <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/m_ttmall_main_style.css"> -->
+   <link rel="stylesheet" href="./css/m_ttmall_main_style.css">
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.ui.touch-punch.min.js"></script>
+   <script src="https://tomato.etomato.com/bootstrap.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.touchSwipe.min.js"></script>
+   <script src="https://tomato.etomato.com/tomatopay/swiper.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.cookie.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.22.0/load-image.all.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/lazy/jquery.lazyload.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/exif.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment-timezone-with-data.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/raterater.jquery.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/Winwheel.js"></script>
+   <script src="https://tomato.etomato.com/crypto-js.min.js"></script>
+
+         <script src="https://tomato.etomato.com/tomatopay/tomato_pay_20220420.js?v=1687324559"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/utility.js?ver=1687324559"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/loadjavascript.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/toast.js"></script>
+
+   <meta name="naver-site-verification" content="939ab956fced0f816c38d1969a807cb2c97365a4" />
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154704959-1"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/m_main_new.js?ver=1687324559"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-154704959-1');
+   </script>
+   <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+   <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "11410ee1ab15bb";
+      if (window.wcs) {
+         wcs_do();
+      }
+   </script>
+</head>
+
+<body style="min-width: 320px;">
+   <div id="spinner_overay" style="display: block;">
+      <div class="spinner"></div>
+   </div>
+   <a href="javascript: setViewTop();" class="btn-top"><img src="https://www.tongtongmall.net/assets/user/images/btn_top.png" style="width: 45px; height: 45px;" alt=""></a>
+   <div class="dialog-overlay" onclick="closeDialog();"></div>
+   <div class="dialog-overlay-address" onclick="closeDialogAddress();"></div>
+   <div class="dialog-overlay-shipping" onclick="closeDialogShipping();"></div>
+   <!-- 일반다이얼로그(통통몰) -->
+   <div class="dialog-normal">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn"></div>
+      </div>
+   </div>
+   <!-- 일반다이얼로그(통통마일) -->
+   <div class="dialog-normal-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn-gtc"></div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통몰-네/아니오) -->
+   <div class="dialog-setting">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;"></div>
+            <div class="btn-1 back-0 fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통마일-네/아니오)  -->
+   <div class="dialog-setting-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;"></div>
+            <div class="btn-1 back-gtc fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통몰) -->
+   <div class="dialog-cart">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;">쇼핑 계속하기</div>
+            <div class="btn-1 back-0 fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통마일) -->
+   <div class="dialog-cart-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_gtc_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;">쇼핑 계속하기</div>
+            <div class="btn-1 back-gtc fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 배송지설정 다이얼로그 -->
+   <div class="dialog-address">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogAddress();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content" style="height: 100%;">
+         <div id="wrap" style="display: none; width: 100%; height: 80%; margin: 5px 0; position: relative;"></div>
+      </div>
+   </div>
+   <!-- 배송정보 다이얼로그 -->
+   <div class="dialog-shipping">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogShipping();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content pt-9">
+         <div class="font-999-12 mb-9">수령인</div>
+         <div class="font-222-12 mb-21" id="name"></div>
+         <div class="font-999-12 mb-9">연락처</div>
+         <div class="font-222-12 mb-21" id="phone"></div>
+         <div class="font-999-12 mb-9">배송지</div>
+         <div class="font-222-12 mb-21 line-height-1" id="address"></div>
+         <div class="font-999-12 mb-9">배송메모</div>
+         <div class="font-222-12" id="memo" style="padding-bottom: 44px;"></div>
+      </div>
+   </div>
+   <!-- 간편결제용 카드사 다이얼로그 -->
+   <div class="dialog-card">
+      <div style="height: 100%;">
+         <div class="dialog-header">
+            <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+         </div>
+         <div class="dialog-title" style="height: 81%; overflow-y: auto;">
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('비씨', '01');">비씨카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('국민', '02');">국민카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('외환', '03');">외환카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('삼성', '04');">삼성카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('신한', '06');">신한카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('현대', '07');">현대카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('롯대', '08');">롯데카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('NH농협', '12');">NH농협카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('하나SK', '16');">하나SK카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('씨티', '11');">씨티카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('우리', '15');">우리카드</div>
+         </div>
+      </div>
+   </div>
+   <div class="dialog-coupon">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1">[쿠폰 <span class="disc-rate">10%</span>] 당첨!</div>
+         <div class="pos-re mt-15" style="padding: 0 45px; display: flex; justify-content: center;">
+            <img src="https://www.tongtongmall.net/assets/user/images/coupon_bg.png" alt="" style="width: 100%; height: 56px;">
+            <div class="pos-ab" style="top: 8px;">
+               <p class="mb-5" style="font-size: 12px; color: #666666; font-weight: bold;">행운 할인쿠폰</p>
+               <p class="mb-0 disc-rate" style="font-size: 18px; color: #de322a; font-weight: bold;">10%</p>
+            </div>
+         </div>
+      </div>
+      <div class="dialog-content">
+         <p style="font-size: 12px; color: #999999; padding: 0 30px;">* <span id="apply-part">전체 상품 사용가능</span></p>
+         <div class="text-center">
+            <p style="font-size: 13px; color: #555555; line-height: 1.3;">
+               하단
+               <span class="pointer" style="color: #de322a; text-decoration: underline;" onclick="window.location.replace('https://www.tongtongmall.net/coupon');">[쿠폰함 바로가기]</span>
+               에서<br>발급 받은 쿠폰을 확인 해보세요.
+            </p>
+            <p class="pb-15" style="font-size: 13px; color: #555555; line-height: 1.3;">오늘까지 사용 가능하며,<br>내일도 받으실 수 있어요.</p>
+         </div>
+      </div>
+   </div>
+   <!-- 통통몰앱으로 이동팝업 -->
+   <div class="run-app-view">
+      <div class="row mb-15">
+         <img class="fl" src="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark_2.png" alt="" style="width: 100%;">
+      </div>
+      <div class="row mb-15">
+         <img id="run-app" src="https://www.tongtongmall.net/assets/user/images/btn_app_redirect.png" alt="" style="width: 100%;" onclick="">
+      </div>
+      <div id="run-web" class="text-center font-weight" style="font-size: 15px; color: #fff; text-decoration: underline;" onclick="runWeb();">아니요, 웹에서 볼게요.</div>
+   </div>
+ 
+<div id="header-other" class="default-unit border-btm " >
+   <div class="row padding-15">
+      <div class="col-xs-12">
+                     <div class="col-xs-1">
+                                 <img class="pointer" src="https://www.tongtongmall.net/assets/user/images/ic_back.svg" onclick="goBack('https://www.tongtongmall.net/');" style="width: 18px; height: 16px;" alt="">
+                           </div>
+                           <div class="col-xs-8">
+                                       <div id="cat-title" class="font-222-18 font-weight ml-10">나의 정보</div>
+                                 </div>
+                                       <div class="col-xs-3 text-right">
+                                                               <img class="fr ml-10 pointer" src="https://www.tongtongmall.net/assets/user/images/header_ic2.svg" alt="" onclick="window.location.replace('https://www.tongtongmall.net/basket')" style="width: 24px; ">
+                                                                  <div class="ico-cart pointer" style="top: -10px;" onclick="window.location.replace('https://www.tongtongmall.net/basket')">1</div>
+                                          <img class="fr pointer" src="https://www.tongtongmall.net/assets/user/images/icon.png" alt="" style="width: 24px;" onclick="window.location.replace('https://www.tongtongmall.net/search')">
+
+
+                                 </div>
+                           </div>
+   </div>
+</div>
+<div id="myinfo-detail" class="default-unit">
+	<div id="myinfo-section" class="border-btm" style="padding: 18px 15px;">
+		<div class="font-222-15 font-weight">기본정보</div>
+	</div>
+	<div id="myinfo-content" class="padding-15 border-btm">
+		<div class="row mb-9">
+			<div class="col-xs-3 h-42" style="align-items: center; display: inline-flex; justify-content: flex-start;">
+				<div class="font-222-12 font-weight">아이디</div>
+			</div>
+			<div class="col-xs-9">
+				<input type="number" id="phone" name="" value="01023397559" placeholder="휴대폰번호" disabled>
+			</div>
+		</div>
+		<div class="row mb-9">
+			<div class="col-xs-3 h-42" style="align-items: center; display: inline-flex; justify-content: flex-start;">
+				<div class="font-222-12 font-weight">이름</div>
+			</div>
+			<div class="col-xs-9">
+				<input class="mb-9" type="text" id="username" name="" value="이민영" placeholder="이름">
+			</div>
+		</div>
+		<div class="row mb-9">
+			<div class="col-xs-3 h-42" style="align-items: center; display: inline-flex; justify-content: flex-start;">
+				<div class="font-222-12 font-weight">비밀번호</div>
+			</div>
+			<div class="col-xs-6">
+				<input class="mb-9" type="password" id="password" name="" value="2019ok26@@" placeholder="비밀번호" disabled>
+			</div>
+			<div class="col-xs-3">
+				<div class="font-222-12 border-all h-42 pt-13 text-center fr pointer" style="width: 90%;" onclick="window.location.href='https://www.tongtongmall.net/forgot_pwd?state=all&index=myinfo'">변경</div>
+			</div>
+		</div>
+	</div>
+	<div class="back-line"></div>
+	<div id="delivery-section" class="border-btm" style="padding: 18px 15px;">
+		<div class="row">
+			<div class="font-222-15 font-weight fl">배송지 관리</div>
+							<div class="font-default-13 mt-2 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_setting'">배송지 변경 ></div>
+					</div>
+					<div id="delivery" class="border-all mt-15 padding-15">
+				<div class="font-222-15 mb-10">이민영</div>
+				<div class="font-999-12 mb-6">010-2339-7559</div>
+				<div class="font-222-12 mb-5">[10073]</div>
+				<div class="font-222-12">경기 김포시 김포한강11로 310</div>
+			</div>
+			</div>
+	<div class="back-line"></div>
+	<div id="delivery-kind" style="padding: 18px 15px;">
+		<div class="font-222-15 font-weight mb-24">개인통관고유부호 관리</div>
+		<div class="font-222-12 font-weight mb-9">개인통관고유부호란?</div>
+		<div class="font-777-12 line-height-1 mb-21">개인 식별을 위한 고유번호로, 통관 시 주민등록번호 대시 사용할 수 있습니다. 관세청 전자통관시스템에서 신청 즉시 발급 가능하며 한 번 발급된 번호로 계속 사용 가능합니다.<br>
+			개인통관고유부호를 등록할 경우, 해외배송 상품 주문 시 개인통관고유부호 정보가 편리하게 자동 입력됩니다.</div>
+		<div class="row">
+							<div class="col-xs-12">
+					<div class="font-222-12 border-all h-42 pt-13 text-center pointer" onclick="window.location.href='https://www.tongtongmall.net/uniq_code'">등록하기</div>
+				</div>
+					</div>
+	</div>
+	<div class="back-line-border"></div>
+	<div id="policy-section" class="border-btm" style="padding: 18px 15px;">
+		<div class="font-222-15 font-weight">이용약관</div>
+	</div>
+	<div id="policy-content" style="padding-bottom: 60px;">
+		<div class="policy-title">
+			<div class="padding-15 border-btm">
+				<div class="row">
+					<div class="fl">
+						<input id="check-tongtong" type="checkbox" name="" value="" checked>
+						<label for="check-tongtong"></label>
+					</div>
+					<div class="font-222-12 fl ml-6 mt-2">통통몰 이용약관</div>
+					<img class="fr mt-6 pointer" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;" onclick="setViewPolicy(this);">
+				</div>
+			</div>
+			<div class="content padding-15 back-6 border-btm font-777-12" style="display: none;">
+				<strong>제1조 (목적)</strong><br>
+				이 약관은 주식회사 토마토트레이드 (전자상거래 사업자)이 운영하는 증권통 쇼핑몰 “통통몰” (이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스 (이하 "서비스"라 함)를 이용함에
+				있어 쇼핑몰과 이용자의 권리의무 및 책임사항을 규정함을 목적으로 합니다.<br>
+				※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」 <br><br>
+				<strong>제2조 (정의)</strong><br>
+				1. "몰"이란 주식회사 토마토트레이드가 재화 또는 용역(이하 "재화 등"이라 함)을 이용자에게 제공하기 위하여 휴대폰 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한
+				가상의 영업장을 말하며, 아울러 쇼핑몰을 운영하는 사업자의 의미로도 사용합니다.<br>
+				2. "이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.<br>
+				3. “회원”이라 함은 "몰"에 개인정보를 제공하여 회원등록을 한 자로서, "몰"의 정보를 지속적으로 제공받으며, "몰"이 제공하는 서비스를 계속적으로 이용할 수 있는 자를
+				말합니다.<br>
+				4. “비회원”이라 함은 회원등록을 하지 않고, 구매서비스를 제외한 "몰"이 제공하는 서비스를 이용하는 자를 말합니다.<br><br>
+				<strong>제3조 (약관 등의 명시와 설명 및 개정)</strong><br>
+				1. "몰"은 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호, 사업자등록번호, 통신판매업신고번호,
+				개인정보관리책임자 등을 이용자가 쉽게 알 수 있도록 쇼핑몰의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.<br>
+				2. "몰"은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회 배송책임 환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는 팝업화면
+				등을 제공하여 이용자의 확인을 구하여야 합니다.<br>
+				3. "몰"은 전자상거래 등에서의 소비자 보호에 관한 법률, 약관의 규제에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망 이용촉진 등에 관한 법률, 방문판매 등에 관한 법률,
+				소비자보호법 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.<br>
+				4. "몰"이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 몰의 초기화면 또는 공지사항에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다.<br>
+				5. 다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 "몰"은 개정 전 내용과 개정 후 내용을 명확하게 비교하여
+				이용자가 알기 쉽도록 표시합니다.<br>
+				6. “회원”은 변경된 약관에 동의하지 않을 권리가 있으며, 변경된 약관에 동의하지 않을 경우에는 서비스 이용을 중단하고 탈퇴를 요청할 수 있습니다. 다만, 이용자가 제 3항의 방법
+				등으로 별도 고지한 약관 개정 공지 기간 내에 “회사”에 개정 약관에 동의하지 않는다는 명시적인 의사표시를 하지 않는 경우 변경된 약관에 동의한 것으로 간주합니다.<br>
+				7. 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자 보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의
+				소비자보호지침 및 관계법령 또는 상관례에 따릅니다.<br><br>
+				<strong>제4조 (서비스의 제공 및 변경)</strong><br>
+				1. "몰"은 다음과 같은 업무를 수행합니다.<br>
+				① 재화 또는 용역에 대한 정보 제공 및 암호화폐를 통한 구매계약의 체결 <br>
+				② 판매자에게 구매계약이 체결된 재화 또는 용역의 배송 안내 <br>
+				③ 기타 "몰"이 정하는 업무 <br>
+				2. "몰"은 재화 또는 용역에 대한 제공 및 배송과 관련하여 판매자와 구매자, 배송업체, 금융기관 등과의 사이에 발생한 분쟁은 당사자들 간의 해결을 원칙으로 하며, "몰"은 어떠한
+				책임도 부담하지 않습니다. <br>
+				3. "몰"은 재화 또는 용역의 품절 또는 기술적 사양의 변경 등의 경우에는 판매자의 동의 없이 장차 체결되는 계약에 의해 제공할 재화 또는 용역의 내용을 변경할 수 있습니다. <br>
+				4. “몰”은 이용자의 구매금액, 횟수, 빈도 및 기타 이용실적 등을 토대로 이용자에게 소정의 암호화폐 또는 일정한 혜택을 부여할 수 있습니다. 해당 내용은 ”몰” 사이트 내에
+				게시합니다. <br>
+				5. “몰”은 제4항의 사유로 인하여 이용자가 입은 손해를 통화가치에 상응하는 암호화폐로 배상합니다. 다만, “몰”이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+				<br><br>
+				<strong>제5조 (서비스의 중단)</strong><br>
+				1. "몰"은 컴퓨터 등 정보통신설비의 보수점검교체 및 고장, 통신의 두절 등의 사유가 발생한 경우에는 서비스의 제공을 일시적으로 중단할 수 있습니다.<br>
+				2. "몰"은 제1항의 사유로 서비스의 제공이 일시적으로 중단됨으로 인하여 이용자 또는 제3자가 입은 손해에 대하여 통화가치에 상응하는 방식으로 배상합니다. 단, "몰"이 고의 또는
+				과실이 없음을 입증하는 경우에는 그러하지 아니합니다.<br>
+				3. 사업종목의 전환, 사업의 포기, 업체간의 통합 등의 이유로 서비스를 제공할 수 없게 되는 경우에는 "몰"은 제8조에 정한 방법으로 이용자에게 통지하고 당초 "몰"에서 제시한 조건에
+				따라 소비자에게 보상합니다. 다만, "몰"이 보상기준 등을 고지하지 아니한 경우에는 이용자들의 포인트를 "몰"에서 통용되는 통화가치에 상응하는 현물 또는 현금으로 이용자에게
+				지급합니다.<br><br>
+				<strong>제6조 (회원가입)</strong><br>
+				1. 이용자는 "몰"이 정한 가입 양식에 따라 회원정보를 기입한 후 이 약관에 동의한다는 의사표시를 함으로서 회원가입을 신청합니다.<br>
+				2. "몰"은 제1항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각호에 해당하지 않는 한 회원으로 등록합니다.<br>
+				① 가입신청자가 이 약관 제7조제3항에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 다만 제7조제3항에 의한 회원자격 상실 후 6개월이 경과한 자로서 "몰"의 회원재가입 승낙을 얻은
+				경우에는 예외로 한다.<br>
+				② 이용자 본인의 실명으로 등록하지 않고 타인의 명의를 도용하거나 등록 내용에 허위, 기재누락, 오기가 있는 경우 <br>
+				③ 기타 회원으로 등록하는 것이 "몰"의 기술상 현저히 지장이 있다고 판단되는 경우 <br>
+				3. “몰”은 서비스 관련 설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우에는 승낙을 유보할 수 있습니다. <br>
+				4. 회원가입계약의 성립시기는 "몰"의 승낙이 회원에게 도달한 시점으로 합니다.<br>
+				5. 회원은 제15조 제1항에 의한 등록사항에 변경이 있는 경우, 즉시 전자우편 기타 방법으로 "몰"에 대하여 그 변경사항을 알려야 합니다.<br><br>
+				<strong>제7조 (회원 탈퇴 및 자격 상실 등)</strong><br>
+				1. 회원은 "몰"에 언제든지 탈퇴를 요청할 수 있으며 "몰"은 즉시 회원탈퇴를 처리합니다. 이때 잔여 포인트는 자동으로 소멸됩니다.<br>
+				2. 회원이 다음 각호의 사유에 해당하는 경우, "몰"은 회원자격을 제한 및 정지시킬 수 있습니다.<br>
+				① 가입 신청 시에 허위 내용을 등록한 경우 <br>
+				② "몰"을 이용하여 구입한 재화 등의 대금, 기타 "몰"이용에 관련하여 회원이 부담하는 채무를 기일에 지급하지 않는 경우 <br>
+				③ 다른 사람의 "몰" 이용을 방해하거나 그 정보를 도용하는 등 전자상거래 질서를 위협하는 경우 <br>
+				④ "몰"을 이용하여 법령 또는 이 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우 <br>
+				3. "몰"이 회원 자격을 제한정지 시킨 후, 동일한 행위가 2회 이상 반복되거나 30일 이내에 그 사유가 시정되지 아니하는 경우 "몰"은 회원자격을 상실시킬 수 있습니다. 단, 회원의
+				위반 정도가 중한 경우 즉시 이용계약을 해지할 수 있습니다.<br>
+				4. "몰"이 회원자격을 상실시키는 경우에는 회원등록을 말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에 최소한 30일 이상의 기간을 정하여 소명할 기회를
+				부여합니다.<br><br>
+				<strong>제8조 (회원에 대한 통지)</strong><br>
+				1. "몰"이 회원에 대한 통지를 하는 경우, 회원이 "몰"과 미리 약정하여 지정한 전화 및 전자우편 주소로 할 수 있습니다.<br>
+				2. "몰"은 불특정다수 회원에 대한 통지의 경우 1주일이상 "몰" 게시판에 게시함으로써 개별 통지에 갈음할 수 있습니다. 다만, 회원 본인의 거래와 관련하여 중대한 영향을 미치는 사항에
+				대하여는 개별통지를 합니다.<br><br>
+				<strong>제9조 (구매신청)</strong><br>
+				"몰"이용자는 "몰"상에서 다음 또는 이와 유사한 방법에 의하여 구매를 신청하며, "몰"은 이용자가 구매신청을 함에 있어서 다음의 각 내용을 알기 쉽게 제공하여야 합니다. 단, 회원인
+				경우 제9조 제4호의 적용을 제외할 수 있습니다.<br>
+				1. 재화 등의 검색 및 선택 <br>
+				2. 성명, 주소, 전화번호, 전자우편주소(또는 이동전화번호) 등의 입력 <br>
+				3. 약관내용, 청약철회권이 제한되는 서비스, 배송료∙설치비 등의 비용부담과 관련한 내용에 대한 확인 <br>
+				4. 이 약관에 동의하고 위 3호의 사항을 확인하거나 거부하는 표시 (예, 마우스 클릭) <br>
+				5. 재화 등의 구매신청 및 이에 관한 확인 또는 "몰"의 확인에 대한 동의 <br>
+				6. 결제방법의 선택 <br><br>
+				<strong>제10조 (계약의 성립)</strong><br>
+				1. "몰"은 제9조와 같은 구매신청에 대하여 다음 각호에 해당하면 승낙하지 않을 수 있습니다.<br>
+				① 신청 내용에 허위, 기재누락, 오기가 있는 경우 <br>
+				② 미성년자가 담배, 주류 등 청소년보호법에서 금지하는 재화 및 용역을 구매하는 경우 <br>
+				③ 신용카드, 포인트 등 결제수단을 이용하여 구매를 가장하는 경우 <br>
+				④ 할인쿠폰, 포인트 등을 획득할 목적으로 부정한 거래를 계속하는 경우 <br>
+				⑤ 기타 구매신청에 승낙하는 것이 "몰" 기술상 현저히 지장이 있다고 판단하는 경우 <br>
+				2. "몰"의 승낙이 제12조제1항의 수신확인통지형태로 이용자에게 도달한 시점에 계약이 성립한 것으로 봅니다.<br>
+				3. "몰"의 승낙의 의사표시에는 이용자의 구매 신청에 대한 확인 및 판매가능 여부, 구매신청의 정정 취소 등에 관한 정보 등을 포함하여야 합니다. <br>
+				4. 미성년자가 구매계약을 체결하는 경우에는 법정대리인의 동의하지 않으면 미성년자 본인 또는 법정대리인이 계약을 취소할 수 있습니다.<br><br>
+				<strong>제11조 (지급방법)</strong><br>
+				"몰"에서 구매한 재화 또는 용역에 대한 대금지급방법은 다음 각호의 방법 중 가용한 방법으로 할 수 있습니다. 단, "몰"은 이용자의 지급방법에 대하여 재화 등의 대금에 어떠한 명목의
+				수수료도 추가하여 징수할 수 없습니다.<br>
+				1. 가상계좌를 통한 결제 <br>
+				2. 직불카드, 신용카드 등의 카드 결제 <br>
+				3. 통통지갑(모바일 암호화폐 지갑)을 통한 통통코인(TTCOIN)에 의한 결제 <br><br>
+				<strong>제12조(수신확인통지구매신청 변경 및 취소)</strong><br>
+				1. "몰"은 이용자의 구매신청이 있는 경우 이용자에게 수신확인통지를 합니다.<br>
+				2. 수신확인통지를 받은 이용자는 의사표시의 불일치 등이 있는 경우에는 수신확인통지를 받은 후 즉시 구매신청 변경 및 취소를 요청할 수 있고 "몰"은 배송 전에 이용자의 요청이 있는
+				경우에는 지체 없이 그 요청에 따라 처리하여야 합니다. 다만 이미 대금을 지불한 경우에는 제15조의 청약철회 등에 관한 규정에 따릅니다.<br><br>
+				<strong>제13조 (재화 등의 공급)</strong><br>
+				1. “몰”은 판매자에게 회사로부터 구매자의 입금 또는 대금결제에 대한 확인통지를 받은 후 7일 이내에 배송에 필요한 조치를 취하도록 안내합니다.<br>
+				2. “몰”은 배송과 관련하여 판매자와 구매자, 배송업체, 금융기관 등과의 사이에 발생한 분쟁은 당사자들 간의 해결을 원칙으로 하며, 회사는 어떠한 책임도 부담하지 않습니다. <br>
+				3. “몰”은 이용자가 구매한 재화에 대해 배송수단, 수단별 배송비용 부담자, 수단별 배송기간 등을 명시합니다. 만약 “몰”이 약정 배송기간을 초과한 경우에는 그로 인한 이용자의 손해를
+				통화 또는 그에 상응하는 암호화폐 및 다른 방식으로 배상하여야 합니다. 다만 “몰”이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.<br><br>
+				<strong>제14조 (환급)</strong><br>
+				"몰"은 이용자가 구매 신청한 재화 등이 품절 등의 사유로 인도 또는 제공을 할 수 없을 때에는 지체 없이 그 사유를 이용자에게 통지하고 사전에 재화 등의 대금을 받은 경우에는 대금을
+				받은 날부터 3영업일 이내에 환급하거나 환급에 필요한 조치를 취합니다.<br><br>
+				<strong>제15조 (청약철회 등)</strong><br>
+				1. "몰"과 재화 등의 구매에 관한 계약을 체결한 이용자는 재화 등을 배송 받은 날부터 7일 이내에는 청약의 철회를 할 수 있습니다.<br>
+				2. 이용자는 재화 등을 배송 받은 경우 다음 각호의 해당하는 경우에는 반품 및 교환을 할 수 없습니다.<br>
+				① 이용자에게 책임 있는 사유로 재화 등이 멸실 또는 훼손된 경우(다만, 재화 등의 내용을 확인하기 위하여 포장 등을 훼손한 경우에는 청약철회를 할 수 있습니다)<br>
+				② 이용자의 사용 또는 일부 소비에 의하여 재화 등의 가치가 현저히 감소한 경우 <br>
+				③ 시간의 경과에 의하여 재판매가 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우 <br>
+				④ 같은 성능을 지닌 재화 등으로 복제가 가능한 경우 그 원본 재화 등의 포장을 훼손한 경우 <br>
+				⑤ 기타 구매자가 환불이나 교환을 요청할 수 없는 합리적인 사유가 있는 경우 <br>
+				3. 이용자는 제1항 및 제2항의 규정에 불구하고 '재화 등'의 내용이 표시∙광고 내용과 다르거나, 계약내용과 다르게 이행된 경우에는 당해 재화등을 공급받은 날로부터 3월 이내, 그
+				사실을 안 날 또는 알 수 있었던 날로부터 30일 이내에 청약철회 등을 할 수 있습니다.<br><br>
+				<strong>제16조 (청약철회 등의 효과)</strong><br>
+				1. “몰”은 구매자로부터 교환 또는 반품의 의사표시를 접수하면, 즉시 그러한 사실을 판매자에게 통보합니다.<br>
+				2. 반품이나 교환에 필요한 왕복 배송비와 기타 필요한 비용은 귀책사유가 있는 쪽에서 부담합니다.<br>
+				3. 교환신청을 하더라도 판매자에게 교환할 물품의 재고가 없으면 교환할 수 없으며, 이때는 반품환불로 처리됩니다.<br>
+				4. 교환에 드는 비용은 물품하자의 경우에는 판매자가 왕복배송비를 부담하나 구매자의 변심에 의한 경우에는 구매자가 부담합니다.<br>
+				5. 배송상의 문제로 구매자가 손해를 보았을 때 그에 대한 책임은 해당 배송업체를 지정한 판매자에게 있습니다.<br>
+				6. “몰”이 구매자의 구매대금 결제 확인에 대해 통지한 후 판매자가 상당 기간 구매자의 주문 정보를 확인하지 않거나 배송 절차를 이행하지 않아 구매자가 거래 취소를 요구하면 회사는 해당
+				거래를 취소할 수 있으며, 거래가 취소되면 보관 중인 상품 구매대금은 구매자에게 환불됩니다. 아울러, “몰”은 개별적인 정책으로 구매자의 요구 없이도 자동 환불처리 등의 조치를 할 수
+				있으며 그럴 경우 미리 해당 내용을 구매자에게 공지합니다.<br>
+				7. “몰”은 판매자가 구매자의 교환, 반품에 대한 사실확인 진행절차에 적극적으로 임하지 않거나 지연하면 구매자에게서 교환이나 반품의 원인을 파악한 후 해당 거래를 취소하여 구매자에게
+				보관 중인 결제대금을 환불할 수 있습니다.<br>
+				8. “몰”은 구매자의 교환 또는 반품의 요청이 정당하지 않다고 판단하면 구매자의 의사표시를 취소하여 보관 중인 결제대금을 판매자에게 지급할 수 있습니다. 또한, 구매자의 교환, 반품
+				등이 접수된 날로부터 7일이 지날 때까지 이미 수령한 상품을 판매자에게 반환하지 않거나 전화, 이메일(E-mail) 등으로 연락되지 않으면 교환, 반품의 의사를 철회한 것으로 간주하여
+				보관 중인 결제대금을 판매자에게 지급할 수 있습니다.<br>
+				9. 구매자는 상품이 발송되기 전까지 구매를 취소할 수 있으며, 배송 중이면 취소가 아닌 반품절차에 의해 처리됩니다.<br>
+				10. 주문확인 상태에서는 즉시 취소처리가 완료되는 것이 원칙이나 이미 상품이 발송되었다면 발송된 상품의 왕복 배송비는 구매자가 부담해야 합니다.<br><br>
+				<strong>제17조 (통통코인 적립)</strong><br>
+				1. “통통코인”은 “몰”에서 상품 구매 시 대금 결제 수단으로 사용할 수 있는 현금 등가의 결제수단을 의미합니다.<br>
+				2. “몰”에서 제공되는 절차를 이행하면 통통코인을 부여 받게 됩니다. 통통코인 적립을 위하여 특정 "회원"의 자격요건이 요구될 수 있습니다.<br>
+				3. 서비스 내 화면에 적립 통통코인으로 명시된 금액만큼의 통통코인가 적립되며 이는 "통통코인관리" 화면에서 확인할 수 있습니다.<br><br>
+				<strong>제18조(할인쿠폰)</strong><br>
+				1. '할인쿠폰'은 "몰"의 이벤트 프로모션 참여 등을 통하여 회원에게 무상으로 지급되며, ‘할인쿠폰’별 유효기간, 할인금액 및 사용방법 등은 개별 안내사항을 통하여 확인
+				가능합니다.<br>
+				2. 할인쿠폰은 현금으로 출금될 수 없으며, 할인쿠폰에 표시된 유효기간이 만료되거나 이용계약이 종료되면 소멸합니다.<br>
+				3. “회사”는 회원이 부정한 목적과 방법으로 할인쿠폰 등을 획득하거나 사용하는 사실이 확인될 경우, 해당 이용자에 대한 할인쿠폰을 회수 또는 소멸시키거나 회원자격을 제한할 수 있습니다.<br>
+				4. '할인쿠폰' 의 제공내용 및 운영방침은 "몰"정책에 따라 달라질 수 있습니다.<br><br>
+				<strong>제19조 (대리행위의 부인)</strong><br>
+				“몰”은 통신판매중개자로서 효율적인 서비스를 위한 시스템 운영 및 관리 책임만을 부담하며, 재화 또는 용역의 거래와 관련하여 구매자 또는 판매자를 대리하지 아니하고, 회원 사이에 성립된
+				거래 및 회원이 제공하고 등록한 정보에 대해서는 해당 회원이 그에 대한 직접적인 책임을 부담하여야 합니다.<br><br>
+				<strong>제20조 (보증의 부인)</strong><br>
+				“몰”은 “몰”이 제공하는 시스템을 통하여 이루어지는 구매자와 판매자 간의 거래와 관련하여 판매의사 또는 구매의사의 존부 및 진정성, 등록물품의 품질, 완전성, 안정성, 적법성 및 타인의
+				권리에 대한 비침해성, 구매자 또는 판매자가 입력하는 정보 및 그 정보를 통하여 링크된 URL에 게재된 자료의 진실성 또는 적법성 등 일체에 대하여 보증하지 아니하며, 이와 관련한 일체의
+				위험과 책임은 해당 회원이 전적으로 부담합니다.<br><br>
+				<strong>제21조 (개인정보보호)</strong><br>
+				1. "몰"은 이용자의 정보 수집 시 구매계약 이행에 필요한 최소한의 정보를 수집합니다. 다음 사항을 필수사항으로 하며 그 외 사항은 선택사항으로 합니다.<br>
+				① 성명 <br>
+				② 생년월일 <br>
+				③ 주소 <br>
+				④ 증권통 ID - 전자우편주소 (회원의 경우) <br>
+				⑤ 비밀번호 (회원의 경우) <br>
+				⑥ 이동전화번호 <br>
+				2. "몰"이 이용자의 개인식별이 가능한 개인정보를 수집하는 때에는 반드시 당해 이용자의 동의를 받습니다.<br>
+				3. 제공된 개인정보는 당해 이용자의 동의 없이 목적 외의 이용이나 제3자에게 제공할 수 없으며, 이에 대한 모든 책임은 “몰”이 집니다. 다만, 다음의 경우에는 예외로 합니다. <br>
+				① 배송업무상 배송업체에게 배송에 필요한 최소한의 이용자의 정보(성명, 주소, 전화번호)를 알려주는 경우 <br>
+				② 통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우 <br>
+				③ 재화 등의 거래에 따른 대금정산을 위하여 필요한 경우 <br>
+				④ 도용방지를 위하여 본인확인에 필요한 경우 <br>
+				⑤ 법률의 규정 또는 법률에 의하여 필요한 불가피한 사유가 있는 경우 <br>
+				4. "몰"이 제2항과 제3항에 의해 이용자의 동의를 받아야 하는 경우에는 개인정보관리 책임자의 신원(소속, 성명 및 전화번호, 기타 연락처), 정보의 수집목적 및 이용목적, 제3자에
+				대한 정보제공 관련사항(제공받은 자, 제공목적 및 제공할 정보의 내용) 등 정보통신망이용촉진 등에 관한 법률 제22조제2항이 규정한 사항을 미리 명시하거나 고지해야 합니다.<br>
+				5. 이용자는 언제든지 "몰"이 가지고 있는 자신의 개인정보에 대해 열람 및 오류정정을 요구할 수 있으며 "몰"은 이에 대해 지체 없이 필요한 조치를 취할 의무를 집니다. 이용자가 오류의
+				정정을 요구한 경우에는 "몰"은 그 오류를 정정할 때까지 당해 개인정보를 이용하지 않습니다.<br>
+				6. "몰"은 개인정보 보호를 위하여 관리자를 한정하여 그 수를 최소화하며 신용카드, 은행계좌 등을 포함한 이용자의 개인정보의 분실, 도난, 유출, 변조 등으로 인한 이용자의 손해에
+				대하여 모든 책임을 집니다.<br>
+				7. "몰" 또는 그로부터 개인정보를 제공받은 제3자는 개인정보의 수집목적 또는 제공받은 목적을 달성한 때에는 당해 개인정보를 지체 없이 파기합니다.<br><br>
+				<strong>제22조 (정보의 제공 및 광고의 게재)</strong><br>
+				1. “회사“는 서비스 이용 중 필요하다고 인정되는 다양한 마케팅 정보 등을 전자우편이나 서신우편, SMS, 전화, 알림 메시지(Push Notification), 회원 연락처와 연동된
+				SNS서비스 등의 방법으로 회원에게 제공할 수 있으며, 회원은 이에 동의합니다. 이 경우, 회원의 통신환경 또는 요금구조 등에 따라 회원이 데이터 요금 등을 부담할 수 있습니다.<br>
+				2. 회원은 관련법에 따른 거래관련정보 및 고객문의 등에 대한 답변 등을 제외하고는 언제든지 전항의 전자우편 등에 대해서 수신 거절을 할 수 있으며, 이 경우 “몰“은 즉시 전항의 마케팅
+				정보 등을 제공하는 행위를 중단합니다.<br><br>
+				<strong>제23조 ("몰"의 의무)</strong><br>
+				1. "몰"은 법령과 이 약관이 금지하거나 공서양속에 반하는 행위를 하지 않으며 이 약관이 정하는 바에 따라 지속적이고, 안정적으로 재화용역을 제공하는데 최선을 다하여야 합니다.<br>
+				2. "몰"은 이용자가 안전하게 인터넷 서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함)보호를 위한 보안 시스템을 갖추어야 합니다.<br>
+				3. "몰"이 상품이나 용역에 대하여 「표시광고의 공정화에 관한 법률」 제소정의 부당한 표시광고행위를 함으로써 이용자가 손해를 입은 때에는 이를 배상할 책임을 집니다.<br>
+				4. "몰"은 이용자가 원하지 않는 영리목적의 광고성 전자우편을 발송하지 않습니다.<br><br>
+				<strong>제24조 (회원의 ID 및 비밀번호에 대한 의무)</strong><br>
+				1. 제23조의 경우를 제외한 ID와 비밀번호에 관한 관리책임은 회원에게 있습니다.<br>
+				2. 회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안됩니다. “몰”은 “몰”의 귀책사유 없이 발생한 ID 및 비밀번호 공유 또는 도용으로 인한 불이익에 대해 책임지지
+				않습니다. 또한, ID 및 비밀번호 공유 중에 제 3자가 “회원” 본인의 ID를 이용하여 약관 위반행위가 발생한다고 하더라도, 약관에 따라 “회원” 및 해당 ID 의 서비스 이용이 제한될
+				수 있습니다.<br>
+				3. 회원이 자신의 ID 및 비밀번호를 도난 당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 "몰"에 통보하고 "몰"의 안내가 있는 경우에는 그에 따라야 합니다.<br><br>
+				<strong>제25조 (이용자의 의무)</strong><br>
+				이용자는 다음 행위를 하여서는 안됩니다.<br>
+				1. 신청 또는 변경 시 허위 내용의 등록 <br>
+				2. 타인의 정보 도용 <br>
+				3. "몰"에 게시된 정보의 변경 <br>
+				4. "몰"이 정한 정보 이외의 정보(컴퓨터 프로그램 등) 등의 송신 또는 게시 <br>
+				5. "몰”과 기타 제3자의 저작권 등 지적재산권에 대한 침해 <br>
+				6. "몰"과 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위 <br>
+				7. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 “몰”에 공개 또는 게시하는 행위 <br>
+				8. 제 3자의 ID를 이용하거나 자신의 ID를 제3자에게 이용하게 하는 행위 <br>
+				9. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 “몰”에 공개 또는 게시하는 행위 <br>
+				10. “사이트”를 이용하여 구입한 재화 등의 대금, 기타 “몰” 이용에 관련하여 “회원”이 부담하는 채무의 미이행 <br>
+				11. 판매기간 종료 후 빈번한 구매취소 및 누적 등으로 타 “회원”의 서비스 이용을 방해할 우려가 있는 행위 <br>
+				12. 상품 등의 구매를 가장하여 재판매 등의 방법으로 자금을 융통하는 것과 같이 비정상적인 결제를 하는 행위 <br>
+				13. 진정한 구매 의사없이 쿠폰 등을 적용하여 상품구매 후 재판매하기 위한 목적으로 서비스를 이용하는 행위 <br>
+				14. 오프라인이나 다른 사이트에서 발생한 구매에 대해 포인트 등을 부당하게 확보할 목적으로 서비스를 이용하는 행위 <br>
+				15. “몰”의 허락 없이 서비스를 이용하여 영업/광고 활동 등을 하거나, “몰”이 허락한 내용과 범위를 벗어난 영업/광고 활동 행위 <br>
+				16. 타인의 신용카드, 은행 계좌, 휴대폰 등을 무단으로 이용 또는 도용하여 상품 등을 구매하는 행위 <br>
+				17. “몰” 또는 타인의 명예를 손상시키거나 확인되지 않은 사실을 유포하는 행위 타인의 권리를 침해하는 행위 및 회사의 업무수행에 현저한 지장을 초래하는 행위 <br>
+				18. “회원”은 “회원”의 정보가 변경된 경우에는 이를 회사에 즉시 알려야 하며, “회원”의 변경 정보를 회사에 알리지 않아 발생하는 불이익에 대해 “몰”은 책임을 지지
+				않습니다.<br>
+				19. “회원”은 이 약관 기타 “회사”의 내부 규정 및 관계 법령을 준수해야 합니다.<br>
+				20. “회원”은 이 약관에서 규정하는 사항 및 “사이트” 상의 공지사항 등 “몰”이 정한 제반 정책이나 규정을 수시로 확인하여야 합니다.<br><br>
+				<strong>제 26 조 (게시물의 관리)</strong><br>
+				1. 게시물이라 함은 “이용자”가 게시한 문자, 문서, 그림, 음성 또는 이들의 조합으로 이루어진 정보 등의 모든 정보를 말합니다.<br>
+				2. “회사”는 “이용자”의 게시물을 소중하게 생각하며, 변조, 훼손, 삭제되지 않도록 최선을 다하여 보호합니다. 다만, 회사는 다음 각 호에 해당하는 게시물이나 자료를 사전통지 없이
+				삭제하거나 이동 또는 등록 거부를 할 수 있습니다.<br>
+				① 다른 “이용자” 또는 제3자에게 심한 모욕을 주거나 명예를 손상시키는 내용인 경우 <br>
+				② “이용자”가 음란물을 게재하거나 음란사이트를 링크한 경우 <br>
+				③ “몰” 또는 제3자의 저작권 등 기타 지적재산권을 포함한 일체의 권리를 침해하는 내용인 경우 <br>
+				④ 게시판의 성격에 부합하지 않는 게시물의 경우 <br>
+				⑤ 공공질서 및 미풍양속에 위반되는 내용을 유포하거나 링크시키는 경우 <br>
+				⑥ 영리를 목적으로 하는 광고성 내용인 경우 <br>
+				⑦ 범죄와 결부된다고 객관적으로 인정되는 내용일 경우 <br>
+				⑧ “몰”에서 규정한 게시물 원칙에 어긋나거나 게시판 성격에 부합하지 않는 경우 <br>
+				⑨ “몰”이나 "서비스"의 정상적인 운영을 방해하는 경우 <br>
+				⑩ 기타 관계법령에 위배된다고 판단되는 경우 <br>
+				3. “사이트”의 게시물로 인하여 법률상 이익이 침해된 자는 관련 법령과 고객센터에서 정한 절차에 따라 당해 게시물의 게시중단 및 삭제 등을 요청할 수 있으며 ”몰”은 관련 법령에 따라
+				필요한 조치를 취하여야 합니다. <br>
+				4. “회원”은 “사이트”를 탈퇴한 이후에는 기존에 작성한 게시물의 편집이나 삭제가 불가하므로, 탈퇴 이전에 해당 게시물에 대한 조치를 취하여야 합니다.<br><br>
+				<strong>제27조 (연결"몰"과 피연결"몰" 간의 관계)</strong><br>
+				1. 상위 "몰"과 하위 "몰"이 하이퍼 링크(예: 하이퍼 링크의 대상에는 문자, 그림 및 동화상 등이 포함됨)방식 등으로 연결된 경우, 전자를 연결 "몰"(웹 사이트)이라고 하고 후자를
+				피연결 "몰"(웹사이트)이라고 합니다.<br>
+				2. 연결"몰"은 피연결"몰"이 독자적으로 제공하는 재화 등에 의하여 이용자와 행하는 거래에 대해서 보증책임을 지지 않는다는 뜻을 연결 "몰"의 초기화면 또는 연결되는 시점의 팝업화면으로
+				명시한 경우에는 그 거래에 대한 보증책임을 지지 않습니다.<br>
+				3. 연결 “몰”에서 제공되는 서비스 외에 피연결 “몰”과 단순한 링크로 연결되어 제 3 자가 제공하는 서비스에 대하여는 “몰”의 개인정보처리방침이 적용되지 않으며 “몰”은 제 3 자의
+				사이트에 대하여 책임지지 않습니다.<br><br>
+				<strong>제28조 (저작권의 귀속 및 이용제한)</strong><br>
+				1. "몰"이 작성한 저작물에 대한 저작권 기타 지적재산권은 "몰"에 귀속합니다.<br>
+				2. 이용자는 "몰"을 이용함으로써 얻은 정보 중 "몰"에게 지적재산권이 귀속된 정보를 "몰"의 사전 승낙 없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로
+				이용하거나 제3자에게 이용하게 하여서는 안됩니다.<br>
+				3. "몰"은 약정에 따라 이용자에게 귀속된 저작권을 사용하는 경우 당해 이용자에게 통보하여야 합니다.<br><br>
+				<strong>제29조 (분쟁해결)</strong><br>
+				1. "몰"은 이용자가 제기하는 정당한 의견이나 불만을 반영하고 그 피해를 보상처리하기 위하여 피해보상처리기구를 설치 운영합니다.<br>
+				2. "몰"은 이용자로부터 제출되는 불만사항 및 의견은 우선적으로 그 사항을 처리합니다. 다만, 신속한 처리가 곤란한 경우에는 이용자에게 그 사유와 처리 일정을 즉시 통보합니다.<br>
+				3. "몰"과 이용자간에 발생한 전자상거래 분쟁과 관련하여 이용자의 피해구제신청이 있는 경우에는 공정거래위원회 또는 시∙도지사가 의뢰하는 분쟁조정기관의 조정에 따를 수
+				있습니다.<br><br>
+				<strong>제30조 (면책)</strong><br>
+				1. “몰”은 전시, 사변, 천재지변, 국가비상사태, 해결이 곤란한 기술적 결함 기타 불가항력적 사유로 서비스를 제공할 수 없는 경우에는 책임이 면제됩니다.<br>
+				2. “몰”은 “이용자”의 귀책사유로 인한 서비스의 중지/이용장애에 대하여 책임을 지지 않습니다.<br>
+				3. “몰”은 기간 통신 사업자가 전기통신서비스를 중지하거나 정상적으로 제공하지 아니하여 “이용자”에게 손해가 발생한 경우에는 책임이 면제됩니다.<br>
+				4. “몰”은 사전에 공지된 서비스용 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로 서비스가 중지되거나 장애가 발생한 경우에 대해서는 책임이 면제됩니다.<br>
+				5. “몰”은 “이용자”가 서비스 내 또는 웹사이트 상에 게시 또는 전송한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 대해서는 책임을 지지 않습니다.<br>
+				6. “몰”은 “이용자” 상호간 또는 “이용자”와 제3자간에 서비스를 매개로 발생한 분쟁에 대해 개입할 의무가 없으며 이로 인한 손해를 배상할 책임도 없습니다.<br>
+				7. 회원이 자신의 개인정보를 타인에게 유출 또는 제공함으로써, 발생하는 피해에 대해서 회사는 일체의 책임을 지지 않습니다.<br><br>
+				<strong>제31조 (재판권 및 준거법)</strong><br>
+				1. "몰"과 이용자간에 발생한 전자상거래 분쟁에 관한 소송은 제소 당시의 이용자의 주소에 의하고, 주소가 없는 경우에는 거소를 관할하는 지방법원의 전속관할로 합니다. 다만, 제소 당시
+				이용자의 주소 또는 거소가 분명하지 않거나 외국 거주자의 경우에는 민사소송법상의 관할법원에 제기합니다.<br>
+				2. "몰"과 이용자간에 제기된 전자상거래 소송에는 대한민국 법령을 적용합니다.<br><br>
+				<strong>부칙</strong><br><br>
+				<strong>제 1 조 (적용일자)</strong><br>
+				이 정책은 2019.06.24일부터 적용됩니다.
+			</div>
+		</div>
+		<div class="policy-title">
+			<div class="padding-15 border-btm">
+				<div class="row">
+					<div class="fl">
+						<input id="check-personal" type="checkbox" name="" value="" checked>
+						<label for="check-personal"></label>
+					</div>
+					<div class="font-222-12 fl ml-6 mt-2">개인정보 수집/이용 동의(필수)</div>
+					<img class="fr mt-6 pointer" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;" onclick="setViewPolicy(this);">
+				</div>
+			</div>
+			<div class="content padding-15 back-6 border-btm font-777-12" style="display: none;">
+				<strong>개인정보 처리방침</strong><br />
+				주식회사 토마토트레이드(이하 "회사"라 함)은 "정보통신망이용 촉진 및 정보보호 등에 관한법률"(이하 "정통망법"이라 함)등 모든 관련법규를 준수하며 회원님의 개인정보가 보호받을 수
+				있도록 최선을 다하고 있습니다.
+				회사는 개인정보취급방침의 공개를 통하여 회원 여러분의 개인정보가 어떠한 목적과 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지를 알려드립니다. 본
+				개인정보취급방침은 관련법령의
+				개정이나 당사 내부방침에 의해 변경될 수 있으며 회원 가입 시나 사이트 이용 시에 수시로 확인하여 주시기 바랍니다.<br /><br />
+				<strong>1. 수집/이용 목적. 수집 항목 및 수집방법</strong><br />
+				① 개인정보란?
+				생존하는 개인에 관한 정보로서 당해 정보에 포함되어 있는 성명, 주민등록번호 등의 사항에 의하여 당해 개인을 식별할 수 있는 정보(당해 정보만으로는 특정 개인을 식별할 수 없더라도 다른
+				정보와 용이하게 결합하여 식별할 수 있는 것을 포함)를 말합니다.<br />
+				② 회사는 고객이 회원가입을 할 때 서비스 제공을 위해 필요한 필수적인 최소한의 개인정보를 받고 있습니다. 회사가 고객의 개인정보를 수집하는 목적은 쇼핑몰 “통통몰”을 통하여 고객에게
+				최적의 서비스를 제공해 드리기 위한 것이며 고객이
+				제공한 개인정보를 바탕으로 고객에게 보다 더 유용한 정보를 선택적으로 제공하기 위한 것입니다.<br />
+				③ 회사는 고객의 사전 동의 없이는 고객의 개인정보를 사전에 밝힌 목적 이외로 이용하거나 제3자에게 공개하지 않습니다.<br />
+				④ 회사는 아래의 항목을 다음과 같은 목적을 위하여 개인정보를 수집하고 있습니다.<br />
+				가. 필수항목<br />
+				- 이름, 아이디(전자메일주소), 비밀번호: 이용자 본인 식별을 위한 목적<br />
+				- 배송지 주소, 휴대폰 번호: 고객이 주문하신 상품 및 경품 배송을 위한 목적<br />
+				- IP Address, 방문 일시, 서비스 이용기록(자동으로 생성 되는 개인정보): 부정이용방지, 비인가 사용방지, 분쟁조정 해결을 위한 기록보존 등<br />
+				나. 선택항목<br />
+				- 휴대폰 번호, 생년월일, 성별: 할인쿠폰, 특가상품 정보, 포인트 혜택 등의 발송을 위한 목적<br />
+				- 결제 : 신용카드 - 카드사명, 카드번호, 유효기간, cvc<br />
+				가상계좌 - 은행명, 계좌번호<br />
+				통통코인 - 통통지갑 주소, 통통코인 금액<br />
+				- 취소∙환불 : 은행명, 계좌번호, 통통코인 지갑 주소<br />
+				⑤ 회사는 고객님의 기본적 인권 침해의 우려가 있는 민감한 개인정보(인종 및 민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록, 건강상태 등)는 수집하지
+				않습니다.<br /><br />
+				<strong>2. 3자 제공 시 제공 받는 자의 성명, 이용 목적, 제공하는 개인정보항목</strong><br />
+				① 회사는 고객의 동의가 있거나 법률의 규정에 의한 경우를 제외하고는 어떠한 경우에도 "1. 개인정보의 수집항목 및 수집방법"에서 고지한 범위를 넘어서 고객의 개인정보를 이용하거나 타인
+				또는 타기업, 기관에 제공하지 않습니다.<br />
+				② 회사가 고객의 개인정보를 제3자에게 제공하는 경우 사전에 고객에게 고객의 개인정보를 제공 받는자, 개인정보를 제공받는 자의 개인정보 이용목적에 대해 동의를 구하는 절차를 거치거나 회원
+				가입시 별도로 동의를 구하는 절차를 거치게 됩니다. <br />
+				고객이 동의하지 않는 경우에는 개인정보를 제공하거나 공유하지 않습니다. <br />
+				③ 다음의 경우에는 예외적으로 고객의 동의 없이 개인정보를 제공할 수 있습니다.<br />
+				가. 형사소송법, 금융실명거래 및 비밀보장에 관한 법률, 신용정보의 이용 및 보호에 관한 법률, 전기통신기본법, 전기통신사업법, 전파법, 지방세법, 소비자보호법, 한국은행법, 등
+				관계법령에 특별한 규정이 있는 경우<br />
+				나. 통계작성, 학술연구나 시장조사를 위하여 특정 개인을 식별할 수 없는 형태로 제공하는 경우<br />
+				다. 관계법령에 의하거나 수사기관의 요청에 의해 정보를 제공한 경우에도 본래의 수집목적 및 이용목적에 반하여 무분별하게 정보가 제공되지 않도록 최대한 노력하겠습니다.<br /><br />
+				<strong>3. 개인정보 보유 및 이용기간, 파기 절차 및 방법</strong><br />
+				① 회원님의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은 목적이 달성되면 파기됩니다. 단, 상법, 전자상거래 등 에서의 소비자보호에 관한 법률 등 관련법령 및 회사 내부
+				규정에 의하여 다음과 같이
+				거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다.<br />
+				가. 계약 또는 청약철회 등에 관한 기록: 5년<br />
+				나. 대금결제 및 재화 등의 공급에 관한 기록: 5년<br />
+				다. 전자금융 거래에 관한 기록: 5년<br />
+				라. 소비자의 불만 또는 분쟁처리에 관한 기록: 3년<br />
+				마. 표시, 광고에 관한 기록: 6개월<br />
+				바. 본인확인에 관한 기록: 6개월<br />
+				사. 사이트 접속에 관한 기록: 3개월<br />
+				아. 부정 이용 기록: 1년<br />
+				자. 잔여 포인트 처리 및 부정가입 방지를 위한 탈퇴 회원정보: 1개월<br />
+				② 회원님의 동의를 받아 보유하고 있는 거래정보 등을 회원님께서 열람을 요구하는 경우에는 소정의 본인확인절차를 거친 후 지체 없이 열람, 확인할 수 있도록 조치합니다.<br />
+				③ 회원가입 등을 통한 개인정보의 수집, 이용, 제공에 대하여 회원은 가입 시 동의한 내용에 대해서 언제든지 철회할 수 있습니다. 동의 철회는 당사 고객센터로 요청하여 언제든지 철회할 수
+				있으며, 개인정보
+				민원담당자에게 서면, 전화, e-mail 등으로 연락하시면 신속하게 개인정보의 삭제 등 필요한 조치를 합니다. 단, 회원ID에 대해서는 서비스 이용의 혼선 방지, 법령에서 규정하는
+				회원거래정보의 보존기간 동안의 보관의무의
+				이행, 기타 안정적인 서비스 제공을 위하여 필요한 정보이므로, 탈퇴 후 동일 ID로의 재가입은 허용되지 않습니다. 이미 제공된 회원정보를 철회 하는 데는 일정 시간이 소요되며 소요되는
+				시간 동안
+				마케팅에 활용되지 않도록 하겠습니다. 회사는 회원님의 소중한 정보를 보호하기 위하여 신속하게 처리 되도록 최선의 노력을 다하겠습니다.<br />
+				④ 회사는 고객의 개인정보를 보호하여 개인정보 유출로 인한 피해가 발생하지 않도록 하기 위하여 다음과 같은 방법을 통하여 개인정보를 파기합니다.<br />
+				가. 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.<br />
+				나. 전자적 파일 형태로 저장된 개인 정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br /><br />
+				<strong>4. 개인정보 취급 위탁 시, 위탁 업무의 내용 및 수탁자</strong><br />
+				① 회사는 위탁계약 체결 시 위탁업무 수행목적 외 개인정보 처리금지, 기술적/관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리/감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에
+				명시하고, 수탁자가 개인정보를
+				안전하게 처리하는지를 감독하고 있습니다.<br />
+				② 회사는 보다 나은 서비스 제공과 고객 편의 제공 등 업무수행을 원활하게 하기 위해 고객의 개인정보를 제한된 범위 내에서 수집, 보관, 처리 등을 위탁하여 처리하고 있습니다. 회사가
+				고객의 개인정보를 위탁하는 현황은 다음과 같습니다.<br /><br />
+				<table class="table">
+					<thead>
+						<tr>
+							<th class="text-center" style="border: 1px solid #dedede;">수탁자</th>
+							<th class="text-center" scope="col" style="border: 1px solid #dedede;">위탁업무 내용</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-center" style="border: 1px solid #dedede;">현대택배,<br>대한통운, 우체국택배 및 기타 택배사</td>
+							<td class="text-center" style="border: 1px solid #dedede;">상품배송업무</td>
+						</tr>
+						<tr>
+							<td class="text-center" style="border: 1px solid #dedede;">토마토페이</td>
+							<td class="text-center" style="border: 1px solid #dedede;">상품 구매에 필요한<br>신용카드결제대행 업무</td>
+						</tr>
+						<tr>
+							<td class="text-center" style="border: 1px solid #dedede;">통통체인</td>
+							<td class="text-center" style="border: 1px solid #dedede;">상품 구매에 필요한 통통코인 <br>결제대행 업무</td>
+						</tr>
+					</tbody>
+				</table>
+				<strong>5. 고객의 권리, 의무와 행사 방법</strong>
+				이용자 및 법정대리인은 언제든지 수집 정보에 대하여 수정, 동의 철회, 삭제, 열람요청 등을 요청 할 수 있습니다. 다만, 동의 철회, 삭제 시 서비스의 일부 또는 전부 이용이 제한될 수
+				있습니다.<br>
+				① 개인정보이용자 및 개인정보 열람 요청<br>
+				통통몰에서 처리하고 있는 이용자의 개인정보에 대한 열람을 요구할 수 있습니다. 아래 나열한 정보에 대해서는 직접 통통몰에 접속하셔서 확인이 가능합니다.<br>
+				가. 회원가입시 제공한 개인정보는 홈페이지(PC Web), 모바일 앱(App)의‘나의 정보 > 비밀번호 확인 > 회원정보수정’<br>
+				나. 구매 시 제공한 개인정보 및 판매자에게 제공한 개인정보는 홈페이지(PC Web), 모바일 앱(App)의 ‘통통몰 > 주문내역’ 서비스 이용을 하면서 시스템을 통하여 자동적으로 생성된
+				개인정보 등 홈페이지(PC Web)를 통하여 직접 확인하지 못하는 개인정보를 열람하고자 하는 경우에는 고객센터 02-2128-3303 또는 tongtongmall@etomato.com으로
+				연락 주시면 특별한 사유가 없는 한 10일 이내(근무일 기준)에 조치를 합니다. 열람의 방식은 이용자의 요청에 따라 정할 수 있으며, 그 방식을 한정하지 않습니다.<br>
+				다만, 열람이 늦어지거나 불가능한 사유는 신속하게 알려드리도록 합니다.<br>
+				여기서 특별한 사유란 제공 시 서비스 또는 보안상 중대한 문제가 생길 경우, 다른 사람의 생명∙신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는
+				경우를 말합니다.<br>
+				② 개인정보 수정<br>
+				홈페이지(PC Web), 모바일 앱(App)의‘나의 정보 > 비밀번호 확인 > 회원정보수정’ 또는 고객센터 02-2128-3303 또는 tongtongmall@coupang.com을
+				이용하여 안내해 드립니다. 이를 위하여, 본인확인 등의 절차가 진행될 수 있습니다.<br>
+				③ 개인정보 동의 철회 및 삭제, 처리 정지<br>
+				고객센터 02-2128-3303 또는 tongtongmall@etomato.com을 이용하여 수집 및 이용된 정보에 대한 동의 철회 및 삭제, 처리 정지를 안내 받으실 수 있습니다.
+				다만, 이러한 요청 시, 서비스의 일부 또는 전부 이용이 제한될 수 있으며, 다른 법령에 따라 수집하는 정보의 경우에는 동의 철회, 삭제, 처리 정지가 어려울 수 있습니다.<br>
+				처리가 완료될 때까지 해당 정보를 이용하거나 타인에게 제공하지 않을 것입니다. 또한 합리적인 사유로 잘못된 개인정보를 제3자에게 이미 제공한 경우, 그 결과를 지체 없이 제3자에게
+				통지하여 동의 철회, 삭제, 처리 정지하도록 조치합니다.<br>
+				④ 회원 탈퇴<br>
+				통통몰 탈퇴를 하실 경우, 고객센터 02-2128-3303 또는 tongtongmall@etomato.com을 통하여 진행할 수 있습니다. 이를 위하여, 본인확인 등의 절차가 진행될 수
+				있습니다.<br><br>
+				<strong>6. 개인 정보를 자동으로 수집하는 장치의 설치, 운영 및 그 거부에 관한 사항</strong><br />
+				① 회사는 다른 많은 웹사이트와 마찬가지로 쿠키를 운용합니다. '쿠키(cookie)'는 회원님에 대한 정보를 저장하고 수시로 찾아내는 역할을 합니다. 그리고, 웹사이트가 회원님의 컴퓨터
+				브라우저(넷스케이프, 인터넷 익스플로러 등)로
+				전송하는 4KB 미만의 텍스트로 이뤄진 소량의 정보입니다.<br />
+				② 회원께서 회사의 웹사이트에 접속을 하시면, 회사의 컴퓨터는 회원님의 브라우저에 있는 쿠키의 내용을 읽고, 회원의 추가정보를 회원님의 컴퓨터에서 찾아 접속에 따른 성명 등의 추가 입력
+				없이 서비스를 제공할 수 있습니다.<br />
+				③ 회원께서는 쿠키에 대한 선택권이 있으며, 다음과 같은 방법으로 쿠키의 전부 또는 일부를 받아들여 웹 브라우저 상단의 "도구 > 인터넷옵션>개인정보>개인정보 설정"에서 "모든
+				쿠키허용-낮음-보통-보통 높음-높음-모든 쿠키차단"을
+				할 수 있는 선택권을 가질 수 있습니다. 그러나, 회원님께서 쿠키에 대한 설치를 거부하거나 삭제로 설정한 경우에는 해당 웹 페이지에 일정 부분에 대해서 접근할 때마다 회원님의
+				아이디(ID)나 비밀번호(password)를 다시 입력하셔야 합니다.<br />
+				④ 회사는 이용자의 편의를 위하여 쿠키를 운영하며. 회사가 쿠키를 통해 수집하는 정보는 회원 ID에 한하며, 그 외의 다른 정보는 수집하지 않습니다. 수집된 회원의 ID는
+				타겟(Target) 마케팅 등의 목적을 위해 사용될 수 있습니다.
+				쿠키는 브라우저의 종료 시나 로그아웃 시 만료됩니다.<br /><br />
+				<strong>7. 개인정보의 기술적/관리적 보호 대책</strong><br />
+				회사는 이용자들의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적/ 관리적 대책을 강구하고 있습니다.<br /><br />
+				가. 해킹 등에 대비한 대책<br />
+				회사는 해킹이나 컴퓨터 바이러스 등에 의해 회원의 개인정보가 유출되거나 훼손되는 것을 막기 위해 최선을 다하고 있습니다. 개인정보의 훼손에 대비해서 자료를 수시로 백업하고 있고, 최신
+				백신프로그램을
+				이용하여 이용자들의 개인정보나 자료가 누출되거나 손상되지 않도록 방지하고 있으며, 암호화 통신 등을 통하여 네트워크상에서 개인정보를 안전하게 전송할 수 있도록 하고 있습니다. 그리고
+				침입차단시스템을 이용하여
+				외부로부터의 무단 접근을 통제하고 있으며, 기타 시스템적으로 보안성을 확보하기 위한 가능한 모든 기술적 장치를 갖추려 노력하고 있습니다.<br />
+				나. 취급 직원의 최소화 및 교육 <br />
+				회사의 개인정보관련 취급 직원은 담당자에 한정시키고 있고 이를 위한 별도의 비밀번호를 부여하고 있으며, 담당자에 대한 수시 교육을 통하여 “통통몰” 개인정보취급방침의 준수를 항상 강조하고
+				있습니다.<br />
+				다. 개인정보보호 운영관리<br />
+				회사는 개인정보취급방침의 이행사항 및 담당자의 준수여부를 확인하여 문제가 발견될 경우 즉시 수정하고 바로 잡을 수 있도록 노력하고 있습니다. 단, 이용자 본인의 부주의나 회사의 고의 또는
+				중대한 과실이 아닌 사유로 개인정보가 유출되어 발생한 문제에 대해 회사는 일체의 책임을 지지 않습니다.<br /><br />
+				<strong>8. 개인정보 관리 책임자의 성명, 관련 업무 처리 부서 명칭 및 연락처</strong><br />
+				① 회사는 개인정보와 관련된 회원의 의견수렴과 불만처리를 위하여 회원관리자를 지정해서 해당업무를 수행하도록 합니다.<br />
+				② 회사는 회원님의 의견을 소중하게 생각하며, 회원님은 의문사항으로부터 언제나 성실한 답변을 받을 권리가 있습니다.<br />
+				③ 회사는 회원님과의 원활환 의사소통을 위해 고객센터를 운영하고 있으며 연락처는 다음과 같습니다.<br /><br />
+				<strong>[고객센터]</strong><br />
+				- 전자우편 : tongtongmall@etomato.com<br />
+				- 전화번호 : 02-2128-3303<br />
+				- 팩스번호 : 02-2128-3851<br />
+				- 주 소 : 서울특별시 마포구 양화진4길 32 토마토트레이드빌딩<br /><br />
+				<strong>[통통몰 개인정보관리책임자]</strong><br />
+				- 성 명: 정민용 팀장<br />
+				- 소속부서: 토마토트레이드 기획팀<br />
+				- 전자우편: tongtongmall@etomato.com<br />
+				- 전화번호 : 02-2128-3303<br />
+				- 팩스번호: 02-2128-3851<br /><br /><br />
+				④ 기타 개인정보에 관한 상담이 필요한 경우에는 개인정보침해신고센터, 정보보호마크 인증위원회, 대검찰청 인터넷범죄수사센터, 경찰청 사이버범죄수사대 등으로 문의하실 수
+				있습니다.<br /><br />
+
+				- 개인정보침해신고센터 (www.118.or.kr / 118)<br />
+				- 정보보호마크인증위원회 (www.eprivacy.or.kr / 02-580-0533~4) <br />
+				- 대검찰청 첨단범죄수사과 (http://www.spo.go.kr / 02-3480-2000) <br />
+				- 경찰청 사이버테러대응센터 (www.ctrc.go.kr / 02-392-0330)<br /><br /><br>
+				<strong>9. 청소년 보호를 위한 관리적 정책</strong><br />
+				주식회사 토마토트레이드(이하 ’회사’라 합니다)은 불건전한 유해매체물로부터 청소년을 보호하 기 위해 [청소년보호법], [정보통신망 이용촉진 및 정보보호 등에 관한 법률 등에 근거하여
+				청소년보호정책을 시행하고 있습니다.<br>
+				회사는 정보통신윤리위원회 심의규정 및 청소년유해매체물 기준에 따라, 19세 미만의 청소년들이 유해매체물에 접근할 수 없도록 방지하고 있습니다.<br><br>
+				1. 유해정보에 대한 청소년접근제한 및 관리조치<br>
+				회사는 청소년이 불법, 유해한 매체물 유통 등으로 인한 피해를 입지 않도록 청소년 유해매체물에 대하여 별도의 성인인증 장치를 적용하며, 청소년 유해정보가 노출되지 않도록
+				예방합니다.<br><br>
+				2. 청소년유해상품 판매제한<br>
+				“회사”는 청소년유해물건, 약품, 청소년유해매체 등 청소년에게 유해 할 수 있는 상품의 주문 및 판매를 제한하고 있습니다.<br><br>
+				3. 유해정보로 인한 피해상담 및 고충처리<br>
+				가. 회사는 청소년 유해매체물의 유통으로 인한 피해신고 및 처리를 위하여 신고센터를 통한 신고를 접수 받고 있습니다.<br>
+				나. 통통몰에서는 고객센터에서 청소년 유해매체물 신고센터도 함께 운영하고 있으며, 모든 매체물 하단에 위치합니다.<br>
+				다. 청소년 유해매체물로 확인되는 경우 매체물 등록자에게 경고조치 등의 조치를 취합니다.<br><br>
+				4. 청소년보호 책임자<br><br>
+				[통통몰 청소년 보호책임자]<br>
+				- 성 명: 정민용 팀장<br>
+				- 소속부서: 토마토트레이드 기획팀<br>
+				- 소속부서: 토마토트레이드 기획팀<br>
+				- 전자우편: tongtongmall@etomato.com<br>
+				- 전화번호 : 02-2128-3303<br>
+				- 팩스번호: 02-2128-3851<br><br>
+				<strong>10. 고지의 의무</strong><br>
+				현 개인정보취급방침의 내용 추가, 삭제 및 수정이 있을 시에는 시행일자 최소 7일전부터 쇼핑통 웹사이트 내 "공지사항" 화면을 통해 공고할 것입니다.<br><br>
+				- 공고일자: 2019년 10월 24일<br>
+				- 시행일자: 공고일자로부터 7일 후<br>
+				- 공고일자: 2019년 01월 02일<br>
+				- 시행일자: 공고일자로부터 7일 후<br>
+			</div>
+		</div>
+		<div class="policy-title">
+			<div class="padding-15 border-btm">
+				<div class="row">
+					<div class="fl">
+													<input id="check-marketing" type="checkbox" name="" value="" checked>
+												<label for="check-marketing"></label>
+					</div>
+					<div class="font-222-12 fl ml-6 mt-2">마케팅 정보수신(선택)</div>
+					<img class="fr mt-6 pointer" src="https://www.tongtongmall.net/assets/user/images/ico_down.png" alt="" style="width: 12px; height: 6px;" onclick="setViewPolicy(this);">
+				</div>
+			</div>
+			<div class="content padding-15 back-6 border-btm font-777-12" style="display: none;">
+				통통몰의 이벤트 및 다양한 정보를 받을 수 있는 아래 채널 이용에 동의(선택)합니다. <br><br>
+				- PUSH알림 - 문자메세지 <br>
+				- 이메일 <br>
+				- 휴대폰 번호
+			</div>
+		</div>
+
+    <div class="wd_link"><a href="m_withdrawal.htm">회원탈퇴</a></div>
+   
+	</div>
+	<div class="btn-submit-2 text-center font-weight active h-51 pos-fix pointer" style="max-width: 500px; bottom: 0; left:50%; transform: translateX(-50%);" onclick="setUserInfo('12', '1636503135!usr-dde398e6-95bf-492a-8f06-5d001e8ee97c');">회원정보수정</div>
+</div>
+
+<script type="text/javascript">
+	loadJavascript("https://www.tongtongmall.net/assets/user/js/other/myinfo/myinfo_detail.js?ver=1687324559", null);
+</script>

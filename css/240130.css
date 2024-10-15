@@ -1,0 +1,19 @@
+@charset "utf-8";
+.ttco-link{font-size: 13px; border:1px solid #e60012; color:#e60012; padding:2px;  font-weight: bold;}
+.ttco-link:hover{background: #e60012; cursor: pointer; color:#fff;  }
+
+/*240304*/
+.font-222-16t{font-size:16px !important; color:#222222 !important; font-weight: normal !important;  }
+.font-red-16t{font-size:16px !important; color:#e60012 !important; font-weight: normal !important;  }
+.font-222-18{font-size:18px !important; color:#222222 !important; font-weight: normal !important; }
+.text-through{text-decoration: line-through ;}
+
+.font-blue-18{font-size:18px !important; color:#2694d0 !important; font-weight: normal !important;  }
+.font-red-21{font-size: 21px !important; color:#e60012;}
+
+.new_price_cont{margin-bottom: 10px; padding: 0px; margin-top: 10px;}
+.new_price_total{ margin-bottom: 10px; padding: 0px;}
+
+.new_price_cont > div, .new_price_total{display: flex; justify-content: space-between; align-items: center;}
+
+.npc_divide{display: flex; justify-content: space-between;}

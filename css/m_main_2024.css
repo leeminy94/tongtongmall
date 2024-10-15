@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+
+
+  .main_banner_slide {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .main_banner_slide .swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_banner_slide .swiper-pagination{
+    width: 50px !important; height: 20px; line-height: 1.5em; position: absolute;  background: #de322a; color:#fff; left:calc(100% - 60px); border-radius: 10px; font-size: .85em;
+  }
+
+  .main_banner_slide .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/*메인 메뉴 카테고리 아이콘*/
+.main_menu_icon_cont .swiper-wrapper{
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+}
+.main_menu_icon_cont .swiper {
+    width: 100%;
+    height: 100%;
+}
+.main_menu_icon_cont .swiper-slide b{font-size: .75em;}
+.main_menu_icon_cont .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_menu_icon_cont .swiper-slide img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.main_menu_icon_cont .swiper-slide span{font-size: .65em;}
+
+
+/*메인 화면 사이드 배너*/
+.main_side_banner{width: 100%; height: 80px; padding:0 15px; margin-top: 30px;}
+.main_side_banner img{width: 100%; height: 100%; object-fit: cover; border-radius: 4px;}
+
+
+/*2줄 신상품 소개*/
+.main_twice_product {margin-top: 20px; background: #DDD;
+  padding: 0;       position: relative;
+  height: 100%;}
+  .slider {position: relative;max-width: 1180px;margin: 20px auto 0;}
+  .slider .inner {overflow: hidden;}
+  .slider .swiper-slide {display:flex;flex-wrap:wrap; flex-direction: column; }
+  .slider .list {width: 88%; margin-bottom: 20px; height: 150px; background: #8ab4f8;font-size: 20px;line-height: 150px;text-align: center;}
+
+  .slider .list:nth-child(2n){margin-bottom: 0px;}
+  
+ .main_twice_product .slider:before{display: none;}
+ 

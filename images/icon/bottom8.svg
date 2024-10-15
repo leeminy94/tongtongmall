@@ -1,0 +1,18 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#3vjdosfiba)">
+        <circle cx="24.23" cy="17.551" r="7.295" stroke="#333" stroke-width="1.5"/>
+        <circle cx="24.23" cy="17.551" r="4.456" fill="#E60000" stroke="#333" stroke-width="1.5"/>
+        <path d="M9.56 13.292V11.16c0-.56.189-1.087.518-1.433l2.542-2.93c.293-.313.726-.025.726.477v6.018" fill="#E60000"/>
+        <path d="M9.56 13.292V11.16c0-.56.189-1.087.518-1.433l2.542-2.93c.293-.313.726-.025.726.477v6.018M8.613 21.81v-7.917c0-.337.223-.6.494-.6h4.692c.277 0 .493.27.493.6v7.918" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13.947 21.81H8.959c-.714 0-1.292.814-1.292 1.817v3.94c0 1.003.578 1.816 1.292 1.816h4.988c.713 0 1.292-.813 1.292-1.816v-3.94c0-1.003-.579-1.816-1.293-1.816z" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <mask id="dak35wmjwb" fill="#fff">
+            <rect x="16.185" y="24.65" width="17.037" height="4.733" rx="1"/>
+        </mask>
+        <rect x="16.185" y="24.65" width="17.037" height="4.733" rx="1" stroke="#333" stroke-width="3" stroke-linejoin="round" mask="url(#dak35wmjwb)"/>
+    </g>
+    <defs>
+        <clipPath id="3vjdosfiba">
+            <path fill="#fff" d="M0 0h40v40H0z"/>
+        </clipPath>
+    </defs>
+</svg>

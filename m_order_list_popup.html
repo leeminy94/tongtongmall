@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Script-Type" content="text/javascript">
+   <meta http-equiv="Content-Style-Type" content="text/css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="apple-mobile-web-app-title" content="TONGTONGMALL">
+   <meta name="title" content="합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.">
+   <meta name="facebook-domain-verification" content="9jqyzhvxh9bi8ledm60906o2f702qe" />
+            <meta id="meta-desc" name="description" content="✿48시간 고보습, 스킨+로션 올인원, 시카, 비타민 성분 첨가✿ 통통스킨로션">
+      <meta id="meta-keyword" name="keywords" content="✿48시간,고보습,,스킨+로션,올인원,,시카,,비타민,성분,첨가✿,통통스킨로션">
+      <meta property="og:description" content="✿48시간 고보습, 스킨+로션 올인원, 시카, 비타민 성분 첨가✿ 통통스킨로션">
+   
+   <meta name="robots" content="index,follow">
+   <meta property="og:title" content="통통몰 :: 합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.tongtongmall.net/">
+   <meta property="og:image" content="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+   <title>통통몰 :: 합리적인 가격에 실용적인 쇼핑을! 생활에 필요한 다양한 상품을 판매합니다.</title>
+   <link rel="shortcut icon" href="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark.jpg">
+
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/common/component/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/side_menu.css?v=1715651819" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/bottom_tab_bar.css?v=1715651819" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+   <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
+
+	<link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/swiper-bundle.min.css?ver=1715651819" />
+
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   <!--<link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/common.css?ver=1715651819" />-->
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/mobile_common.css?ver=1715651819" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/parameters.css?ver=1715651819" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/custom.css?ver=1715651819" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/toast.css?ver=1715651819" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/raterater.css?ver=1715651819" />
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/m_ttmall_style.css?ver=1715651819">
+   <link rel="stylesheet" href="https://www.tongtongmall.net/assets/user/css/subscribe.css?ver=1715651819">
+	<link rel="stylesheet" href="https://www.tongtongmall.net/assets/pc/css/240130.css?ver=1715651819" />
+
+    <!--240530-->
+    <link rel="stylesheet" href="./css/240530.css">
+    <!--240530-->
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.ui.touch-punch.min.js"></script>
+   <script src="https://tomato.etomato.com/bootstrap.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.touchSwipe.min.js"></script>
+   <script src="https://tomato.etomato.com/tomatopay/swiper.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/jquery.cookie.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.22.0/load-image.all.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/lazy/jquery.lazyload.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/exif.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/moment-timezone-with-data.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/raterater.jquery.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/component/jquery/Winwheel.js"></script>
+   <script src="https://tomato.etomato.com/crypto-js.min.js"></script>
+
+ <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+
+
+
+         <script src="https://tomato.etomato.com/tomatopay/tomato_pay_20220420.js?v=1715651819"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/utility.js?ver=1715651819"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/loadjavascript.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/toast.js"></script>
+
+   <meta name="naver-site-verification" content="939ab956fced0f816c38d1969a807cb2c97365a4" />
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154704959-1"></script>
+   <!-- Swiper JS -->
+   <!--<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>-->
+	<script src="https://www.tongtongmall.net/assets/common/component/jquery/swiper-bundle.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://www.tongtongmall.net/assets/common/js/m_main_new.js?ver=1715651819"></script>
+  <!--
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-154704959-1');
+   </script>
+   -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HWXEEDRCJ"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9HWXEEDRCJ');
+   </script>
+
+   <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '213048801265200');
+      fbq('track', 'PageView');
+   </script>
+   <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=213048801265200&ev=PageView&noscript=1"/>
+   </noscript>
+
+   <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
+   <script type="text/javascript">
+      kakaoPixel('8334493243257763801').pageView();
+   </script>
+</head>
+
+<body style="min-width: 320px;">
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script>
+<script type="text/javascript">
+   if (!wcs_add) var wcs_add={};
+   wcs_add["wa"] = "s_2914622f9666";
+   if (!_nasa) var _nasa={};
+   if(window.wcs){
+      wcs.inflow("tongtongmall.net");
+      wcs_do(_nasa);
+   }
+</script>
+   <div id="spinner_overay" style="display: block;">
+      <div class="spinner"></div>
+   </div>
+   <a href="javascript: setViewTop();" class="btn-top"><img src="https://www.tongtongmall.net/assets/user/images/btn_top.png" style="width: 45px; height: 45px;" alt=""></a>
+   <div class="dialog-overlay" onclick="closeDialog();" style="display: block;"></div>
+   <div class="dialog-overlay-address" onclick="closeDialogAddress();"></div>
+   <div class="dialog-overlay-shipping" onclick="closeDialogShipping();"></div>
+   
+   <!--240530-->
+   <div class="dialog-normal dialog-ttco" style="display: block;">
+        <div class="dialog-ttco-top">
+            <p>TTR <br>지급 완료!</p>
+            <img class="dtt_l" src="./images/popup_left.png" alt="">
+          <img class="dtt_r" src="./images/popup_right.png" alt="">
+        </div>
+        <div class="dialog-ttco-mid">
+            <div class="dtm_price">
+                + <span>10</span> TTR
+            </div>
+            <img src="./images/popup_layer02_ttr.png" alt="">
+        </div>
+        <div class="dialog-ttco-bottom">
+            <p class="purple">포토후기 작성 + <span>10</span> TTR</p>
+            <p>지갑에서 확인하세요.</p>
+        </div>
+    </div>
+
+    <div class="dialog-normal dialog-ttco" style="display: none;">
+      <div class="dialog-ttco-top">
+          <p>TTR <br>지급 완료!</p>
+          <img class="dtt_l" src="./images/popup_left.png" alt="">
+        <img class="dtt_r" src="./images/popup_right.png" alt="">
+      </div>
+      <div class="dialog-ttco-mid">
+          <div class="dtm_price">
+              + <span>5</span> TTR
+          </div>
+          <img src="./images/popup_layer02_ttr.png" alt="">
+      </div>
+      <div class="dialog-ttco-bottom">
+          <p class="purple">구매후기 작성 + <span>5</span> TTR</p>
+          <p>지갑에서 확인하세요.</p>
+      </div>
+  </div>
+    <!--240530-->
+   
+   <!-- 일반다이얼로그(통통몰) -->
+   <div class="dialog-normal">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn"></div>
+      </div>
+   </div>
+   <!-- 일반다이얼로그(통통마일) -->
+   <div class="dialog-normal-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn-gtc"></div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통몰-네/아니오) -->
+   <div class="dialog-setting">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;"></div>
+            <div class="btn-1 back-0 fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통마일-네/아니오)  -->
+   <div class="dialog-setting-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;"></div>
+            <div class="btn-1 back-gtc fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통몰) -->
+   <div class="dialog-cart">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-default back-default fl pointer" style="color: #de322a;">쇼핑 계속하기</div>
+            <div class="btn-1 back-0 fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통마일) -->
+   <div class="dialog-cart-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="https://www.tongtongmall.net/assets/user/images/add_gtc_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;">쇼핑 계속하기</div>
+            <div class="btn-1 back-gtc fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 배송지설정 다이얼로그 -->
+   <div class="dialog-address">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogAddress();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content" style="height: 100%;">
+         <div id="wrap" style="display: none; width: 100%; height: 80%; margin: 5px 0; position: relative;"></div>
+      </div>
+   </div>
+   <!-- 배송정보 다이얼로그 -->
+   <div class="dialog-shipping">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogShipping();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content pt-9">
+         <div class="font-999-12 mb-9">수령인</div>
+         <div class="font-222-12 mb-21" id="name"></div>
+         <div class="font-999-12 mb-9">연락처</div>
+         <div class="font-222-12 mb-21" id="phone"></div>
+         <div class="font-999-12 mb-9">배송지</div>
+         <div class="font-222-12 mb-21 line-height-1" id="address"></div>
+         <div class="font-999-12 mb-9">배송메모</div>
+         <div class="font-222-12" id="memo" style="padding-bottom: 44px;"></div>
+      </div>
+   </div>
+   <!-- 간편결제용 카드사 다이얼로그 -->
+   <div class="dialog-card">
+      <div style="height: 100%;">
+         <div class="dialog-header">
+            <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+         </div>
+         <div class="dialog-title" style="height: 81%; overflow-y: auto;">
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('비씨', '01');">비씨카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('국민', '02');">국민카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('외환', '03');">외환카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('삼성', '04');">삼성카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('신한', '06');">신한카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('현대', '07');">현대카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('롯대', '08');">롯데카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('NH농협', '12');">NH농협카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('하나SK', '16');">하나SK카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('씨티', '11');">씨티카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('우리', '15');">우리카드</div>
+         </div>
+      </div>
+   </div>
+   <div class="dialog-coupon">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1">[쿠폰 <span class="disc-rate">10%</span>] 당첨!</div>
+         <div class="pos-re mt-15" style="padding: 0 45px; display: flex; justify-content: center;">
+            <img src="https://www.tongtongmall.net/assets/user/images/coupon_bg.png" alt="" style="width: 100%; height: 56px;">
+            <div class="pos-ab" style="top: 8px;">
+               <p class="mb-5" style="font-size: 12px; color: #666666; font-weight: bold;">행운 할인쿠폰</p>
+               <p class="mb-0 disc-rate" style="font-size: 18px; color: #de322a; font-weight: bold;">10%</p>
+            </div>
+         </div>
+      </div>
+      <div class="dialog-content">
+         <p style="font-size: 12px; color: #999999; padding: 0 30px;">* <span id="apply-part">전체 상품 사용가능</span></p>
+         <div class="text-center">
+            <p style="font-size: 13px; color: #555555; line-height: 1.3;">
+               하단
+               <span class="pointer" style="color: #de322a; text-decoration: underline;" onclick="window.location.replace('https://www.tongtongmall.net/coupon');">[쿠폰함 바로가기]</span>
+               에서<br>발급 받은 쿠폰을 확인 해보세요.
+            </p>
+            <p class="pb-15" style="font-size: 13px; color: #555555; line-height: 1.3;">오늘까지 사용 가능하며,<br>내일도 받으실 수 있어요.</p>
+         </div>
+      </div>
+   </div>
+   <!-- 통통몰앱으로 이동팝업 -->
+   <div class="run-app-view">
+      <div class="row mb-15">
+         <img class="fl" src="https://www.tongtongmall.net/assets/user/images/tongtongmall_mark_2.png" alt="" style="width: 100%;">
+      </div>
+      <div class="row mb-15">
+         <img id="run-app" src="https://www.tongtongmall.net/assets/user/images/btn_app_redirect.png" alt="" style="width: 100%;" onclick="">
+      </div>
+      <div id="run-web" class="text-center font-weight" style="font-size: 15px; color: #fff; text-decoration: underline;" onclick="runWeb();">아니요, 웹에서 볼게요.</div>
+   </div>
+ 
+<div id="header-other" class="default-unit border-btm " >
+   <div class="row padding-15">
+      <div class="col-xs-12">
+                     <div class="col-xs-1">
+                                 <img class="pointer" src="https://www.tongtongmall.net/assets/user/images/ic_back.svg" onclick="goBack('https://www.tongtongmall.net/');" style="width: 18px; height: 16px;" alt="">
+                           </div>
+                           <div class="col-xs-8">
+                                       <div id="cat-title" class="font-222-18 font-weight ml-10">주문내역</div>
+                                 </div>
+                                       <div class="col-xs-3 text-right">
+                                                               <img class="fr ml-10 pointer" src="https://www.tongtongmall.net/assets/user/images/header_ic2.svg" alt="" onclick="window.location.replace('https://www.tongtongmall.net/basket')" style="width: 24px; ">
+                                                               <img class="fr pointer" src="https://www.tongtongmall.net/assets/user/images/icon.png" alt="" style="width: 24px;" onclick="window.location.replace('https://www.tongtongmall.net/search')">
+
+
+                                 </div>
+                           </div>
+   </div>
+</div>
+<div id="order" class="default-unit" data-reward="0" style="padding-bottom: 20px;" data-status="">
+   <div id="order-kind">
+      <div class="row">
+         <div class="col-xs-12 border-btm">
+            <div class="col-xs-6 text-center">
+               <div class="prod-tab active pointer pointer" onclick="setOrderKind(this, 'order');" style="font-size: 14px;">통통몰</div>
+            </div>
+            <div class="col-xs-6 text-center pointer">
+               <div class="prod-tab pointer" onclick="setOrderKind(this, 'gtc');" style="font-size: 14px;">통통마일몰</div>
+            </div>
+           <!--<div class="col-xs-4 text-center pointer">
+               <div class="prod-tab pointer" onclick="setOrderKind(this, 'subpurchase');" style="font-size: 14px;">구매대행 신청내역</div>
+            </div>-->
+         </div>
+      </div>
+   </div>
+   <div id="order-search-tool" class="row border-btm" style="padding: 8px 15px;">
+               <div id="date-text" class="font-999-12 fl">전체</div>
+            <img id="icon-top-bottom" class="fl ml-6 mt-4" src="https://www.tongtongmall.net/assets/user/images/ico_down_2.png" alt="" style="width: 9px; height: 5px;" onclick="setViewItem(this, 'date');">
+      <img id="search" class="fr pointer" src="https://www.tongtongmall.net/assets/user/images/ico_search_2.png" alt="" style="width: 12px; height: 12px; display: block;" onclick="setViewItem(this, 'cancel');">
+      <img id="cancel" class="fr pointer" src="https://www.tongtongmall.net/assets/user/images/ico_cancel.png" alt="" style="width: 10px; height: 10px; display: none;" onclick="setViewItem(this, 'search');">
+   </div>
+   <div id="order-search-content" style="display: none;">
+      <div id="order-date" class="padding-15 border-btm" style="display: none;">
+         <div class="row">
+            <div class="col-xs-3">
+                                 <div class="btn-other-5 active pointer h-36 pt-10" style="border-top-left-radius: 3px; border-bottom-left-radius: 3px;" onclick="setDataByDate(this, 'all');">전체</div>
+                           </div>
+            <div class="col-xs-3">
+               <div class="btn-other-5 pointer h-36 pt-10" onclick="setDataByDate(this, '1');">1개월</div>
+            </div>
+            <div class="col-xs-3">
+                                 <div class="btn-other-5 pointer h-36 pt-10" onclick="setDataByDate(this, '3');">3개월</div>
+                           </div>
+            <div class="col-xs-3">
+               <div class="btn-other-5 pointer h-36 pt-10" style="border-top-right-radius: 3px; border-bottom-right-radius: 3px;" onclick="setDataByDate(this, '6');">6개월</div>
+            </div>
+         </div>
+      </div>
+      <div id="order-search" class="padding-15 border-btm pos-re" style="display: none;">
+         <input id="search-value" class="radius-3 h-36 pr-30" type="text" name="" value="" placeholder="주문상품 검색" onkeypress="setSearchOrder(this, event);" autocomplete="off">
+         <img class="pos-ab pointer" src="https://www.tongtongmall.net/assets/user/images/ico_search_3.png" alt="" style="width: 15px; height: 15px; top: 26px; right: 25px;" onclick="setClickSearch(this);">
+         <div id="search-result" class="mt-12" style="display: none;">
+            <span class="font-222-12">검색결과&nbsp;</span>
+            <span class="font-default-12">0</span>
+            <span class="font-222-12">건</span>
+         </div>
+      </div>
+   </div>
+   <div class="back-line"></div>
+   <div class="padding-15">
+      <div id="shipping-status" class="row border-all radius-5 mb-6">
+         <div class="col-xs-3 text-center" style="padding: 15px 0px;">
+                           <div class="font-weight mb-15" style="font-size: 15px; color: #cecece;">0</div>
+               <div class="" style="font-size: 12px; color: #cecece;">결제완료</div>
+                     </div>
+         <div class="col-xs-3 text-center" style="padding: 15px 0px;">
+                           <div class="font-weight mb-15" style="font-size: 15px; color: #cecece;">0</div>
+               <div class="" style="font-size: 12px; color: #cecece;">배송준비중</div>
+                     </div>
+         <div class="col-xs-3 text-center" style="padding: 15px 0px;">
+                           <div class="font-weight mb-15" style="font-size: 15px; color: #cecece;">0</div>
+               <div class="" style="font-size: 12px; color: #cecece;">배송중</div>
+                     </div>
+         <div class="col-xs-3 text-center" style="padding: 15px 0px;">
+                           <div class="font-default-15 font-weight mb-15 pointer" onclick="setViewOrder('374');">7</div>
+               <div class="font-222-12">배송완료</div>
+                     </div>
+      </div>
+      <div id="other-status" class="row border-all radius-5">
+         <div class="col-xs-6 text-center h-36 pt-10" style="border-right: 1px solid #dedede;">
+                           <span class="font-222-12">취소/교환/환불</span>
+               <span class="font-default-12 ml-9 font-weight pointer" onclick="setViewOrder('cancel');">27</span>
+                     </div>
+         <div class="col-xs-6 text-center h-36 pt-10">
+                           <span class="font-222-12">구매확정</span>
+               <span class="font-default-12 ml-9 font-weight pointer" onclick="setViewOrder('427');">1</span>
+                     </div>
+      </div>
+   </div>
+   <div class="back-line-border"></div>
+
+   <div class="order-content" style="display: block;">
+                     <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2024.05.13</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=4079'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/87571952213950464.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">✿48시간 고보습, 스킨+로션 올인원, 시카, 비타민 성분 첨가✿ 통통스킨로션</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">7,950<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=4077'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/87571952213950464.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">✿48시간 고보습, 스킨+로션 올인원, 시카, 비타민 성분 첨가✿ 통통스킨로션</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">7,950<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2024.05.09</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                            <div class="font-222-12 font-weight fl">구매확정</div>
+                                                                                                                                                                                                                                    </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=4069'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/9126304199712178176.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">23년 햅쌀 강화교동 해풍맞은 상등급 고시히카리쌀 통통쌀 4kg (1kg씩 진공포장)</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">18,000<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">통통코인결제</div>
+                                                   </div>
+                         
+                                                                                          <div class="font-0ba-13 ml-7 mt-9">189.4 통통코인</div>
+                                                          
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                                                         <!-- 구매후기 -->
+                                                                                                   <td class="pointer h-36 font-222-12" width="100%" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=17735'">구매후기보기</td>
+                                                                                          
+                           <!-- 배송취소이면 -->
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2024.03.04</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3867'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1919342024687878144.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통백두산김치 5kg</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">15,400<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3866'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/6402020131920150528.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">✦소량 한정판매✦ 100% 국내산 아카시아 천연벌꿀, 통통꿀</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">31,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">통통코인결제</div>
+                                                   </div>
+                         
+                                                                                          <div class="font-0ba-13 ml-7 mt-9">309.6 통통코인</div>
+                                                          
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2024.02.14</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3799'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/8315394.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">마이크 커버 2P 블랙</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">108<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">통통코인결제</div>
+                                                   </div>
+                         
+                                                                                          <div class="font-0ba-13 ml-7 mt-9">1.0 통통코인</div>
+                                                          
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2024.01.29</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3703'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/6168158879185108992.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">샴푸+린스+바디워시를 하나로 올인원샴푸 통통생활 통통비타올인원 1L 대용량</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">12,700<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.12.27</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3567'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1261618.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 주방세제 500ml, 4개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">3개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.12.26</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3561'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1261618.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 주방세제 500ml, 4개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">2개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.12.04</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3475'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/9126304199712178176.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">23년 햅쌀 강화교동 해풍맞은 상등급 고시히카리쌀 통통쌀 4kg (1kg씩 진공포장)</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">22,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.11.23</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                       <div class="font-222-12 font-weight fl">배송완료</div>
+                                                   <div class="font-default-12 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_info?orderid=3414'">배송조회 ></div>
+                                                                                                                                    <div class="font-222-12 font-weight">취소처리중</div>
+                                                                                                                                                                                          </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3414'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/6236501571325132800.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">★산지직송★★청년감귤★ 당도 높은 조생 감귤</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">18,000<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">통통코인결제</div>
+                                                   </div>
+                         
+                                                                                          <div class="font-0ba-13 ml-7 mt-9">157.6 통통코인</div>
+                                                          
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                                                         <!-- 반품신청 -->
+                                                               <!-- 교환신청전 -->
+                                                                     <!-- 반품신청전 -->
+                                    <td id="refund" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/refund?orderid=3414'">반품신청</td>
+                                                               
+                              <!-- 교환신청 -->
+                                                               <!-- 구매확정전이고 반품전이면 -->
+                                                                     <!-- 교환신청전 -->
+                                    <td id="exchange" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/exchange?orderid=3414'">교환신청</td>
+                                                               
+                              <!-- 구매확정 -->
+                                                               <!-- 반품신청전, 교환신청전이면 -->
+                                   
+                                                                           <td id="save" class="pointer h-36 font-222-12" width="25%" onclick="setCheckPurchase(this, '3414', 'DE2935164552548974592', 'D37677506114879488', '18000', '330', '★산지직송★★청년감귤★ 당도 높은 조생 감귤');">구매확정</td>
+                                                                      
+                                                                                                
+                                 <!-- 구매후기 -->
+                                                                     <td class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/review_write?productid=17796&attrid=10690&ordercd=DE2935164552548974592'">구매후기쓰기</td>
+                                                                                                                        
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                       <div class="font-222-12 font-weight fl">배송완료</div>
+                                                   <div class="font-default-12 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_info?orderid=3396'">배송조회 ></div>
+                                                                                                                                                                                                                                                                                 </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3396'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/6236501571325132800.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">★산지직송★★청년감귤★ 당도 높은 조생 감귤</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">18,000<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                                                         <!-- 반품신청 -->
+                                                               <!-- 교환신청전 -->
+                                                                     <!-- 반품신청전 -->
+                                    <td id="refund" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/refund?orderid=3396'">반품신청</td>
+                                                               
+                              <!-- 교환신청 -->
+                                                               <!-- 구매확정전이고 반품전이면 -->
+                                                                     <!-- 교환신청전 -->
+                                    <td id="exchange" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/exchange?orderid=3396'">교환신청</td>
+                                                               
+                              <!-- 구매확정 -->
+                                                               <!-- 반품신청전, 교환신청전이면 -->
+                                   
+                                                                           <td id="save" class="pointer h-36 font-222-12" width="25%" onclick="setCheckPurchase(this, '3396', 'DE8054355541738127360', 'D2517242308840128512', '18000', '331', '★산지직송★★청년감귤★ 당도 높은 조생 감귤');">구매확정</td>
+                                                                      
+                                                                                                
+                                 <!-- 구매후기 -->
+                                                                     <td class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=17795'">구매후기보기</td>
+                                                                                                                        
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.11.22</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3387'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1888722678848684032.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">★산지직송★ 당도 높은 조생 감귤</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">19,000<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.10.24</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3243'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1261618.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 주방세제 500ml, 4개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.10.19</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3235'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/6637346466719334400.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">구룡포 연지 홍게 A급(살수율 80%)</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">23,000<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.09.26</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                       <div class="font-222-12 font-weight fl">배송완료</div>
+                                                   <div class="font-default-12 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_info?orderid=3043'">배송조회 ></div>
+                                                                                                                                                                                                                                                                                 </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=3043'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/4357694988415401984.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">★★산지직송★★팜앤그로 샤인머스켓</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">45,000<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                           <div class="font-999-12 ml-7 mt-9">11,000원 쿠폰 할인</div>
+                                             </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                                                         <!-- 반품신청 -->
+                                                               <!-- 교환신청전 -->
+                                                                     <!-- 반품신청전 -->
+                                    <td id="refund" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/refund?orderid=3043'">반품신청</td>
+                                                               
+                              <!-- 교환신청 -->
+                                                               <!-- 구매확정전이고 반품전이면 -->
+                                                                     <!-- 교환신청전 -->
+                                    <td id="exchange" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/exchange?orderid=3043'">교환신청</td>
+                                                               
+                              <!-- 구매확정 -->
+                                                               <!-- 반품신청전, 교환신청전이면 -->
+                                   
+                                                                           <td id="save" class="pointer h-36 font-222-12" width="25%" onclick="setCheckPurchase(this, '3043', 'DE6481853622513565696', 'D8089780685398605824', '45000', '331', '★★산지직송★★팜앤그로 샤인머스켓');">구매확정</td>
+                                                                      
+                                                                                                
+                                 <!-- 구매후기 -->
+                                                                     <td class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/review_write?productid=17466&attrid=10428&ordercd=DE6481853622513565696'">구매후기쓰기</td>
+                                                                                                                        
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.09.19</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                       <div class="font-222-12 font-weight fl">배송완료</div>
+                                                   <div class="font-default-12 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_info?orderid=2955'">배송조회 ></div>
+                                                                                                                                                                                                                                                                                 </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2955'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/5304381075525468160.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">★명절선물★ 통통몰 X LA생갈비(test)</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">56,000<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                           <div class="font-999-12 ml-7 mt-9">11,200원 쿠폰 할인</div>
+                                             </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                                                         <!-- 반품신청 -->
+                                                               <!-- 교환신청전 -->
+                                                                     <!-- 반품신청전 -->
+                                    <td id="refund" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/refund?orderid=2955'">반품신청</td>
+                                                               
+                              <!-- 교환신청 -->
+                                                               <!-- 구매확정전이고 반품전이면 -->
+                                                                     <!-- 교환신청전 -->
+                                    <td id="exchange" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/exchange?orderid=2955'">교환신청</td>
+                                                               
+                              <!-- 구매확정 -->
+                                                               <!-- 반품신청전, 교환신청전이면 -->
+                                   
+                                                                           <td id="save" class="pointer h-36 font-222-12" width="25%" onclick="setCheckPurchase(this, '2955', 'DE2671979268866572288', 'D7252985296516546560', '56000', '331', '★명절선물★ 통통몰 X LA생갈비(test)');">구매확정</td>
+                                                                      
+                                                                                                
+                                 <!-- 구매후기 -->
+                                                                     <td class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/review_write?productid=17450&attrid=10412&ordercd=DE2671979268866572288'">구매후기쓰기</td>
+                                                                                                                        
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.08.31</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2676'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/8117078.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 일회용수세미 60매, 2개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">10,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2677'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/8117078.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 일회용수세미 60매, 2개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">10,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2675'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/8117078.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 일회용수세미 60매, 2개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">10,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.08.25</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                       <div class="font-222-12 font-weight fl">배송완료</div>
+                                                   <div class="font-default-12 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_info?orderid=2595'">배송조회 ></div>
+                                                                                                                                                                                                                                                                                 </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2595'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/7352707212994674688.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">국보국밥 8종 1+1</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">14,000<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                                                         <!-- 반품신청 -->
+                                                               <!-- 교환신청전 -->
+                                                                     <!-- 반품신청전 -->
+                                    <td id="refund" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/refund?orderid=2595'">반품신청</td>
+                                                               
+                              <!-- 교환신청 -->
+                                                               <!-- 구매확정전이고 반품전이면 -->
+                                                                     <!-- 교환신청전 -->
+                                    <td id="exchange" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/exchange?orderid=2595'">교환신청</td>
+                                                               
+                              <!-- 구매확정 -->
+                                                               <!-- 반품신청전, 교환신청전이면 -->
+                                   
+                                                                           <td id="save" class="pointer h-36 font-222-12" width="25%" onclick="setCheckPurchase(this, '2595', 'DE3168060197851627520', 'D6114555303624179712', '14000', '331', '국보국밥 8종 1+1');">구매확정</td>
+                                                                      
+                                                                                                
+                                 <!-- 구매후기 -->
+                                                                     <td class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/review_write?productid=17351&attrid=10333&ordercd=DE3168060197851627520'">구매후기쓰기</td>
+                                                                                                                        
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                       <div class="font-222-12 font-weight fl">배송완료</div>
+                                                   <div class="font-default-12 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_info?orderid=2596'">배송조회 ></div>
+                                                                                                                                                                                                                                                                                 </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2596'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/7352707212994674688.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">국보국밥 8종 1+1</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                                                         <!-- 반품신청 -->
+                                                               <!-- 교환신청전 -->
+                                                                     <!-- 반품신청전 -->
+                                    <td id="refund" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/refund?orderid=2596'">반품신청</td>
+                                                               
+                              <!-- 교환신청 -->
+                                                               <!-- 구매확정전이고 반품전이면 -->
+                                                                     <!-- 교환신청전 -->
+                                    <td id="exchange" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/exchange?orderid=2596'">교환신청</td>
+                                                               
+                              <!-- 구매확정 -->
+                                                               <!-- 반품신청전, 교환신청전이면 -->
+                                   
+                                                                           <td id="save" class="pointer h-36 font-222-12" width="25%" onclick="setCheckPurchase(this, '2596', 'DE4901881561160351744', 'D6114555303624179712', '13500', '331', '국보국밥 8종 1+1');">구매확정</td>
+                                                                      
+                                                                                                
+                                 <!-- 구매후기 -->
+                                                                     <td class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/review_write?productid=17350&attrid=10332&ordercd=DE4901881561160351744'">구매후기쓰기</td>
+                                                                                                                        
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.08.24</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2555'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/7352707212994674688.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">국보국밥 8종 1+1</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                           <div class="font-999-12 ml-7 mt-9">1,350원 쿠폰 할인</div>
+                                             </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2552'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/7352707212994674688.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">국보국밥 8종 1+1</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                           <div class="font-999-12 ml-7 mt-9">2,700원 쿠폰 할인</div>
+                                             </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.08.22</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2534'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1261618.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 주방세제 500ml, 4개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2533'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1261618.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 주방세제 500ml, 4개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.08.07</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2514'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/8117078.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 일회용수세미 60매, 2개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">10,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.07.12</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2436'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/8315394.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">마이크 커버 2P 블랙</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">120<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.07.04</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                       <div class="font-222-12 font-weight fl">배송완료</div>
+                                                   <div class="font-default-12 fr pointer" onclick="window.location.href='https://www.tongtongmall.net/delivery_info?orderid=2353'">배송조회 ></div>
+                                                                                                                                                                                                                                                                                 </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2353'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1261618.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 주방세제 500ml, 4개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">통통코인결제</div>
+                                                   </div>
+                         
+                                                                                          <div class="font-0ba-13 ml-7 mt-9">161.7 통통코인</div>
+                                                          
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                                                         <!-- 반품신청 -->
+                                                               <!-- 교환신청전 -->
+                                                                     <!-- 반품신청전 -->
+                                    <td id="refund" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/refund?orderid=2353'">반품신청</td>
+                                                               
+                              <!-- 교환신청 -->
+                                                               <!-- 구매확정전이고 반품전이면 -->
+                                                                     <!-- 교환신청전 -->
+                                    <td id="exchange" class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/exchange?orderid=2353'">교환신청</td>
+                                                               
+                              <!-- 구매확정 -->
+                                                               <!-- 반품신청전, 교환신청전이면 -->
+                                   
+                                                                           <td id="save" class="pointer h-36 font-222-12" width="25%" onclick="setCheckPurchase(this, '2353', 'DE9993313588202', 'D3664278778713', '13500', '330', '통통생활 주방세제 500ml, 4개');">구매확정</td>
+                                                                      
+                                                                                                
+                                 <!-- 구매후기 -->
+                                                                     <td class="pointer h-36 font-222-12" width="25%" onclick="window.location.href='https://www.tongtongmall.net/product_detail?productid=17150'">구매후기보기</td>
+                                                                                                                        
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.06.19</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2336'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/7525406.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 섬유유연제 1.7L 1+1</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">12,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                 <div class="font-222-12 font-weight">환불처리중</div>
+                                                                                 </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2337'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/5487484.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 세탁세제 1.7L 1+1</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">12,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2338'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/8117078.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 일회용수세미 60매, 2개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">10,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                                     </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2339'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/1261618.png" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">통통생활 주방세제 500ml, 4개</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">13,500<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">카드결제</div>
+                                                   </div>
+                         
+                            
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+               <div class="order-item">
+            <div style="padding: 8px 15px;">
+               <div class="font-222-12">2023.03.24</div>
+            </div>
+         </div>
+         <div id="content">
+                           <div class="padding-15 border-top pb-0">
+                  <div class="row">
+                                                                                                                                                                           <div class="font-222-12 font-weight">취소완료</div>
+                                                                                                                                                      <div class="font-222-12 font-weight">환불완료</div>
+                                                            </div>
+               </div>
+               <div class="padding-15 pb-0">
+                  <div class="row pb-15 pointer" onclick="window.location.href='https://www.tongtongmall.net/order_detail?orderid=2240'">
+                     <div class="col-xs-3">
+                        <img class="thumbnail m0" src="https://img.tongtongmall.net/assets/upload/product/8315394.jpg" alt="" style="width: 100%; height: auto !important;">
+                                             </div>
+                     <div class="col-xs-9">
+                                                   <div class="mt-3 ml-9 font-222-12 content-width line-height-2">마이크 커버 2P 블랙</div>
+                                                                        <div class="font-777-12 ml-7 mt-9">1개</div>
+                        <div class="row mt-9">
+                                                      <div class="font-222-15 font-weight ml-7 fl">120<span class="font-222-12"> 원</span></div>
+                                                                                                               <div class="border-all ml-6 fl font-999-11" style="padding: 1px 2px;">통통코인결제</div>
+                                                   </div>
+                         
+                                                                                          <div class="font-0ba-13 ml-7 mt-9">0.9 통통코인</div>
+                                                          
+                                                                                                                     </div>
+                  </div>
+               </div>
+               <div class="padding-15 pt-9">
+                  <table border="1" class="text-center border-all" style="width: 100%;">
+                     <tbody>
+                        <tr>
+                           <!-- 결제완료 -->
+                           
+                           <!-- 배송준비중 -->
+                           <!---->
+
+                           <!-- 배송준비중 -->
+                           
+                           <!-- 배송중 -->
+                           
+                           <!-- 배송완료 -->
+                           
+                           <!-- 구매확정이면 -->
+                           
+                           <!-- 배송취소이면 -->
+                                                         <td class="h-36 font-222-12 back-6" width="50%">주문취소</td>
+                              <td class="pointer h-36 font-222-12" width="50%" onclick="window.location.href='https://www.tongtongmall.net/service_write'">판매자문의</td>
+                                                   </tr>
+                     </tbody>
+                  </table>
+               </div>
+                     </div>
+         <div class="back-line-border"></div>
+         </div>
+   <div class="gtc-content" style="display: none;"></div>
+   <div class="subpurchase-content" style="display: none;"></div>
+</div>
+
+<script type="text/javascript">
+   loadJavascript("https://www.tongtongmall.net/assets/user/js/orderinfo/order/order.js?ver=1715651819", null);
+</script>

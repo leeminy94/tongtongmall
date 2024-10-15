@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="Content-Script-Type" content="text/javascript">
+   <meta http-equiv="Content-Style-Type" content="text/css">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="apple-mobile-web-app-title" content="TONGTONGMALL">
+   <meta name="title" content="통통몰 - 최저가보다 더 저렴하게!">
+    <meta id="meta-desc" name="description" content="[백억하누] 백억 특 갈비탕">
+    <meta id="meta-keyword" name="keywords" content="[백억하누],백억,특,갈비탕">
+    <meta property="og:description" content="[백억하누] 백억 특 갈비탕">
+   
+   <meta name="robots" content="index,follow">
+   <meta property="og:title" content="통통몰 :: 최저가보다 더 저렴하게!">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.tongtongmall.net/">
+   <meta property="og:image" content="http://211.192.45.232/assets/user/images/tongtongmall_mark.jpg">
+   <title>통통몰 :: 최저가보다 더 저렴하게!</title>
+
+   <link rel="shortcut icon" href="http://211.192.45.232/assets/user/images/tongtongmall_mark.jpg">
+
+   <link rel="stylesheet" href="http://211.192.45.232/assets/common/component/slick/slick.css" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/common/component/slick/slick-theme.css" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/common/component/bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/side_menu.css?v=1682468407" />
+   <link rel="stylesheet" href="https://tomato.etomato.com/tomatopay/css/bottom_tab_bar.css?v=1682468407" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="http://211.192.45.232/assets/pc/css/common.css?ver=1682468407" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/pc/css/parameters.css?ver=1.0" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/pc/css/custom.css?ver=1682468407" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/pc/css/toast.css?ver=1.0" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/pc/css/raterater.css?ver=1.0" />
+   <link rel="stylesheet" href="http://211.192.45.232/assets/pc/css/ttmall_style.css?ver=1682468407" />
+   <link rel="stylesheet" href="./css/ttmal_main_style.css">
+
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/jquery.ui.touch-punch.min.js"></script>
+   <script src="https://tomato.etomato.com/bootstrap.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/jquery.touchSwipe.min.js"></script>
+   <script src="https://tomato.etomato.com/tomatopay/swiper.min.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/jquery.cookie.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-load-image/2.22.0/load-image.all.min.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/lazy/jquery.lazyload.min.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/exif.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/moment.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/moment-timezone-with-data.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/raterater.jquery.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/jquery/Winwheel.js"></script>
+   <script src="http://211.192.45.232/assets/common/component/slick/slick.min.js"></script>
+   <script src="https://tomato.etomato.com/crypto-js.min.js"></script>
+
+    <script src="https://tomato.etomato.com/tomatopay/tomato_pay_20220420.js?v=1682468407"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+   <!-- <script src="http://211.192.45.232/assets/pc/common/js/utility.js?ver=1682468407"></script> -->
+   <script src="./js/utility.js"></script>
+   <script src="http://211.192.45.232/assets/pc/common/js/loadjavascript.js"></script>
+   <script src="http://211.192.45.232/assets/pc/common/js/toast.js"></script>
+
+   <meta name="naver-site-verification" content="939ab956fced0f816c38d1969a807cb2c97365a4" />
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154704959-1"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  
+   <script src="http://211.192.45.232/assets/common/js/pay/webtoolkit.md5.js"></script>
+   <script src="http://211.192.45.232/assets/common/js/pay/incMerchant.js"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-154704959-1');
+   </script>
+   <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+   <script type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "11410ee1ab15bb";
+      if (window.wcs) {
+         wcs_do();
+      }
+   </script>
+</head>
+
+<body style="min-width: 1920px;max-width: 1920px;">
+  
+   <a href="javascript: setViewTop();" class="btn-top"  ><img src="http://211.192.45.232/assets/pc/images/top_icon.png" style="width: 38px; height: 38px;" alt=""></a>
+   <a href="javascript: setViewDown();" class="btn-bottom" ><img src="http://211.192.45.232/assets/pc/images/bottom_icon.png" style="width: 38px; height: 38px; " alt=""></a>
+   <div class="dialog-overlay" onclick="closeDialog();"></div>
+   <div class="dialog-overlay-address" onclick="closeDialogAddress();"></div>
+   <div class="dialog-overlay-shipping" onclick="closeDialogShipping();"></div>
+   <!-- 일반다이얼로그(통통몰) -->
+   <div class="dialog-normal">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/pc/images/close_icon.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn"></div>
+      </div>
+   </div>
+   <!-- 일반다이얼로그(통통마일) -->
+   <div class="dialog-normal-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/pc/images/close_icon.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn-gtc"></div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통몰-네/아니오) -->
+   <div class="dialog-setting">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/pc/images/close_icon.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="btn-layout">
+            <div class="btn-1  pointer"></div>
+            <div class="btn-1  pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 설정 다이얼로그(통통마일-네/아니오)  -->
+   <div class="dialog-setting-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/pc/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-2"></div>
+      </div>
+      <div class="dialog-content line-height-2"></div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;"></div>
+            <div class="btn-1 back-gtc fr pointer"></div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통몰) -->
+   <div class="dialog-cart">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/pc/images/close_icon.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="http://211.192.45.232/assets/pc/images/add_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row" style="display: flex;justify-content: space-between;">
+            <div class="btn-1 border-default back-default  pointer" style="color: #de322a;width:48%;">쇼핑 계속하기</div>
+            <div class="btn-1 back-0  pointer" style="width:48%;">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 장바구니 다이얼로그(통통마일) -->
+   <div class="dialog-cart-gtc">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title">
+            <img src="http://211.192.45.232/assets/user/images/add_gtc_cart.png" alt="" style="width: 75px;">
+         </div>
+      </div>
+      <div class="dialog-content font-weight font-222-17 text-center">상품이 장바구니에 담겼습니다.</div>
+      <div class="dialog-footer">
+         <div class="row">
+            <div class="btn-1 border-gtc back-default fl pointer" style="color: #660588;">쇼핑 계속하기</div>
+            <div class="btn-1 back-gtc fr pointer">구매하기</div>
+         </div>
+      </div>
+   </div>
+   <!-- 배송지설정 다이얼로그 -->
+   <div class="dialog-address">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogAddress();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content" style="height: 100%;">
+         <div id="wrap" style="display: none; width: 100%; height: 80%; margin: 5px 0; position: relative;"></div>
+      </div>
+   </div>
+   <!-- 배송정보 다이얼로그 -->
+   <div class="dialog-shipping">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialogShipping();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1"></div>
+      </div>
+      <div class="dialog-content pt-9">
+         <div class="font-999-12 mb-9">수령인</div>
+         <div class="font-222-12 mb-21" id="name"></div>
+         <div class="font-999-12 mb-9">연락처</div>
+         <div class="font-222-12 mb-21" id="phone"></div>
+         <div class="font-999-12 mb-9">배송지</div>
+         <div class="font-222-12 mb-21 line-height-1" id="address"></div>
+         <div class="font-999-12 mb-9">배송메모</div>
+         <div class="font-222-12" id="memo" style="padding-bottom: 44px;"></div>
+      </div>
+   </div>
+   <!-- 간편결제용 카드사 다이얼로그 -->
+   <div class="dialog-card">
+      <div style="height: 100%;">
+         <div class="dialog-header">
+            <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+         </div>
+         <div class="dialog-title" style="height: 81%; overflow-y: auto;">
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('비씨', '01');">비씨카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('국민', '02');">국민카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('외환', '03');">외환카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('삼성', '04');">삼성카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('신한', '06');">신한카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('현대', '07');">현대카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('롯대', '08');">롯데카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('NH농협', '12');">NH농협카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('하나SK', '16');">하나SK카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('씨티', '11');">씨티카드</div>
+            <div class="tag-title line-height-1 border-btm pt-5 pb-5 pointer" onclick="selectCardCompany('우리', '15');">우리카드</div>
+         </div>
+      </div>
+   </div>
+   <div class="dialog-coupon">
+      <div class="dialog-header">
+         <img class="tag-close pointer" src="http://211.192.45.232/assets/user/images/ico_cancel.png" alt="" onclick="closeDialog();">
+      </div>
+      <div class="dialog-title">
+         <div class="tag-title line-height-1">[쿠폰 <span class="disc-rate">10%</span>] 당첨!</div>
+         <div class="pos-re mt-15" style="padding: 0 45px; display: flex; justify-content: center;">
+            <img src="http://211.192.45.232/assets/user/images/coupon_bg.png" alt="" style="width: 100%; height: 56px;">
+            <div class="pos-ab" style="top: 8px;">
+               <p class="mb-5" style="font-size: 12px; color: #666666; font-weight: bold;">행운 할인쿠폰</p>
+               <p class="mb-0 disc-rate" style="font-size: 18px; color: #de322a; font-weight: bold;">10%</p>
+            </div>
+         </div>
+      </div>
+      <div class="dialog-content">
+         <p style="font-size: 12px; color: #999999; padding: 0 30px;">* <span id="apply-part">전체 상품 사용가능</span></p>
+         <div class="text-center">
+            <p style="font-size: 13px; color: #555555; line-height: 1.3;">
+               하단
+               <span class="pointer" style="color: #de322a; text-decoration: underline;" onclick="window.location.replace('http://211.192.45.232/coupon');">[쿠폰함 바로가기]</span>
+               에서<br>발급 받은 쿠폰을 확인 해보세요.
+            </p>
+            <p class="pb-15" style="font-size: 13px; color: #555555; line-height: 1.3;">오늘까지 사용 가능하며,<br>내일도 받으실 수 있어요.</p>
+         </div>
+      </div>
+   </div>
+   <!-- 통통몰앱으로 이동팝업 -->
+   <div class="run-app-view">
+      <div class="row mb-15">
+         <img class="fl" src="http://211.192.45.232/assets/user/images/tongtongmall_mark_2.png" alt="" style="width: 100%;">
+      </div>
+      <div class="row mb-15">
+         <img id="run-app" src="http://211.192.45.232/assets/user/images/btn_app_redirect.png" alt="" style="width: 100%;" onclick="">
+      </div>
+      <div id="run-web" class="text-center font-weight" style="font-size: 15px; color: #fff; text-decoration: underline;" onclick="runWeb();">아니요, 웹에서 볼게요.</div>
+   </div>
+
+<!--pc--->
+<!--  advert-->
+<div class="advert">
+   <div class="pannel content">
+      <div>문자 광고 영역. 통통몰 가입시 만원 쿠폰 바로 지급!</div>
+      <a href="#" onclick="closeAdvert()">
+         <img src="http://211.192.45.232/assets/pc/images/close_btn.png"/>
+      </a>
+   </div>
+</div>
+<!--  advert-->
+<!--header-->
+<div class="header pannel">
+   <div class="nav">
+      <div class="left none">
+         <a href="javascript:void(0);" id="favorite" title="즐겨찾기 등록">즐겨찾기</a>
+         <a href="javascript:void(0);" onclick='setShowContactInfo();'>입점신청</a>
+      </div>
+      <!-- <div class="right">
+                     <a href="javascript:void(0);" onclick="window.location.href='http://211.192.45.232/auth_request?type=register&index='">회원가입</a>
+            <a href="javascript:void(0);" onclick="window.location.href='http://211.192.45.232/login'">로그인</a>
+                              <a href="javascript:void(0);" onclick="window.location.href='http://211.192.45.232/login'">고객센터</a>
+        </div> -->
+   </div>
+   <div class="sec_nav"> 
+      <div class="left">
+         <div class="menu none">
+            <p style="margin:0px;">
+               <a href="javascript:void(0);" class="pointer" onclick="clickmenu(this);"> 
+                  <img src="http://211.192.45.232/assets/pc/images/menu.png"/>  카테고리
+               </a> 
+            </p>
+            <div id='collapseMenu' class="hidden-menu collapseMenu">
+               <div class="card card-body cate-layout">
+                  <div class="category">
+                                                                        <div id="29" class="category-item" onmouseover="overCateItem(this)">
+                              <div class="category-name pointer  active">식품</div>
+                              <div class="icon  show_icon"  >
+                                 <img src="http://211.192.45.232/assets/pc/images/icon_right.png"/> 
+                              </div> 
+                           </div>
+                                                   <div id="31" class="category-item" onmouseover="overCateItem(this)">
+                              <div class="category-name pointer  ">생활/생필품</div>
+                              <div class="icon  hidden_icon"  >
+                                 <img src="http://211.192.45.232/assets/pc/images/icon_right.png"/> 
+                              </div> 
+                           </div>
+                                                   <div id="30" class="category-item" onmouseover="overCateItem(this)">
+                              <div class="category-name pointer  ">건강/레저</div>
+                              <div class="icon  hidden_icon"  >
+                                 <img src="http://211.192.45.232/assets/pc/images/icon_right.png"/> 
+                              </div> 
+                           </div>
+                                                   <div id="26" class="category-item" onmouseover="overCateItem(this)">
+                              <div class="category-name pointer  ">가전/디지털</div>
+                              <div class="icon  hidden_icon"  >
+                                 <img src="http://211.192.45.232/assets/pc/images/icon_right.png"/> 
+                              </div> 
+                           </div>
+                                                   <div id="27" class="category-item" onmouseover="overCateItem(this)">
+                              <div class="category-name pointer  ">패션/주얼리/뷰티</div>
+                              <div class="icon  hidden_icon"  >
+                                 <img src="http://211.192.45.232/assets/pc/images/icon_right.png"/> 
+                              </div> 
+                           </div>
+                                                   <div id="28" class="category-item" onmouseover="overCateItem(this)">
+                              <div class="category-name pointer  ">가구/취미/반려</div>
+                              <div class="icon  hidden_icon"  >
+                                 <img src="http://211.192.45.232/assets/pc/images/icon_right.png"/> 
+                              </div> 
+                           </div>
+                                                   <div id="32" class="category-item" onmouseover="overCateItem(this)">
+                              <div class="category-name pointer  ">자동차/공구</div>
+                              <div class="icon  hidden_icon"  >
+                                 <img src="http://211.192.45.232/assets/pc/images/icon_right.png"/> 
+                              </div> 
+                           </div>
+                                                   <div id="85" class="category-item" onmouseover="overCateItem(this)">
+                              <div class="category-name pointer  ">공동구매</div>
+                              <div class="icon  hidden_icon"  >
+                                 <img src="http://211.192.45.232/assets/pc/images/icon_right.png"/> 
+                              </div> 
+                           </div>
+                                                               </div>
+                  <div class="sub-category"> 
+                      
+                                                                                 <div class="sub-category-name pointer " onclick="redirectCategoryList('296' , `29`,`461` , `0` );">신선식품</div>
+                                                                                                               <div class="sub-category-name pointer " onclick="redirectCategoryList('296' , `29`,`63` , `1` );">가공식품</div>
+                                                                                                               <div class="sub-category-name pointer " onclick="redirectCategoryList('296' , `29`,`62` , `2` );">건강식품</div>
+                                                                                                               <div class="sub-category-name pointer " onclick="redirectCategoryList('296' , `29`,`465` , `3` );">생수/커피/음료</div>
+                                                                                                               <div class="sub-category-name pointer " onclick="redirectCategoryList('296' , `29`,`464` , `4` );">기타</div>
+                                                                                             </div> 
+                  <div class="sub-category sub-category-26" style="display:none;">  
+                      
+                         
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`39` , `0` );">계절가전</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`42` , `7` );">건강가전</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`43` , `14` );">주방가전</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`44` , `20` );">생활/미용가전</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`40` , `27` );">영상/음향가전</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`35` , `32` );">PC/노트북</div>
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`36` , `34` );">PC주변기기</div>
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`38` , `36` );">저장장치</div>
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`37` , `38` );">스마트 기기</div>
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `26`,`33` , `40` );">기타</div>
+                                                    
+                                                    
+                                                    
+                                                                                          </div> 
+                  <div class="sub-category  sub-category-27" style="display:none;">  
+                      
+                         
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `27`,`46` , `1` );">의류/언더웨어</div>
+                                                       
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `27`,`49` , `8` );">잡화</div>
+                                                       
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `27`,`50` , `15` );">화장품/향수</div>
+                                                       
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `27`,`468` , `26` );">주얼리/시계</div>
+                                                       
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                                          </div> 
+                  <div class="sub-category sub-category-28"  style="display:none;">  
+                      
+                         
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `28`,`53` , `2` );">가구/DIY</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `28`,`58` , `9` );">침구/커튼</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `28`,`59` , `16` );">인테리어소품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `28`,`61` , `21` );">기타</div>
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `28`,`81` , `24` );">취미/문구</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `28`,`82` , `30` );">반려동물</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                                          </div> 
+                  <div class="sub-category sub-category-29"  style="display:none;">  
+                      
+                         
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `29`,`461` , `6` );">신선식품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `29`,`63` , `10` );">가공식품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `29`,`62` , `17` );">건강식품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `29`,`465` , `25` );">생수/커피/음료</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `29`,`464` , `31` );">기타</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                                          </div> 
+                  <div class="sub-category sub-category-30"  style="display:none;">  
+                      
+                         
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `30`,`76` , `5` );">건강/의료용품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `30`,`66` , `11` );">운동기구</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `30`,`67` , `18` );">레저용품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `30`,`68` , `22` );">운동의류/잡화</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `30`,`69` , `28` );">기타</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                                          </div> 
+                  <div class="sub-category sub-category-31"  style="display:none;">  
+                      
+                         
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `31`,`72` , `4` );">주방용품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `31`,`73` , `13` );">욕실용품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `31`,`77` , `23` );">구강/세안/면도</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `31`,`78` , `29` );">세제/방향/살충</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `31`,`52` , `33` );">유아용품</div>
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `31`,`74` , `35` );">생활잡화</div>
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `31`,`79` , `37` );">수납정리용품</div>
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `31`,`75` , `39` );">기타</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                                          </div> 
+                  <div class="sub-category sub-category-32" style="display:none;">  
+                      
+                         
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `32`,`70` , `3` );">자동차용품</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `32`,`71` , `12` );">공구</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `32`,`83` , `19` );">기타</div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                                                          </div> 
+                  <div class="sub-category sub-category-85" style="display:none;">  
+                      
+                         
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `85`,`86` , `41` );">신상</div>
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `85`,`87` , `42` );">마감임박</div>
+                                                    
+                                                         <div class="sub-category-name pointer" onclick="redirectCategoryList('296' , `85`,`88` , `43` );">지난공구</div>
+                                                                                          </div>  
+               </div>
+            </div> 
+         </div>
+         <div class="logo">
+            <a class="logo_link" href="javascript:void(0);" onclick="window.location.href='index_new.html'">
+               <svg width="133" height="45" viewBox="0 0 133 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M63.71 36c-4.08 0-6.21-.66-6.21-2.1 0-1.38 2.13-2.07 6.21-2.07 4.11 0 6.24.69 6.24 2.07 0 1.44-2.13 2.1-6.24 2.1zm0-6.45c-5.88 0-9.33 1.5-9.33 4.35 0 2.88 3.45 4.41 9.33 4.41 5.91 0 9.33-1.53 9.33-4.41 0-2.85-3.42-4.35-9.33-4.35zm1.59-4.17v-2.22h7.95v-2.37H57.71v-2.1h14.7v-2.31h-14.7v-2.04h15.36v-2.37H54.62v11.19h7.56v2.22H51.47v2.49h24.51v-2.49H65.3zM91.308 36c-4.08 0-6.21-.66-6.21-2.1 0-1.38 2.13-2.07 6.21-2.07 4.11 0 6.24.69 6.24 2.07 0 1.44-2.13 2.1-6.24 2.1zm0-6.45c-5.88 0-9.33 1.5-9.33 4.35 0 2.88 3.45 4.41 9.33 4.41 5.91 0 9.33-1.53 9.33-4.41 0-2.85-3.42-4.35-9.33-4.35zm1.59-4.17v-2.22h7.95v-2.37h-15.54v-2.1h14.7v-2.31h-14.7v-2.04h15.36v-2.37h-18.45v11.19h7.56v2.22h-10.71v2.49h24.51v-2.49h-10.68zm19.827 8.1h15.42v-6.45h-18.54v2.34h15.51v1.92h-15.45v6.78h19.26V35.7h-16.2v-2.22zm.15-19.02h12.15V18h-12.15v-3.54zm7.59 8.25v-2.28h7.59v-8.37h-18.24v8.37h7.56v2.28h-10.68v2.46h24.54v-2.46h-10.77z" fill="#E60000"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.833 7.333c0-1.012.821-1.833 1.834-1.833H6.19a5.5 5.5 0 0 1 5.382 4.368L11.811 11h22.36c3.4 0 5.985 3.052 5.426 6.404l-.687 4.123a5.5 5.5 0 0 1-4.57 4.529l-18.568 2.927.116.384a5.487 5.487 0 0 1 4.71 1.8h8.303a5.5 5.5 0 1 1-1.4 3.667h-5.501a5.5 5.5 0 1 1-9.447-3.83l-.9-2.972a1.819 1.819 0 0 1-.04-.155L7.985 10.623A1.833 1.833 0 0 0 6.19 9.167H3.667a1.833 1.833 0 0 1-1.834-1.834zm13.01 18.085-2.26-10.751h21.589A1.833 1.833 0 0 1 35.98 16.8l-.687 4.123a1.833 1.833 0 0 1-1.523 1.51l-18.927 2.984zM16.5 33a1.832 1.832 0 0 0-1.833 1.833A1.833 1.833 0 1 0 16.5 33zM33 33a1.832 1.832 0 0 0-1.833 1.833A1.833 1.833 0 1 0 33 33z" fill="#E60000" stroke="#fff"/>
+               </svg>
+            </a>
+         </div>
+      </div>
+      <div class="right">
+         <div class="search">
+            <input type="text" id='search-value' name="search" placeholder="찾고 싶은 상품을 검색해보세요!"/>
+            <a href="javascript:void(0);"  >
+               <img src="http://211.192.45.232/assets/pc/images/btn_search.png"/> 
+            </a>
+         </div>
+         <div class="menu-group">
+            <div class="right">
+               <a href="javascript:void(0);" onclick="window.location.href='http://211.192.45.232/auth_request?type=register&index='">회원가입</a> 
+               <span class="mg_bar">|</span>
+               <a href="javascript:void(0);" onclick="window.location.href='http://211.192.45.232/login'">로그인</a> 
+               <span class="mg_bar">|</span>
+               <div class="dropdown">
+                  <a class="dropbtn">고객센터 <img src="./images/cate_down2.png" alt=""></a>
+                  <div class="dropdown-content">
+                    <a href="https://www.tongtongmall.net/notice">공지사항</a>
+                    
+                    <a href="https://www.tongtongmall.net/faq">FAQ</a>
+                    
+                    <a href="https://www.tongtongmall.net/service">제휴문의</a>
+                  </div>
+                </div>
+              
+            </div>
+
+            <!-- <div class="mg_link">
+               <a href="javascript:void(0);" onclick="window.location.href='http://211.192.45.232/login'">
+                  <img src="http://211.192.45.232/assets/pc/images/btn_my.png"/> 
+               </a>
+               <a href="javascript:void(0);" onclick="window.location.href='http://211.192.45.232/login'">
+                  <img src="http://211.192.45.232/assets/pc/images/btn_cart.png"/> 
+               </a>
+            </div>             -->
+         </div>
+      </div>
+   </div>
+   
+</div>
+<div class="main_nav">
+   <div class="container">
+     <ul class="menu-main">
+
+
+       <li><a href="">식품</a>
+         <div class="menu-sub">
+           <div class="menu-col-3">
+            <a class="" href="">전체</a>
+            <a class="" href="">신선식품</a>
+
+            <a class="" href="">가공식품</a>
+
+            <a class="" href="">건강식품</a>
+
+            <a class="" href="">생수/커피/음료</a>
+
+            <a class="" href="">기타</a>
+           </div>
+         </div>
+       </li>
+
+       <li><a href="">생활/생필품</a>
+         <div class="menu-sub">
+            <div class="menu-col-3">
+                <a class="" href="">전체</a>
+             <a class="" href="">주방용품</a>
+
+             <a class="" href="">욕실용품</a>
+
+             <a class="" href="">구강/세면/면도</a>
+
+             <a class="" href="">세제/방향/살충</a>
+
+             <a class="" href="">유아용품</a>
+            </div>
+          </div>
+       </li>
+
+       <li><a href="">건강/레저</a>
+         <div class="menu-sub">
+            <div class="menu-col-3">
+                <a class="" href="">전체</a>
+             <a class="" href="">건강/의료용품</a>
+
+             <a class="" href="">운동기구</a>
+
+             <a class="" href="">레저용품</a>
+
+             <a class="" href="">운동의류/잡화</a>
+
+             <a class="" href="">기타</a>
+            </div>
+          </div>
+       </li>
+
+       <li><a href="">가전/디지털</a>
+         <div class="menu-sub">
+            <div class="menu-col-3">
+                <a class="" href="">전체</a>
+             <a class="" href="">계절가전</a>
+
+             <a class="" href="">건강가전</a>
+
+             <a class="" href="">주방가전</a>
+
+             <a class="" href="">미용가전</a>
+             <a class="" href="">음향가전</a>
+
+             <a class="" href="">노트북</a>
+
+             <a class="" href="">pc주변기기</a>
+
+             <a class="" href="">저장장치</a>
+
+             <a class="" href="">스마트 기기</a>
+             <a class="" href="">기타</a>
+            </div>
+          </div>
+       </li>
+
+       <li><a href="">패션/주얼리/뷰티</a>
+         <div class="menu-sub">
+            <div class="menu-col-3">
+                <a class="" href="">전체</a>
+             <a class="" href="">의류/언더웨어</a>
+
+             <a class="" href="">잡화</a>
+
+             <a class="" href="">화장품/향수</a>
+
+             <a class="" href="">주얼리/시계</a>
+           
+            </div>
+         </div>
+       </li>
+
+       <li><a href="">가구/취미/반려</a>
+         <div class="menu-sub">
+            <div class="menu-col-3">
+                <a class="" href="">전체</a>
+             <a class="" href="">가구/DIY</a>
+             <a class="" href="">침구/커튼</a>
+             <a class="" href="">인테리어소품</a>
+             <a class="" href="">기타</a>
+             <a class="" href="">취미/문구</a>
+             <a class="" href="">반려동물</a>
+            </div>
+         </div>
+       </li>
+       <li><a href="">자동차/공구</a>
+         <div class="menu-sub">
+            <div class="menu-col-3">
+                <a class="" href="">전체</a>
+             <a class="" href="">자동차용품</a>
+             <a class="" href="">공구</a>
+             <a class="" href="">기타</a>              
+            </div>
+         </div>
+       </li>
+
+     </ul>
+ </div>
+</div>
+<div class="contact-overlay" onclick="setCloseContactInfo();"></div>
+
+<div class="dialog-contact">
+   <div style="width: 100%; background-color: #de322a; padding: 25px 0;">
+      <div class="font-white-18 mb-18">통통몰 연락처</div>
+      <div class="font-white-21 mb-15 font-weight">02-2128-3303</div>
+      <div class="font-white-15 mb-12">tongtongmall@etomato.com</div>
+      <div class="font-ffbc-12 line-height-2">
+         평일 9:00 ~ 18:00<br>
+         토요일, 일요일, 공휴일 휴무
+      </div>
+   </div>
+   <div style="width: 100%; background-color: #f9f9f9; padding: 15px 0;">
+      <div class="footer-info">
+         <div class="footer-copyright">
+            <div class="footer-copyright-item line-height-1"><a>㈜토마토페이(대표자 : 박서준)<span class="gray">&nbsp;|&nbsp;</span>서울특별시 마포구 양화진4길 32</a></div>
+            <div class="footer-copyright-item line-height-1"><a>사업자등록번호 124-87-02232 <span class="gray">&nbsp;|&nbsp;</span>통신판매업신고번호 2013-서울마포-0121</a></div>
+         </div>
+         <div class="copy-text text-center gray line-height-1">
+            통통몰은 통신판매중개자이며 통신판매의 당사자가 아닙니다.<br>
+            따라서 통통몰은 상품/거래정보 및 가격에 대하여 책임을 지지 않습니다.<br />
+            Copyright ⓒ ㈜토마토페이 All Rights Reserved.
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+   function setShowContactInfo() {
+      $('.contact-overlay').css('display', 'block');
+      $('.dialog-contact').css('display', 'block');
+   }
+
+   function setCloseContactInfo() {
+      $('.contact-overlay').css('display', 'none');
+      $('.dialog-contact').css('display', 'none');
+   }
+</script>
+<!--header-->
+
+<div id="guide_cont">
+
+   <div id="menu">
+      <ul>
+        <li><a class="hover_tab" href="#tab1">통통몰 이용약관</a></li>
+        <li><a href="#tab2">개인정보 처리방침</a></li>
+        <li><a href="#tab3">판매자 이용약관</a></li>
+      </ul>
+    </div>
+
+    <div id="txt_cont">
+      <div class="txt_tab" id="tab1">
+            <h2>통통몰 이용약관</h2>
+            <p>제1조 (목적)
+               이 약관은 주식회사 토마토트레이드 (전자상거래 사업자)이 운영하는 증권통 쇼핑몰 “통통몰” (이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스 (이하 "서비스"라 함)를 이용함에 있어 쇼핑몰과 이용자의 권리의무 및 책임사항을 규정함을 목적으로 합니다.
+               ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」
+               <br>
+               제2조 (정의)
+               1. "몰"이란 주식회사 토마토트레이드가 재화 또는 용역(이하 "재화 등"이라 함)을 이용자에게 제공하기 위하여 휴대폰 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 쇼핑몰을 운영하는 사업자의 의미로도 사용합니다.
+               2. "이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.
+               3. “회원”이라 함은 "몰"에 개인정보를 제공하여 회원등록을 한 자로서, "몰"의 정보를 지속적으로 제공받으며, "몰"이 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.
+               4. “비회원”이라 함은 회원등록을 하지 않고, 구매서비스를 제외한 "몰"이 제공하는 서비스를 이용하는 자를 말합니다.
+               <br>
+               제3조 (약관 등의 명시와 설명 및 개정)
+               1. "몰"은 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호, 사업자등록번호, 통신판매업신고번호, 개인정보관리책임자 등을 이용자가 쉽게 알 수 있도록 쇼핑몰의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.
+               2. "몰"은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회 배송책임 환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 이용자의 확인을 구하여야 합니다.
+               3. "몰"은 전자상거래 등에서의 소비자 보호에 관한 법률, 약관의 규제에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망 이용촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자보호법 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+               4. "몰"이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 몰의 초기화면 또는 공지사항에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다.
+               5. 다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 "몰"은 개정 전 내용과 개정 후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표시합니다.
+               6. “회원”은 변경된 약관에 동의하지 않을 권리가 있으며, 변경된 약관에 동의하지 않을 경우에는 서비스 이용을 중단하고 탈퇴를 요청할 수 있습니다. 다만, 이용자가 제 3항의 방법 등으로 별도 고지한 약관 개정 공지 기간 내에 “회사”에 개정 약관에 동의하지 않는다는 명시적인 의사표시를 하지 않는 경우 변경된 약관에 동의한 것으로 간주합니다.
+               7. 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자 보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자보호지침 및 관계법령 또는 상관례에 따릅니다.
+               <br>
+               제4조 (서비스의 제공 및 변경)
+               1. "몰"은 다음과 같은 업무를 수행합니다.
+               ① 재화 또는 용역에 대한 정보 제공 및 암호화폐를 통한 구매계약의 체결
+               ② 판매자에게 구매계약이 체결된 재화 또는 용역의 배송 안내
+               ③ 기타 "몰"이 정하는 업무
+               2. "몰"은 재화 또는 용역에 대한 제공 및 배송과 관련하여 판매자와 구매자, 배송업체, 금융기관 등과의 사이에 발생한 분쟁은 당사자들 간의 해결을 원칙으로 하며, "몰"은 어떠한 책임도 부담하지 않습니다.
+               3. "몰"은 재화 또는 용역의 품절 또는 기술적 사양의 변경 등의 경우에는 판매자의 동의 없이 장차 체결되는 계약에 의해 제공할 재화 또는 용역의 내용을 변경할 수 있습니다.
+               4. “몰”은 이용자의 구매금액, 횟수, 빈도 및 기타 이용실적 등을 토대로 이용자에게 소정의 암호화폐 또는 일정한 혜택을 부여할 수 있습니다. 해당 내용은 ”몰” 사이트 내에 게시합니다.
+               5. “몰”은 제4항의 사유로 인하여 이용자가 입은 손해를 통화가치에 상응하는 암호화폐로 배상합니다. 다만, “몰”이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+               <br>
+               제5조 (서비스의 중단)
+               1. "몰"은 컴퓨터 등 정보통신설비의 보수점검교체 및 고장, 통신의 두절 등의 사유가 발생한 경우에는 서비스의 제공을 일시적으로 중단할 수 있습니다.
+               2. "몰"은 제1항의 사유로 서비스의 제공이 일시적으로 중단됨으로 인하여 이용자 또는 제3자가 입은 손해에 대하여 통화가치에 상응하는 방식으로 배상합니다. 단, "몰"이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+               3. 사업종목의 전환, 사업의 포기, 업체간의 통합 등의 이유로 서비스를 제공할 수 없게 되는 경우에는 "몰"은 제8조에 정한 방법으로 이용자에게 통지하고 당초 "몰"에서 제시한 조건에 따라 소비자에게 보상합니다. 다만, "몰"이 보상기준 등을 고지하지 아니한 경우에는 이용자들의 포인트를 "몰"에서 통용되는 통화가치에 상응하는 현물 또는 현금으로 이용자에게 지급합니다.
+               <br>
+               제6조 (회원가입)
+               1. 이용자는 "몰"이 정한 가입 양식에 따라 회원정보를 기입한 후 이 약관에 동의한다는 의사표시를 함으로서 회원가입을 신청합니다.
+               2. "몰"은 제1항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각호에 해당하지 않는 한 회원으로 등록합니다.
+               ① 가입신청자가 이 약관 제7조제3항에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 다만 제7조제3항에 의한 회원자격 상실 후 6개월이 경과한 자로서 "몰"의 회원재가입 승낙을 얻은 경우에는 예외로 한다.
+               ② 이용자 본인의 실명으로 등록하지 않고 타인의 명의를 도용하거나 등록 내용에 허위, 기재누락, 오기가 있는 경우
+               ③ 기타 회원으로 등록하는 것이 "몰"의 기술상 현저히 지장이 있다고 판단되는 경우
+               3. “몰”은 서비스 관련 설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우에는 승낙을 유보할 수 있습니다.
+               4. 회원가입계약의 성립시기는 "몰"의 승낙이 회원에게 도달한 시점으로 합니다.
+               5. 회원은 제15조 제1항에 의한 등록사항에 변경이 있는 경우, 즉시 전자우편 기타 방법으로 "몰"에 대하여 그 변경사항을 알려야 합니다.
+               <br>
+               제7조 (회원 탈퇴 및 자격 상실 등)
+               1. 회원은 "몰"에 언제든지 탈퇴를 요청할 수 있으며 "몰"은 즉시 회원탈퇴를 처리합니다. 이때 잔여 포인트는 자동으로 소멸됩니다.
+               2. 회원이 다음 각호의 사유에 해당하는 경우, "몰"은 회원자격을 제한 및 정지시킬 수 있습니다.
+               ① 가입 신청 시에 허위 내용을 등록한 경우
+               ② "몰"을 이용하여 구입한 재화 등의 대금, 기타 "몰"이용에 관련하여 회원이 부담하는 채무를 기일에 지급하지 않는 경우
+               ③ 다른 사람의 "몰" 이용을 방해하거나 그 정보를 도용하는 등 전자상거래 질서를 위협하는 경우
+               ④ "몰"을 이용하여 법령 또는 이 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우
+               3. "몰"이 회원 자격을 제한정지 시킨 후, 동일한 행위가 2회 이상 반복되거나 30일 이내에 그 사유가 시정되지 아니하는 경우 "몰"은 회원자격을 상실시킬 수 있습니다. 단, 회원의 위반 정도가 중한 경우 즉시 이용계약을 해지할 수 있습니다.
+               4. "몰"이 회원자격을 상실시키는 경우에는 회원등록을 말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에 최소한 30일 이상의 기간을 정하여 소명할 기회를 부여합니다.
+               <br>
+               제8조 (회원에 대한 통지)
+               1. "몰"이 회원에 대한 통지를 하는 경우, 회원이 "몰"과 미리 약정하여 지정한 전화 및 전자우편 주소로 할 수 있습니다.
+               2. "몰"은 불특정다수 회원에 대한 통지의 경우 1주일이상 "몰" 게시판에 게시함으로써 개별 통지에 갈음할 수 있습니다. 다만, 회원 본인의 거래와 관련하여 중대한 영향을 미치는 사항에 대하여는 개별통지를 합니다.
+               <br>
+               제9조 (구매신청)
+               "몰"이용자는 "몰"상에서 다음 또는 이와 유사한 방법에 의하여 구매를 신청하며, "몰"은 이용자가 구매신청을 함에 있어서 다음의 각 내용을 알기 쉽게 제공하여야 합니다. 단, 회원인 경우 제9조 제4호의 적용을 제외할 수 있습니다.
+               1. 재화 등의 검색 및 선택
+               2. 성명, 주소, 전화번호, 전자우편주소(또는 이동전화번호) 등의 입력
+               3. 약관내용, 청약철회권이 제한되는 서비스, 배송료∙설치비 등의 비용부담과 관련한 내용에 대한 확인
+               4. 이 약관에 동의하고 위 3호의 사항을 확인하거나 거부하는 표시 (예, 마우스 클릭)
+               5. 재화 등의 구매신청 및 이에 관한 확인 또는 "몰"의 확인에 대한 동의
+               6. 결제방법의 선택
+               <br>
+               제10조 (계약의 성립)
+               1. "몰"은 제9조와 같은 구매신청에 대하여 다음 각호에 해당하면 승낙하지 않을 수 있습니다.
+               ① 신청 내용에 허위, 기재누락, 오기가 있는 경우
+               ② 미성년자가 담배, 주류 등 청소년보호법에서 금지하는 재화 및 용역을 구매하는 경우
+               ③ 신용카드, 포인트 등 결제수단을 이용하여 구매를 가장하는 경우
+               ④ 할인쿠폰, 포인트 등을 획득할 목적으로 부정한 거래를 계속하는 경우
+               ⑤ 기타 구매신청에 승낙하는 것이 "몰" 기술상 현저히 지장이 있다고 판단하는 경우
+               2. "몰"의 승낙이 제12조제1항의 수신확인통지형태로 이용자에게 도달한 시점에 계약이 성립한 것으로 봅니다.
+               3. "몰"의 승낙의 의사표시에는 이용자의 구매 신청에 대한 확인 및 판매가능 여부, 구매신청의 정정 취소 등에 관한 정보 등을 포함하여야 합니다.
+               4. 미성년자가 구매계약을 체결하는 경우에는 법정대리인의 동의하지 않으면 미성년자 본인 또는 법정대리인이 계약을 취소할 수 있습니다.
+               <br>
+               제11조 (지급방법)
+               "몰"에서 구매한 재화 또는 용역에 대한 대금지급방법은 다음 각호의 방법 중 가용한 방법으로 할 수 있습니다. 단, "몰"은 이용자의 지급방법에 대하여 재화 등의 대금에 어떠한 명목의 수수료도 추가하여 징수할 수 없습니다.
+               1. 가상계좌를 통한 결제
+               2. 직불카드, 신용카드 등의 카드 결제
+               3. 통통지갑(모바일 암호화폐 지갑)을 통한 통통코인(TTCOIN)에 의한 결제
+               <br>
+               제12조(수신확인통지구매신청 변경 및 취소)
+               1. "몰"은 이용자의 구매신청이 있는 경우 이용자에게 수신확인통지를 합니다.
+               2. 수신확인통지를 받은 이용자는 의사표시의 불일치 등이 있는 경우에는 수신확인통지를 받은 후 즉시 구매신청 변경 및 취소를 요청할 수 있고 "몰"은 배송 전에 이용자의 요청이 있는 경우에는 지체 없이 그 요청에 따라 처리하여야 합니다. 다만 이미 대금을 지불한 경우에는 제15조의 청약철회 등에 관한 규정에 따릅니다.
+               <br>
+               제13조 (재화 등의 공급)
+               1. “몰”은 판매자에게 회사로부터 구매자의 입금 또는 대금결제에 대한 확인통지를 받은 후 7일 이내에 배송에 필요한 조치를 취하도록 안내합니다.
+               2. “몰”은 배송과 관련하여 판매자와 구매자, 배송업체, 금융기관 등과의 사이에 발생한 분쟁은 당사자들 간의 해결을 원칙으로 하며, 회사는 어떠한 책임도 부담하지 않습니다.
+               3. “몰”은 이용자가 구매한 재화에 대해 배송수단, 수단별 배송비용 부담자, 수단별 배송기간 등을 명시합니다. 만약 “몰”이 약정 배송기간을 초과한 경우에는 그로 인한 이용자의 손해를 통화 또는 그에 상응하는 암호화폐 및 다른 방식으로 배상하여야 합니다. 다만 “몰”이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+               <br>
+               제14조 (환급)
+               "몰"은 이용자가 구매 신청한 재화 등이 품절 등의 사유로 인도 또는 제공을 할 수 없을 때에는 지체 없이 그 사유를 이용자에게 통지하고 사전에 재화 등의 대금을 받은 경우에는 대금을 받은 날부터 3영업일 이내에 환급하거나 환급에 필요한 조치를 취합니다.
+               <br>
+               제15조 (청약철회 등)
+               1. "몰"과 재화 등의 구매에 관한 계약을 체결한 이용자는 재화 등을 배송 받은 날부터 7일 이내에는 청약의 철회를 할 수 있습니다.
+               2. 이용자는 재화 등을 배송 받은 경우 다음 각호의 해당하는 경우에는 반품 및 교환을 할 수 없습니다.
+               ① 이용자에게 책임 있는 사유로 재화 등이 멸실 또는 훼손된 경우(다만, 재화 등의 내용을 확인하기 위하여 포장 등을 훼손한 경우에는 청약철회를 할 수 있습니다)
+               ② 이용자의 사용 또는 일부 소비에 의하여 재화 등의 가치가 현저히 감소한 경우
+               ③ 시간의 경과에 의하여 재판매가 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우
+               ④ 같은 성능을 지닌 재화 등으로 복제가 가능한 경우 그 원본 재화 등의 포장을 훼손한 경우
+               ⑤ 기타 구매자가 환불이나 교환을 요청할 수 없는 합리적인 사유가 있는 경우
+               3. 이용자는 제1항 및 제2항의 규정에 불구하고 '재화 등'의 내용이 표시∙광고 내용과 다르거나, 계약내용과 다르게 이행된 경우에는 당해 재화등을 공급받은 날로부터 3월 이내, 그 사실을 안 날 또는 알 수 있었던 날로부터 30일 이내에 청약철회 등을 할 수 있습니다.
+               <br>
+               제16조 (청약철회 등의 효과)
+               1. “몰”은 구매자로부터 교환 또는 반품의 의사표시를 접수하면, 즉시 그러한 사실을 판매자에게 통보합니다.
+               2. 반품이나 교환에 필요한 왕복 배송비와 기타 필요한 비용은 귀책사유가 있는 쪽에서 부담합니다.
+               3. 교환신청을 하더라도 판매자에게 교환할 물품의 재고가 없으면 교환할 수 없으며, 이때는 반품환불로 처리됩니다.
+               4. 교환에 드는 비용은 물품하자의 경우에는 판매자가 왕복배송비를 부담하나 구매자의 변심에 의한 경우에는 구매자가 부담합니다.
+               5. 배송상의 문제로 구매자가 손해를 보았을 때 그에 대한 책임은 해당 배송업체를 지정한 판매자에게 있습니다.
+               6. “몰”이 구매자의 구매대금 결제 확인에 대해 통지한 후 판매자가 상당 기간 구매자의 주문 정보를 확인하지 않거나 배송 절차를 이행하지 않아 구매자가 거래 취소를 요구하면 회사는 해당 거래를 취소할 수 있으며, 거래가 취소되면 보관 중인 상품 구매대금은 구매자에게 환불됩니다. 아울러, “몰”은 개별적인 정책으로 구매자의 요구 없이도 자동 환불처리 등의 조치를 할 수 있으며 그럴 경우 미리 해당 내용을 구매자에게 공지합니다.
+               7. “몰”은 판매자가 구매자의 교환, 반품에 대한 사실확인 진행절차에 적극적으로 임하지 않거나 지연하면 구매자에게서 교환이나 반품의 원인을 파악한 후 해당 거래를 취소하여 구매자에게 보관 중인 결제대금을 환불할 수 있습니다.
+               8. “몰”은 구매자의 교환 또는 반품의 요청이 정당하지 않다고 판단하면 구매자의 의사표시를 취소하여 보관 중인 결제대금을 판매자에게 지급할 수 있습니다. 또한, 구매자의 교환, 반품 등이 접수된 날로부터 7일이 지날 때까지 이미 수령한 상품을 판매자에게 반환하지 않거나 전화, 이메일(E-mail) 등으로 연락되지 않으면 교환, 반품의 의사를 철회한 것으로 간주하여 보관 중인 결제대금을 판매자에게 지급할 수 있습니다.
+               9. 구매자는 상품이 발송되기 전까지 구매를 취소할 수 있으며, 배송 중이면 취소가 아닌 반품절차에 의해 처리됩니다.
+               10. 주문확인 상태에서는 즉시 취소처리가 완료되는 것이 원칙이나 이미 상품이 발송되었다면 발송된 상품의 왕복 배송비는 구매자가 부담해야 합니다.
+               <br>
+               제17조 (통통코인 적립)
+               1. “통통코인”은 “몰”에서 상품 구매 시 대금 결제 수단으로 사용할 수 있는 현금 등가의 결제수단을 의미합니다.
+               2. “몰”에서 제공되는 절차를 이행하면 통통코인을 부여 받게 됩니다. 통통코인 적립을 위하여 특정 "회원"의 자격요건이 요구될 수 있습니다.
+               3. 서비스 내 화면에 적립 통통코인으로 명시된 금액만큼의 통통코인가 적립되며 이는 "통통코인관리" 화면에서 확인할 수 있습니다.
+               <br>
+               제18조(할인쿠폰)
+               1. '할인쿠폰'은 "몰"의 이벤트 프로모션 참여 등을 통하여 회원에게 무상으로 지급되며, ‘할인쿠폰’별 유효기간, 할인금액 및 사용방법 등은 개별 안내사항을 통하여 확인 가능합니다.
+               2. 할인쿠폰은 현금으로 출금될 수 없으며, 할인쿠폰에 표시된 유효기간이 만료되거나 이용계약이 종료되면 소멸합니다.
+               3. “회사”는 회원이 부정한 목적과 방법으로 할인쿠폰 등을 획득하거나 사용하는 사실이 확인될 경우, 해당 이용자에 대한 할인쿠폰을 회수 또는 소멸시키거나 회원자격을 제한할 수 있습니다.
+               4. '할인쿠폰' 의 제공내용 및 운영방침은 "몰"정책에 따라 달라질 수 있습니다.
+               <br>
+               제19조 (대리행위의 부인)
+               “몰”은 통신판매중개자로서 효율적인 서비스를 위한 시스템 운영 및 관리 책임만을 부담하며, 재화 또는 용역의 거래와 관련하여 구매자 또는 판매자를 대리하지 아니하고, 회원 사이에 성립된 거래 및 회원이 제공하고 등록한 정보에 대해서는 해당 회원이 그에 대한 직접적인 책임을 부담하여야 합니다.
+               <br>
+               제20조 (보증의 부인)
+               “몰”은 “몰”이 제공하는 시스템을 통하여 이루어지는 구매자와 판매자 간의 거래와 관련하여 판매의사 또는 구매의사의 존부 및 진정성, 등록물품의 품질, 완전성, 안정성, 적법성 및 타인의 권리에 대한 비침해성, 구매자 또는 판매자가 입력하는 정보 및 그 정보를 통하여 링크된 URL에 게재된 자료의 진실성 또는 적법성 등 일체에 대하여 보증하지 아니하며, 이와 관련한 일체의 위험과 책임은 해당 회원이 전적으로 부담합니다.
+               <br>
+               제21조 (개인정보보호)
+               1. "몰"은 이용자의 정보 수집 시 구매계약 이행에 필요한 최소한의 정보를 수집합니다. 다음 사항을 필수사항으로 하며 그 외 사항은 선택사항으로 합니다.
+               ① 성명
+               ② 생년월일
+               ③ 주소
+               ④ 증권통 ID - 전자우편주소 (회원의 경우)
+               ⑤ 비밀번호 (회원의 경우)
+               ⑥ 이동전화번호
+               2. "몰"이 이용자의 개인식별이 가능한 개인정보를 수집하는 때에는 반드시 당해 이용자의 동의를 받습니다.
+               3. 제공된 개인정보는 당해 이용자의 동의 없이 목적 외의 이용이나 제3자에게 제공할 수 없으며, 이에 대한 모든 책임은 “몰”이 집니다. 다만, 다음의 경우에는 예외로 합니다.
+               ① 배송업무상 배송업체에게 배송에 필요한 최소한의 이용자의 정보(성명, 주소, 전화번호)를 알려주는 경우
+               ② 통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우
+               ③ 재화 등의 거래에 따른 대금정산을 위하여 필요한 경우
+               ④ 도용방지를 위하여 본인확인에 필요한 경우
+               ⑤ 법률의 규정 또는 법률에 의하여 필요한 불가피한 사유가 있는 경우
+               4. "몰"이 제2항과 제3항에 의해 이용자의 동의를 받아야 하는 경우에는 개인정보관리 책임자의 신원(소속, 성명 및 전화번호, 기타 연락처), 정보의 수집목적 및 이용목적, 제3자에 대한 정보제공 관련사항(제공받은 자, 제공목적 및 제공할 정보의 내용) 등 정보통신망이용촉진 등에 관한 법률 제22조제2항이 규정한 사항을 미리 명시하거나 고지해야 합니다.
+               5. 이용자는 언제든지 "몰"이 가지고 있는 자신의 개인정보에 대해 열람 및 오류정정을 요구할 수 있으며 "몰"은 이에 대해 지체 없이 필요한 조치를 취할 의무를 집니다. 이용자가 오류의 정정을 요구한 경우에는 "몰"은 그 오류를 정정할 때까지 당해 개인정보를 이용하지 않습니다.
+               6. "몰"은 개인정보 보호를 위하여 관리자를 한정하여 그 수를 최소화하며 신용카드, 은행계좌 등을 포함한 이용자의 개인정보의 분실, 도난, 유출, 변조 등으로 인한 이용자의 손해에 대하여 모든 책임을 집니다.
+               7. "몰" 또는 그로부터 개인정보를 제공받은 제3자는 개인정보의 수집목적 또는 제공받은 목적을 달성한 때에는 당해 개인정보를 지체 없이 파기합니다.
+               <br>
+               제22조 (정보의 제공 및 광고의 게재)
+               1. “회사“는 서비스 이용 중 필요하다고 인정되는 다양한 마케팅 정보 등을 전자우편이나 서신우편, SMS, 전화, 알림 메시지(Push Notification), 회원 연락처와 연동된 SNS서비스 등의 방법으로 회원에게 제공할 수 있으며, 회원은 이에 동의합니다. 이 경우, 회원의 통신환경 또는 요금구조 등에 따라 회원이 데이터 요금 등을 부담할 수 있습니다.
+               2. 회원은 관련법에 따른 거래관련정보 및 고객문의 등에 대한 답변 등을 제외하고는 언제든지 전항의 전자우편 등에 대해서 수신 거절을 할 수 있으며, 이 경우 “몰“은 즉시 전항의 마케팅 정보 등을 제공하는 행위를 중단합니다.
+               <br>
+               제23조 ("몰"의 의무)
+               1. "몰"은 법령과 이 약관이 금지하거나 공서양속에 반하는 행위를 하지 않으며 이 약관이 정하는 바에 따라 지속적이고, 안정적으로 재화용역을 제공하는데 최선을 다하여야 합니다.
+               2. "몰"은 이용자가 안전하게 인터넷 서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함)보호를 위한 보안 시스템을 갖추어야 합니다.
+               3. "몰"이 상품이나 용역에 대하여 「표시광고의 공정화에 관한 법률」 제소정의 부당한 표시광고행위를 함으로써 이용자가 손해를 입은 때에는 이를 배상할 책임을 집니다.
+               4. "몰"은 이용자가 원하지 않는 영리목적의 광고성 전자우편을 발송하지 않습니다.
+               <br>
+               제24조 (회원의 ID 및 비밀번호에 대한 의무)
+               1. 제23조의 경우를 제외한 ID와 비밀번호에 관한 관리책임은 회원에게 있습니다.
+               2. 회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안됩니다. “몰”은 “몰”의 귀책사유 없이 발생한 ID 및 비밀번호 공유 또는 도용으로 인한 불이익에 대해 책임지지 않습니다. 또한, ID 및 비밀번호 공유 중에 제 3자가 “회원” 본인의 ID를 이용하여 약관 위반행위가 발생한다고 하더라도, 약관에 따라 “회원” 및 해당 ID 의 서비스 이용이 제한될 수 있습니다.
+               3. 회원이 자신의 ID 및 비밀번호를 도난 당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 "몰"에 통보하고 "몰"의 안내가 있는 경우에는 그에 따라야 합니다.
+               <br>
+               제25조 (이용자의 의무)
+               이용자는 다음 행위를 하여서는 안됩니다.
+               1. 신청 또는 변경 시 허위 내용의 등록
+               2. 타인의 정보 도용
+               3. "몰"에 게시된 정보의 변경
+               4. "몰"이 정한 정보 이외의 정보(컴퓨터 프로그램 등) 등의 송신 또는 게시
+               5. "몰”과 기타 제3자의 저작권 등 지적재산권에 대한 침해
+               6. "몰"과 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위
+               7. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 “몰”에 공개 또는 게시하는 행위
+               8. 제 3자의 ID를 이용하거나 자신의 ID를 제3자에게 이용하게 하는 행위
+               9. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 “몰”에 공개 또는 게시하는 행위
+               10. “사이트”를 이용하여 구입한 재화 등의 대금, 기타 “몰” 이용에 관련하여 “회원”이 부담하는 채무의 미이행
+               11. 판매기간 종료 후 빈번한 구매취소 및 누적 등으로 타 “회원”의 서비스 이용을 방해할 우려가 있는 행위
+               12. 상품 등의 구매를 가장하여 재판매 등의 방법으로 자금을 융통하는 것과 같이 비정상적인 결제를 하는 행위
+               13. 진정한 구매 의사없이 쿠폰 등을 적용하여 상품구매 후 재판매하기 위한 목적으로 서비스를 이용하는 행위
+               14. 오프라인이나 다른 사이트에서 발생한 구매에 대해 포인트 등을 부당하게 확보할 목적으로 서비스를 이용하는 행위
+               15. “몰”의 허락 없이 서비스를 이용하여 영업/광고 활동 등을 하거나, “몰”이 허락한 내용과 범위를 벗어난 영업/광고 활동 행위
+               16. 타인의 신용카드, 은행 계좌, 휴대폰 등을 무단으로 이용 또는 도용하여 상품 등을 구매하는 행위
+               17. “몰” 또는 타인의 명예를 손상시키거나 확인되지 않은 사실을 유포하는 행위 타인의 권리를 침해하는 행위 및 회사의 업무수행에 현저한 지장을 초래하는 행위
+               18. “회원”은 “회원”의 정보가 변경된 경우에는 이를 회사에 즉시 알려야 하며, “회원”의 변경 정보를 회사에 알리지 않아 발생하는 불이익에 대해 “몰”은 책임을 지지 않습니다.
+               19. “회원”은 이 약관 기타 “회사”의 내부 규정 및 관계 법령을 준수해야 합니다.
+               20. “회원”은 이 약관에서 규정하는 사항 및 “사이트” 상의 공지사항 등 “몰”이 정한 제반 정책이나 규정을 수시로 확인하여야 합니다.
+               <br>
+               제 26 조 (게시물의 관리)
+               1. 게시물이라 함은 “이용자”가 게시한 문자, 문서, 그림, 음성 또는 이들의 조합으로 이루어진 정보 등의 모든 정보를 말합니다.
+               2. “회사”는 “이용자”의 게시물을 소중하게 생각하며, 변조, 훼손, 삭제되지 않도록 최선을 다하여 보호합니다. 다만, 회사는 다음 각 호에 해당하는 게시물이나 자료를 사전통지 없이 삭제하거나 이동 또는 등록 거부를 할 수 있습니다.
+               ① 다른 “이용자” 또는 제3자에게 심한 모욕을 주거나 명예를 손상시키는 내용인 경우
+               ② “이용자”가 음란물을 게재하거나 음란사이트를 링크한 경우
+               ③ “몰” 또는 제3자의 저작권 등 기타 지적재산권을 포함한 일체의 권리를 침해하는 내용인 경우
+               ④ 게시판의 성격에 부합하지 않는 게시물의 경우
+               ⑤ 공공질서 및 미풍양속에 위반되는 내용을 유포하거나 링크시키는 경우
+               ⑥ 영리를 목적으로 하는 광고성 내용인 경우
+               ⑦ 범죄와 결부된다고 객관적으로 인정되는 내용일 경우
+               ⑧ “몰”에서 규정한 게시물 원칙에 어긋나거나 게시판 성격에 부합하지 않는 경우
+               ⑨ “몰”이나 "서비스"의 정상적인 운영을 방해하는 경우
+               ⑩ 기타 관계법령에 위배된다고 판단되는 경우
+               3. “사이트”의 게시물로 인하여 법률상 이익이 침해된 자는 관련 법령과 고객센터에서 정한 절차에 따라 당해 게시물의 게시중단 및 삭제 등을 요청할 수 있으며 ”몰”은 관련 법령에 따라 필요한 조치를 취하여야 합니다.
+               4. “회원”은 “사이트”를 탈퇴한 이후에는 기존에 작성한 게시물의 편집이나 삭제가 불가하므로, 탈퇴 이전에 해당 게시물에 대한 조치를 취하여야 합니다.
+               
+               제27조 (연결"몰"과 피연결"몰" 간의 관계)
+               1. 상위 "몰"과 하위 "몰"이 하이퍼 링크(예: 하이퍼 링크의 대상에는 문자, 그림 및 동화상 등이 포함됨)방식 등으로 연결된 경우, 전자를 연결 "몰"(웹 사이트)이라고 하고 후자를 피연결 "몰"(웹사이트)이라고 합니다.
+               2. 연결"몰"은 피연결"몰"이 독자적으로 제공하는 재화 등에 의하여 이용자와 행하는 거래에 대해서 보증책임을 지지 않는다는 뜻을 연결 "몰"의 초기화면 또는 연결되는 시점의 팝업화면으로 명시한 경우에는 그 거래에 대한 보증책임을 지지 않습니다.
+               3. 연결 “몰”에서 제공되는 서비스 외에 피연결 “몰”과 단순한 링크로 연결되어 제 3 자가 제공하는 서비스에 대하여는 “몰”의 개인정보처리방침이 적용되지 않으며 “몰”은 제 3 자의 사이트에 대하여 책임지지 않습니다.
+               
+               제28조 (저작권의 귀속 및 이용제한)
+               1. "몰"이 작성한 저작물에 대한 저작권 기타 지적재산권은 "몰"에 귀속합니다.
+               2. 이용자는 "몰"을 이용함으로써 얻은 정보 중 "몰"에게 지적재산권이 귀속된 정보를 "몰"의 사전 승낙 없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.
+               3. "몰"은 약정에 따라 이용자에게 귀속된 저작권을 사용하는 경우 당해 이용자에게 통보하여야 합니다.
+               
+               제29조 (분쟁해결)
+               1. "몰"은 이용자가 제기하는 정당한 의견이나 불만을 반영하고 그 피해를 보상처리하기 위하여 피해보상처리기구를 설치 운영합니다.
+               2. "몰"은 이용자로부터 제출되는 불만사항 및 의견은 우선적으로 그 사항을 처리합니다. 다만, 신속한 처리가 곤란한 경우에는 이용자에게 그 사유와 처리 일정을 즉시 통보합니다.
+               3. "몰"과 이용자간에 발생한 전자상거래 분쟁과 관련하여 이용자의 피해구제신청이 있는 경우에는 공정거래위원회 또는 시∙도지사가 의뢰하는 분쟁조정기관의 조정에 따를 수 있습니다.
+               
+               제30조 (면책)
+               1. “몰”은 전시, 사변, 천재지변, 국가비상사태, 해결이 곤란한 기술적 결함 기타 불가항력적 사유로 서비스를 제공할 수 없는 경우에는 책임이 면제됩니다.
+               2. “몰”은 “이용자”의 귀책사유로 인한 서비스의 중지/이용장애에 대하여 책임을 지지 않습니다.
+               3. “몰”은 기간 통신 사업자가 전기통신서비스를 중지하거나 정상적으로 제공하지 아니하여 “이용자”에게 손해가 발생한 경우에는 책임이 면제됩니다.
+               4. “몰”은 사전에 공지된 서비스용 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로 서비스가 중지되거나 장애가 발생한 경우에 대해서는 책임이 면제됩니다.
+               5. “몰”은 “이용자”가 서비스 내 또는 웹사이트 상에 게시 또는 전송한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 대해서는 책임을 지지 않습니다.
+               6. “몰”은 “이용자” 상호간 또는 “이용자”와 제3자간에 서비스를 매개로 발생한 분쟁에 대해 개입할 의무가 없으며 이로 인한 손해를 배상할 책임도 없습니다.
+               7. 회원이 자신의 개인정보를 타인에게 유출 또는 제공함으로써, 발생하는 피해에 대해서 회사는 일체의 책임을 지지 않습니다.
+               
+               제31조 (재판권 및 준거법)
+               1. "몰"과 이용자간에 발생한 전자상거래 분쟁에 관한 소송은 제소 당시의 이용자의 주소에 의하고, 주소가 없는 경우에는 거소를 관할하는 지방법원의 전속관할로 합니다. 다만, 제소 당시 이용자의 주소 또는 거소가 분명하지 않거나 외국 거주자의 경우에는 민사소송법상의 관할법원에 제기합니다.
+               2. "몰"과 이용자간에 제기된 전자상거래 소송에는 대한민국 법령을 적용합니다.
+               
+               부칙
+               
+               제 1 조 (적용일자)
+               이 정책은 2019.06.24일부터 적용됩니다.</p>
+            
+      </div>
+      <div class="txt_tab" id="tab2">
+         <h2>개인정보 처리방침</h2>
+        <p>주식회사 토마토트레이드(이하 "회사"라 함)은 "정보통신망이용 촉진 및 정보보호 등에 관한법률"(이하 "정통망법"이라 함)등 모든 관련법규를 준수하며 회원님의 개인정보가 보호받을 수 있도록 최선을 다하고 있습니다. 회사는 개인정보취급방침의 공개를 통하여 회원 여러분의 개인정보가 어떠한 목적과 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지를 알려드립니다. 본 개인정보취급방침은 관련법령의 개정이나 당사 내부방침에 의해 변경될 수 있으며 회원 가입 시나 사이트 이용 시에 수시로 확인하여 주시기 바랍니다.
+
+           1. 수집/이용 목적. 수집 항목 및 수집방법
+           ① 개인정보란? 생존하는 개인에 관한 정보로서 당해 정보에 포함되어 있는 성명, 주민등록번호 등의 사항에 의하여 당해 개인을 식별할 수 있는 정보(당해 정보만으로는 특정 개인을 식별할 수 없더라도 다른 정보와 용이하게 결합하여 식별할 수 있는 것을 포함)를 말합니다.
+           ② 회사는 고객이 회원가입을 할 때 서비스 제공을 위해 필요한 필수적인 최소한의 개인정보를 받고 있습니다. 회사가 고객의 개인정보를 수집하는 목적은 쇼핑몰 “통통몰”을 통하여 고객에게 최적의 서비스를 제공해 드리기 위한 것이며 고객이 제공한 개인정보를 바탕으로 고객에게 보다 더 유용한 정보를 선택적으로 제공하기 위한 것입니다.
+           ③ 회사는 고객의 사전 동의 없이는 고객의 개인정보를 사전에 밝힌 목적 이외로 이용하거나 제3자에게 공개하지 않습니다.
+           ④ 회사는 아래의 항목을 다음과 같은 목적을 위하여 개인정보를 수집하고 있습니다.
+           가. 필수항목
+           - 이름, 아이디(전자메일주소), 비밀번호: 이용자 본인 식별을 위한 목적
+           - 배송지 주소, 휴대폰 번호: 고객이 주문하신 상품 및 경품 배송을 위한 목적
+           - IP Address, 방문 일시, 서비스 이용기록(자동으로 생성 되는 개인정보): 부정이용방지, 비인가 사용방지, 분쟁조정 해결을 위한 기록보존 등
+           나. 선택항목
+           - 휴대폰 번호, 생년월일, 성별: 할인쿠폰, 특가상품 정보, 포인트 혜택 등의 발송을 위한 목적
+           - 결제 : 신용카드 - 카드사명, 카드번호, 유효기간, cvc
+           가상계좌 - 은행명, 계좌번호
+           통통코인 - 통통지갑 주소, 통통코인 금액
+           - 취소∙환불 : 은행명, 계좌번호, 통통코인 지갑 주소
+           ⑤ 회사는 고객님의 기본적 인권 침해의 우려가 있는 민감한 개인정보(인종 및 민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록, 건강상태 등)는 수집하지 않습니다.
+           
+           2. 3자 제공 시 제공 받는 자의 성명, 이용 목적, 제공하는 개인정보항목
+           ① 회사는 고객의 동의가 있거나 법률의 규정에 의한 경우를 제외하고는 어떠한 경우에도 "1. 개인정보의 수집항목 및 수집방법"에서 고지한 범위를 넘어서 고객의 개인정보를 이용하거나 타인 또는 타기업, 기관에 제공하지 않습니다.
+           ② 회사가 고객의 개인정보를 제3자에게 제공하는 경우 사전에 고객에게 고객의 개인정보를 제공 받는자, 개인정보를 제공받는 자의 개인정보 이용목적에 대해 동의를 구하는 절차를 거치거나 회원 가입시 별도로 동의를 구하는 절차를 거치게 됩니다.
+           고객이 동의하지 않는 경우에는 개인정보를 제공하거나 공유하지 않습니다.
+           ③ 다음의 경우에는 예외적으로 고객의 동의 없이 개인정보를 제공할 수 있습니다.
+           가. 형사소송법, 금융실명거래 및 비밀보장에 관한 법률, 신용정보의 이용 및 보호에 관한 법률, 전기통신기본법, 전기통신사업법, 전파법, 지방세법, 소비자보호법, 한국은행법, 등 관계법령에 특별한 규정이 있는 경우
+           나. 통계작성, 학술연구나 시장조사를 위하여 특정 개인을 식별할 수 없는 형태로 제공하는 경우
+           다. 관계법령에 의하거나 수사기관의 요청에 의해 정보를 제공한 경우에도 본래의 수집목적 및 이용목적에 반하여 무분별하게 정보가 제공되지 않도록 최대한 노력하겠습니다.
+           
+           3. 개인정보 보유 및 이용기간, 파기 절차 및 방법
+           ① 회원님의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은 목적이 달성되면 파기됩니다. 단, 상법, 전자상거래 등 에서의 소비자보호에 관한 법률 등 관련법령 및 회사 내부 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다.
+           가. 계약 또는 청약철회 등에 관한 기록: 5년
+           나. 대금결제 및 재화 등의 공급에 관한 기록: 5년
+           다. 전자금융 거래에 관한 기록: 5년
+           라. 소비자의 불만 또는 분쟁처리에 관한 기록: 3년
+           마. 표시, 광고에 관한 기록: 6개월
+           바. 본인확인에 관한 기록: 6개월
+           사. 사이트 접속에 관한 기록: 3개월
+           아. 부정 이용 기록: 1년
+           자. 잔여 포인트 처리 및 부정가입 방지를 위한 탈퇴 회원정보: 1개월
+           ② 회원님의 동의를 받아 보유하고 있는 거래정보 등을 회원님께서 열람을 요구하는 경우에는 소정의 본인확인절차를 거친 후 지체 없이 열람, 확인할 수 있도록 조치합니다.
+           ③ 회원가입 등을 통한 개인정보의 수집, 이용, 제공에 대하여 회원은 가입 시 동의한 내용에 대해서 언제든지 철회할 수 있습니다. 동의 철회는 당사 고객센터로 요청하여 언제든지 철회할 수 있으며, 개인정보 민원담당자에게 서면, 전화, e-mail 등으로 연락하시면 신속하게 개인정보의 삭제 등 필요한 조치를 합니다. 단, 회원ID에 대해서는 서비스 이용의 혼선 방지, 법령에서 규정하는 회원거래정보의 보존기간 동안의 보관의무의 이행, 기타 안정적인 서비스 제공을 위하여 필요한 정보이므로, 탈퇴 후 동일 ID로의 재가입은 허용되지 않습니다. 이미 제공된 회원정보를 철회 하는 데는 일정 시간이 소요되며 소요되는 시간 동안 마케팅에 활용되지 않도록 하겠습니다. 회사는 회원님의 소중한 정보를 보호하기 위하여 신속하게 처리 되도록 최선의 노력을 다하겠습니다.
+           ④ 회사는 고객의 개인정보를 보호하여 개인정보 유출로 인한 피해가 발생하지 않도록 하기 위하여 다음과 같은 방법을 통하여 개인정보를 파기합니다.
+           가. 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.
+           나. 전자적 파일 형태로 저장된 개인 정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+           
+           4. 개인정보 취급 위탁 시, 위탁 업무의 내용 및 수탁자
+           ① 회사는 위탁계약 체결 시 위탁업무 수행목적 외 개인정보 처리금지, 기술적/관리적 보호조치, 재위탁 제한, 수탁자에 대한 관리/감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 개인정보를 안전하게 처리하는지를 감독하고 있습니다.
+           ② 회사는 보다 나은 서비스 제공과 고객 편의 제공 등 업무수행을 원활하게 하기 위해 고객의 개인정보를 제한된 범위 내에서 수집, 보관, 처리 등을 위탁하여 처리하고 있습니다. 회사가 고객의 개인정보를 위탁하는 현황은 다음과 같습니다.
+           
+           수탁자	위탁업무 내용
+           현대택배,
+           대한통운, 우체국택배 및 기타 택배사	상품배송업무
+           토마토페이	상품 구매에 필요한
+           신용카드결제대행 업무
+           통통체인	상품 구매에 필요한 통통코인
+           결제대행 업무
+           5. 고객의 권리, 의무와 행사 방법 이용자 및 법정대리인은 언제든지 수집 정보에 대하여 수정, 동의 철회, 삭제, 열람요청 등을 요청 할 수 있습니다. 다만, 동의 철회, 삭제 시 서비스의 일부 또는 전부 이용이 제한될 수 있습니다.
+           ① 개인정보이용자 및 개인정보 열람 요청
+           통통몰에서 처리하고 있는 이용자의 개인정보에 대한 열람을 요구할 수 있습니다. 아래 나열한 정보에 대해서는 직접 통통몰에 접속하셔서 확인이 가능합니다.
+           가. 회원가입시 제공한 개인정보는 홈페이지(PC Web), 모바일 앱(App)의‘나의 정보 > 비밀번호 확인 > 회원정보수정’
+           나. 구매 시 제공한 개인정보 및 판매자에게 제공한 개인정보는 홈페이지(PC Web), 모바일 앱(App)의 ‘통통몰 > 주문내역’ 서비스 이용을 하면서 시스템을 통하여 자동적으로 생성된 개인정보 등 홈페이지(PC Web)를 통하여 직접 확인하지 못하는 개인정보를 열람하고자 하는 경우에는 고객센터 02-2128-3303 또는 tongtongmall@etomato.com으로 연락 주시면 특별한 사유가 없는 한 10일 이내(근무일 기준)에 조치를 합니다. 열람의 방식은 이용자의 요청에 따라 정할 수 있으며, 그 방식을 한정하지 않습니다.
+           다만, 열람이 늦어지거나 불가능한 사유는 신속하게 알려드리도록 합니다.
+           여기서 특별한 사유란 제공 시 서비스 또는 보안상 중대한 문제가 생길 경우, 다른 사람의 생명∙신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우를 말합니다.
+           ② 개인정보 수정
+           홈페이지(PC Web), 모바일 앱(App)의‘나의 정보 > 비밀번호 확인 > 회원정보수정’ 또는 고객센터 02-2128-3303 또는 tongtongmall@coupang.com을 이용하여 안내해 드립니다. 이를 위하여, 본인확인 등의 절차가 진행될 수 있습니다.
+           ③ 개인정보 동의 철회 및 삭제, 처리 정지
+           고객센터 02-2128-3303 또는 tongtongmall@etomato.com을 이용하여 수집 및 이용된 정보에 대한 동의 철회 및 삭제, 처리 정지를 안내 받으실 수 있습니다. 다만, 이러한 요청 시, 서비스의 일부 또는 전부 이용이 제한될 수 있으며, 다른 법령에 따라 수집하는 정보의 경우에는 동의 철회, 삭제, 처리 정지가 어려울 수 있습니다.
+           처리가 완료될 때까지 해당 정보를 이용하거나 타인에게 제공하지 않을 것입니다. 또한 합리적인 사유로 잘못된 개인정보를 제3자에게 이미 제공한 경우, 그 결과를 지체 없이 제3자에게 통지하여 동의 철회, 삭제, 처리 정지하도록 조치합니다.
+           ④ 회원 탈퇴
+           통통몰 탈퇴를 하실 경우, 고객센터 02-2128-3303 또는 tongtongmall@etomato.com을 통하여 진행할 수 있습니다. 이를 위하여, 본인확인 등의 절차가 진행될 수 있습니다.
+           
+           6. 개인 정보를 자동으로 수집하는 장치의 설치, 운영 및 그 거부에 관한 사항
+           ① 회사는 다른 많은 웹사이트와 마찬가지로 쿠키를 운용합니다. '쿠키(cookie)'는 회원님에 대한 정보를 저장하고 수시로 찾아내는 역할을 합니다. 그리고, 웹사이트가 회원님의 컴퓨터 브라우저(넷스케이프, 인터넷 익스플로러 등)로 전송하는 4KB 미만의 텍스트로 이뤄진 소량의 정보입니다.
+           ② 회원께서 회사의 웹사이트에 접속을 하시면, 회사의 컴퓨터는 회원님의 브라우저에 있는 쿠키의 내용을 읽고, 회원의 추가정보를 회원님의 컴퓨터에서 찾아 접속에 따른 성명 등의 추가 입력 없이 서비스를 제공할 수 있습니다.
+           ③ 회원께서는 쿠키에 대한 선택권이 있으며, 다음과 같은 방법으로 쿠키의 전부 또는 일부를 받아들여 웹 브라우저 상단의 "도구 > 인터넷옵션>개인정보>개인정보 설정"에서 "모든 쿠키허용-낮음-보통-보통 높음-높음-모든 쿠키차단"을 할 수 있는 선택권을 가질 수 있습니다. 그러나, 회원님께서 쿠키에 대한 설치를 거부하거나 삭제로 설정한 경우에는 해당 웹 페이지에 일정 부분에 대해서 접근할 때마다 회원님의 아이디(ID)나 비밀번호(password)를 다시 입력하셔야 합니다.
+           ④ 회사는 이용자의 편의를 위하여 쿠키를 운영하며. 회사가 쿠키를 통해 수집하는 정보는 회원 ID에 한하며, 그 외의 다른 정보는 수집하지 않습니다. 수집된 회원의 ID는 타겟(Target) 마케팅 등의 목적을 위해 사용될 수 있습니다. 쿠키는 브라우저의 종료 시나 로그아웃 시 만료됩니다.
+           
+           7. 개인정보의 기술적/관리적 보호 대책
+           회사는 이용자들의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적/ 관리적 대책을 강구하고 있습니다.
+           
+           가. 해킹 등에 대비한 대책
+           회사는 해킹이나 컴퓨터 바이러스 등에 의해 회원의 개인정보가 유출되거나 훼손되는 것을 막기 위해 최선을 다하고 있습니다. 개인정보의 훼손에 대비해서 자료를 수시로 백업하고 있고, 최신 백신프로그램을 이용하여 이용자들의 개인정보나 자료가 누출되거나 손상되지 않도록 방지하고 있으며, 암호화 통신 등을 통하여 네트워크상에서 개인정보를 안전하게 전송할 수 있도록 하고 있습니다. 그리고 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있으며, 기타 시스템적으로 보안성을 확보하기 위한 가능한 모든 기술적 장치를 갖추려 노력하고 있습니다.
+           나. 취급 직원의 최소화 및 교육
+           회사의 개인정보관련 취급 직원은 담당자에 한정시키고 있고 이를 위한 별도의 비밀번호를 부여하고 있으며, 담당자에 대한 수시 교육을 통하여 “통통몰” 개인정보취급방침의 준수를 항상 강조하고 있습니다.
+           다. 개인정보보호 운영관리
+           회사는 개인정보취급방침의 이행사항 및 담당자의 준수여부를 확인하여 문제가 발견될 경우 즉시 수정하고 바로 잡을 수 있도록 노력하고 있습니다. 단, 이용자 본인의 부주의나 회사의 고의 또는 중대한 과실이 아닌 사유로 개인정보가 유출되어 발생한 문제에 대해 회사는 일체의 책임을 지지 않습니다.
+           
+           8. 개인정보 관리 책임자의 성명, 관련 업무 처리 부서 명칭 및 연락처
+           ① 회사는 개인정보와 관련된 회원의 의견수렴과 불만처리를 위하여 회원관리자를 지정해서 해당업무를 수행하도록 합니다.
+           ② 회사는 회원님의 의견을 소중하게 생각하며, 회원님은 의문사항으로부터 언제나 성실한 답변을 받을 권리가 있습니다.
+           ③ 회사는 회원님과의 원활환 의사소통을 위해 고객센터를 운영하고 있으며 연락처는 다음과 같습니다.
+           
+           [고객센터]
+           - 전자우편 : tongtongmall@etomato.com
+           - 전화번호 : 02-2128-3303
+           - 팩스번호 : 02-2128-3851
+           - 주 소 : 서울특별시 마포구 양화진4길 32 토마토트레이드빌딩
+           
+           [통통몰 개인정보관리책임자]
+           - 성 명: 정민용 팀장
+           - 소속부서: 토마토트레이드 기획팀
+           - 전자우편: tongtongmall@etomato.com
+           - 전화번호 : 02-2128-3303
+           - 팩스번호: 02-2128-3851
+           
+           
+           ④ 기타 개인정보에 관한 상담이 필요한 경우에는 개인정보침해신고센터, 정보보호마크 인증위원회, 대검찰청 인터넷범죄수사센터, 경찰청 사이버범죄수사대 등으로 문의하실 수 있습니다.
+           
+           - 개인정보침해신고센터 (www.118.or.kr / 118)
+           - 정보보호마크인증위원회 (www.eprivacy.or.kr / 02-580-0533~4)
+           - 대검찰청 첨단범죄수사과 (http://www.spo.go.kr / 02-3480-2000)
+           - 경찰청 사이버테러대응센터 (www.ctrc.go.kr / 02-392-0330)
+           
+           
+           9. 청소년 보호를 위한 관리적 정책
+           주식회사 토마토트레이드(이하 ’회사’라 합니다)은 불건전한 유해매체물로부터 청소년을 보호하 기 위해 [청소년보호법], [정보통신망 이용촉진 및 정보보호 등에 관한 법률 등에 근거하여 청소년보호정책을 시행하고 있습니다.
+           회사는 정보통신윤리위원회 심의규정 및 청소년유해매체물 기준에 따라, 19세 미만의 청소년들이 유해매체물에 접근할 수 없도록 방지하고 있습니다.
+           
+           1. 유해정보에 대한 청소년접근제한 및 관리조치
+           회사는 청소년이 불법, 유해한 매체물 유통 등으로 인한 피해를 입지 않도록 청소년 유해매체물에 대하여 별도의 성인인증 장치를 적용하며, 청소년 유해정보가 노출되지 않도록 예방합니다.
+           
+           2. 청소년유해상품 판매제한
+           “회사”는 청소년유해물건, 약품, 청소년유해매체 등 청소년에게 유해 할 수 있는 상품의 주문 및 판매를 제한하고 있습니다.
+           
+           3. 유해정보로 인한 피해상담 및 고충처리
+           가. 회사는 청소년 유해매체물의 유통으로 인한 피해신고 및 처리를 위하여 신고센터를 통한 신고를 접수 받고 있습니다.
+           나. 통통몰에서는 고객센터에서 청소년 유해매체물 신고센터도 함께 운영하고 있으며, 모든 매체물 하단에 위치합니다.
+           다. 청소년 유해매체물로 확인되는 경우 매체물 등록자에게 경고조치 등의 조치를 취합니다.
+           
+           4. 청소년보호 책임자
+           
+           [통통몰 청소년 보호책임자]
+           - 성 명: 정민용 팀장
+           - 소속부서: 토마토트레이드 기획팀
+           - 소속부서: 토마토트레이드 기획팀
+           - 전자우편: tongtongmall@etomato.com
+           - 전화번호 : 02-2128-3303
+           - 팩스번호: 02-2128-3851
+           
+           10. 고지의 의무
+           현 개인정보취급방침의 내용 추가, 삭제 및 수정이 있을 시에는 시행일자 최소 7일전부터 쇼핑통 웹사이트 내 "공지사항" 화면을 통해 공고할 것입니다.
+           
+           - 공고일자: 2019년 10월 24일
+           - 시행일자: 공고일자로부터 7일 후
+           - 공고일자: 2019년 01월 02일
+           - 시행일자: 공고일자로부터 7일 후
+        </p>
+      </div>
+      <div class="txt_tab" id="tab3">
+            <h2>판매자 이용약관 - 전자거래 이용약관</h2>
+            <p>제1장 총칙
+
+               제1조 (목적)
+               이 약관은 주식회사 토마토페이(이하 “회사”)가 운영하는 인터넷 사이트 쇼핑몰 “통통몰” (http://www.tongtongmall.net 이하 “쇼핑몰”) 를 통하여 제공하는 전자지급결제대행서비스, 결제 대금예치서비스를 이용자가 이용할 때 회사와 이용자간 전자금융거래의 법률관계를 정하는 데 목 적이 있습니다.
+               
+               제2조 (정의)
+               ① 본 약관에서 정하는 용어의 정의는 다음과 같습니다.
+               1. “전자금융거래”는 회사가 전자적 장치를 통하여 전자금융업무를 제공하고, 이용자가 회사의 종사자와 직접 대면하거나 의사소통하지 않고 자동화된 방식으로 이를 이용하는 거래를 말합니다.
+               2. “전자지급거래”는 자금을 주는 자(이하 “지급인”)가 회사로 하여금 전자지급수단을 이용하여 자금을 받는 자(이하 “수취인”)에게 자금을 이동하게 하는 전자금융거래를 말합니다.
+               3. “전자적 장치”는 전자금융거래정보를 전자적 방법으로 전송하거나 처리하는 데 이용되는 장치로서 현금자동지급기, 자동입출금기, 지급용 단말기, 컴퓨터, 전화기, 그 밖에 전자적 방법으로 정보를 전송하거나 처리하는 장치를 말합니다.
+               4. “접근매체”는 전자금융거래에서 거래지시를 하거나 이용자와 거래내용의 진실성과 정확성을 확보하기 위하여 사용되는 수단 또는 정보로서 전자식 카드 및 이에 준하는 전자적 정보(신용카드번호를 포함한다), “전자서명법”상의 인증서, 금융기관 또는 전자금융업자에 등록된 이용자번호, 이용자의 생체정보, 이상의 수단이나 정보를 사용하는 데 필요한 비밀번호 등 전자금융거래법 제2조 제10호에서 정하고 있는 것을 말합니다.
+               5. “이용자”는 회사와 본 약관에 동의하고 본 약관에 따라 사이트 전자금융거래 서비스를 이용하는 사이트 회원을 말합니다.
+               6. “이용자번호”란 이용자의 동일성 식별과 서비스 이용을 위하여 이용자가 설정하고 회사가 승인한 숫자와 문자의 조합을 말합니다.
+               7. “비밀번호”란 이용자의 동일성 식별과 회원정보의 보호를 위하여 이용자가 설정하고 회사가 승인한 숫자와 문자의 조합을 말합니다.
+               8. “거래지시”란 이용자가 본 약관에 따라 회사에 전자금융거래의 처리를 지시하는 것을 말합니다.
+               9. “오류”란 이용자의 고의 또는 과실 없이 전자금융거래가 본 약관 또는 이용자의 거래지시에 따라 이행되지 않은 경우를 말합니다.
+               ② 본 조 및 본 약관의 다른 조항에서 정의한 것을 제외하고는 전자금융거래법 등 관련 법령에 정한 바에 따릅니다.
+               
+               제3조 (약관의 명시 및 변경)
+               ① 회사는 이용자가 전자금융거래를 하기 전에 본 약관을 사이트에 게시하고 이용자가 본 약관의 중요한 내용을 확인할 수 있도록 합니다.
+               ② 회사는 이용자가 요청하면 전자문서를 전송(전자우편을 이용한 전송을 포함합니다)하는 방식으로 본 약관의 사본을 이용자에게 교부합니다.
+               ③ 회사가 본 약관을 변경하는 때에는 그 시행일 1개월 전에 변경되는 약관을 금융거래정보 입력화면과 회사의 홈페이지(“쇼핑몰”을 말합니다. 이하에서 같습니다)에 게시하여 이용자에게 공지합니다. 다만, 법령의 개정으로 인하여 긴급하게 약관을 변경한 때에는 변경된 약관을 홈페이지에 1개월 이상 게시하고 이용자에게 전자우편 등을 통하여 사후 통지합니다.
+               ④ 회사는 제3항의 고지나 통지를 할 경우 “이용자가 변경에 동의하지 아니한 경우 고지나 통지를 받은 날로부터 30일 이내에 계약을 해지할 수 있으며, 계약해지의 의사표시를 하지 아니한 경우에는 변경에 동의한 것으로 본다.”라는 취지의 내용을 고지하거나 통지합니다.
+               
+               제4조 (거래내용의 확인)
+               ① 회사는 “쇼핑몰”의 “마이 페이지” 조회 화면을 통하여 이용자의 거래내용(이용자의 “오류정정 요구사실 및 처리결과에 관한 사항”을 포함합니다)을 확인할 수 있도록 하며, 이용자가 요청하면 요청을 받은 날로부터 2주 이내에 모사전송, 우편 또는 직접 교부의 방법으로 거래내용에 관한 서면을 교부합니다. 다만, 전자적 장치의 운영장애, 그 밖의 사유로 거래내용을 제공할 수 없는 때에는 즉시 이용자에게 전자문서 전송(전자우편을 이용한 전송을 포함합니다)의 방법으로 그러한 사유를 알려야 하며, 거래내용을 제공할 수 없는 기간은 서면교부 기간에 산입하지 아니합니다.
+               ② 제1항의 대상이 되는 거래내용 중 대상기간이 5년인 것은 다음 각 호와 같습니다.
+               1. 전자금융거래가 계좌를 통하여 이루어지는 경우 거래계좌의 명칭 또는 번호
+               2. 거래의 종류 및 금액
+               3. 거래상대방을 나타내는 정보
+               4. 거래일자
+               5. 전자적 장치의 종류와 전자적 장치를 식별할 수 있는 정보
+               6. 해당 전자금융거래와 관련한 전자적 장치의 접속기록
+               7. 금융회사 또는 전자금융업자가 전자금융거래의 대가로 받은 수수료
+               8. 전자금융거래법 제15조 제1항에 따른 지급인의 출금 동의에 관한 사항
+               9. 전자금융거래 신청 및 조건의 변경에 관한 사항
+               10. 건당 거래금액이 1만원을 초과하는 전자금융거래에 관한 기록
+               ③ 제1항의 대상이 되는 거래내용 중 대상기간이 1년인 것은 다음 각 호와 같습니다.
+               1. 건당 거래금액이 1만 원 이하인 소액 전자금융거래에 관한 기록
+               2. 전자지급수단을 이용할 때의 거래승인에 관한 기록
+               3. 이용자의 오류정정 요구사실 및 처리결과에 관한 사항
+               ④ 이용자는 제1항에서 정한 서면교부를 다음의 주소와 전화번호로 요청할 수 있습니다.
+               1. 주소: 서울시 마포구 양화진4길 32 이토마토빌딩
+               2. 이메일(E-mail) 주소: shopmaster@etomato.com
+               3. 전화번호: 02-2128-2693
+               
+               제5조 (오류의 정정 등)
+               ① 전자금융거래서비스를 이용하는 데 오류가 있음을 안 이용자는 회사에 그 정정을 요구할 수 있습니다.
+               ② 회사는 제1항의 규정에 따른 오류의 정정요구를 받은 때 또는 스스로 오류가 있음을 안 때에는 이를 즉시 조사하여 처리한 후 정정요구를 받은 날 또는 오류가 있음을 안 날부터 2주 이내에 그 결과를 문서, 전화 또는 전자우편으로 이용자에게 알려 드리며, 이용자가 문서로 알려줄 것을 요청하는 경우에는 문서로 알립니다.
+               
+               제6조 (전자금융거래 기록의 생성 및 보존)
+               ① 회사는 이용자가 이용한 전자금융거래의 내용을 추적, 검색하거나 그 내용에 오류가 발생했을 때 이를 확인하거나 정정할 수 있는 기록을 생성하여 보존합니다.
+               ② 제1항의 규정에 따라 회사가 보존해야 하는 기록의 종류와 보존방법은 제4조 제2항, 제3항에서 정한 바를 따릅니다.
+               
+               제7조 (지급의 효력발생시기 및 거래지시의 철회)
+               ① 전자지급수단을 이용하여 자금을 지급하는 경우 지급의 효력은 다음 각 호에서 정한 때에 발생합니다.
+               1. 전자자금이체의 경우 : 거래지시된 금액의 정보에 대하여 수취인의 계좌가 개설되어 있는 금융기관 계좌의 원장에 입금기록이 끝난 때
+               2. 선불전자지급수단으로 지급하는 경우 : 거래지시된 금액의 정보가 수취인이 지정한 전자적 장치에 도달한 때
+               3. 그 밖의 전자지급수단으로 지급하는 경우 : 거래지시된 금액의 정보가 수취인의 계좌가 개설되어 있는 금융기관의 전자적 장치에 입력이 끝난 때
+               ② 이용자는 제1항에 따라 지급의 효력이 발생하기 전까지 인터넷사이트 등의 초기화면에 게시된 고객센터의 연락처 또는 인터넷사이트 등의 고객문의 기능을 통하여 전자문서를 전송하는 방법으로, 거래지시를 철회할 수 있습니다.
+               ③ 이용자는 통신판매에 따른 재화 또는 용역(이하 ‘재화 등’이라고 합니다)의 구매대금으로 전자지급수단을 지급하여 제1항에 따라 지급의 효력이 발행한 경우에는 「전자상거래 등에서의 소비자보호에 관한 법률」에 따른 청약철회의 방법에 따라 해당 결제대금을 반환 받을 수 있습니다.
+               
+               제8조 (전자금융거래정보의 제공금지)
+               회사는 전자금융거래서비스를 제공하기 위해 취득한 이용자의 인적 사항, 이용자의 계좌, 접근매체 및 전자금융거래의 내용과 실적에 관한 정보 또는 자료를 법령에 따르거나 이용자의 동의를 얻지 않고 제3자에게 제공∙누설하거나 업무상 목적 외에 사용하지 않습니다.
+               
+               제9조 (회사의 책임)
+               ① 회사는 접근매체의 위조나 변조로 발생한 사고, 계약체결 또는 거래지시의 전자적 전송이나 처리 과정에서 발생한 사고, 전자금융거래를 위한 전자적 장치 또는 “정보통신망 이용촉진 및 정보보호 등에 관한 법률” 제2조제1항제1호에 따른 정보통신망에 침입하여 거짓이나 그 밖의 부정한 방법으로 획득한 접근매체의 이용으로 발생한 사고로 이용자에게 손해가 발생했을 때 그 손해를 배상할 책임을 집니다.
+               ② 회사는 제1항에도 불구하고 다음 각 호의 경우에는 그 책임의 전부 또는 일부를 이용자가 부담하게 할 수 있습니다.
+               1. 이용자가 접근매체를 제3자에게 대여하거나 그 사용을 위임하거나 양도 또는 담보 목적으로 제공하거나, 제3자가 권한 없이 이용자의 접근매체를 이용하여 전자금융거래를 할 수 있음을 알았거나 알 수 있었음에도 이용자가 자신의 접근매체를 누설 또는 노출하거나 방치한 경우
+               2. 법인(“중소기업기본법” 제2조 제2항에 따른 소기업은 제외)인 이용자에게 손해가 발생한 경우로서 회사가 사고를 방지하기 위하여 보안절차를 수립하고 이를 철저히 지키는 등 합리적으로 요구되는 충분한 주의 의무를 다한 경우
+               ③ 이용자로부터 거래지시가 있음에도 천재지변, 회사의 귀책사유가 없는 정전, 화재, 통신장애, 기타의 불가항력적인 사유로 처리할 수 없거나 지연된 경우로서 이용자에게 처리할 수 없거나 지연할 수밖에 없는 사유를 통지 (금융기관 또는 결제수단 발행업체나 통신판매업자가 통지한 경우를 포함)했을 때에는 이용자에 대하여 그 책임을 지지 않습니다.
+               ④ 회사는 컴퓨터 등 정보통신설비의 보수점검, 교체의 사유가 발생하여 전자금융서비스의 제공을 일시적으로 중단할 때에는 회사의 홈페이지를 통하여 이용자에게 중단 일정과 중단 사유를 미리 공지합니다.
+               
+               제10조 (분쟁처리 및 분쟁조정)
+               ① 이용자는 회사의 홈페이지 메인 화면 하단에 게시된 분쟁처리 책임자와 담당자에게 전자금융거래와 관련한 의견 및 불만 제기, 손해배상 청구 등의 분쟁처리를 요구할 수 있습니다.
+               ② 이용자가 회사에 분쟁처리를 신청했을 때 회사는 15일 이내에 이에 대한 조사 또는 처리 결과를 이용자에게 안내합니다.
+               ③ 이용자는 회사의 분쟁처리결과에 이의가 있으면 “금융위원회의 설치 등에 관한 법률” 제51조의 규정에 따른 금융감독원의 금융분쟁조정위원회나 “소비자기본법” 제31조 제1항의 규정에 따른 한국소비자원의 소비자분쟁조정위원회에 회사의 전자금융거래서비스 이용과 관련한 분쟁조정을 신청할 수 있습니다.
+               
+               제11조 (회사의 안정성 확보 의무)
+               회사는 전자금융거래가 안전하게 처리될 수 있도록 선량한 관리자로서의 주의를 다하며 전자금융거래의 안전성과 신뢰성을 확보할 수 있도록 전자금융거래의 종류별로 전자적 전송이나 처리를 위한 인력, 시설, 전자적 장치 등의 정보기술부문 및 전자금융업무에 관하여 금융위원회가 정하는 기준을 지킵니다.
+               
+               제12조 (약관 외 준칙)
+               회사와 이용자 사이에 개별적으로 합의한 사항이 이 약관에 정한 사항과 다를 때에는 그 합의사항을 이 약관에 우선하여 적용합니다.
+               본 약관에서 정하지 않은 사항(용어의 정의 포함)은 전자금융거래법, 전자상거래 등에서의 소비자 보호에 관한 법률, 통신판매에 관한 법률, 여신전문금융업법 등 소비자보호 관련 법령 및 개별약관에서 정한 바를 따릅니다.
+               
+               제13조 (관할)
+               회사와 이용자 간에 발생한 분쟁에 관한 관할은 민사소송법에서 정한 바를 따릅니다.
+               
+               제2장 전자지급결제대행 서비스
+               제14조 (정의)
+               본 장에서 정하는 용어의 정의는 다음과 같습니다.
+               1. “전자지급결제대행 서비스”란 전자적 방법으로 재화 또는 용역(이하 “재화 등”)을 구매하는 것과 관련하여 지급결제정보를 송신하거나 수신하는 것 또는 그 대가의 정산을 대행하거나 매개하는 서비스를 말합니다.
+               2. “이용자”란 본 약관에 동의하고 회사가 제공하는 전자지급결제대행 서비스를 이용하는 자를 말합니다.
+               
+               제15조 (거래지시의 철회)
+               ① 전자지급결제대행 서비스를 이용하는 이용자는 수취인의 계좌가 개설된 금융기관 또는 회사 계좌의 원장에 입금이 기록되거나 전자적 장치에 입력이 끝날 때까지 거래 지시된 금액의 정보에 대하여 거래지시를 철회할 수 있습니다.
+               ② 회사는 이용자가 거래지시를 철회하여 지급거래가 이루어지지 않으면 수령한 자금을 이용자에게 반환해야 합니다.
+               
+               제16조 (접근매체의 관리)
+               ① 전자지급결제대행 서비스를 제공할 때 회사는 접근매체를 선정하여 이용자의 신원, 권한 및 거래지시의 내용 등을 확인할 수 있습니다.
+               ② 이용자는 접근매체를 제3자에게 대여하거나 그 사용을 위임하거나 양도 또는 담보 목적으로 제공할 수 없습니다.
+               ③ 이용자는 자신의 접근매체를 제3자에게 누설 또는 노출하거나 방치해서는 안 되며, 접근매체의 도용이나 위조 또는 변조를 방지하기 위하여 충분한 주의를 기울여야 합니다.
+               ④ 회사는 이용자로부터 접근매체의 분실이나 도난 등의 통지를 받았을 때에는 그때부터 제3자가 그 접근매체를 사용하여 이용자에게 끼친 손해를 배상할 책임이 있습니다.
+               
+               부칙
+               제1조 (시행일) 본 약관은 2019년 01월 02일부터 시행합니다.
+            </p>     
+
+            <h2>판매자 이용약관 - 통통코인 이용약관</h2>
+            <p>
+               제1장 총칙
+
+제1조 (목적)
+이 약관은 주식”회사” 토마토페이(이하 “회사”)가 운영하는 인터넷 사이트 쇼핑몰 “통통몰” (http://www.tongtongmall.net, 이하 “쇼핑몰”)를 통하여 사용하는 암호화폐 결제수단(이하 “통통코인”)을 사용함에 있어 “회사”와 고객간에 “통통코인”에 대한 이용조건 및 절차에 관한 “회사”와 회원간의 권리 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+
+제2조 (약관의 명시 및 변경)
+이 약관의 내용은 “회사” 사이트 초기화면에 게시하거나 별도의 연결 화면 또는 팝업화면으로 제공합니다.
+회원이 “통통코인” 결제서비스를 이용하면서 이 약관에 동의함으로써 효력을 발생합니다.
+“회사”는 "약관의 규제에 관한 법률", "정보통신망이용촉진 및 정보보호 등에 관한 법률", 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+“회사”가 약관을 개정할 경우에는 적용일자 및 개정 사유를 명시하여 현행 약관과 함께 “회사” 사이트의 초기화면이나 팝업 화면 또는 공지사항 란에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다. 다만, 이용회원에게 불리한 약관의 개정의 경우에는 적용일자 30일 이전에 공지하며, 공지 외에 일정기간 이용 회원의 전자우편 등의 전자적 수단을 통해 통지합니다.
+“회사”가 전항에 따라 개정약관을 공지 통지하면서 회원에게 7일간의 기간 내에 의사 표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 고지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.
+회원이 개정약관의 적용에 동의하지 않는다는 명시적의사를 표명한 경우 “회사”는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 “회사”는 이용계약을 해지할 수 있습니다.
+
+제3조 (약관 외 준칙)
+이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 제정한 전자상거래 등에서의 소비자보호지침 및 관련 법령의 규정과 일반 상관례에 의합니다.
+회원은 항상 개별약관이나 이용정책의 내용에 변경이 있는지 여부를 주시하여야 하며, 변경사항의 공지가 있을 시에는 이를 확인하여야 합니다.
+이 약관에 별도 내용이 없으면, “회사”와 회원간 체결된 이용약관을 준용하여 해석하거나 적용합니다.
+
+제4조 (용어의 정의)
+이 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+“통통코인” 결제 서비스 : 회원이 상품 또는 용역(이하 “상품 등”)을 거래함에 있어 “통통코인”을 통하여 거래할 수 있도록 “회사”가 제공하는 결제서비스를 의미합니다.
+“통통코인” : “통통코인” 결제서비스에서 이용할 수 있는 암호화폐 결제수단 입니다.
+1. 총 “통통코인” : 회원이 보유한 “통통코인” 총액이며, 회원 보유 암호화폐(“통통코인”)의 환산금액 입니다.
+2. 사용가능 “통통코인” : 연동된 통통지갑 내에 있는 현 시세가 적용되어 환산된 암호화폐(“통통코인”)입니다.
+
+제5조 (“회사”의 의무)
+“회사”는 법령과 이 약관이 금지하거나 공서양속에 반하는 행위를 하지 않으며 이 약관이 정하는 바에 다라 지속적이고, 안정적으로 “통통코인” 결제서비스를 제공하는데 최선을 다하여야 합니다.
+“회사”는 회원이 안전하게 “통통코인” 결제서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함) 보호를 위한 보안 시스템을 갖추어야 합니다.
+
+제6조 (“회원”의 의무)
+회원은 상품을 구매하기 전에 반드시 상품의 상세 내용과 거래의 조건을 정확하게 확인한 후 구매를 하여야 합니다. 회원은 구매하려는 상품의 내용과 거래의 조건을 확인하지 않고 구매하여 발생한 모든 손실, 손해에 대한 책임을 부담하여야 합니다.
+회원은 이 약관과 “통통코인” 결제서비스 화면에서 고지하는 내용을 준수하여야 하며, 이 약관 및 고지 내용을 위반하거나 이행하지 아니하여 발생하는 모든 손실, 손해에 대하여 책임을 부담합니다.
+회원은 자신의 명의가 도용되거나 제 3자에게 부정하게 사용된 것을 인지한 경우 즉시 그 사실을 “회사”에 통보하여야 합니다.
+회원은 상품 등 구매 시 스스로의 책임 하에 상품 등을 구매하여야 합니다. “회사”는 제휴사의 상품 등 내용과 거래 조건에 대해서 어떠한 보증이나 책임도 부담하지 않습니다.
+상품의 결제와 관련하여 회원이 입력한 정보 및 그 정보와 관련하여 발생한 책임과 불이익은 전적으로 회원이 부담하여야 합니다.
+“회사”가 회원의 “통통코인” 결제서비스 이용 편의를 위해 “쇼핑몰”에 게재하거나 제 3자가 제공하는 방식으로 “통통코인” 결제서비스 화면 내 참조용 정보나 컨텐츠를 제공하는 경우라도, 회원은 상품 등 구매 시 자신의 판단과 책임으로 결정하여 구매하여야 하며 “회사”는 어떠한 경우에도 회원의 구매결정에 대하여 책임을 부담하지 않습니다.
+회원은 “회사”가 “통통코인” 결제서비스를 안전하게 제공할 수 있도록 “회사”에 협조하여야 하며, “회사”가 회원의 이 약관 위반행위를 발견하여 이용회원에게 해당 위반행위에 대하여 소명을 요청할 경우 회원은 “회사”의 요청에 적극 응하여야 합니다.
+회원은 “회사”가 정하고 인정하는 방식에 따라 “통통코인”을 사용하여야 합니다.
+미성년자는 “통통코인” 결제서비스를 이용할 수 없습니다.
+회원은 다음 각호의 행위를 할 수 없습니다.
+① “회사”가 제공하는 서비스 이용방법에 의하지 아니하고 비정상적인 방법으로 서비스를 이용하거나 시스템에 접근하는 행위
+② 타인의 명의, 계좌 정보 등을 도용하여 “회사”가 제공하는 서비스를 이용하는 경우
+③ 상품거래를 가장하여 자금을 융통하는 것과 같이 법령에 의하여 금지된 방법으로 비 정상적으로 결제하는 행위
+④ “회사”가 정하지 않은 비정상적인 방법으로 “통통코인” 등을 경제적 가치를 취득하거나 사용하는 행위
+⑤ 구매의사 없는 반복적인 구매 행위
+⑥ “회사”가 정한 통신 정보 이외의 정보 등의 송신 또는 게시 행위
+⑦ 기타 불법적이거나 부당한 이용 행위
+회원이 본 조의 의무를 불이행 하거나 금지행위를 위반하는 경우 및 “쇼핑몰” 회원 자격이 정지 또는 상실되는 경우, 이 약관 또는 별도의 페이지에 규정한 이용 정책을 위반하는 경우 “회사”는 회원과 이용계약을 해지 할 수 있으며, 별도의 손해배상을 청구할 수 있습니다.
+
+제7조 (“통통코인” 사용)
+“통통코인”은 “쇼핑몰”에서 결제수단으로 이용되며, “통통코인”을 이용하기 위해서는 통통 메신저 계정 및 통통지갑이 있어야 가능합니다.
+“통통코인” 결제서비스 이용 시 결제금액이 사용가능 “통통코인”일 경우에만 사용할 수 있습니다.
+사용가능 “통통코인”은 암호화폐 시세에 따라 변경될 수 있으며, 결제요청, 결제진행중 등 각 시점에 따라 차이가 있을 수 있습니다.
+“통통코인”으로 결제하였을 경우 결제금액의 0.5% 수수료(최소 수수료 0.1TTC)가 부과됩니다.
+
+제8조 (“통통코인” 환불)
+회원은 “통통코인”으로 구매한 상품 등에 대해서는 이용약관 및 정책에 따라 처리가 우선되며, 처리결과에 따라 환불이 필요한 경우 “통통코인”으로 환불됩니다.
+
+제9조 (“통통코인” 결제서비스 중단)
+“회사”는 다음 각 호에 해당하는 경우 서비스 제공을 중지할 수 있습니다.
+① 서비스용 설비의 보수 등 공사로 인한 부득이한 경우
+② 전기통신사업법에 규정된 기간통신사업자가 전기통신 서비스를 중지했을 경우
+③ 기타 불가항력적 사유가 있는 경우
+“회사”는 국가비상사태, 정전, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 때에는 서비스의 전부 또는 일부를 제한하거나 정지할 수 있습니다.
+“회사”는 새로운 서비스로 교체 또는 기타 “회사”가 서비스를 제공할 수 없는 사유 발생 시 제공되는 서비스를 중단할 수 있습니다.
+
+제10조 (면책조항)
+1. “쇼핑몰”은 전시, 사변, 천재지변, 국가비상사태, 해결이 곤란한 기술적 결함 기타 불가항력적 사유로 서비스를 제공할 수 없는 경우에는 책임이 면제됩니다.
+2. “쇼핑몰”은 “이용자”의 귀책사유로 인한 서비스의 중지/이용장애에 대하여 책임을 지지 않습니다.
+3. “쇼핑몰”은 기간 통신 사업자가 전기통신서비스를 중지하거나 정상적으로 제공하지 아니하여 “이용자”에게 손해가 발생한 경우에는 책임이 면제됩니다.
+4. “쇼핑몰”은 사전에 공지된 서비스용 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로 서비스가 중지되거나 장애가 발생한 경우에 대해서는 책임이 면제됩니다.
+5. “쇼핑몰”은 “이용자”가 서비스 내 또는 웹사이트 상에 게시 또는 전송한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 대해서는 책임을 지지 않습니다.
+6. “쇼핑몰”은 “이용자” 상호간 또는 “이용자”와 제3자간에 서비스를 매개로 발생한 분쟁에 대해 개입할 의무가 없으며 이로 인한 손해를 배상할 책임도 없습니다.
+7. 회원이 자신의 개인정보를 타인에게 유출 또는 제공함으로써, 발생하는 피해에 대해서 “회사”는 일체의 책임을 지지 않습니다.
+
+제11조 (재판권 및 준거법)
+1. “쇼핑몰”과 이용자간에 발생한 전자상거래 분쟁에 관한 소송은 제소 당시의 이용자의 주소에 의하고, 주소가 없는 경우에는 거소를 관할하는 지방법원의 전속관할로 합니다.
+다만, 제소 당시 이용자의 주소 또는 거소가 분명하지 않거나 외국 거주자의 경우에는 민사소송법상의 관할법원에 제기합니다.
+2. "몰"과 이용자간에 제기된 전자상거래 소송에는 대한민국 법령을 적용합니다.
+
+
+[부칙]
+제 1 조 (적용일자)
+이 정책은 2019.01.02일부터 적용됩니다.
+
+            </p>
+
+            <h2>판매자 이용약관 - 구매 이용약관</h2>
+            <p><판매자 이용약관>
+               -	구매이용약관
+               제1조 (목적)
+               이 약관은 주식회사 토마토페이 (전자상거래 사업자)이 운영하는 쇼핑몰 “통통몰” (이하 "몰"이라 함)에서 제공하는 인터넷 관련 서비스 (이하 "서비스"라 함)를 이용함에 있어 쇼핑몰과 이용자의 권리의무 및 책임사항을 규정함을 목적으로 합니다.
+               ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」
+               
+               제2조 (정의)
+               1. "몰"이란 주식회사 토마토페이가 재화 또는 용역(이하 "재화 등"이라 함)을 이용자에게 제공하기 위하여 휴대폰 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 쇼핑몰을 운영하는 사업자의 의미로도 사용합니다.
+               2. "이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.
+               3. “회원”이라 함은 "몰"에 개인정보를 제공하여 회원등록을 한 자로서, "몰"의 정보를 지속적으로 제공받으며, "몰"이 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.
+               4. “비회원”이라 함은 회원등록을 하지 않고, 구매서비스를 제외한 "몰"이 제공하는 서비스를 이용하는 자를 말합니다.
+               
+               제3조 (약관 등의 명시와 설명 및 개정)
+               1. "몰"은 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호, 사업자등록번호, 통신판매업신고번호, 개인정보관리책임자 등을 이용자가 쉽게 알 수 있도록 쇼핑몰의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.
+               2. "몰"은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회 배송책임 환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 이용자의 확인을 구하여야 합니다.
+               3. "몰"은 전자상거래 등에서의 소비자 보호에 관한 법률, 약관의 규제에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망 이용촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자보호법 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+               4. "몰"이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 몰의 초기화면 또는 공지사항에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다.
+               5. 다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 "몰"은 개정 전 내용과 개정 후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표시합니다.
+               6. “회원”은 변경된 약관에 동의하지 않을 권리가 있으며, 변경된 약관에 동의하지 않을 경우에는 서비스 이용을 중단하고 탈퇴를 요청할 수 있습니다. 다만, 이용자가 제 3항의 방법 등으로 별도 고지한 약관 개정 공지 기간 내에 “회사”에 개정 약관에 동의하지 않는다는 명시적인 의사표시를 하지 않는 경우 변경된 약관에 동의한 것으로 간주합니다.
+               7. 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자 보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자보호지침 및 관계법령 또는 상관례에 따릅니다.
+               
+               제4조 (서비스의 제공 및 변경)
+               1. "몰"은 다음과 같은 업무를 수행합니다.
+               ① 재화 또는 용역에 대한 정보 제공 및 암호화폐를 통한 구매계약의 체결
+               ② 판매자에게 구매계약이 체결된 재화 또는 용역의 배송 안내
+               ③ 기타 "몰"이 정하는 업무
+               2. "몰"은 재화 또는 용역에 대한 제공 및 배송과 관련하여 판매자와 구매자, 배송업체, 금융기관 등과의 사이에 발생한 분쟁은 당사자들 간의 해결을 원칙으로 하며, "몰"은 어떠한 책임도 부담하지 않습니다.
+               3. "몰"은 재화 또는 용역의 품절 또는 기술적 사양의 변경 등의 경우에는 판매자의 동의 없이 장차 체결되는 계약에 의해 제공할 재화 또는 용역의 내용을 변경할 수 있습니다.
+               4. “몰”은 이용자의 구매금액, 횟수, 빈도 및 기타 이용실적 등을 토대로 이용자에게 소정의 암호화폐 또는 일정한 혜택을 부여할 수 있습니다. 해당 내용은 ”몰” 사이트 내에 게시합니다.
+               5.. “몰”은 제4항의 사유로 인하여 이용자가 입은 손해를 통화가치에 상응하는 암호화폐로 배상합니다. 다만, “몰”이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+               
+               제5조 (서비스의 중단)
+               1. "몰"은 컴퓨터 등 정보통신설비의 보수점검교체 및 고장, 통신의 두절 등의 사유가 발생한 경우에는 서비스의 제공을 일시적으로 중단할 수 있습니다.
+               2. "몰"은 제1항의 사유로 서비스의 제공이 일시적으로 중단됨으로 인하여 이용자 또는 제3자가 입은 손해에 대하여 통화가치에 상응하는 방식으로 배상합니다. 단, "몰"이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+               3. 사업종목의 전환, 사업의 포기, 업체간의 통합 등의 이유로 서비스를 제공할 수 없게 되는 경우에는 "몰"은 제8조에 정한 방법으로 이용자에게 통지하고 당초 "몰"에서 제시한 조건에 따라 소비자에게 보상합니다. 다만, "몰"이 보상기준 등을 고지하지 아니한 경우에는 이용자들의 포인트를 "몰"에서 통용되는 통화가치에 상응하는 현물 또는 현금으로 이용자에게 지급합니다.
+               
+               제6조 (회원가입)
+               1. 이용자는 "몰"이 정한 가입 양식에 따라 회원정보를 기입한 후 이 약관에 동의한다는 의사표시를 함으로서 회원가입을 신청합니다.
+               2. "몰"은 제1항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각호에 해당하지 않는 한 회원으로 등록합니다.
+               ① 가입신청자가 이 약관 제7조제3항에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 다만 제7조제3항에 의한 회원자격 상실 후 6개월이 경과한 자로서 "몰"의 회원재가입 승낙을 얻은 경우에는 예외로 한다.
+               ② 이용자 본인의 실명으로 등록하지 않고 타인의 명의를 도용하거나 등록 내용에 허위, 기재누락, 오기가 있는 경우
+               ③ 기타 회원으로 등록하는 것이 "몰"의 기술상 현저히 지장이 있다고 판단되는 경우
+               3. “몰”은 서비스 관련 설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우에는 승낙을 유보할 수 있습니다.
+               4. 회원가입계약의 성립시기는 "몰"의 승낙이 회원에게 도달한 시점으로 합니다.
+               5. 회원은 제15조 제1항에 의한 등록사항에 변경이 있는 경우, 즉시 전자우편 기타 방법으로 "몰"에 대하여 그 변경사항을 알려야 합니다.
+               
+               제7조 (회원 탈퇴 및 자격 상실 등)
+               1. 회원은 "몰"에 언제든지 탈퇴를 요청할 수 있으며 "몰"은 즉시 회원탈퇴를 처리합니다. 이때 잔여 포인트는 자동으로 소멸됩니다.
+               2. 회원이 다음 각호의 사유에 해당하는 경우, "몰"은 회원자격을 제한 및 정지시킬 수 있습니다.
+               ① 가입 신청 시에 허위 내용을 등록한 경우
+               ② "몰"을 이용하여 구입한 재화 등의 대금, 기타 "몰"이용에 관련하여 회원이 부담하는 채무를 기일에 지급하지 않는 경우
+               ③ 다른 사람의 "몰" 이용을 방해하거나 그 정보를 도용하는 등 전자상거래 질서를 위협하는 경우
+               ④ "몰"을 이용하여 법령 또는 이 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우
+               3. "몰"이 회원 자격을 제한정지 시킨 후, 동일한 행위가 2회 이상 반복되거나 30일 이내에 그 사유가 시정되지 아니하는 경우 "몰"은 회원자격을 상실시킬 수 있습니다. 단, 회원의 위반 정도가 중한 경우 즉시 이용계약을 해지할 수 있습니다.
+               4. "몰"이 회원자격을 상실시키는 경우에는 회원등록을 말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에 최소한 30일 이상의 기간을 정하여 소명할 기회를 부여합니다.
+               
+               제8조 (회원에 대한 통지)
+               1. "몰"이 회원에 대한 통지를 하는 경우, 회원이 "몰"과 미리 약정하여 지정한 전화 및 전자우편 주소로 할 수 있습니다.
+               2. "몰"은 불특정다수 회원에 대한 통지의 경우 1주일이상 "몰" 게시판에 게시함으로써 개별 통지에 갈음할 수 있습니다. 다만, 회원 본인의 거래와 관련하여 중대한 영향을 미치는 사항에 대하여는 개별통지를 합니다.
+               
+               제9조 (구매신청)
+               "몰"이용자는 "몰"상에서 다음 또는 이와 유사한 방법에 의하여 구매를 신청하며, "몰"은 이용자가 구매신청을 함에 있어서 다음의 각 내용을 알기 쉽게 제공하여야 합니다. 단, 회원인 경우 제9조 제4호의 적용을 제외할 수 있습니다.
+               1. 재화 등의 검색 및 선택
+               2. 성명, 주소, 전화번호, 전자우편주소(또는 이동전화번호) 등의 입력
+               3. 약관내용, 청약철회권이 제한되는 서비스, 배송료∙설치비 등의 비용부담과 관련한 내용에 대한 확인
+               4. 이 약관에 동의하고 위 3호의 사항을 확인하거나 거부하는 표시 (예, 마우스 클릭)
+               5. 재화 등의 구매신청 및 이에 관한 확인 또는 "몰"의 확인에 대한 동의
+               6. 결제방법의 선택
+               
+               제10조 (계약의 성립)
+               1. "몰"은 제9조와 같은 구매신청에 대하여 다음 각호에 해당하면 승낙하지 않을 수 있습니다.
+               ① 신청 내용에 허위, 기재누락, 오기가 있는 경우
+               ② 미성년자가 담배, 주류 등 청소년보호법에서 금지하는 재화 및 용역을 구매하는 경우
+               ③ 신용카드, 포인트 등 결제수단을 이용하여 구매를 가장하는 경우
+               ④ 할인쿠폰, 포인트 등을 획득할 목적으로 부정한 거래를 계속하는 경우
+               ⑤ 기타 구매신청에 승낙하는 것이 "몰" 기술상 현저히 지장이 있다고 판단하는 경우
+               2. "몰"의 승낙이 제12조제1항의 수신확인통지형태로 이용자에게 도달한 시점에 계약이 성립한 것으로 봅니다.
+               3. "몰"의 승낙의 의사표시에는 이용자의 구매 신청에 대한 확인 및 판매가능 여부, 구매신청의 정정 취소 등에 관한 정보 등을 포함하여야 합니다.
+               4. 미성년자가 구매계약을 체결하는 경우에는 법정대리인의 동의하지 않으면 미성년자 본인 또는 법정대리인이 계약을 취소할 수 있습니다.
+               
+               제11조 (지급방법)
+               "몰"에서 구매한 재화 또는 용역에 대한 대금지급방법은 다음 각호의 방법 중 가용한 방법으로 할 수 있습니다. 단, "몰"은 이용자의 지급방법에 대하여 재화 등의 대금에 어떠한 명목의 수수료도 추가하여 징수할 수 없습니다.
+               1. 가상계좌를 통한 결제
+               2. 직불카드, 신용카드 등의 카드 결제
+               3. 통통지갑(모바일 암호화폐 지갑)을 통한 통통코인(TTCOIN)에 의한 결제
+               
+               제12조(수신확인통지구매신청 변경 및 취소)
+               1. "몰"은 이용자의 구매신청이 있는 경우 이용자에게 수신확인통지를 합니다.
+               2. 수신확인통지를 받은 이용자는 의사표시의 불일치 등이 있는 경우에는 수신확인통지를 받은 후 즉시 구매신청 변경 및 취소를 요청할 수 있고 "몰"은 배송 전에 이용자의 요청이 있는 경우에는 지체 없이 그 요청에 따라 처리하여야 합니다. 다만 이미 대금을 지불한 경우에는 제15조의 청약철회 등에 관한 규정에 따릅니다.
+               
+               제13조 (재화 등의 공급)
+               1. “몰”은 판매자에게 회사로부터 구매자의 입금 또는 대금결제에 대한 확인통지를 받은 후 7일 이내에 배송에 필요한 조치를 취하도록 안내합니다.
+               2. “몰”은 배송과 관련하여 판매자와 구매자, 배송업체, 금융기관 등과의 사이에 발생한 분쟁은 당사자들 간의 해결을 원칙으로 하며, 회사는 어떠한 책임도 부담하지 않습니다.
+               3. “몰”은 이용자가 구매한 재화에 대해 배송수단, 수단별 배송비용 부담자, 수단별 배송기간 등을 명시합니다. 만약 “몰”이 약정 배송기간을 초과한 경우에는 그로 인한 이용자의 손해를 통화 또는 그에 상응하는 암호화폐 및 다른 방식으로 배상하여야 합니다. 다만 “몰”이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+               
+               제14조 (환급)
+               "몰"은 이용자가 구매 신청한 재화 등이 품절 등의 사유로 인도 또는 제공을 할 수 없을 때에는 지체 없이 그 사유를 이용자에게 통지하고 사전에 재화 등의 대금을 받은 경우에는 대금을 받은 날부터 3영업일 이내에 환급하거나 환급에 필요한 조치를 취합니다.
+               
+               제15조 (청약철회 등)
+               1. "몰"과 재화 등의 구매에 관한 계약을 체결한 이용자는 재화 등을 배송 받은 날부터 7일 이내에는 청약의 철회를 할 수 있습니다.
+               2. 이용자는 재화 등을 배송 받은 경우 다음 각호의 해당하는 경우에는 반품 및 교환을 할 수 없습니다.
+               ① 이용자에게 책임 있는 사유로 재화 등이 멸실 또는 훼손된 경우(다만, 재화 등의 내용을 확인하기 위하여 포장 등을 훼손한 경우에는 청약철회를 할 수 있습니다)
+               ② 이용자의 사용 또는 일부 소비에 의하여 재화 등의 가치가 현저히 감소한 경우
+               ③ 시간의 경과에 의하여 재판매가 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우
+               ④ 같은 성능을 지닌 재화 등으로 복제가 가능한 경우 그 원본 재화 등의 포장을 훼손한 경우
+               ⑤ 기타 구매자가 환불이나 교환을 요청할 수 없는 합리적인 사유가 있는 경우
+               3. 이용자는 제1항 및 제2항의 규정에 불구하고 '재화 등'의 내용이 표시∙광고 내용과 다르거나, 계약내용과 다르게 이행된 경우에는 당해 재화등을 공급받은 날로부터 3월 이내, 그 사실을 안 날 또는 알 수 있었던 날로부터 30일 이내에 청약철회 등을 할 수 있습니다.
+               
+               제16조 (청약철회 등의 효과)
+               1. “몰”은 구매자로부터 교환 또는 반품의 의사표시를 접수하면, 즉시 그러한 사실을 판매자에게 통보합니다.
+               2. 반품이나 교환에 필요한 왕복 배송비와 기타 필요한 비용은 귀책사유가 있는 쪽에서 부담합니다.
+               3. 교환신청을 하더라도 판매자에게 교환할 물품의 재고가 없으면 교환할 수 없으며, 이때는 반품환불로 처리됩니다.
+               4. 교환에 드는 비용은 물품하자의 경우에는 판매자가 왕복배송비를 부담하나 구매자의 변심에 의한 경우에는 구매자가 부담합니다.
+               5. 배송상의 문제로 구매자가 손해를 보았을 때 그에 대한 책임은 해당 배송업체를 지정한 판매자에게 있습니다.
+               6. “몰”이 구매자의 구매대금 결제 확인에 대해 통지한 후 판매자가 상당 기간 구매자의 주문 정보를 확인하지 않거나 배송 절차를 이행하지 않아 구매자가 거래 취소를 요구하면 회사는 해당 거래를 취소할 수 있으며, 거래가 취소되면 보관 중인 상품 구매대금은 구매자에게 환불됩니다. 아울러, “몰”은 개별적인 정책으로 구매자의 요구 없이도 자동 환불처리 등의 조치를 할 수 있으며 그럴 경우 미리 해당 내용을 구매자에게 공지합니다.
+               7. “몰”은 판매자가 구매자의 교환, 반품에 대한 사실확인 진행절차에 적극적으로 임하지 않거나 지연하면 구매자에게서 교환이나 반품의 원인을 파악한 후 해당 거래를 취소하여 구매자에게 보관 중인 결제대금을 환불할 수 있습니다.
+               8. “몰”은 구매자의 교환 또는 반품의 요청이 정당하지 않다고 판단하면 구매자의 의사표시를 취소하여 보관 중인 결제대금을 판매자에게 지급할 수 있습니다. 또한, 구매자의 교환, 반품 등이 접수된 날로부터 7일이 지날 때까지 이미 수령한 상품을 판매자에게 반환하지 않거나 전화, 이메일(E-mail) 등으로 연락되지 않으면 교환, 반품의 의사를 철회한 것으로 간주하여 보관 중인 결제대금을 판매자에게 지급할 수 있습니다.
+               9. 구매자는 상품이 발송되기 전까지 구매를 취소할 수 있으며, 배송 중이면 취소가 아닌 반품절차에 의해 처리됩니다.
+               10. 주문확인 상태에서는 즉시 취소처리가 완료되는 것이 원칙이나 이미 상품이 발송되었다면 발송된 상품의 왕복 배송비는 구매자가 부담해야 합니다.
+               
+               제17조 (통통코인) 1. “통통코인”은 “몰”에서 상품 구매 시 대금 결제 수단으로 사용할 수 있는 현금 등가의 결제수단을 의미합니다.
+               2. “몰”에서 제공되는 절차를 이행하면 통통코인을 부여 받게 됩니다. 통통코인 적립을 위하여 특정 "회원"의 자격요건이 요구될 수 있습니다.
+               3. 서비스 내 화면에 적립 통통코인으로 명시된 금액만큼의 통통코인가 적립되며 이는 "통통코인관리" 화면에서 확인할 수 있습니다.
+               
+               제18조 (통통마일)
+               1. “통통마일”은 통통몰 및 통통마일몰의 개별 정책에 따라 미리 공지되는 구매활동, 이벤트 참여 등에 따라 회원에게 일정한 통통마일 적립 기회를 부여/적립됩니다.
+               2. 회원은 “통통마일”을 통통몰 및 통통마일몰에서 상품 등의 구매 시 결제 수단으로 사용할 수 있으며, “몰”은 “통통마일”의 적립기준, 사용방법, 사용기간 및 제한에 대한 사항을 사이트에 별도로 게시하거나 통지합니다. “통통마일”의 사용조건에 관한 사항은 “몰”의 정책에 따라 달라질 수 있습니다.
+               3. “통통마일”은 현금으로 환급될 수 없습니다.
+               4. “통통마일”을 통한 상품구매 시 별도의 전송 수수료가 발생하며, 결제금액의 0.5%(최소수수료량 0.1TTMI)가 부과됩니다.
+               5. 회원은 통통지갑을 이용하여 “통통마일”을 제3자 또는 다른 아이디로 양도가 가능하며, 양도할 경우 전송 수수료(0.5%)가 부가됩니다.
+               6. “몰”은 회원이 “회사”가 승인하지 않은 방법 또는 허위 정보 제공 등의 부정한 방법으로 “통통마일”을 획득하거나 부정한 목적이나 용도로 “통통마일”을 사용하는 경우, “통통마일”의 사용을 제한하거나 “통통마일”을 사용한 구매신청을 취소하거나 회원자격을 정지할 수 있습니다.
+               7. 회원이 구매 또는 이벤트 등으로 받은 “통통마일”을 사용한 후 해당 적립 원인이 취소(혹은 반품)되는 경우, 이를 “몰”에 반환하여야 합니다.
+               
+               제19조(할인쿠폰)
+               1. '할인쿠폰'은 "몰"의 이벤트 프로모션 참여 등을 통하여 회원에게 무상으로 지급되며, ‘할인쿠폰’별 유효기간, 할인금액 및 사용방법 등은 개별 안내사항을 통하여 확인 가능합니다.
+               2. 할인쿠폰은 현금으로 출금될 수 없으며, 할인쿠폰에 표시된 유효기간이 만료되거나 이용계약이 종료되면 소멸합니다.
+               3. “회사”는 회원이 부정한 목적과 방법으로 할인쿠폰 등을 획득하거나 사용하는 사실이 확인될 경우, 해당 이용자에 대한 할인쿠폰을 회수 또는 소멸시키거나 회원자격을 제한할 수 있습니다.
+               4. '할인쿠폰' 의 제공내용 및 운영방침은 "몰"정책에 따라 달라질 수 있습니다.
+               
+               제20조 (대리행위의 부인)
+               “몰”은 통신판매중개자로서 효율적인 서비스를 위한 시스템 운영 및 관리 책임만을 부담하며, 재화 또는 용역의 거래와 관련하여 구매자 또는 판매자를 대리하지 아니하고, 회원 사이에 성립된 거래 및 회원이 제공하고 등록한 정보에 대해서는 해당 회원이 그에 대한 직접적인 책임을 부담하여야 합니다.
+               
+               제21조 (보증의 부인)
+               “몰”은 “몰”이 제공하는 시스템을 통하여 이루어지는 구매자와 판매자 간의 거래와 관련하여 판매의사 또는 구매의사의 존부 및 진정성, 등록물품의 품질, 완전성, 안정성, 적법성 및 타인의 권리에 대한 비침해성, 구매자 또는 판매자가 입력하는 정보 및 그 정보를 통하여 링크된 URL에 게재된 자료의 진실성 또는 적법성 등 일체에 대하여 보증하지 아니하며, 이와 관련한 일체의 위험과 책임은 해당 회원이 전적으로 부담합니다.
+               
+               제22조 (개인정보보호)
+               1. "몰"은 이용자의 정보 수집 시 구매계약 이행에 필요한 최소한의 정보를 수집합니다. 다음 사항을 필수사항으로 하며 그 외 사항은 선택사항으로 합니다.
+               ① 성명
+               ② 생년월일
+               ③ 주소
+               ④ 증권통 ID - 전자우편주소 (회원의 경우)
+               ⑤ 비밀번호 (회원의 경우)
+               ⑥ 이동전화번호
+               2. "몰"이 이용자의 개인식별이 가능한 개인정보를 수집하는 때에는 반드시 당해 이용자의 동의를 받습니다.
+               3. 제공된 개인정보는 당해 이용자의 동의 없이 목적 외의 이용이나 제3자에게 제공할 수 없으며, 이에 대한 모든 책임은 “몰”이 집니다. 다만, 다음의 경우에는 예외로 합니다.
+               ① 배송업무상 배송업체에게 배송에 필요한 최소한의 이용자의 정보(성명, 주소, 전화번호)를 알려주는 경우
+               ② 통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우
+               ③ 재화 등의 거래에 따른 대금정산을 위하여 필요한 경우
+               ④ 도용방지를 위하여 본인확인에 필요한 경우
+               ⑤ 법률의 규정 또는 법률에 의하여 필요한 불가피한 사유가 있는 경우
+               4. "몰"이 제2항과 제3항에 의해 이용자의 동의를 받아야 하는 경우에는 개인정보관리 책임자의 신원(소속, 성명 및 전화번호, 기타 연락처), 정보의 수집목적 및 이용목적, 제3자에 대한 정보제공 관련사항(제공받은 자, 제공목적 및 제공할 정보의 내용) 등 정보통신망이용촉진 등에 관한 법률 제22조제2항이 규정한 사항을 미리 명시하거나 고지해야 합니다.
+               5. 이용자는 언제든지 "몰"이 가지고 있는 자신의 개인정보에 대해 열람 및 오류정정을 요구할 수 있으며 "몰"은 이에 대해 지체 없이 필요한 조치를 취할 의무를 집니다. 이용자가 오류의 정정을 요구한 경우에는 "몰"은 그 오류를 정정할 때까지 당해 개인정보를 이용하지 않습니다.
+               6. "몰"은 개인정보 보호를 위하여 관리자를 한정하여 그 수를 최소화하며 신용카드, 은행계좌 등을 포함한 이용자의 개인정보의 분실, 도난, 유출, 변조 등으로 인한 이용자의 손해에 대하여 모든 책임을 집니다.
+               7. "몰" 또는 그로부터 개인정보를 제공받은 제3자는 개인정보의 수집목적 또는 제공받은 목적을 달성한 때에는 당해 개인정보를 지체 없이 파기합니다.
+               
+               제23조 (정보의 제공 및 광고의 게재)
+               1. “회사“는 서비스 이용 중 필요하다고 인정되는 다양한 마케팅 정보 등을 전자우편이나 서신우편, SMS, 전화, 알림 메시지(Push Notification), 회원 연락처와 연동된 SNS서비스 등의 방법으로 회원에게 제공할 수 있으며, 회원은 이에 동의합니다. 이 경우, 회원의 통신환경 또는 요금구조 등에 따라 회원이 데이터 요금 등을 부담할 수 있습니다.
+               2. 회원은 관련법에 따른 거래관련정보 및 고객문의 등에 대한 답변 등을 제외하고는 언제든지 전항의 전자우편 등에 대해서 수신 거절을 할 수 있으며, 이 경우 “몰“은 즉시 전항의 마케팅 정보 등을 제공하는 행위를 중단합니다.
+               
+               제24조 ("몰"의 의무)
+               1. "몰"은 법령과 이 약관이 금지하거나 공서양속에 반하는 행위를 하지 않으며 이 약관이 정하는 바에 따라 지속적이고, 안정적으로 재화용역을 제공하는데 최선을 다하여야 합니다.
+               2. "몰"은 이용자가 안전하게 인터넷 서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함)보호를 위한 보안 시스템을 갖추어야 합니다.
+               3. "몰"이 상품이나 용역에 대하여 「표시광고의 공정화에 관한 법률」 제소정의 부당한 표시광고행위를 함으로써 이용자가 손해를 입은 때에는 이를 배상할 책임을 집니다.
+               4. "몰"은 이용자가 원하지 않는 영리목적의 광고성 전자우편을 발송하지 않습니다.
+               
+               제25조 (회원의 ID 및 비밀번호에 대한 의무)
+               1. 제23조의 경우를 제외한 ID와 비밀번호에 관한 관리책임은 회원에게 있습니다.
+               2. 회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안됩니다. “몰”은 “몰”의 귀책사유 없이 발생한 ID 및 비밀번호 공유 또는 도용으로 인한 불이익에 대해 책임지지 않습니다. 또한, ID 및 비밀번호 공유 중에 제 3자가 “회원” 본인의 ID를 이용하여 약관 위반행위가 발생한다고 하더라도, 약관에 따라 “회원” 및 해당 ID 의 서비스 이용이 제한될 수 있습니다.
+               3. 회원이 자신의 ID 및 비밀번호를 도난 당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 "몰"에 통보하고 "몰"의 안내가 있는 경우에는 그에 따라야 합니다.
+               
+               제26조 (이용자의 의무)
+               이용자는 다음 행위를 하여서는 안됩니다.
+               1. 신청 또는 변경 시 허위 내용의 등록
+               2. 타인의 정보 도용
+               3. "몰"에 게시된 정보의 변경
+               4. "몰"이 정한 정보 이외의 정보(컴퓨터 프로그램 등) 등의 송신 또는 게시
+               5. "몰”과 기타 제3자의 저작권 등 지적재산권에 대한 침해
+               6. "몰"과 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위
+               7. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 “몰”에 공개 또는 게시하는 행위
+               8. 제 3자의 ID를 이용하거나 자신의 ID를 제3자에게 이용하게 하는 행위
+               9. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 “몰”에 공개 또는 게시하는 행위
+               10. “사이트”를 이용하여 구입한 재화 등의 대금, 기타 “몰” 이용에 관련하여 “회원”이 부담하는 채무의 미이행
+               11. 판매기간 종료 후 빈번한 구매취소 및 누적 등으로 타 “회원”의 서비스 이용을 방해할 우려가 있는 행위
+               12. 상품 등의 구매를 가장하여 재판매 등의 방법으로 자금을 융통하는 것과 같이 비정상적인 결제를 하는 행위
+               13. 진정한 구매 의사없이 쿠폰 등을 적용하여 상품구매 후 재판매하기 위한 목적으로 서비스를 이용하는 행위
+               14. 오프라인이나 다른 사이트에서 발생한 구매에 대해 포인트 등을 부당하게 확보할 목적으로 서비스를 이용하는 행위
+               15. “몰”의 허락 없이 서비스를 이용하여 영업/광고 활동 등을 하거나, “몰”이 허락한 내용과 범위를 벗어난 영업/광고 활동 행위
+               16. 타인의 신용카드, 은행 계좌, 휴대폰 등을 무단으로 이용 또는 도용하여 상품 등을 구매하는 행위
+               17. “몰” 또는 타인의 명예를 손상시키거나 확인되지 않은 사실을 유포하는 행위 타인의 권리를 침해하는 행위 및 회사의 업무수행에 현저한 지장을 초래하는 행위
+               18. “회원”은 “회원”의 정보가 변경된 경우에는 이를 회사에 즉시 알려야 하며, “회원”의 변경 정보를 회사에 알리지 않아 발생하는 불이익에 대해 “몰”은 책임을 지지 않습니다.
+               19. “회원”은 이 약관 기타 “회사”의 내부 규정 및 관계 법령을 준수해야 합니다.
+               20. “회원”은 이 약관에서 규정하는 사항 및 “사이트” 상의 공지사항 등 “몰”이 정한 제반 정책이나 규정을 수시로 확인하여야 합니다.
+               
+               제 27 조 (게시물의 관리)
+               1. 게시물이라 함은 “이용자”가 게시한 문자, 문서, 그림, 음성 또는 이들의 조합으로 이루어진 정보 등의 모든 정보를 말합니다.
+               2. “회사”는 “이용자”의 게시물을 소중하게 생각하며, 변조, 훼손, 삭제되지 않도록 최선을 다하여 보호합니다. 다만, 회사는 다음 각 호에 해당하는 게시물이나 자료를 사전통지 없이 삭제하거나 이동 또는 등록 거부를 할 수 있습니다.
+               ① 다른 “이용자” 또는 제3자에게 심한 모욕을 주거나 명예를 손상시키는 내용인 경우
+               ② “이용자”가 음란물을 게재하거나 음란사이트를 링크한 경우
+               ③ “몰” 또는 제3자의 저작권 등 기타 지적재산권을 포함한 일체의 권리를 침해하는 내용인 경우
+               ④ 게시판의 성격에 부합하지 않는 게시물의 경우
+               ⑤ 공공질서 및 미풍양속에 위반되는 내용을 유포하거나 링크시키는 경우
+               ⑥ 영리를 목적으로 하는 광고성 내용인 경우
+               ⑦ 범죄와 결부된다고 객관적으로 인정되는 내용일 경우
+               ⑧ “몰”에서 규정한 게시물 원칙에 어긋나거나 게시판 성격에 부합하지 않는 경우
+               ⑨ “몰”이나 "서비스"의 정상적인 운영을 방해하는 경우
+               ⑩ 기타 관계법령에 위배된다고 판단되는 경우
+               3. “사이트”의 게시물로 인하여 법률상 이익이 침해된 자는 관련 법령과 고객센터에서 정한 절차에 따라 당해 게시물의 게시중단 및 삭제 등을 요청할 수 있으며 ”몰”은 관련 법령에 따라 필요한 조치를 취하여야 합니다.
+               4. “회원”은 “사이트”를 탈퇴한 이후에는 기존에 작성한 게시물의 편집이나 삭제가 불가하므로, 탈퇴 이전에 해당 게시물에 대한 조치를 취하여야 합니다.
+               
+               제28조 (연결"몰"과 피연결"몰" 간의 관계)
+               1. 상위 "몰"과 하위 "몰"이 하이퍼 링크(예: 하이퍼 링크의 대상에는 문자, 그림 및 동화상 등이 포함됨)방식 등으로 연결된 경우, 전자를 연결 "몰"(웹 사이트)이라고 하고 후자를 피연결 "몰"(웹사이트)이라고 합니다.
+               2. 연결"몰"은 피연결"몰"이 독자적으로 제공하는 재화 등에 의하여 이용자와 행하는 거래에 대해서 보증책임을 지지 않는다는 뜻을 연결 "몰"의 초기화면 또는 연결되는 시점의 팝업화면으로 명시한 경우에는 그 거래에 대한 보증책임을 지지 않습니다.
+               3. 연결 “몰”에서 제공되는 서비스 외에 피연결 “몰”과 단순한 링크로 연결되어 제 3 자가 제공하는 서비스에 대하여는 “몰”의 개인정보처리방침이 적용되지 않으며 “몰”은 제 3 자의 사이트에 대하여 책임지지 않습니다.
+               
+               제29조 (저작권의 귀속 및 이용제한)
+               1. "몰"이 작성한 저작물에 대한 저작권 기타 지적재산권은 "몰"에 귀속합니다.
+               2. 이용자는 "몰"을 이용함으로써 얻은 정보 중 "몰"에게 지적재산권이 귀속된 정보를 "몰"의 사전 승낙 없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.
+               3. "몰"은 약정에 따라 이용자에게 귀속된 저작권을 사용하는 경우 당해 이용자에게 통보하여야 합니다.
+               
+               제30조 (분쟁해결)
+               1. "몰"은 이용자가 제기하는 정당한 의견이나 불만을 반영하고 그 피해를 보상처리하기 위하여 피해보상처리기구를 설치 운영합니다.
+               2. "몰"은 이용자로부터 제출되는 불만사항 및 의견은 우선적으로 그 사항을 처리합니다. 다만, 신속한 처리가 곤란한 경우에는 이용자에게 그 사유와 처리 일정을 즉시 통보합니다.
+               3. "몰"과 이용자간에 발생한 전자상거래 분쟁과 관련하여 이용자의 피해구제신청이 있는 경우에는 공정거래위원회 또는 시∙도지사가 의뢰하는 분쟁조정기관의 조정에 따를 수 있습니다.
+               
+               제31조 (면책)
+               1. “몰”은 전시, 사변, 천재지변, 국가비상사태, 해결이 곤란한 기술적 결함 기타 불가항력적 사유로 서비스를 제공할 수 없는 경우에는 책임이 면제됩니다.
+               2. “몰”은 “이용자”의 귀책사유로 인한 서비스의 중지/이용장애에 대하여 책임을 지지 않습니다.
+               3. “몰”은 기간 통신 사업자가 전기통신서비스를 중지하거나 정상적으로 제공하지 아니하여 “이용자”에게 손해가 발생한 경우에는 책임이 면제됩니다.
+               4. “몰”은 사전에 공지된 서비스용 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로 서비스가 중지되거나 장애가 발생한 경우에 대해서는 책임이 면제됩니다.
+               5. “몰”은 “이용자”가 서비스 내 또는 웹사이트 상에 게시 또는 전송한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 대해서는 책임을 지지 않습니다.
+               6. “몰”은 “이용자” 상호간 또는 “이용자”와 제3자간에 서비스를 매개로 발생한 분쟁에 대해 개입할 의무가 없으며 이로 인한 손해를 배상할 책임도 없습니다.
+               7. 회원이 자신의 개인정보를 타인에게 유출 또는 제공함으로써, 발생하는 피해에 대해서 회사는 일체의 책임을 지지 않습니다.
+               
+               제32조 (재판권 및 준거법)
+               1. "몰"과 이용자간에 발생한 전자상거래 분쟁에 관한 소송은 제소 당시의 이용자의 주소에 의하고, 주소가 없는 경우에는 거소를 관할하는 지방법원의 전속관할로 합니다. 다만, 제소 당시 이용자의 주소 또는 거소가 분명하지 않거나 외국 거주자의 경우에는 민사소송법상의 관할법원에 제기합니다.
+               2. "몰"과 이용자간에 제기된 전자상거래 소송에는 대한민국 법령을 적용합니다.
+               
+               부칙
+               
+               제 1 조 (적용일자)
+               이 정책은 2019.01.02일부터 적용됩니다.
+               </p>
+      </div>
+    </div>
+</div>
+
+<script>
+ $(document).ready(function(){
+  $('div#txt_cont div:gt(0)').css('display', 'none');
+  $('#menu ul li a, #menu2 ul li a').click(function(event){
+    event.preventDefault();
+    var id_tab = $(this).attr('href');
+    $('#menu ul li a').removeClass('hover_tab');
+    $(this).addClass('hover_tab');
+    $('div.txt_tab:visible').hide();
+    $(id_tab).show('slide');
+  }); 
+
+  $('#menu2 ul li:first-child').click(function(event){
+      $('#menu ul li:first-child a').addClass('hover_tab');
+  }); 
+
+  $('#menu2 ul li:nth-child(2)').click(function(event){
+      $('#menu ul li:nth-child(2) a').addClass('hover_tab');
+  }); 
+
+  $('#menu2 ul li:nth-child(3)').click(function(event){
+      $('#menu ul li:nth-child(3) a').addClass('hover_tab');
+  }); 
+});
+
+
+</script>
+
+<div id="footer" class="footer">
+   <div class="footer_conts">
+      <div class="footer_l">
+         <p class="fl_tit">고객센터 <br>02-2128-2600</p>
+         <p class="fl_time">평일 9:00 ~ 18:00 토요일, 일요일, 공휴일 휴무</p>
+      </div>
+      <div class="footer_r" id="menu2">
+         <ul>
+            <li><a href="#tab1" >통통몰 이용약관</a></li>
+            <li><a href="#tab2">개인정보 처리방침</a></li>
+            <li><a href="#tab3">판매자 이용약관</a></li>
+         </ul>
+   
+         <p>(주)토마토페이 | 대표:박서준 | 주소: 서울특별시 마포구 양화진 4길 32 <br> 사업자 등록번호: 124-87-02232 | 통신판매업신고번호 : 2013-서울마포-0121 <br> 제휴문의: tongtongmail@etomato.com</p>
+         
+       
+      </div>
+   </div>
+   <div class="footer_c">통통몰은 통신판매중개자이며 통신판매의 당사자가 아닙니다. <br>
+      따라서 통통몰은 상품/거래정보 및 가격에 대하여 책임을 지지 않습니다. <br>
+      Copyright ⓒ ㈜토마토페이 All Rights Reserved.</div>
+</div>
+<div class="scrolll_bottom" ></div>
+</body>
+
+</html>
